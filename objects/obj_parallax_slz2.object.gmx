@@ -35,17 +35,14 @@
         bg_yoffset = 0.90; // Offset for the parallax bg.
         
  // Create the sky.
-    for(i=0; i&lt;12; i+=1)
-    {
-        parallax_add_node(1, pbg_slz1_01, (0.99-(i*0.002)), 0, 0, 0, 0, bg_yoffset, 0, 0, i*6, 0, 0, i*12, 700, 394);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8                
-    } 
+    parallax_add_node(1, pbg_slz2_01, 0.99, 0, 0, 0, 0, bg_yoffset, 0, 0, -32, 0, 0, 12, 700, 394);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8                
         
  // Create the mountains:
-    parallax_add_node(1, pbg_slz2_02, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, 24, 0, 0, 0, 700, 394);  // &lt; Parallax ID 1      
-    parallax_add_node(1, pbg_slz2_03, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 168, 0, 0, 0, 512, 88);  // &lt; Parallax ID 1      
+    parallax_add_node(1, pbg_slz2_02, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, 64, 0, 0, 0, 261, 135);  // &lt; Parallax ID 1      
+    parallax_add_node(1, pbg_slz2_03, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 160, 0, 0, 0, 512, 88);  // &lt; Parallax ID 1      
     parallax_add_node(1, pbg_slz1_03, 0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 240, 0, 0, 0, 512, 72); // &lt; Parallax ID 2    
     parallax_add_node(1, pbg_slz1_03, 0.86, 0, 0, 0, 0, bg_yoffset, 0, 0, 270, 0, 0, 0, 512, 72); // &lt; Parallax ID 2    
-    parallax_add_node(1, pgb_slz2_03, 0.82, 0, 0, 0, 0, bg_yoffset, 0, 0, 300, 0, 0, 0, 512, 72); // &lt; Parallax ID 2  
+    parallax_add_node(1, pgb_slz2_03, 0.82, 0, 0, 0, 0, bg_yoffset, 0, 0, 300, 0, 0, 0, 512, 104); // &lt; Parallax ID 2  
     parallax_add_node(1, pbg_slz2_04, 0.78, 0, 0, 0, 0, bg_yoffset, 0, 0, 242, 0, 0, 0, 512, 480); // &lt; Parallax ID 2   
     parallax_add_node(1, pbg_slz_light, 0.78, 0, 0, 0, 0, bg_yoffset, 0, 0, 100, 0, 0, 0, 512, 640); // &lt; Parallax ID 2 
 </string>
