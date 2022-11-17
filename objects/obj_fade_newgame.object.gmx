@@ -57,7 +57,7 @@
             <kind>1</kind>
             <string>/// Go to the first stage.
 
-    room_goto(rm_intro2);
+    room_goto(rm_t_intro);
     audio_stop(msc_menu)
 
 </string>

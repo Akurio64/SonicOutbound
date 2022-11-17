@@ -117,7 +117,7 @@
     <instance objName="obj_ramp4" x="3581" y="-94" name="inst_80604301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ramp_3" x="3577" y="161" name="inst_92E18CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp2" x="3833" y="162" name="inst_E7F2D721" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character" x="164" y="639" name="inst_8F5C9459" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="14650" y="639" name="inst_8F5C9459" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_30" x="2144" y="759" name="inst_5B2A1E96" locked="0" code="" scaleX="1.50793647766113" scaleY="1.85714280605316" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_30" x="3073" y="1006" name="inst_DA63C0F2" locked="0" code="" scaleX="-2.04999995231628" scaleY="1.98000001907349" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_30" x="4350" y="877" name="inst_1ADE5002" locked="0" code="" scaleX="2.04761910438538" scaleY="1.98000001907349" colour="4294967295" rotation="0"/>
@@ -1206,7 +1206,7 @@
     <instance objName="obj_badnik_block" x="11756" y="593" name="inst_F78671BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="11516" y="593" name="inst_22B26CE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="9472" y="908" name="inst_55827E5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boss_camera" x="17828" y="951" name="inst_CEC19D6D" locked="0" code="boss_id=obj_miniboss_3&#xA;mode=1&#xA;boss_x=x+424+45&#xA;boss_y=730&#xA;offset=300&#xA;cutscene=false" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boss_camera" x="17828" y="951" name="inst_CEC19D6D" locked="0" code="boss_id=obj_ethunderbolt&#xA;mode=1&#xA;boss_x=x&#xA;boss_y=y-48&#xA;offset=300&#xA;cutscene=false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="goal_ground" x="17292" y="1039" name="inst_A4EAB391" locked="0" code="" scaleX="31.375" scaleY="4.73999977111816" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_collapse" x="13785" y="304" name="inst_DF7C5A39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_collapse" x="13753" y="304" name="inst_20D3A1E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

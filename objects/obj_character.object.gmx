@@ -341,6 +341,7 @@
     animation_timer           = 0; 
     draw_x                    = x;
     draw_y                    = y;
+    mania                     = false;
 
 </string>
           </argument>
@@ -1086,7 +1087,13 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
           // Start the playback of the animation:
              if(animation_flag == "START")
              {
+                if mania=false{
                 update_animation_index();
+                }
+                else
+                {
+                update_animation_index_mania();
+                }
                 animation_flag = "PLAY";
              }
 
@@ -1136,7 +1143,13 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
                    animation_flag  = "PLAY";                  
                    animation_index = animation_next; 
                    animation_frame = animation_next_frame;                                                    
-                   update_animation_index();                                                  
+                   if mania=false{
+                update_animation_index();
+                }
+                else
+                {
+                update_animation_index_mania();
+                }                                                 
                 }
              }
        }
@@ -1147,6 +1160,8 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     {
        miles_tail_frame += miles_tail_speed;
     }
+    
+    if room=rm_t_intro{mania=true}
 
 </string>
           </argument>
@@ -3101,7 +3116,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,obj_boss_cutscene)
+            <string>if mania=true{mania=false}else if mania=false{mania=true}
 </string>
           </argument>
         </arguments>

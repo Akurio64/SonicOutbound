@@ -91,6 +91,7 @@
       <sound>sound\msc_menu3</sound>
       <sound>sound\msc_slz1</sound>
       <sound>sound\msc_slz2</sound>
+      <sound>sound\msc_phantom_egg</sound>
     </sounds>
     <sounds name="SE">
       <sounds name="Badniks">
@@ -322,6 +323,36 @@
           <sprite>sprites\spr_mask_lines_small</sprite>
           <sprite>sprites\spr_mask_edge_line</sprite>
           <sprite>sprites\spr_mask_ledge_climb</sprite>
+        </sprites>
+        <sprites name="Mania">
+          <sprites name="Sonic">
+            <sprite>sprites\spr_sonic_balance_1_new</sprite>
+            <sprite>sprites\spr_sonic_balance_2_new</sprite>
+            <sprite>sprites\spr_sonic_breathe_new</sprite>
+            <sprite>sprites\spr_sonic_crouch_new</sprite>
+            <sprite>sprites\spr_sonic_crouch_up_new</sprite>
+            <sprite>sprites\spr_sonic_dash_new</sprite>
+            <sprite>sprites\spr_sonic_death_new</sprite>
+            <sprite>sprites\spr_sonic_dropdash_new</sprite>
+            <sprite>sprites\spr_sonic_drown_new</sprite>
+            <sprite>sprites\spr_sonic_hurt_new</sprite>
+            <sprite>sprites\spr_sonic_idle_1_new</sprite>
+            <sprite>sprites\spr_sonic_idle_2_new</sprite>
+            <sprite>sprites\spr_sonic_jog_new</sprite>
+            <sprite>sprites\spr_sonic_look_end_new</sprite>
+            <sprite>sprites\spr_sonic_look_up_new</sprite>
+            <sprite>sprites\spr_sonic_peelout_new</sprite>
+            <sprite>sprites\spr_sonic_push_new</sprite>
+            <sprite>sprites\spr_sonic_roll_new</sprite>
+            <sprite>sprites\spr_sonic_run_new</sprite>
+            <sprite>sprites\spr_sonic_skid_new</sprite>
+            <sprite>sprites\spr_sonic_skid_turn_new</sprite>
+            <sprite>sprites\spr_sonic_spindash_new</sprite>
+            <sprite>sprites\spr_sonic_spring_new</sprite>
+            <sprite>sprites\spr_sonic_stand_new</sprite>
+            <sprite>sprites\spr_sonic_twirl_new</sprite>
+            <sprite>sprites\spr_sonic_walk_new</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Objects">
@@ -960,6 +991,11 @@
       <background>background\tls_slz2_2</background>
       <background>background\bg_slz_loop1</background>
       <background>background\bg_slz_loop2</background>
+      <background>background\bg_t_intro_t</background>
+      <background>background\bg_t_intro_bg_1</background>
+      <background>background\bg_t_intro_bg_2</background>
+      <background>background\bg_t_intro_bg_3</background>
+      <background>background\bg_t_intro_lvl</background>
     </backgrounds>
     <backgrounds name="Misc">
       <background>background\bg_dataselect</background>
@@ -992,6 +1028,7 @@
         <scripts name="Animation">
           <script>scripts\set_animation.gml</script>
           <script>scripts\update_animation_index.gml</script>
+          <script>scripts\update_animation_index_mania.gml</script>
           <scripts name="Miles">
             <script>scripts\tail_animation_setup.gml</script>
             <script>scripts\tail_apply_animation.gml</script>
@@ -1370,6 +1407,7 @@
           <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_slz1</object>
           <object>objects\obj_parallax_slz2</object>
+          <object>objects\obj_t_intro_bg</object>
           <object>objects\obj_parallax_spz1</object>
           <object>objects\obj_parallax_spz2</object>
         </objects>
@@ -1683,6 +1721,7 @@
       <room>rooms\rm_level_select</room>
     </rooms>
     <rooms name="Stages">
+      <room>rooms\rm_t_intro</room>
       <room>rooms\rm_intro2</room>
       <room>rooms\rm_slz_act1</room>
       <room>rooms\rm_slz_act2</room>

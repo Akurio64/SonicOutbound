@@ -33,13 +33,17 @@ act_clear=_ev_act_clear2
 
 theme=_ev_robotnik3
 thunderbolt=noone
+alpha=0
 alarm[0]=120
 i_speed=0.3
 
 //Boss
 
 speede=0
+goto=0
+goto_s=0
 alarm[2]=60
+alarm[8]=random_range(30,120)
 hp=12
 </string>
           </argument>
@@ -144,6 +148,33 @@ if alarm[9]=-1{alarm[9]=180}
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>goto=random_range(obj_character.x-512,obj_character.x+512)
+goto=clamp(goto,ctr_camera.limit_left+128,ctr_camera.limit_right-128)
+goto_s=0.02
+alarm[8]=random_range(30,120)
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -241,7 +272,7 @@ alarm[1]=160
           <argument>
             <kind>1</kind>
             <string>if dead=false{image_angle=-clamp(speede,-25,25)
-x = lerp(x, obj_character.x, 0.02);
+x = lerp(x, goto, goto_s);
 
 speede=x-xprevious}
 else{if !place_meeting(x, y + 1, par_terrain)
@@ -292,6 +323,16 @@ d3d_set_fog(true,c_red,0,0);
 //draw code
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,obj_glow.image_alpha);
 d3d_set_fog(false,c_black,0,0)}
+
+if instance_exists(thunderbolt)
+{
+with thunderbolt{
+draw_set_color(c_black)
+draw_set_alpha(.3)
+draw_rectangle(0, 0, room_width, room_height, false)
+draw_self()}
+}
+else{draw_set_alpha(1)}
 </string>
           </argument>
         </arguments>
