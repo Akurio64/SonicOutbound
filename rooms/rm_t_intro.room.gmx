@@ -56,6 +56,7 @@
     <instance objName="obj_aehz_collision_00_o" x="0" y="208" name="inst_3E546B2F" locked="0" code="" scaleX="215" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_t_intro_bg" x="17" y="0" name="inst_6CDA4E2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ai" x="32" y="192" name="inst_F28101FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_phantom_egg" x="212" y="64" name="inst_F8033F10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_t_intro_lvl" x="-28" y="-48" w="6400" h="432" xo="0" yo="0" id="10004506" name="inst_44704A9C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
