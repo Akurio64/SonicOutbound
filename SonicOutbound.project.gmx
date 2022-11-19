@@ -902,8 +902,13 @@
     <sprite>sprites\spr_ethunderbolt_2</sprite>
     <sprite>sprites\spr_ethunderbolt_3</sprite>
     <sprite>sprites\spr_ethunderbolt_bomb</sprite>
+    <sprite>sprites\spr_tmz_chain_elec</sprite>
+    <sprite>sprites\spr_tmz_chain</sprite>
     <sprite>sprites\spr_hszb_missile</sprite>
     <sprite>sprites\spr_thunderbolt_1</sprite>
+    <sprite>sprites\spr_tmz_pr</sprite>
+    <sprite>sprites\spr_tmz_robotnik_normal</sprite>
+    <sprite>sprites\spr_tmz_robotnik_hurt</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1703,6 +1708,7 @@
     <object>objects\obj_electro_missile</object>
     <object>objects\obj_hszb_missile</object>
     <object>objects\obj_miniboss_laser</object>
+    <object>objects\obj_tmz_chain</object>
     <object>objects\obj_miniboss_3</object>
     <object>objects\par_boss</object>
     <object>objects\obj_fang_test</object>
