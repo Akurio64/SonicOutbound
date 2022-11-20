@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.zone_id      =1;</code>
+  <code>global.zone_id      =1;
+global.crings       =18;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -57,11 +58,21 @@
     <instance objName="obj_t_intro_bg" x="17" y="0" name="inst_6CDA4E2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ai" x="32" y="192" name="inst_F28101FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_phantom_egg" x="212" y="64" name="inst_F8033F10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="112" y="192" name="inst_0DDA35E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="144" y="192" name="inst_4F6C1DB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="176" y="192" name="inst_A40E2D56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="208" y="192" name="inst_823305EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="240" y="192" name="inst_94E8F64A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="272" y="192" name="inst_87B603A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="304" y="192" name="inst_853E2350" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="336" y="192" name="inst_6F520727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ring" x="368" y="192" name="inst_0F5970D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bg_t_intro_lvl" x="-28" y="-48" w="6400" h="432" xo="0" yo="0" id="10004506" name="inst_44704A9C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_intro_lvl" x="-28" y="-48" w="6400" h="432" xo="0" yo="0" id="10004506" name="inst_44704A9C" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_t_intro_t" x="-12" y="0" w="256" h="128" xo="0" yo="0" id="10004508" name="inst_754491B5" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_t_intro_t" x="436" y="0" w="256" h="128" xo="0" yo="0" id="10004509" name="inst_73BE2DBE" depth="-100" locked="0" colour="4294967295" scaleX="-1" scaleY="1"/>
+    <tile bgName="background72" x="-28" y="208" w="424" h="176" xo="0" yo="0" id="10004512" name="inst_7705A6DD" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

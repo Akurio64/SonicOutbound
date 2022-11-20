@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_boss</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -30,6 +30,9 @@ jump=3
 alarm[0]=1
 x_x=0
 y_y=0
+go=1
+global.crings=18
+audio_play(_tmz_shield, global.sfx_volume);
 
 for (i=4; i&gt;0;i-=1)
     {
@@ -37,6 +40,254 @@ for (i=4; i&gt;0;i-=1)
         ring_create.direction=(360-i*90)-45
         ring_create.ie=i
     }
+
+for (i=4; i&gt;0;i-=1)
+    {
+        mis=instance_create(x,y,obj_tmz_missile)
+        mis.mis=i
+    }
+ 
+event_inherited()
+eggman_sprite=spr_tmz_robotnik_normal
+act_clear=_ev_act_clear2
+theme=msc_phantom_egg
+hp=16
+i_speed=0.3
+instance_create(x,y,obj_tmz_shield)
+
+instance_create(212,120,obj_boss_ctmz)
+
+cx=0
+
+dir=1
+splay=false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play(_boss_destroy, global.sfx_volume);
+instance_create(x,y,obj_fade_to_white)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hit=false
+eggman_sprite=spr_tmz_robotnik_normal
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dead=true
+var xx=random_range(x-(sprite_width/2)+(sprite_width/9),x+(sprite_width/2)-(sprite_width/9))
+var yy=random_range(y-(sprite_height/2)+(sprite_height/9),y+(sprite_height/2)-(sprite_height/9))
+dummy_effect_create(spr_boss_explosion, 0.35, xx, yy, -5, 0)
+dummy_effect_create(spr_red_glow, 0.35, xx, yy, -4, 0);
+audio_stop(_boss_hit); 
+audio_play(_boss_hit, global.sfx_volume);  
+ctr_camera.Camera_ShakeScreen   = true;
+ctr_camera.Camera_ShakeDuration = 8;
+ctr_camera.Camera_ShakeForce    = 0.5;
+with obj_dummy_effect{image_xscale=random_range(0.1,1);image_yscale=image_xscale}
+if instance_exists(obj_glow)=false{instance_create(x,y,obj_glow)}
+alarm[10]=8
+if alarm[9]=-1{alarm[9]=180}
+
+alarm[0]=-1
+alarm[1]=-1
+alarm[2]=-1
+alarm[3]=-1
+alarm[4]=-1
+alarm[5]=-1
+alarm[6]=-1
+alarm[7]=-1
+alarm[8]=-1
+instance_destroy(obj_tmz_shield)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy()
+if instance_exists(obj_tmz_missile){instance_destroy(obj_tmz_missile)}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if go&lt;=4{
+with obj_tmz_missile{
+if mis=obj_phantom_egg.go{alarm[0]=1}
+}go+=1
+alarm[6]=10}else{go=0}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>for (i=4; i&gt;0;i-=1)
+    {
+        mis=instance_create(x,y,obj_tmz_missile)
+        mis.mis=i
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[6]=10
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (irandom(1) == 1){
+alarm[1]=90}
+else{state=10;
+alarm[0]=(point_distance(x,y,x_x,y_y)/10)}
+
+if instance_exists(obj_tmz_chain){
+obj_tmz_chain.image_speed = 0
+obj_tmz_chain.image_index = 0
+obj_tmz_chain.sprite_index=spr_tmz_chain}
 </string>
           </argument>
         </arguments>
@@ -59,9 +310,11 @@ for (i=4; i&gt;0;i-=1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_tmz_chain.alarm[0]=1
-jump=3
-alarm[1]=120
+            <string>state=2
+obj_tmz_chain.alarm[0]=1
+hspeed=0
+jump=4
+alarm[3]=120
 </string>
           </argument>
         </arguments>
@@ -85,18 +338,13 @@ alarm[1]=120
           <argument>
             <kind>1</kind>
             <string>path_end()
-gravity=0.2
-if jump&lt;=2{vspeed=-7}
+state=0
+if jump&lt;=3{vspeed=-8}
 hspeed=1.25*sign(obj_character.x-x)
-obj_tmz_chain.image_speed = 0
-obj_tmz_chain.image_index = 0
-obj_tmz_chain.sprite_index=spr_tmz_chain
+y-=3
 jump-=1
-
-if (irandom(9) == 1)
-{
-    state=10;alarm[0]=45
-}
+if !audio_is_playing(_tmz_jump)
+{audio_play(_tmz_jump,global.sfx_volume)}
 </string>
           </argument>
         </arguments>
@@ -119,16 +367,37 @@ if (irandom(9) == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state=0
+            <string>audio_play(_tmz_shield, global.sfx_volume);
+state=0
 alarm[1]=random_range(120,240)
+alarm[4]=120
 x_x = path_get_x(pth_phantom_egg, 0);
 y_y = path_get_y(pth_phantom_egg, 0);
-jump=3
-path_start(pth_phantom_egg,1.6,path_action_restart,true)
-
-obj_tmz_chain.image_speed = 0
-obj_tmz_chain.image_index = 0
-obj_tmz_chain.sprite_index=spr_tmz_chain
+jump=4
+path_start(pth_phantom_egg,1.6,path_action_restart,true)  
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if x&lt;96{hspeed=2}else if x&gt;424-96{hspeed=-2}
 </string>
           </argument>
         </arguments>
@@ -152,24 +421,59 @@ obj_tmz_chain.sprite_index=spr_tmz_chain
           <argument>
             <kind>1</kind>
             <string>if path_index=pth_phantom_egg{
-path_speed=4-(abs(x-xstart)/160)}
+path_speed=4-(abs(x-xstart)/75)}
 image_index=(y-128)/2
 image_index=clamp(image_index,0,7)
 
 if state=10
 {
 y=lerp(y,y_y,0.05);x=lerp(x,x_x,0.05)
-obj_tmz_chain.image_speed = 0
-obj_tmz_chain.image_index = 0
-obj_tmz_chain.sprite_index=spr_tmz_chain
 }
 
+if dead=false{
+if hit=true{
+if sprite_index=spr_phantom_egg_hurt{
+sprite_index=spr_phantom_egg}
+else if sprite_index=spr_phantom_egg{
+sprite_index=spr_phantom_egg_hurt}}
+else{sprite_index=spr_phantom_egg}}
+else{sprite_index=spr_phantom_egg}
+
+if dead=true{
+y=lerp(y,ystart,0.05);x=lerp(x,xstart,0.05)}
+
+if dead=false{
+if (state=10)=false{
+if !place_meeting(x, y + 1, par_terrain)
+   {
+   gravity = 0.2;
+   splay=false
+   }
+else
+   {
+   if vspeed&gt;0{
+   vspeed = 0;
+   }
+   gravity = 0;
+   hspeed=0
+   if (state=2)=false{
+   if !jump=0{if alarm[1]=-1{alarm[1]=45}}
+   else{if alarm[2]=-1{alarm[2]=90}}}
+   }
+
+ if place_meeting(x,y,par_terrain){
+   y-=1;
+   if !(state=2){if splay=false{audio_play(_tmz_land,global.sfx_volume);splay=true}}
+   }}}
+
+if !instance_exists(obj_tmz_missile){
+alarm[5]=1}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="par_terrain">
+    <event eventtype="4" ename="par_character">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -186,11 +490,74 @@ obj_tmz_chain.sprite_index=spr_tmz_chain
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gravity=0
-vspeed=0
-hspeed=0
-if !jump=0{if alarm[1]=-1{alarm[1]=45}}
-else{if alarm[2]=-1{alarm[2]=45}}
+            <string>if vulnerable == true
+{
+if hit == false
+{
+
+with(other){
+  if(state = CS_JUMP or state = CS_ROLL or state = CS_GLIDE or state==CS_SPINDASH or state==CS_FLY){
+               angle_to_boss = degtorad(round(wrap_angle(point_direction(x, y, par_boss.x, par_boss.y)-90)/22.5)*24);        
+             if(physic_state=0){
+                x_speed        = sin(wrap_angle(angle_to_boss-angle))*4;
+                y_speed        = cos(wrap_angle(angle_to_boss-angle))*3;  
+             }else{
+                x_speed        = sin(wrap_angle(angle_to_boss-angle))*2;
+                y_speed        = cos(wrap_angle(angle_to_boss-angle))*1.5;           
+             }
+             ground        = false;    
+            
+             if(state == CS_FLY){
+                // Check if the vertical speed is way too much:
+                   if(y_speed &lt; -3){
+                      y_speed = -3;
+                   }
+             } 
+              
+  if obj_tmz_chain.sprite_index=spr_tmz_chain_elec or obj_phantom_egg.state=2{
+  par_boss.hp +=-1;
+  par_boss.hit=true;
+  if par_boss.hp=12{with obj_tmz_chain{
+  if ie=2{alarm[11]=1;if alarm[10]=-1{
+  alarm[10]=60};dx=x;dy=y;}}}
+  else if par_boss.hp=8{with obj_tmz_chain{
+  if ie=1{alarm[11]=1;if alarm[10]=-1{
+  alarm[10]=60}dx=x;dy=y;}}}
+  else if par_boss.hp=4{with obj_tmz_chain{
+  if ie=3{alarm[11]=1;if alarm[10]=-1{
+  alarm[10]=60}dx=x;dy=y;}}}  
+  else if par_boss.hp=0{with obj_tmz_chain{
+  if ie=4{alarm[11]=1;if alarm[10]=-1{
+  alarm[10]=60}dx=x;dy=y;}}}
+  audio_play(_boss_hit, global.sfx_volume);  
+  par_boss.eggman_sprite=spr_tmz_robotnik_hurt
+  par_boss.image_speed=0.3}else{
+  if !audio_is_playing(_tmz_repel){
+  audio_play(_tmz_repel, global.sfx_volume)}}
+ }else if(state != CS_HURT &amp;&amp; state != CS_DEATH &amp;&amp; !is_cpu){
+   if obj_tmz_chain.sprite_index=spr_tmz_chain_elec  or obj_phantom_egg.state=2{character_state_hurt(other, false)}
+   };
+  };
+
+
+
+}
+
+if hp&lt;1
+{
+if dead=false{alarm[10]=1}
+eggman_sprite=spr_tmz_robotnik_dead
+}
+
+if hp&gt;0
+{
+if alarm[11]=-1{alarm[11]=40}
+}
+}
+else
+{
+with obj_character{character_state_hurt(other, false)}
+}
 </string>
           </argument>
         </arguments>
@@ -213,7 +580,7 @@ else{if alarm[2]=-1{alarm[2]=45}}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_tmz_robotnik_normal,0,x,y)
+            <string>draw_sprite(eggman_sprite,0,x,y)
 draw_self()
 draw_sprite(spr_tmz_pr,0,x,y)
 </string>
