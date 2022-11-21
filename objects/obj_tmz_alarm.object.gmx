@@ -49,7 +49,7 @@ part_type_life(first_particle,50,125);
 first_emitter = part_emitter_create(FirstParticleSystem);
 
 //define the emitter region
-part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96-off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_gaussian);
+part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_gaussian);
 
 //start the emitter
 part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
@@ -102,7 +102,7 @@ part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
             <string>off+=1.5
 
 //define the emitter region
-part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96-off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_gaussian);
+part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_gaussian);
 
 //start the emitter
 part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
