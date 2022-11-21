@@ -51,7 +51,7 @@
             <string>if place_meeting(x,y,obj_character)
 {
 if x&lt;6300{
-x=obj_character.x}
+x=x+(obj_character.x-obj_character.xprevious)}
 else{hspeed=20}
 ie=1
 }
