@@ -66,6 +66,7 @@ explosion-=1
 ChainCount-=1
 dummy_effect_create(spr_boss_explosion, 0.35, x+lengthdir_x(explosion*ChainGap, ChainAngle), y+lengthdir_y(explosion*ChainGap, ChainAngle)+(offset*i/3), -5, 0)
 dummy_effect_create(spr_red_glow, 0.35, x+lengthdir_x(explosion*ChainGap, ChainAngle), y+lengthdir_y(explosion*ChainGap, ChainAngle)+(offset*i/3), -4, 0);
+instance_create(x+lengthdir_x(explosion*ChainGap, ChainAngle), y+lengthdir_y(explosion*ChainGap, ChainAngle)+(offset*i/3),obj_tmz_chain_drop)
 with obj_dummy_effect{image_xscale=0.25;image_yscale=image_xscale}
 audio_stop(_boss_hit)
 audio_play(_boss_hit,global.sfx_volume)
@@ -171,9 +172,10 @@ offset = sin(timer*frequency)*amplitude;
 timer++;
 
 if sprite_index=spr_tmz_chain_elec{
-if alarm[1]=-1{alarm[1]=15}
 if collision_line(x,y,x1,y1,obj_character,false,true){
 with obj_character{character_state_hurt(obj_character,false)}}}
+
+if obj_phantom_egg.state=2 and sprite_index=spr_tmz_chain_elec{if alarm[1]=-1{alarm[1]=15}}
 </string>
           </argument>
         </arguments>
@@ -249,7 +251,7 @@ ChainAngle    = point_direction(x, y, x1, y1);
 ChainCount    = 8
 ChainGap      = ChainDistance/ChainCount;
 
-for (i=ChainCount; i&gt;0;i-=1)
+for (i=explosion; i&gt;0;i-=1)
 {
 draw_sprite(sprite_index, -1, x+lengthdir_x(i*ChainGap, ChainAngle), y+lengthdir_y(i*ChainGap, ChainAngle)+sin(i)*offset);  
 }

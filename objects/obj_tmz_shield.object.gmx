@@ -50,7 +50,7 @@ y=obj_phantom_egg.y
           <argument>
             <kind>1</kind>
             <string>draw_set_blend_mode(bm_add);
-if (obj_tmz_chain.sprite_index=spr_tmz_chain_elec or obj_phantom_egg.state=2)=false
+if (obj_tmz_chain.sprite_index=spr_tmz_chain_elec or obj_phantom_egg.state=2 or obj_phantom_egg.idle=true)=false
 {draw_sprite(sprite_index,image_index,obj_phantom_egg.x,obj_phantom_egg.y)}
 draw_set_blend_mode(bm_normal);
 </string>

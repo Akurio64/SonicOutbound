@@ -25,23 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state=0
-jump=3
+            <string>jump=3
 alarm[0]=1
 x_x=0
 y_y=0
 go=1
+idle=false
 global.crings=18
 audio_play(_tmz_shield, global.sfx_volume);
 
-for (i=4; i&gt;0;i-=1)
+for (i=4; i&gt;0; i-=1)
     {
         ring_create=instance_create(x,y,obj_tmz_chain)
         ring_create.direction=(360-i*90)-45
         ring_create.ie=i
     }
 
-for (i=4; i&gt;0;i-=1)
+for (i=4; i&gt;0; i-=1)
     {
         mis=instance_create(x,y,obj_tmz_missile)
         mis.mis=i
@@ -56,7 +56,7 @@ i_speed=0.3
 instance_create(x,y,obj_tmz_shield)
 
 instance_create(212,120,obj_boss_ctmz)
-
+amog=false //too lazy to decide variable name other than Among Us lmao
 cx=0
 
 dir=1
@@ -85,6 +85,9 @@ splay=false
             <kind>1</kind>
             <string>audio_play(_boss_destroy, global.sfx_volume);
 instance_create(x,y,obj_fade_to_white)
+instance_create(x,y,obj_tmz_eggman)
+instance_destroy(obj_tmz_missile)
+instance_destroy(obj_phantom_egg_crack)
 </string>
           </argument>
         </arguments>
@@ -144,7 +147,7 @@ ctr_camera.Camera_ShakeForce    = 0.5;
 with obj_dummy_effect{image_xscale=random_range(0.1,1);image_yscale=image_xscale}
 if instance_exists(obj_glow)=false{instance_create(x,y,obj_glow)}
 alarm[10]=8
-if alarm[9]=-1{alarm[9]=180}
+if alarm[9]=-1{alarm[9]=150}
 
 alarm[0]=-1
 alarm[1]=-1
@@ -156,6 +159,7 @@ alarm[6]=-1
 alarm[7]=-1
 alarm[8]=-1
 instance_destroy(obj_tmz_shield)
+obj_level_hud.visible=false
 </string>
           </argument>
         </arguments>
@@ -178,35 +182,8 @@ instance_destroy(obj_tmz_shield)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
-if instance_exists(obj_tmz_missile){instance_destroy(obj_tmz_missile)}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="6">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if go&lt;=4{
-with obj_tmz_missile{
-if mis=obj_phantom_egg.go{alarm[0]=1}
-}go+=1
-alarm[6]=10}else{go=0}
+            <string>instance_create(x,y,obj_phantom_egg_crack)
+alarm[10]=-1
 </string>
           </argument>
         </arguments>
@@ -256,7 +233,11 @@ alarm[6]=10}else{go=0}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[6]=10
+            <string>if go&lt;=4{
+with obj_tmz_missile{
+if mis=obj_phantom_egg.go{alarm[0]=1}
+}go+=1
+alarm[4]=20}else{go=0}
 </string>
           </argument>
         </arguments>
@@ -279,10 +260,10 @@ alarm[6]=10}else{go=0}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (irandom(1) == 1){
-alarm[1]=90}
-else{state=10;
-alarm[0]=(point_distance(x,y,x_x,y_y)/10)}
+            <string>if (irandom((hp/3)) == 1){
+alarm[0]=90;state=10;}
+else{alarm[1]=90}
+idle=true
 
 if instance_exists(obj_tmz_chain){
 obj_tmz_chain.image_speed = 0
@@ -314,7 +295,9 @@ obj_tmz_chain.sprite_index=spr_tmz_chain}
 obj_tmz_chain.alarm[0]=1
 hspeed=0
 jump=4
-alarm[3]=120
+alarm[3]=150
+alarm[4]=-1
+amog=false
 </string>
           </argument>
         </arguments>
@@ -339,12 +322,15 @@ alarm[3]=120
             <kind>1</kind>
             <string>path_end()
 state=0
-if jump&lt;=3{vspeed=-8}
+if jump&lt;=2{vspeed=-8}
 hspeed=1.25*sign(obj_character.x-x)
 y-=3
 jump-=1
+idle=false
 if !audio_is_playing(_tmz_jump)
 {audio_play(_tmz_jump,global.sfx_volume)}
+
+if (irandom(3)=1){if alarm[4]=-1{alarm[4]=180}}
 </string>
           </argument>
         </arguments>
@@ -373,8 +359,11 @@ alarm[1]=random_range(120,240)
 alarm[4]=120
 x_x = path_get_x(pth_phantom_egg, 0);
 y_y = path_get_y(pth_phantom_egg, 0);
-jump=4
-path_start(pth_phantom_egg,1.6,path_action_restart,true)  
+idle=false
+jump=3
+path_start(pth_phantom_egg,random_range(1,5),path_action_restart,true)
+path_scale=random_range(0.5,1.25)
+path_orientation=random_range(-30,30)
 </string>
           </argument>
         </arguments>
@@ -420,9 +409,7 @@ path_start(pth_phantom_egg,1.6,path_action_restart,true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if path_index=pth_phantom_egg{
-path_speed=4-(abs(x-xstart)/75)}
-image_index=(y-128)/2
+            <string>image_index=(y-128)/2
 image_index=clamp(image_index,0,7)
 
 if state=10
@@ -439,11 +426,11 @@ sprite_index=spr_phantom_egg_hurt}}
 else{sprite_index=spr_phantom_egg}}
 else{sprite_index=spr_phantom_egg}
 
-if dead=true{
-y=lerp(y,ystart,0.05);x=lerp(x,xstart,0.05)}
+if dead=true and instance_exists(obj_tmz_chain)=false{
+y=lerp(y,64,0.05);x=lerp(x,212,0.05)}
 
 if dead=false{
-if (state=10)=false{
+if (state=10 or state=2)=false{
 if !place_meeting(x, y + 1, par_terrain)
    {
    gravity = 0.2;
@@ -464,7 +451,7 @@ else
  if place_meeting(x,y,par_terrain){
    y-=1;
    if !(state=2){if splay=false{audio_play(_tmz_land,global.sfx_volume);splay=true}}
-   }}}
+   }}else if state=2{vspeed = 0;gravity = 0;}}
 
 if !instance_exists(obj_tmz_missile){
 alarm[5]=1}
@@ -514,7 +501,7 @@ with(other){
                    }
              } 
               
-  if obj_tmz_chain.sprite_index=spr_tmz_chain_elec or obj_phantom_egg.state=2{
+  if obj_tmz_chain.sprite_index=spr_tmz_chain_elec or obj_phantom_egg.state=2 or obj_phantom_egg.idle=true{
   par_boss.hp +=-1;
   par_boss.hit=true;
   if par_boss.hp=12{with obj_tmz_chain{
@@ -535,7 +522,7 @@ with(other){
   if !audio_is_playing(_tmz_repel){
   audio_play(_tmz_repel, global.sfx_volume)}}
  }else if(state != CS_HURT &amp;&amp; state != CS_DEATH &amp;&amp; !is_cpu){
-   if obj_tmz_chain.sprite_index=spr_tmz_chain_elec  or obj_phantom_egg.state=2{character_state_hurt(other, false)}
+   if obj_tmz_chain.sprite_index=spr_tmz_chain_elec  or obj_phantom_egg.state=2 or obj_phantom_egg.idle=true{character_state_hurt(other, false)}
    };
   };
 

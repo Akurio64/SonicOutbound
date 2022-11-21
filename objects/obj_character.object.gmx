@@ -2283,7 +2283,10 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
                       }
                       else if(input_alarm == 0)
                       {
-                              x_speed -= min(abs(x_speed), x_temp_friction)*sign(x_speed);
+                              if instance_exists(obj_tmz_ending)=true
+                              {if obj_tmz_ending.ending=false
+                              {x_speed -= min(abs(x_speed), x_temp_friction)*sign(x_speed)}}
+                              else{x_speed -= min(abs(x_speed), x_temp_friction)*sign(x_speed)}
                       }
                    }
                    else

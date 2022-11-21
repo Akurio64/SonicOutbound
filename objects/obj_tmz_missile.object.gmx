@@ -56,18 +56,14 @@ go=1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Explode.
-                                
- // Dummy Effect:
+            <string>if instance_exists(obj_phantom_egg){
     var xx;
         xx = (x-sprite_get_xoffset(sprite_index)+(sprite_get_width(sprite_index)/2));
     var yy;
         yy = (y-sprite_get_yoffset(sprite_index)+(sprite_get_height(sprite_index)/2));
     dummy_effect_create(spr_badnik_explosion, 0.35, xx, yy, -5, 0);
     dummy_effect_create(spr_red_glow, 0.35, xx, yy, 5, 0);
-    instance_create(x,y,obj_enemy_part)
     
-
         
  // Play Sound:
     audio_play(_tmz_missile, global.sfx_volume);       
@@ -76,7 +72,7 @@ ctr_camera.Camera_ShakeScreen   = true;
 ctr_camera.Camera_ShakeDuration = 20;
 ctr_camera.Camera_ShakeForce    = 1;
 
-if instance_exists(obj_tmz_missile_lock){if obj_tmz_missile_lock.mis=mis{instance_destroy(obj_tmz_missile_lock)}}
+if instance_exists(obj_tmz_missile_lock){if obj_tmz_missile_lock.mis=mis{instance_destroy(obj_tmz_missile_lock)}}}
 </string>
           </argument>
         </arguments>
@@ -99,12 +95,9 @@ if instance_exists(obj_tmz_missile_lock){if obj_tmz_missile_lock.mis=mis{instanc
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lock=instance_create(obj_character.x,192,obj_tmz_missile_lock)
-lock.mis=mis
-hurt=true
-move_towards_point(lock.x,192,5)
-point_direction(x,y,lock.x,192)
-image_angle=direction
+            <string>launch=true
+vspeed=-3
+gravity=0.2
 </string>
           </argument>
         </arguments>
@@ -131,6 +124,7 @@ image_angle=direction
 speed = 4
 launch=true
 image_angle=direction
+audio_play(_boss_rocket,global.bgm_volume)
 </string>
           </argument>
         </arguments>
@@ -247,9 +241,15 @@ y=(obj_phantom_egg.y-20)+(offy*0.75)
           <argument>
             <kind>1</kind>
             <string>if launch=true{
-vspeed=0
-hspeed=0
-if alarm[1]=-1{alarm[1]=45}}
+if instance_number(obj_tmz_missile_lock)&lt;=4{
+lock=instance_create(obj_character.x,192,obj_tmz_missile_lock)
+lock.mis=mis
+hurt=true
+move_towards_point(lock.x,192,5)
+point_direction(x,y,lock.x,192)
+image_angle=direction}}
+
+if obj_phantom_egg.dead=true{instance_destroy()}
 </string>
           </argument>
         </arguments>

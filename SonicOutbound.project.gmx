@@ -137,6 +137,7 @@
         <sound>sound\_general_error</sound>
         <sound>sound\_general_hyper</sound>
         <sound>sound\_general_collapse</sound>
+        <sound>sound\_general_alarm</sound>
       </sounds>
       <sounds name="Menu">
         <sound>sound\_general_menu_vo_sonic</sound>
@@ -162,6 +163,7 @@
       </sounds>
       <sounds name="Boss">
         <sound>sound\_boss_hit</sound>
+        <sound>sound\_boss_rocket</sound>
         <sound>sound\_boss_destroy</sound>
         <sounds name="Phantom">
           <sound>sound\_tmz_jump</sound>
@@ -170,6 +172,7 @@
           <sound>sound\_tmz_shock</sound>
           <sound>sound\_tmz_missile</sound>
           <sound>sound\_tmz_shield</sound>
+          <sound>sound\_tmz_fire</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -907,23 +910,30 @@
     <sprite>sprites\spr_thunderbolt</sprite>
     <sprite>sprites\spr_ethunderbolt_1</sprite>
     <sprite>sprites\spr_phantom_egg</sprite>
+    <sprite>sprites\sprite544</sprite>
     <sprite>sprites\spr_phantom_egg_hurt</sprite>
     <sprite>sprites\spr_ethunderbolt_2</sprite>
     <sprite>sprites\spr_ethunderbolt_3</sprite>
     <sprite>sprites\spr_ethunderbolt_bomb</sprite>
-    <sprite>sprites\sprite539</sprite>
     <sprite>sprites\spr_tmz_chain_elec</sprite>
     <sprite>sprites\spr_tmz_missile_lock</sprite>
     <sprite>sprites\spr_tmz_chain</sprite>
     <sprite>sprites\spr_tmz_missile</sprite>
     <sprite>sprites\spr_hszb_missile</sprite>
-    <sprite>sprites\SPR_TMZ_LOCKON</sprite>
+    <sprite>sprites\spr_tmz_lockon</sprite>
     <sprite>sprites\spr_tmz_shield</sprite>
+    <sprite>sprites\spr_phantom_egg_crack</sprite>
     <sprite>sprites\spr_thunderbolt_1</sprite>
     <sprite>sprites\spr_tmz_pr</sprite>
-    <sprite>sprites\spr_tmz_robotnik_normal</sprite>
     <sprite>sprites\spr_tmz_robotnik_dead</sprite>
+    <sprite>sprites\spr_tmz_robotnik_normal</sprite>
     <sprite>sprites\spr_tmz_robotnik_hurt</sprite>
+    <sprite>sprites\spr_phantom_egg_piece</sprite>
+    <sprite>sprites\spr_tmz_eggman_2</sprite>
+    <sprite>sprites\spr_tmz_eggman_1</sprite>
+    <sprite>sprites\spr_tmz_ending</sprite>
+    <sprite>sprites\spr_tmz_escape</sprite>
+    <sprite>sprites\spr_tmz_knux</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1708,6 +1718,7 @@
     <object>objects\obj_collapsing_template</object>
     <object>objects\par_collapsing_terrain</object>
     <object>objects\par_collapsing_terrain_tiles</object>
+    <object>objects\obj_phantom_egg_crack</object>
     <object>objects\obj_boss_cutscene</object>
     <object>objects\obj_slz_star</object>
     <object>objects\obj_miniboss_lock_on</object>
@@ -1717,18 +1728,25 @@
     <object>objects\obj_ethunderbolt</object>
     <object>objects\obj_bigboss_1</object>
     <object>objects\obj_phantom_egg</object>
+    <object>objects\obj_tmz_missile_lock</object>
     <object>objects\obj_miniboss_3</object>
     <object>objects\obj_miniboss_1</object>
-    <object>objects\obj_tmz_missile_lock</object>
+    <object>objects\obj_tmz_eggman</object>
     <object>objects\obj_miniboss_part</object>
     <object>objects\obj_miniboss_3_solid</object>
     <object>objects\obj_thunderbolt_1</object>
     <object>objects\obj_bigboss_1_solid</object>
+    <object>objects\obj_tmz_alarm</object>
     <object>objects\obj_tmz_missile</object>
+    <object>objects\obj_tmz_boom</object>
+    <object>objects\obj_tmz_escape</object>
     <object>objects\obj_electro_missile</object>
+    <object>objects\obj_tmz_ending</object>
     <object>objects\obj_ethunderbolt_bomb</object>
     <object>objects\obj_hszb_missile</object>
     <object>objects\obj_miniboss_laser</object>
+    <object>objects\obj_tmz_fade</object>
+    <object>objects\obj_tmz_chain_drop</object>
     <object>objects\obj_tmz_chain</object>
     <object>objects\par_boss</object>
     <object>objects\obj_fang_test</object>
