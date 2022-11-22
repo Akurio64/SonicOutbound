@@ -27,6 +27,32 @@
             <kind>1</kind>
             <string>ending=false
 image_yscale=0
+warning=0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(obj_character.x,obj_character.y,obj_tmz_alarm)
+alarm[1]=1
+depth=-1000
 </string>
           </argument>
         </arguments>
@@ -53,32 +79,13 @@ image_yscale=0
 {
 image_yscale=lerp(image_yscale,1,0.15)
 image_speed=random_range(0.01,0.3)
-with par_character
-{
-input_lock_l=1
-if !place_meeting(x,y,obj_tmz_escape){
-start=false
-if(x_speed &lt; 0)
-                              {
-                                 x_speed += x_temp_decel;
-                                 if(x_speed &gt;= 0)
-                                 {                                 
-                                    x_speed = 0.5;
-                                 }   
-                              }
-                              else
-                              {
-                                 if(x_speed &lt; x_speed_top)
-                                 {
-                                    x_speed += x_temp_accel;
-                                    if(x_speed &gt;= x_speed_top)
-                                    {
-                                       x_speed = x_speed_top;
-                                    }
-                                 }
-                              }}
-else{x_speed=lerp(x_speed,18,0.0007);visible=false}
-}}
+if !audio_is_playing(_general_alarm)
+{audio_play(_general_alarm,global.sfx_volume)}
+if alarm[1]=-1{alarm[1]=150}
+ctr_camera.Camera_ShakeScreen   = true;
+ctr_camera.Camera_ShakeDuration = 30
+ctr_camera.Camera_ShakeForce    = 3;
+}
 </string>
           </argument>
         </arguments>

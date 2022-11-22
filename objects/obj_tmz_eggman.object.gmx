@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -48,8 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_tmz_ending.ending=true
-instance_create(obj_character.x,obj_character.y,obj_tmz_alarm)
+            <string>obj_tmz_ending.alarm[0]=120
+obj_tmz_ending.ending=true
 instance_destroy(obj_boss_ctmz)
        with(ctr_camera)
        {

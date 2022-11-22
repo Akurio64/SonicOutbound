@@ -34,6 +34,9 @@ mis=1
 launch=false
 hurt=false
 go=1
+ende=false
+xx=0
+yy=0
 </string>
           </argument>
         </arguments>
@@ -72,7 +75,32 @@ ctr_camera.Camera_ShakeScreen   = true;
 ctr_camera.Camera_ShakeDuration = 20;
 ctr_camera.Camera_ShakeForce    = 1;
 
-if instance_exists(obj_tmz_missile_lock){if obj_tmz_missile_lock.mis=mis{instance_destroy(obj_tmz_missile_lock)}}}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ende=true
+y=lerp(y,obj_phantom_egg.y,0.05)
+x=lerp(x,obj_phantom_egg.x,0.05)
 </string>
           </argument>
         </arguments>
@@ -95,9 +123,15 @@ if instance_exists(obj_tmz_missile_lock){if obj_tmz_missile_lock.mis=mis{instanc
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>launch=true
-vspeed=-3
-gravity=0.2
+            <string>if launch=true{
+hurt=true
+xx=obj_character.x
+yy=obj_character.y
+move_towards_point(obj_character.x,192,5)
+point_direction(x,y,obj_character.x,192)
+image_angle=direction}
+
+if obj_phantom_egg.dead=true{instance_destroy()}
 </string>
           </argument>
         </arguments>
@@ -125,6 +159,7 @@ speed = 4
 launch=true
 image_angle=direction
 audio_play(_boss_rocket,global.bgm_volume)
+alarm[1]=90
 </string>
           </argument>
         </arguments>
@@ -151,6 +186,7 @@ audio_play(_boss_rocket,global.bgm_volume)
 offx = ((sign(image_angle-90)*sin(timer*frequency*mis)*amplitude)/3)
 timer++;
 
+if ende=false{
 if launch=false{
 if mis=1{
 image_angle=120;
@@ -171,7 +207,7 @@ else if mis=4{
 image_angle=60;
 x=(obj_phantom_egg.x+12)+(offx*0.75)
 y=(obj_phantom_egg.y-20)+(offy*0.75)
-}}
+}}}
 </string>
           </argument>
         </arguments>
@@ -223,7 +259,7 @@ y=(obj_phantom_egg.y-20)+(offy*0.75)
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="40">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -240,16 +276,12 @@ y=(obj_phantom_egg.y-20)+(offy*0.75)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if launch=true{
-if instance_number(obj_tmz_missile_lock)&lt;=4{
-lock=instance_create(obj_character.x,192,obj_tmz_missile_lock)
-lock.mis=mis
-hurt=true
-move_towards_point(lock.x,192,5)
-point_direction(x,y,lock.x,192)
-image_angle=direction}}
-
-if obj_phantom_egg.dead=true{instance_destroy()}
+            <string>draw_self()
+if hurt=true{
+image_index=mis-1
+depth=-10
+draw_sprite(spr_tmz_missile_lock,mis,xx,yy)
+draw_sprite(spr_tmz_lockon,0,xx,yy)}
 </string>
           </argument>
         </arguments>

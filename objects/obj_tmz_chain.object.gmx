@@ -163,9 +163,11 @@ if ie=1{x1=424-128;y1=240-32}
 else if ie=2{x1=128;y1=240-32}
 else if ie=3{x1=128;y1=32}
 else if ie=4{x1=424-128;y1=32}
-
-x=obj_phantom_egg.x
-y=obj_phantom_egg.y
+    
+     if ie=1{x=obj_phantom_egg.x+27;y=obj_phantom_egg.y+13}
+else if ie=2{x=obj_phantom_egg.x-27;y=obj_phantom_egg.y+13}
+else if ie=3{x=obj_phantom_egg.x-27;y=obj_phantom_egg.y-20}
+else if ie=4{x=obj_phantom_egg.x+27;y=obj_phantom_egg.y-20}
 
 amplitude = 8
 offset = sin(timer*frequency)*amplitude;
@@ -175,7 +177,7 @@ if sprite_index=spr_tmz_chain_elec{
 if collision_line(x,y,x1,y1,obj_character,false,true){
 with obj_character{character_state_hurt(obj_character,false)}}}
 
-if obj_phantom_egg.state=2 and sprite_index=spr_tmz_chain_elec{if alarm[1]=-1{alarm[1]=15}}
+if obj_phantom_egg.s=false{if alarm[1]=-1{alarm[1]=15}}
 </string>
           </argument>
         </arguments>

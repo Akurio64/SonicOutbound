@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>ie=0
+image_speed=0
+tou=false
 </string>
           </argument>
         </arguments>
@@ -51,9 +53,11 @@
             <string>if place_meeting(x,y,obj_character)
 {
 if x&lt;6300{
-x=x+(obj_character.x-obj_character.xprevious)}
+x=obj_character.x}
 else{hspeed=20}
 ie=1
+tou=true
+image_speed=0.3
 }
 </string>
           </argument>

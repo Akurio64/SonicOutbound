@@ -96,7 +96,7 @@ if (video_exists(v))
         {
         with(instance_create(0, 0, obj_fade_to))
 {
-fade_to = rm_title_screen;
+fade_to = rm_slz_act1;
 }
 }
     }
@@ -219,12 +219,16 @@ if (video_exists(v)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>            if !instance_exists(obj_fade_to)
-        {
-        with(instance_create(0, 0, obj_fade_to))
-{
-fade_to = rm_title_screen;
-}
+            <string>///Don't forget to *always* free buffers and surfaces.
+
+if (video_exists(v)) {
+
+  buffer_delete(buff);
+  surface_free(surf);
+
+  video_stop(v);
+  video_delete(v);
+
 }
 </string>
           </argument>

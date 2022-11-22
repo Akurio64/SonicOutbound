@@ -318,6 +318,7 @@
         <sprites name="Effects">
           <sprite>sprites\spr_skid_dust</sprite>
           <sprite>sprites\spr_spindash_dust</sprite>
+          <sprite>sprites\spr_rock_part</sprite>
           <sprite>sprites\spr_dropdash_dust</sprite>
           <sprite>sprites\spr_lightning_spark</sprite>
           <sprite>sprites\spr_invincibility_spark</sprite>
@@ -408,6 +409,8 @@
           </sprites>
           <sprites name="Effects">
             <sprite>sprites\spr_badnik_explosion</sprite>
+            <sprite>sprites\spr_cd_flower_palmtree_good</sprite>
+            <sprite>sprites\spr_enemy_part</sprite>
             <sprite>sprites\spr_badnik_debris</sprite>
           </sprites>
           <sprites name="Masks">
@@ -525,6 +528,7 @@
               <sprite>sprites\spr_hsz_boss_1</sprite>
               <sprite>sprites\spr_hsz_boss_mask</sprite>
               <sprite>sprites\spr_hsz_boss_3</sprite>
+              <sprite>sprites\spr_hszb_missile</sprite>
               <sprite>sprites\spr_hsz_boss_4</sprite>
               <sprite>sprites\spr_hsz_boss_2</sprite>
             </sprites>
@@ -535,10 +539,18 @@
             </sprites>
           </sprites>
           <sprites name="SLZ">
-            <sprites name="Ristar Egg">
+            <sprites name="Big">
               <sprite>sprites\spr_slz_boss_1</sprite>
               <sprite>sprites\spr_slz_boss_2</sprite>
               <sprite>sprites\spr_slz_boss_3</sprite>
+              <sprite>sprites\spr_slz_star</sprite>
+            </sprites>
+            <sprites name="Mini">
+              <sprite>sprites\spr_miniboss_3_1</sprite>
+              <sprite>sprites\spr_miniboss_3_2</sprite>
+              <sprite>sprites\spr_miniboss_3_3</sprite>
+              <sprite>sprites\spr_miniboss_3_solid</sprite>
+              <sprite>sprites\spr_slz_laser</sprite>
             </sprites>
           </sprites>
           <sprites name="RPZ">
@@ -547,9 +559,15 @@
             </sprites>
           </sprites>
           <sprites name="TTZ">
-            <sprites name="Triple Trouble">
-              <sprites name="Robotnik's Lightning UFO">
+            <sprites name="Big">
+              <sprites name="E">
                 <sprite>sprites\spr_ttz_e_1</sprite>
+                <sprite>sprites\spr_ethunderbolt_1</sprite>
+                <sprite>sprites\spr_thunderbolt_1</sprite>
+                <sprite>sprites\spr_ethunderbolt_3</sprite>
+                <sprite>sprites\spr_ethunderbolt_2</sprite>
+                <sprite>sprites\spr_ethunderbolt_bomb</sprite>
+                <sprite>sprites\spr_thunderbolt</sprite>
               </sprites>
             </sprites>
           </sprites>
@@ -564,6 +582,46 @@
             <sprite>sprites\spr_fang_dead</sprite>
             <sprite>sprites\spr_fang_look</sprite>
           </sprites>
+          <sprites name="Misc">
+            <sprite>sprites\spr_miniboss_locker</sprite>
+            <sprite>sprites\spr_robotnik_escape</sprite>
+            <sprite>sprites\spr_boss_explosion</sprite>
+            <sprite>sprites\spr_glow</sprite>
+            <sprite>sprites\spr_robotnik_escape_2</sprite>
+          </sprites>
+          <sprites name="Cutscenes">
+            <sprite>sprites\spr_cutscene_1</sprite>
+          </sprites>
+          <sprites name="Phantom Egg">
+            <sprite>sprites\spr_phantom_egg</sprite>
+            <sprite>sprites\spr_tmz_shield</sprite>
+            <sprite>sprites\spr_phantom_egg_crack</sprite>
+            <sprite>sprites\spr_tmz_pr</sprite>
+            <sprite>sprites\spr_tmz_robotnik_hurt</sprite>
+            <sprite>sprites\spr_phantom_egg_piece</sprite>
+            <sprite>sprites\spr_tmz_robotnik_normal</sprite>
+            <sprite>sprites\spr_tmz_eggman_2</sprite>
+            <sprite>sprites\spr_tmz_eggman_1</sprite>
+            <sprite>sprites\spr_tmz_robotnik_dead</sprite>
+            <sprite>sprites\spr_tmz_knux</sprite>
+            <sprite>sprites\spr_tmz_ending</sprite>
+            <sprite>sprites\spr_tmz_escape</sprite>
+            <sprite>sprites\spr_phantom_egg_hurt</sprite>
+            <sprites name="Chain">
+              <sprite>sprites\spr_tmz_chain</sprite>
+              <sprite>sprites\spr_tmz_chain_elec</sprite>
+            </sprites>
+            <sprites name="Missile">
+              <sprite>sprites\spr_tmz_missile_lock</sprite>
+              <sprite>sprites\spr_tmz_lockon</sprite>
+              <sprite>sprites\spr_tmz_missile</sprite>
+            </sprites>
+          </sprites>
+        </sprites>
+        <sprites name="Break Walls">
+          <sprite>sprites\spr_test_break_wall_pieces</sprite>
+          <sprite>sprites\spr_test_break_wall</sprite>
+          <sprite>sprites\spr_mask_null</sprite>
         </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
@@ -888,52 +946,6 @@
       <sprite>sprites\tile055</sprite>
       <sprite>sprites\tile056</sprite>
     </sprites>
-    <sprite>sprites\spr_cd_flower_palmtree_good</sprite>
-    <sprite>sprites\spr_enemy_part</sprite>
-    <sprite>sprites\spr_rock_part</sprite>
-    <sprite>sprites\spr_test_break_wall_pieces</sprite>
-    <sprite>sprites\spr_cutscene_1</sprite>
-    <sprite>sprites\spr_test_break_wall</sprite>
-    <sprite>sprites\spr_boss_flare</sprite>
-    <sprite>sprites\spr_mask_null</sprite>
-    <sprite>sprites\spr_robotnik_escape</sprite>
-    <sprite>sprites\spr_glow</sprite>
-    <sprite>sprites\spr_boss_explosion</sprite>
-    <sprite>sprites\spr_slz_laser</sprite>
-    <sprite>sprites\spr_slz_star</sprite>
-    <sprite>sprites\spr_miniboss_3_1</sprite>
-    <sprite>sprites\spr_miniboss_3_solid</sprite>
-    <sprite>sprites\spr_miniboss_3_2</sprite>
-    <sprite>sprites\spr_miniboss_3_3</sprite>
-    <sprite>sprites\spr_miniboss_locker</sprite>
-    <sprite>sprites\spr_robotnik_escape_2</sprite>
-    <sprite>sprites\spr_thunderbolt</sprite>
-    <sprite>sprites\spr_ethunderbolt_1</sprite>
-    <sprite>sprites\spr_phantom_egg</sprite>
-    <sprite>sprites\sprite544</sprite>
-    <sprite>sprites\spr_phantom_egg_hurt</sprite>
-    <sprite>sprites\spr_ethunderbolt_2</sprite>
-    <sprite>sprites\spr_ethunderbolt_3</sprite>
-    <sprite>sprites\spr_ethunderbolt_bomb</sprite>
-    <sprite>sprites\spr_tmz_chain_elec</sprite>
-    <sprite>sprites\spr_tmz_missile_lock</sprite>
-    <sprite>sprites\spr_tmz_chain</sprite>
-    <sprite>sprites\spr_tmz_missile</sprite>
-    <sprite>sprites\spr_hszb_missile</sprite>
-    <sprite>sprites\spr_tmz_lockon</sprite>
-    <sprite>sprites\spr_tmz_shield</sprite>
-    <sprite>sprites\spr_phantom_egg_crack</sprite>
-    <sprite>sprites\spr_thunderbolt_1</sprite>
-    <sprite>sprites\spr_tmz_pr</sprite>
-    <sprite>sprites\spr_tmz_robotnik_dead</sprite>
-    <sprite>sprites\spr_tmz_robotnik_normal</sprite>
-    <sprite>sprites\spr_tmz_robotnik_hurt</sprite>
-    <sprite>sprites\spr_phantom_egg_piece</sprite>
-    <sprite>sprites\spr_tmz_eggman_2</sprite>
-    <sprite>sprites\spr_tmz_eggman_1</sprite>
-    <sprite>sprites\spr_tmz_ending</sprite>
-    <sprite>sprites\spr_tmz_escape</sprite>
-    <sprite>sprites\spr_tmz_knux</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1286,6 +1298,7 @@
         <objects name="Common">
           <object>objects\obj_ring</object>
           <object>objects\obj_hyper_ring</object>
+          <object>objects\obj_ring_loss</object>
           <object>objects\obj_ring_magnetized</object>
           <objects name="Checkpoint">
             <object>objects\obj_checkpoint</object>
@@ -1419,6 +1432,82 @@
           <object>objects\obj_test_breakwall</object>
           <object>objects\obj_slz_swing_hurt</object>
           <object>objects\obj_slz_swing</object>
+          <object>objects\obj_slz_collapse</object>
+        </objects>
+        <objects name="Bosses">
+          <objects name="Misc">
+            <object>objects\obj_robotnik_escape</object>
+            <object>objects\obj_robotnik_escape_2</object>
+            <object>objects\obj_miniboss_lock_on</object>
+            <object>objects\obj_boss_template</object>
+            <object>objects\obj_miniboss_part</object>
+            <objects name="DO NOT REMOVE">
+              <object>objects\obj_boss_camera</object>
+              <object>objects\obj_boss_cutscene</object>
+              <object>objects\obj_glow</object>
+              <object>objects\par_boss</object>
+              <object>objects\obj_camera</object>
+            </objects>
+          </objects>
+          <objects name="HSZ">
+            <objects name="Mini">
+              <object>objects\obj_mecha_shark</object>
+              <object>objects\obj_miniboss_1</object>
+            </objects>
+            <objects name="Big">
+              <object>objects\obj_bigboss_1</object>
+              <object>objects\obj_bigboss_1_solid</object>
+              <object>objects\obj_hszb_missile</object>
+            </objects>
+          </objects>
+          <objects name="SPZ">
+            <objects name="Big">
+              <object>objects\obj_fang_test</object>
+            </objects>
+          </objects>
+          <objects name="SLZ">
+            <objects name="Mini">
+              <object>objects\obj_miniboss_3</object>
+              <object>objects\obj_miniboss_3_solid</object>
+              <object>objects\obj_miniboss_laser</object>
+            </objects>
+            <objects name="Big">
+              <object>objects\obj_bigboss_3</object>
+              <object>objects\obj_slzb_bg</object>
+              <object>objects\obj_slz_star</object>
+            </objects>
+          </objects>
+          <objects name="RPZ"/>
+          <objects name="TTZ">
+            <objects name="Big">
+              <objects name="E">
+                <object>objects\obj_ethunderbolt_bomb</object>
+                <object>objects\obj_ethunderbolt</object>
+                <object>objects\obj_electro_missile</object>
+                <object>objects\obj_thunderbolt_1</object>
+              </objects>
+            </objects>
+          </objects>
+          <objects name="Phantom Egg">
+            <object>objects\obj_phantom_egg</object>
+            <object>objects\obj_tmz_eggman</object>
+            <object>objects\obj_phantom_egg_crack</object>
+            <object>objects\obj_tmz_shield</object>
+            <object>objects\obj_tmz_missile</object>
+            <object>objects\obj_tmz_boom</object>
+            <object>objects\obj_boss_ctmz</object>
+            <object>objects\obj_tmz_escape</object>
+            <object>objects\obj_tmz_fade</object>
+            <object>objects\obj_tmz_ending</object>
+            <object>objects\obj_tmz_chain</object>
+            <object>objects\obj_tmz_alarm</object>
+            <object>objects\obj_tmz_chain_drop</object>
+          </objects>
+        </objects>
+        <objects name="Collapse">
+          <object>objects\obj_collapsing_template</object>
+          <object>objects\par_collapsing_terrain_tiles</object>
+          <object>objects\par_collapsing_terrain</object>
         </objects>
       </objects>
       <objects name="Interface">
@@ -1621,6 +1710,7 @@
     <objects name="Controllers">
       <object>objects\ctr_indestructible</object>
       <object>objects\ctr_culling</object>
+      <object>objects\bg_debug</object>
       <object>objects\ctr_display</object>
       <object>objects\ctr_audio</object>
       <object>objects\ctr_gamepad</object>
@@ -1702,54 +1792,10 @@
       <object>objects\obj_rain</object>
       <object>objects\obj_wind</object>
     </objects>
-    <object>objects\bg_debug</object>
-    <object>objects\obj_intro2</object>
-    <object>objects\obj_intro</object>
-    <object>objects\obj_ring_loss</object>
-    <object>objects\obj_mecha_shark</object>
-    <object>objects\obj_robotnik_escape</object>
-    <object>objects\obj_robotnik_escape_2</object>
-    <object>objects\obj_glow</object>
-    <object>objects\obj_camera</object>
-    <object>objects\obj_boss_camera</object>
-    <object>objects\obj_boss_ctmz</object>
-    <object>objects\obj_slzb_bg</object>
-    <object>objects\obj_slz_collapse</object>
-    <object>objects\obj_collapsing_template</object>
-    <object>objects\par_collapsing_terrain</object>
-    <object>objects\par_collapsing_terrain_tiles</object>
-    <object>objects\obj_phantom_egg_crack</object>
-    <object>objects\obj_boss_cutscene</object>
-    <object>objects\obj_slz_star</object>
-    <object>objects\obj_miniboss_lock_on</object>
-    <object>objects\obj_bigboss_3</object>
-    <object>objects\obj_boss_template</object>
-    <object>objects\obj_tmz_shield</object>
-    <object>objects\obj_ethunderbolt</object>
-    <object>objects\obj_bigboss_1</object>
-    <object>objects\obj_phantom_egg</object>
-    <object>objects\obj_tmz_missile_lock</object>
-    <object>objects\obj_miniboss_3</object>
-    <object>objects\obj_miniboss_1</object>
-    <object>objects\obj_tmz_eggman</object>
-    <object>objects\obj_miniboss_part</object>
-    <object>objects\obj_miniboss_3_solid</object>
-    <object>objects\obj_thunderbolt_1</object>
-    <object>objects\obj_bigboss_1_solid</object>
-    <object>objects\obj_tmz_alarm</object>
-    <object>objects\obj_tmz_missile</object>
-    <object>objects\obj_tmz_boom</object>
-    <object>objects\obj_tmz_escape</object>
-    <object>objects\obj_electro_missile</object>
-    <object>objects\obj_tmz_ending</object>
-    <object>objects\obj_ethunderbolt_bomb</object>
-    <object>objects\obj_hszb_missile</object>
-    <object>objects\obj_miniboss_laser</object>
-    <object>objects\obj_tmz_fade</object>
-    <object>objects\obj_tmz_chain_drop</object>
-    <object>objects\obj_tmz_chain</object>
-    <object>objects\par_boss</object>
-    <object>objects\obj_fang_test</object>
+    <objects name="Video">
+      <object>objects\obj_intro</object>
+      <object>objects\obj_intro2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">

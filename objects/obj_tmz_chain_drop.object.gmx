@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>gravity=0.15
 hspeed=choose(-1,1)
+image_speed=0
 vspeed=-3
 </string>
           </argument>

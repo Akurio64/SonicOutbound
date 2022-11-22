@@ -30,7 +30,9 @@ alarm[0]=1
 x_x=0
 y_y=0
 go=1
+s=true
 idle=false
+mis=false
 global.crings=18
 audio_play(_tmz_shield, global.sfx_volume);
 
@@ -189,6 +191,29 @@ alarm[10]=-1
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hspeed=1.25*sign(obj_character.x-x)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="5">
       <action>
         <libid>1</libid>
@@ -261,9 +286,10 @@ alarm[4]=20}else{go=0}
           <argument>
             <kind>1</kind>
             <string>if (irandom((hp/3)) == 1){
-alarm[0]=90;state=10;}
-else{alarm[1]=90}
+alarm[0]=150;state=10;}
+else{alarm[1]=150}
 idle=true
+s=true
 
 if instance_exists(obj_tmz_chain){
 obj_tmz_chain.image_speed = 0
@@ -294,10 +320,12 @@ obj_tmz_chain.sprite_index=spr_tmz_chain}
             <string>state=2
 obj_tmz_chain.alarm[0]=1
 hspeed=0
-jump=4
+jump=3
 alarm[3]=150
 alarm[4]=-1
 amog=false
+s=false
+mis=false
 </string>
           </argument>
         </arguments>
@@ -322,15 +350,14 @@ amog=false
             <kind>1</kind>
             <string>path_end()
 state=0
-if jump&lt;=2{vspeed=-8}
-hspeed=1.25*sign(obj_character.x-x)
-y-=3
+if jump&lt;3{vspeed=-8}
+alarm[6]=2
 jump-=1
 idle=false
 if !audio_is_playing(_tmz_jump)
 {audio_play(_tmz_jump,global.sfx_volume)}
 
-if (irandom(3)=1){if alarm[4]=-1{alarm[4]=180}}
+if (irandom(3)=1){if mis=false{alarm[4]=120;mis=true}}
 </string>
           </argument>
         </arguments>
@@ -427,7 +454,7 @@ else{sprite_index=spr_phantom_egg}}
 else{sprite_index=spr_phantom_egg}
 
 if dead=true and instance_exists(obj_tmz_chain)=false{
-y=lerp(y,64,0.05);x=lerp(x,212,0.05)}
+y=lerp(y,64,0.05);x=lerp(x,212,0.05);obj_tmz_missile.alarm[2]=1}
 
 if dead=false{
 if (state=10 or state=2)=false{

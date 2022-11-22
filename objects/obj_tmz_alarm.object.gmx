@@ -25,13 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>warning=0
-off=-240
+            <string>off=-100
+warning=0
+alarm[0]=1
+image_alpha=0
 // define the particle system
 FirstParticleSystem = part_system_create()
 
 // define the depth of the particle system
-part_system_depth(FirstParticleSystem,depth);
+part_system_depth(FirstParticleSystem,depth+1);
 
 // define the particle
 first_particle = part_type_create();
@@ -48,35 +50,7 @@ part_type_life(first_particle,50,125);
 // define the emitter
 first_emitter = part_emitter_create(FirstParticleSystem);
 
-//define the emitter region
-part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_gaussian);
 
-//start the emitter
-part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>warning=clamp(warning,0,0.5)
 </string>
           </argument>
         </arguments>
@@ -99,13 +73,14 @@ part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>off+=1.5
+            <string>if obj_tmz_escape.tou=true{
+off+=0.5
 
 //define the emitter region
-part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_gaussian);
+part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_linear);
 
 //start the emitter
-part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
+part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,15);}
 </string>
           </argument>
         </arguments>
@@ -130,43 +105,32 @@ part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,30);
             <kind>1</kind>
             <string>x=obj_character.x
 y=obj_character.y
-warning=0.5*sin(current_time*0.01) + 0.5
-if !audio_is_playing(_general_alarm)
-{audio_play(_general_alarm,global.sfx_volume)}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_alpha(warning); // Increase or decrease to change tint intensity
-
-draw_set_color(c_red); // Change to the color you want
-
-draw_rectangle(view_xview, view_yview, view_xview+view_wview, view_yview+view_hview, 0);
-
-draw_set_alpha(1);
-
-draw_set_color(c_black);
-
-
-
+with par_character
+{
+input_lock_l=1
+if !place_meeting(x,y,obj_tmz_escape){
+start=false
+if(x_speed &lt; 0)
+                              {
+                                 x_speed += x_temp_decel;
+                                 if(x_speed &gt;= 0)
+                                 {                                 
+                                    x_speed = 0.5;
+                                 }   
+                              }
+                              else
+                              {
+                                 if(x_speed &lt; x_speed_top)
+                                 {
+                                    x_speed += x_temp_accel;
+                                    if(x_speed &gt;= x_speed_top)
+                                    {
+                                       x_speed = x_speed_top;
+                                    }
+                                 }
+                              }}
+else{x_speed=lerp(x_speed,18,0.0007);visible=false}
+}
 </string>
           </argument>
         </arguments>

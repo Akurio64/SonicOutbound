@@ -51,7 +51,7 @@
     limit_bottom = room_height;
     
  // Camera handle:
-    cam_handle = obj_character;
+ if room=rm_t_intro{cam_handle = obj_boss_ctmz}else{cam_handle = obj_character}
     cam_speed  = 6.5;
     
  // Camera position.

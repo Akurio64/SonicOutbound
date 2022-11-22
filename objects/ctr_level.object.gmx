@@ -155,7 +155,7 @@
 
     if(keyboard_check_pressed(global.ip_button_s) || joy_pressed(0, global.dip_button_s))
     {
-       if(instance_exists(obj_level_pause) == false &amp;&amp; instance_exists(obj_results) == false &amp;&amp; instance_exists(obj_title_card) == false &amp;&amp; instance_exists(obj_game_over) == false)
+       if(instance_exists(obj_level_pause) == false &amp;&amp; instance_exists(obj_results) == false &amp;&amp; instance_exists(obj_title_card) == false &amp;&amp; instance_exists(obj_game_over) == false &amp;&amp; instance_exists(obj_tmz_eggman) == false)
        {
        if obj_character.state!=CS_DEATH
        {

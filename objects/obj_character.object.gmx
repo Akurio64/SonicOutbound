@@ -1682,8 +1682,9 @@ part_emitter_burst(Star2,ie2,ip2,1)}
                    }
                    
                 // Decrease lives:
+                if (room=rm_t_intro)=false{
                    global.clives -= 1;
-                   if(global.clives &lt; 0) global.clives = 0;
+                   if(global.clives &lt; 0) global.clives = 0;}
                    
                 // Play death/drown sound.
                    if(has_drowned == false)
