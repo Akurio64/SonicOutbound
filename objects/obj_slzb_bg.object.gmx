@@ -83,10 +83,6 @@ part_emitter_region(FirstParticleSystem,second_emitter,ctr_camera.limit_left,ctr
 //define the emitter region
 part_emitter_region(SecondParticleSystem,second_emitter,ctr_camera.limit_left,ctr_camera.limit_right,obj_boss_camera.y+64,obj_boss_camera.y+96,ps_shape_rectangle,ps_distr_linear);
 
-//start the emitter
-part_emitter_stream(SecondParticleSystem,second_emitter,second_particle,-3);
-part_emitter_stream(FirstParticleSystem,first_emitter,first_particle,-3);
-
  // Create the sky.
     for(i=0; i&lt;12; i+=1)
     {
@@ -118,6 +114,31 @@ part_emitter_stream(FirstParticleSystem,first_emitter,first_particle,-3);
             <kind>1</kind>
             <string>part_emitter_destroy(FirstParticleSystem,first_emitter)
 part_emitter_destroy(SecondParticleSystem,second_emitter)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//start the emitter
+part_emitter_burst(SecondParticleSystem,second_emitter,second_particle,-3);
+part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,-3);
 </string>
           </argument>
         </arguments>

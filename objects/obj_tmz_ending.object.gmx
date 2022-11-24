@@ -50,7 +50,7 @@ warning=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(obj_character.x,obj_character.y,obj_tmz_alarm)
+            <string>if !instance_exists(obj_tmz_alarm){instance_create(obj_character.x,obj_character.y,obj_tmz_alarm)}
 alarm[1]=1
 depth=-1000
 </string>
@@ -79,6 +79,7 @@ depth=-1000
 {
 image_yscale=lerp(image_yscale,1,0.15)
 image_speed=random_range(0.01,0.3)
+warning=0.5*sin(current_time*0.001)+0.5
 if !audio_is_playing(_general_alarm)
 {audio_play(_general_alarm,global.sfx_volume)}
 if alarm[1]=-1{alarm[1]=150}

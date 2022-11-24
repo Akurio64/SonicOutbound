@@ -38,16 +38,10 @@ teleporting=false
 teleported=false
 returning=false
 s_pos=240
+path=""
 star=0
 alarm[0]=150
 instance_create(x,y,obj_slzb_bg)
-
-star1=instance_create(x,view_yview-64,obj_slz_star)
-star2=instance_create(x,view_yview-64,obj_slz_star)
-star3=instance_create(x,view_yview-64,obj_slz_star)
-star1.visible=false
-star2.visible=false
-star3.visible=false
 </string>
           </argument>
         </arguments>
@@ -150,62 +144,6 @@ path_end()
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>randomize()
-var path=choose(pth_star_1,pth_star_2,pth_star_3,pth_star_4,pth_star_5)
-with star2{x=ctr_camera.limit_left+(64)+64;y= view_yview;
-visible=true; path_start(path, 3, path_action_stop, true)}
-alarm[2]=path_get_length(path)/3;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="6">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>randomize()
-var path=choose(pth_star_1,pth_star_2,pth_star_3,pth_star_4,pth_star_5)
-with star2{x=ctr_camera.limit_left+(64)+64;y= view_yview;
-visible=true; path_start(path, 3, path_action_stop, true)}
-alarm[2]=path_get_length(path)/3;
-
-alarm[7]=30
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="5">
       <action>
         <libid>1</libid>
@@ -273,7 +211,7 @@ alarm[4]=100
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y=view_yview
+            <string>y=view_yview-sprite_height
 visible=false
 vulnerable=true
 instance_create(x,y,obj_fade_to_white)
@@ -304,12 +242,13 @@ alarm[5]=90
           <argument>
             <kind>1</kind>
             <string>randomize()
-var path=choose(pth_star_1,pth_star_2,pth_star_3,pth_star_4,pth_star_5)
-with star1{x=ctr_camera.limit_left+(64)+64;y= view_yview;
-visible=true; path_start(path, 3, path_action_stop, true)}
+if star=0{path=choose(pth_star_1,pth_star_2,pth_star_3,pth_star_4,pth_star_5)}
+if star&lt;8{
+with instance_create(ctr_camera.limit_left-64,view_yview-64,obj_slz_star)
+{image_xscale=0.5;image_yscale=0.5;visible=true; 
+path_start(obj_bigboss_3.path, 3, path_action_stop, false)}
 alarm[2]=path_get_length(path)/3;
-
-alarm[6]=30
+star+=1;alarm[3]=60}
 </string>
           </argument>
         </arguments>
@@ -339,6 +278,7 @@ y=ystart
 instance_create(x,y,obj_fade_to_white)
 audio_play(_general_super,global.bgm_volume)
 x=random_range(obj_boss_camera.x-270,obj_boss_camera.x+270)
+star=0
 
 with obj_slz_star{path_end();x=xstart;y=ystart;visible=false}
 </string>
@@ -507,7 +447,7 @@ alarm[1]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp&gt;=4{
+            <string>if hp&gt;4{
 if teleporting=true
 {
 with(instance_create(x, y, obj_character_afterimage))

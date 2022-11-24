@@ -85,7 +85,7 @@ global.crings       =18;</code>
     <tile bgName="bg_t_intro_lvl" x="-28" y="-48" w="6400" h="432" xo="0" yo="0" id="10004506" name="inst_44704A9C" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_t_intro_t" x="-12" y="0" w="256" h="128" xo="0" yo="0" id="10004508" name="inst_754491B5" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_t_intro_t" x="436" y="0" w="256" h="128" xo="0" yo="0" id="10004509" name="inst_73BE2DBE" depth="-100" locked="0" colour="4294967295" scaleX="-1" scaleY="1"/>
-    <tile bgName="background72" x="-28" y="208" w="424" h="176" xo="0" yo="0" id="10004512" name="inst_7705A6DD" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_ground" x="-28" y="208" w="424" h="176" xo="0" yo="0" id="10004512" name="inst_7705A6DD" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

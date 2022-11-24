@@ -145,6 +145,29 @@ image_angle=point_direction(x,y,x+hspeed,y+vspeed)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_aehz_collision_00_o">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if hurt=true{instance_destroy()}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_bigboss_1">
       <action>
         <libid>1</libid>
@@ -172,29 +195,6 @@ audio_play(_boss_hit, global.sfx_volume);
 obj_bigboss_1.sprite_index=spr_hsz_boss_3
 instance_destroy()}}
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_aehz_collision_00_o">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if hurt=true{instance_destroy()}
 </string>
           </argument>
         </arguments>

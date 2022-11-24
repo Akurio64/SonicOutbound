@@ -29,6 +29,7 @@
 warning=0
 alarm[0]=1
 image_alpha=0
+
 // define the particle system
 FirstParticleSystem = part_system_create()
 
@@ -129,7 +130,7 @@ if(x_speed &lt; 0)
                                     }
                                  }
                               }}
-else{x_speed=lerp(x_speed,18,0.0007);visible=false}
+else{x_speed=lerp(x_speed,18,0.001);visible=false}
 }
 </string>
           </argument>

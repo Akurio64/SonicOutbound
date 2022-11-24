@@ -35,33 +35,33 @@
  // Tails:
     if(character_id = CHAR_TAILS)
     {
-       set_animation("STAND",          spr_miles_stand,    0,  0, 0, -1, "", 0);
-       set_animation("BORED_1",         spr_miles_idle, 0.20, 46, 1, -1, "", 0);         
-       set_animation("LOOK",         spr_miles_look_up, 0.35,  4, 0,  0, "", 0);    
-       set_animation("LOOK_END",    spr_miles_look_end, 0.18,  1, 0,  0, "STAND", 0);            
-       set_animation("CROUCH",        spr_miles_crouch,  0.6,   5, 0,  0, "", 0);    
-       set_animation("CROUCH_UP",  spr_miles_crouch_up, 0.40,  1, 0,  0, "STAND", 0);   
-       set_animation("PUSH",            spr_miles_push, 0.15,  9, 0, -1, "", 0);         
-       set_animation("WALK",            spr_miles_walk, 0.25, 11, 0, -1, "", 0); 
-       set_animation("JOG",              spr_miles_jog, 0.25,  9, 0, -1, "", 0);    
-       set_animation("RUN",              spr_miles_run, 0.25,  8, 1, -1, "", 0);  
-       set_animation("DASH",            spr_miles_dash, 0.25,  4, 1, -1, "", 0);             
-       set_animation("ROLL",            spr_miles_roll,  0.5,  15, 0, -1, "", 0);
-       set_animation("SPINDASH",    spr_miles_spindash,  0.8,  15, 0, -1, "", 0);         
-       set_animation("SPRING",        spr_miles_spring, 0.15,  1, 0, -1, "", 0);       
-       set_animation("TWIRL",          spr_miles_twirl,  0.5,  9, 0, -1, "", 0);         
-       set_animation("SKID",            spr_miles_skid, 0.35,  6, 5,  0, "", 0); 
-       set_animation("SKID TURN",  spr_miles_skid_turn, 0.25,  2, 0,  0, "", 0);             
-       set_animation("BALANCE",    spr_miles_balance_1, 0.20,  6, 0, -1, "", 0); 
-       set_animation("BALANCE 2",  spr_miles_balance_2, 0.20,  7, 0, -1, "", 0);
-       set_animation("FLY",              spr_miles_fly, 0.45,  3, 0, -1, "", 0); 
-       set_animation("FLY DROP",   spr_miles_fly_tired, 0.20,  6, 0, -1, "", 0);   
-       set_animation("SWIM",            spr_miles_swim, 0.25,  9, 0, -1, "", 0); 
-       set_animation("SWIM DROP", spr_miles_swim_tired, 0.20,  7, 0, -1, "", 0);                          
-       set_animation("HURT",            spr_miles_hurt, 0.18,  4, 3, -1, "", 0); 
-       set_animation("BREATHE",      spr_miles_breathe, 0.20,  6, 0,  0, "WALK", 0);              
-       set_animation("DEATH",          spr_miles_death,    0,  0, 0, -1, "", 0);        
-       set_animation("DROWN",          spr_miles_drown,    0,  0, 0, -1, "", 0);    
+       set_animation("STAND",          spr_miles_stand_new,    0,  0, 0, -1, "", 0);
+       set_animation("BORED_1",         spr_miles_idle_new, 0.20, 46, 1, -1, "", 0);         
+       set_animation("LOOK",         spr_miles_look_up_new, 0.35,  4, 0,  0, "", 0);    
+       set_animation("LOOK_END",    spr_miles_look_end_new, 0.18,  1, 0,  0, "STAND", 0);            
+       set_animation("CROUCH",        spr_miles_crouch_new,  0.6,   5, 0,  0, "", 0);    
+       set_animation("CROUCH_UP",  spr_miles_crouch_up_new, 0.40,  1, 0,  0, "STAND", 0);   
+       set_animation("PUSH",            spr_miles_push_new, 0.15,  9, 0, -1, "", 0);         
+       set_animation("WALK",            spr_miles_walk_new, 0.25, 11, 0, -1, "", 0); 
+       set_animation("JOG",              spr_miles_jog_new, 0.25,  9, 0, -1, "", 0);    
+       set_animation("RUN",              spr_miles_run_new, 0.25,  8, 1, -1, "", 0);  
+       set_animation("DASH",            spr_miles_dash_new, 0.25,  4, 1, -1, "", 0);             
+       set_animation("ROLL",            spr_miles_roll_new,  0.5,  15, 0, -1, "", 0);
+       set_animation("SPINDASH",    spr_miles_spindash_new,  0.8,  15, 0, -1, "", 0);         
+       set_animation("SPRING",        spr_miles_spring_new, 0.15,  1, 0, -1, "", 0);       
+       set_animation("TWIRL",          spr_miles_twirl_new,  0.5,  9, 0, -1, "", 0);         
+       set_animation("SKID",            spr_miles_skid_new, 0.35,  6, 5,  0, "", 0); 
+       set_animation("SKID TURN",  spr_miles_skid_turn_new, 0.25,  2, 0,  0, "", 0);             
+       set_animation("BALANCE",    spr_miles_balance_1_new, 0.20,  6, 0, -1, "", 0); 
+       set_animation("BALANCE 2",  spr_miles_balance_2_new, 0.20,  7, 0, -1, "", 0);
+       set_animation("FLY",              spr_miles_fly_new, 0.45,  3, 0, -1, "", 0); 
+       set_animation("FLY DROP",   spr_miles_fly_tired_new, 0.20,  6, 0, -1, "", 0);   
+       set_animation("SWIM",            spr_miles_swim_new, 0.25,  9, 0, -1, "", 0); 
+       set_animation("SWIM DROP", spr_miles_swim_tired_new, 0.20,  7, 0, -1, "", 0);                          
+       set_animation("HURT",            spr_miles_hurt_new, 0.18,  4, 3, -1, "", 0); 
+       set_animation("BREATHE",      spr_miles_breathe_new, 0.20,  6, 0,  0, "WALK", 0);              
+       set_animation("DEATH",          spr_miles_death_new,    0,  0, 0, -1, "", 0);        
+       set_animation("DROWN",          spr_miles_drown_new,    0,  0, 0, -1, "", 0);    
     }
 
  // Knuckles:

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>par_hurt</parentName>
+  <parentName>par_hurt_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -97,57 +97,6 @@ part_emitter_region(FirstParticleSystem,first_emitter,x-sprite_width,x+sprite_wi
 
 if visible=true{
 part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,-2);}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_angle+=1
-
-if (point_in_rectangle(x, y, ctr_camera.limit_left-sprite_width, view_yview[0]-sprite_height, ctr_camera.limit_right+sprite_width, view_yview[0] + view_hview[0]+sprite_height))=false
-{
-hspeed=0
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>part_emitter_destroy(FirstParticleSystem,first_emitter)
 </string>
           </argument>
         </arguments>

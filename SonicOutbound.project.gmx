@@ -201,6 +201,7 @@
         <sprite>sprites\spr_starting_position</sprite>
         <sprites name="Sonic">
           <sprite>sprites\spr_sonic_stand</sprite>
+          <sprite>sprites\spr_sonic_3dloop</sprite>
           <sprite>sprites\spr_sonic_idle_1</sprite>
           <sprite>sprites\spr_sonic_idle_2</sprite>
           <sprite>sprites\spr_sonic_look_up</sprite>
@@ -365,6 +366,35 @@
             <sprite>sprites\spr_sonic_twirl_new</sprite>
             <sprite>sprites\spr_sonic_walk_new</sprite>
           </sprites>
+          <sprites name="Tails">
+            <sprite>sprites\spr_miles_balance_1_new</sprite>
+            <sprite>sprites\spr_miles_balance_2_new</sprite>
+            <sprite>sprites\spr_miles_breathe_new</sprite>
+            <sprite>sprites\spr_miles_crouch_new</sprite>
+            <sprite>sprites\spr_miles_crouch_up_new</sprite>
+            <sprite>sprites\spr_miles_dash_new</sprite>
+            <sprite>sprites\spr_miles_death_new</sprite>
+            <sprite>sprites\spr_miles_drown_new</sprite>
+            <sprite>sprites\spr_miles_fly_new</sprite>
+            <sprite>sprites\spr_miles_fly_tired_new</sprite>
+            <sprite>sprites\spr_miles_hurt_new</sprite>
+            <sprite>sprites\spr_miles_idle_new</sprite>
+            <sprite>sprites\spr_miles_jog_new</sprite>
+            <sprite>sprites\spr_miles_look_end_new</sprite>
+            <sprite>sprites\spr_miles_look_up_new</sprite>
+            <sprite>sprites\spr_miles_push_new</sprite>
+            <sprite>sprites\spr_miles_roll_new</sprite>
+            <sprite>sprites\spr_miles_run_new</sprite>
+            <sprite>sprites\spr_miles_skid_new</sprite>
+            <sprite>sprites\spr_miles_skid_turn_new</sprite>
+            <sprite>sprites\spr_miles_spindash_new</sprite>
+            <sprite>sprites\spr_miles_spring_new</sprite>
+            <sprite>sprites\spr_miles_stand_new</sprite>
+            <sprite>sprites\spr_miles_swim_new</sprite>
+            <sprite>sprites\spr_miles_swim_tired_new</sprite>
+            <sprite>sprites\spr_miles_twirl_new</sprite>
+            <sprite>sprites\spr_miles_walk_new</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Objects">
@@ -514,6 +544,10 @@
           <sprite>sprites\spr_see_ball</sprite>
           <sprite>sprites\spr_stairpreview</sprite>
           <sprite>sprites\spr_slz_fire_shooter</sprite>
+          <sprite>sprites\spr_slz_3dloop</sprite>
+          <sprite>sprites\spr_slz_3dloop_ext</sprite>
+          <sprite>sprites\spr_slz_3dloop_m</sprite>
+          <sprite>sprites\spr_3dloop_speed</sprite>
           <sprite>sprites\spr_slz_fire</sprite>
           <sprite>sprites\spr_slz_wind</sprite>
           <sprite>sprites\spr_slz_fan</sprite>
@@ -857,8 +891,8 @@
         <sprite>sprites\spr_sega_startup2</sprite>
       </sprites>
       <sprites name="SAGE">
-        <sprite>sprites\sprite991</sprite>
-        <sprite>sprites\sprite1007</sprite>
+        <sprite>sprites\spr_sage_logo_1</sprite>
+        <sprite>sprites\spr_sage_logo_2</sprite>
         <sprite>sprites\spr_p255_boot</sprite>
       </sprites>
       <sprites name="Title">
@@ -1039,7 +1073,7 @@
       <background>background\bg_t_intro_bg_2</background>
       <background>background\bg_t_intro_bg_3</background>
       <background>background\bg_t_intro_lvl</background>
-      <background>background\background72</background>
+      <background>background\bg_t_ground</background>
     </backgrounds>
     <backgrounds name="Misc">
       <background>background\bg_dataselect</background>
@@ -1429,9 +1463,15 @@
           <object>objects\obj_slz_light</object>
           <object>objects\par_break_walls</object>
           <object>objects\par_break_parts</object>
+          <object>objects\obj_slz_3dloop_ext</object>
+          <object>objects\obj_3dloop_speed</object>
+          <object>objects\par_3dloop</object>
+          <object>objects\obj_slz_3dloop</object>
           <object>objects\obj_test_breakwall</object>
           <object>objects\obj_slz_swing_hurt</object>
           <object>objects\obj_slz_swing</object>
+          <object>objects\obj_slz_shooting_c</object>
+          <object>objects\obj_slz_shooting_s</object>
           <object>objects\obj_slz_collapse</object>
         </objects>
         <objects name="Bosses">
@@ -1477,7 +1517,6 @@
               <object>objects\obj_slz_star</object>
             </objects>
           </objects>
-          <objects name="RPZ"/>
           <objects name="TTZ">
             <objects name="Big">
               <objects name="E">
@@ -1821,7 +1860,7 @@
     </rooms>
     <room>rooms\rm_continue</room>
   </rooms>
-  <constants number="74">
+  <constants number="75">
     <constant name="GAME_NAME">"Sonic Outbound"</constant>
     <constant name="GAME_VERSION">"V0.2"</constant>
     <constant name="STG">ctr_level</constant>
@@ -1873,6 +1912,7 @@
     <constant name="CS_SPRING_DIAGONAL">18</constant>
     <constant name="CS_TORNADO">19</constant>
     <constant name="CS_MEGA">20</constant>
+    <constant name="CS_3DLOOP">21</constant>
     <constant name="CS_WIN">-4</constant>
     <constant name="CS_HURT">-1</constant>
     <constant name="CS_DEATH">-2</constant>

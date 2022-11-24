@@ -86,6 +86,7 @@ instance_create(x,y,obj_fade_to_white)
             <kind>1</kind>
             <string>hit=false
 sprite_index=main_sprite
+ctr_audio.act_clear=act_clear
 </string>
           </argument>
         </arguments>
