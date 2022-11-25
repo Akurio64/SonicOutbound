@@ -155,7 +155,7 @@
     
     // Animate Sonic's transition animation
     if(transition == 1 &amp;&amp; frameTimer &gt; 1){
-        sonicIndex += 0.2;
+        sonicIndex += 0.6;
         
         // Once his animation is done move to the next transition, and reset his frame index
         if(sonicIndex &gt;= sprite_get_number(sprSonicTransition)){
