@@ -341,7 +341,7 @@
     animation_timer           = 0; 
     draw_x                    = x;
     draw_y                    = y;
-    mania                     = false;
+    if room=rm_t_intro{mania=true}else{mania=false}
 
 </string>
           </argument>

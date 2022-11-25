@@ -447,7 +447,7 @@ alarm[1]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp&gt;4{
+            <string>if hp&gt;=4{
 if teleporting=true
 {
 with(instance_create(x, y, obj_character_afterimage))

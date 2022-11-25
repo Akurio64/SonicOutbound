@@ -257,6 +257,7 @@
     
     hyper = false
     shield_y=floor(y)
+    if room=rm_t_intro{mania=true}else{mania=false}
 </string>
           </argument>
         </arguments>
@@ -838,7 +839,13 @@
           // Start the playback of the animation:
              if(animation_flag == "START")
              {
+                if mania=false{
                 update_animation_index();
+                }
+                else
+                {
+                update_animation_index_mania();
+                }
                 animation_flag = "PLAY";
              }
 
@@ -888,7 +895,13 @@
                    animation_flag  = "PLAY";                  
                    animation_index = animation_next; 
                    animation_frame = animation_next_frame;                                                    
-                   update_animation_index();                                                  
+                   if mania=false{
+                update_animation_index();
+                }
+                else
+                {
+                update_animation_index_mania();
+                }                                                 
                 }
              }
        }

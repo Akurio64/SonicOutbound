@@ -109,6 +109,7 @@ y=obj_character.y
 with par_character
 {
 input_lock_l=1
+input_lock_r=0
 if !place_meeting(x,y,obj_tmz_escape){
 start=false
 if(x_speed &lt; 0)

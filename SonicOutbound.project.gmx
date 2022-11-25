@@ -1457,6 +1457,7 @@
           <object>objects\obj_slz_fan</object>
           <object>objects\obj_slz_wind</object>
           <object>objects\obj_see_ball</object>
+          <object>objects\spr_slz_fire_des</object>
           <object>objects\obj_slz_fire</object>
           <object>objects\obj_slz_fire_shooter</object>
           <object>objects\obj_seesaw</object>
@@ -1468,9 +1469,9 @@
           <object>objects\par_3dloop</object>
           <object>objects\obj_slz_3dloop</object>
           <object>objects\obj_test_breakwall</object>
+          <object>objects\obj_slz_shooting_c</object>
           <object>objects\obj_slz_swing_hurt</object>
           <object>objects\obj_slz_swing</object>
-          <object>objects\obj_slz_shooting_c</object>
           <object>objects\obj_slz_shooting_s</object>
           <object>objects\obj_slz_collapse</object>
         </objects>

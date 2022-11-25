@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>alarm[0]=90
+with obj_character{
+input_lock_l=1
+input_lock_r=1}
 </string>
           </argument>
         </arguments>
@@ -96,8 +99,7 @@ else
    y-=1;
    }
    image_speed=0.3
-   
-
+ 
 </string>
           </argument>
         </arguments>
