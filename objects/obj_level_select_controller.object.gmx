@@ -29,20 +29,28 @@
 
  // Main variables.
     lvlselect_zone             =  1; // Zone we want to go to or preview.
-    lvlselect_zone_end         =  2; // This should be the amount of zones in game.
+    lvlselect_zone_end         =  image_number; // This should be the amount of zones in game.
     
  // Misc.
     lvlselect_arrow_frame = 0;
     
  // Zone Name / Description.
  // Add the names and descriptions for each zone here. 
-    lvlselect_zone_name       [1]    = "STAR LIGHT ZONE"
+    lvlselect_zone_name       [1]    = "HEAVEN SHORE ZONE ACT 1"
     lvlselect_zone_description[1, 1] = "THIS IS A SIMPLE TEST STAGE"
     lvlselect_zone_description[1, 2] = "THIS IS ANOTHER SMALL TEST"  
  
-    lvlselect_zone_name       [2]    = "STAR LIGHT ZONE";
+    lvlselect_zone_name       [2]    = "HEAVEN SHORE ZONE ACT 2";
     lvlselect_zone_description[2, 1] = "THIS IS A SIMPLE TEST STAGE";
     lvlselect_zone_description[2, 2] = "THIS IS ANOTHER SMALL TEST";
+    
+    lvlselect_zone_name       [3]    = "STAR LIGHT ZONE ACT 1"
+    lvlselect_zone_description[3, 1] = "THIS IS A SIMPLE TEST STAGE"
+    lvlselect_zone_description[3, 2] = "THIS IS ANOTHER SMALL TEST"  
+ 
+    lvlselect_zone_name       [4]    = "STAR LIGHT ZONE ACT 2";
+    lvlselect_zone_description[4, 1] = "THIS IS A SIMPLE TEST STAGE";
+    lvlselect_zone_description[4, 2] = "THIS IS ANOTHER SMALL TEST";
  
     
          

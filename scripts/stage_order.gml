@@ -9,6 +9,18 @@
  // Get next stage.
     switch(room)
     {
+           case rm_hsz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_hsz_act2; 
+                 break;
+           }
+           case rm_hsz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_slz_act1; 
+                 break;
+           }
            case rm_slz_act1:
            {
               // Test Stage (Act 2)

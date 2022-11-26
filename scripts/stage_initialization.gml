@@ -14,18 +14,32 @@ if(global.save_selected != 0)
                  stage_set_data("TITANIC MONARCH", 2, msc_phantom_egg, false, -1, room_height, 315946, 6694951, 44100);
                  break;
            }
+           case rm_hsz_act1:
+           {
+              // Test Stage (Act 2)
+                 stage_set_data("HEAVEN SHORE", 1, msc_hsz1, false, 200, room_height, 315946, 6694951, 44100);
+                 global.zone_id=1
+                 break;
+           }
+           case rm_hsz_act2:
+           {
+              // Test Stage (Act 2)
+                 stage_set_data("HEAVEN SHORE", 1, msc_hsz2, true, 200, room_height, 315946, 6694951, 44100);
+                 global.zone_id=2
+                 break;
+           }
            case rm_slz_act1:
            {
               // Test Stage (Act 2)
                  stage_set_data("STAR LIGHT", 1, msc_slz1, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=1
+                 global.zone_id=3
                  break;
            }
            case rm_slz_act2:
            {
               // Test Stage (Act 2)
                  stage_set_data("STAR LIGHT", 2, msc_slz2, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=2
+                 global.zone_id=4
                  break;
            }
            default: // Keep this at the bottom.

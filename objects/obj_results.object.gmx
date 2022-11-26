@@ -141,13 +141,7 @@
        }
     }
     else
-    {
-     if room=rm_slz_act1
-       {
-       global.game_completed=true
-       global.zone_id=3
-       }
-       
+    {   
     if(global.save_selected != 0)
              {
                save_create(global.save_selected);
