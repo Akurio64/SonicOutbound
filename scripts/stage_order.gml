@@ -39,7 +39,7 @@
            default: // Keep this at the bottom.
            {
               // First stage, Test Stage (Act 1)
-                 return rm_slz_act1;
+                 return rm_hsz_act1;
                  break;
            }               
     }
