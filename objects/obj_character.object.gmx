@@ -733,6 +733,14 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     }
     
  // Assign animation:
+ 
+ if(ground == false)
+ {
+ if animation_index="3DLOOP3"
+ {
+ animation_index="ROLL"
+ }
+ }
    
  // Standing, Idling:
     if(ground == true)
@@ -775,9 +783,20 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
        {
        if place_meeting(x,y,par_3dloop)
        {
-       animation_index="3DLOOP"
-       animation_speed=x_speed/7.5
-       animation_speed=clamp(x_speed,0,0.25)
+       var loopy
+       loopy=instance_nearest(x,y,obj_slz_3dloop).y+192
+       if (y &gt;= loopy &amp;&amp; y &lt;= (loopy+15))
+       {
+       animation_index="3DLOOP1"
+       }
+       else if (y &gt;= (loopy-32) &amp;&amp; y &lt;= (loopy))
+       {
+       animation_index="3DLOOP2"
+       }
+       else if (y &gt;= (loopy-64) &amp;&amp; y &lt;= (loopy-32))
+       {
+       animation_index="3DLOOP3"
+       }
        }
        else{
           if(animation_index != "WALK"  &amp;&amp; abs(x_speed) &lt; 3.75)                      
@@ -814,9 +833,9 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
                 }
              }
           }   
-       }    
+       }   
     }
-    }
+}
     
  // Set the animation speed for walk, run, dashing and peelout:
     if(ground == true &amp;&amp; animation_index != "SKID TURN")
@@ -1261,7 +1280,7 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
  // This is used for rotating the players sprite.
  
  // Exit if not initialized, death or hurt.
-    if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK &amp;&amp; animation_index != "3DLOOP")
+    if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK &amp;&amp; animation_index != "3DLOOP3" &amp;&amp; animation_index != "3DLOOP2" &amp;&amp; animation_index != "3DLOOP1")
     {
  
  // Change animation angle values:
@@ -3128,7 +3147,10 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mania=true{mania=false}else if mania=false{mania=true}
+            <string>with(instance_create(x, y, obj_fade_to))
+             {
+                  fade_to = stage_order();
+             }
 </string>
           </argument>
         </arguments>

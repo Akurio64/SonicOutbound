@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sign_post_camera    = instance_create(obj_boss_camera.x, obj_boss_camera.y, obj_sign_post_camera); 
+            <string>sign_post_camera    = instance_create(view_xview+212, obj_boss_camera.y, obj_sign_post_camera); 
 sign_post_activated=false
 post=choose(0,4,8,12)
 dir=0

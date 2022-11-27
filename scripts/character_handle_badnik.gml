@@ -1,5 +1,13 @@
 /// character_handle_badnik()
  // Script to handle badniks
+ 
+ if instance_exists(obj_hsz_bouncer_2)=true
+ {
+ if obj_hsz_bouncer_2.inv=true
+ {
+ exit
+ }
+ }
 
  // Getting hurt.
     if not (state == CS_FLY && y_speed < 0)

@@ -3,7 +3,7 @@
   <spriteName>spr_3dloop_speed</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if place_meeting(x,y,obj_character){
 image_speed=0.3;
-obj_character.x_speed=16
+obj_character.x_speed=obj_slz_3dloop.spd
 }
 else{image_speed=0;image_index=0}
 </string>

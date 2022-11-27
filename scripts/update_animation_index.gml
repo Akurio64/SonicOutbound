@@ -5,8 +5,10 @@
     if(character_id = CHAR_SONIC)
     {
        set_animation("STAND",          spr_sonic_stand,    0,  0, 0, -1, "", 0);
-       set_animation("3DLOOP",        spr_sonic_3dloop, 0,10, 7, -1, "", 0);
-       set_animation("BORED_1",       spr_sonic_idle_1, 0.25, 9, 4, 12, "BORED_2", 0);    
+       set_animation("3DLOOP1",       spr_sonic_3dloop1, 0.25, 2, 0, -1, "", 0);
+       set_animation("3DLOOP2",       spr_sonic_3dloop2, 0.25, 4, 0, -1, "", 0);
+       set_animation("3DLOOP3",       spr_sonic_3dloop3, 0.25, 4, 0, -1, "", 0);
+       set_animation("BORED_1",       spr_sonic_idle_1, 0.25,  9, 4, 12, "BORED_2", 0);    
        set_animation("BORED_2",       spr_sonic_idle_2, 0.25, 23, 0, -1, "BORED_2", 0);        
        set_animation("LOOK",         spr_sonic_look_up, 0.35,  4, 0,  0, "", 0);    
        set_animation("LOOK_END",    spr_sonic_look_end, 0.18,  1, 0,  0, "STAND", 0);            

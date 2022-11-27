@@ -33,6 +33,7 @@
  // Create the parallax background:
     var bg_yoffset;
         bg_yoffset = 0.90; // Offset for the parallax bg.
+        bg_offset  = 0
         
  // Create the sky.
     parallax_add_node(1, pbg_slz2_01, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, -32, 0, 0, 12, 512, 384);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8                

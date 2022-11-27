@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited()
-instance_create(x+176,y+128,obj_3dloop_speed)
+spd=8
+instance_create(x+160,y+128,obj_3dloop_speed)
 </string>
           </argument>
         </arguments>
