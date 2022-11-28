@@ -992,9 +992,9 @@
       <sprite>sprites\tile055</sprite>
       <sprite>sprites\tile056</sprite>
     </sprites>
-    <sprite>sprites\spr_vine_texture</sprite>
     <sprite>sprites\spr_hsz_beach_ball</sprite>
     <sprite>sprites\spr_hsz_vine</sprite>
+    <sprite>sprites\spr_hsz_liftor</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1417,6 +1417,7 @@
           <objects name="HSZ">
             <object>objects\obj_hsz_bouncer_2</object>
             <object>objects\obj_hsz_bouncer_1</object>
+            <object>objects\obj_hsz_liftor</object>
           </objects>
         </objects>
         <objects name="Springs">

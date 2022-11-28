@@ -5,7 +5,7 @@
     if(character_id = CHAR_SONIC)
     {
        set_animation("STAND",          spr_sonic_stand,    0,  0, 0, -1, "", 0);
-       set_animation("VINE",            spr_sonic_vine,    0,  0, 0, -1, "", 0);
+       set_animation("VINE",            spr_sonic_vine,    0.2,  7, 0, -1, "", 0);
        set_animation("3DLOOP1",       spr_sonic_3dloop1, 0.25, 2, 0, -1, "", 0);
        set_animation("3DLOOP2",       spr_sonic_3dloop2, 0.25, 4, 0, -1, "", 0);
        set_animation("3DLOOP3",       spr_sonic_3dloop3, 0.25, 4, 0, -1, "", 0);

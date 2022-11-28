@@ -3,7 +3,7 @@
   <spriteName>spr_slz_laser</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>5</depth>
+  <depth>1000001</depth>
   <persistent>0</persistent>
   <parentName>par_hurt</parentName>
   <maskName>&lt;undefined&gt;</maskName>

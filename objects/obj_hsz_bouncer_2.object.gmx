@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,6 +28,8 @@
             <string>event_inherited()
 image_speed=0
 hp=3
+hit=true
+alarm[11]=30
 </string>
           </argument>
         </arguments>
@@ -111,6 +113,30 @@ vspeed = -5;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hit=false
+image_alpha=1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
@@ -172,7 +198,7 @@ else
  if place_meeting(x,y,par_terrain){
    y-=1;
    }
-   
+ 
 image_angle=xstart-(x*(360/(pi*sprite_width)))
 </string>
           </argument>
@@ -196,11 +222,14 @@ image_angle=xstart-(x*(360/(pi*sprite_width)))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp&gt;0{
-par_character.x_speed=-par_character.x_speed
+            <string>if hit=false{
+if hp&gt;0{
+par_character.x_speed=hspeed
 hspeed=-hspeed
-hp-=1}
-else{instance_destroy()}
+hp-=1;hit=true;
+alarm[11]=45;
+image_alpha=0.5}
+else{instance_destroy()}}
 </string>
           </argument>
         </arguments>

@@ -54,22 +54,24 @@ surf=-1
             <kind>1</kind>
             <string>if triggered==true
 {
-par_character.x=floor(x);
+par_character.x=floor(x)
 par_character.y=floor(y);
 par_character.x_speed=0;
 par_character.y_speed=0;
-par_character.state=CS_HANG;
+if par_character.state!=CS_HANG{
+par_character.state=CS_HANG}
 par_character.vine=id
+
 if (par_character.input_action_pressed == true)
 {
 triggered=false;
-par_character.state=CS_ROLL;
 canbetriggered=false;
+par_character.state=CS_ROLL;
 par_character.ground=false;
 par_character.y_speed=-4;
 par_character.x_speed=4*par_character.animation_direction
+audio_play(_char_jump,global.sfx_volume)
 }
-
 
 }
 
@@ -85,8 +87,8 @@ canbetriggered=true;
 
 }
 
-y=ystart-(50*power(sin(current_time*0.002),2))
-x=xstart+(80*sin((current_time+(xstart*69))*0.002))
+y=ystart-(-40*power(sin(((current_time*0.002)+(pi/2))),2))
+x=xstart+(80*sin((current_time+(xstart*50))*0.002))
 </string>
           </argument>
         </arguments>
@@ -136,6 +138,8 @@ x=xstart+(80*sin((current_time+(xstart*69))*0.002))
 draw_curve(x,y,xstart,ystart-150,x-(xstart-90),100)
 draw_curve(x-1,y,xstart-1,ystart-150,x-(xstart-90),100)
 draw_curve(x-1,y,xstart-1,ystart-150,x-(xstart-90),100)
+draw_curve(x-2,y,xstart-1,ystart-150,x-(xstart-90),100)
+draw_curve(x-2,y,xstart-1,ystart-150,x-(xstart-90),100)
 image_angle=x-(xstart-90)
 </string>
           </argument>

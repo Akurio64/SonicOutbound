@@ -1138,7 +1138,13 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
              if(animation_flag == "PLAY")
              {
                 // Animate:
-                   animation_frame += animation_speed;
+                if animation_index="VINE"{
+                if animation_direction=1
+                {animation_frame=((x-(vine.xstart))+80)/20}
+                else if animation_direction=-1
+                {animation_frame=(((vine.xstart)-x)+80)/20}}
+                else{
+                animation_frame += animation_speed}
                 
                 // Check if the animation has ended:                   
                    if(floor(animation_frame) &gt; animation_end)
