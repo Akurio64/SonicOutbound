@@ -25,12 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>off=0
-side=0
-si=1
-yy=obj_character.y
-grip=false
-image_speed=0.1
+            <string>triggered=false;
+canbetriggered=true;
+
+//surface
+surf=-1
 </string>
           </argument>
         </arguments>
@@ -53,31 +52,47 @@ image_speed=0.1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>off=round(2*power(1.26,image_index))
-
-if image_xscale=-1{
-si=1}else
-if image_xscale=1{
-si=2}
-
-if place_meeting(x,y,obj_character)
+            <string>if triggered==true
 {
-if grip=false{yy=obj_character.y}
-grip=true
+par_character.x=floor(x);
+par_character.y=floor(y);
+par_character.x_speed=0;
+par_character.y_speed=0;
+par_character.state=CS_HANG;
+par_character.vine=id
+if (par_character.input_action_pressed == true)
+{
+triggered=false;
+par_character.state=CS_ROLL;
+canbetriggered=false;
+par_character.ground=false;
+par_character.y_speed=-4;
+par_character.x_speed=4*par_character.animation_direction
 }
 
-if grip=true{
-with obj_character{
-x=(obj_hsz_vine.x-94)+obj_hsz_vine.si*(obj_hsz_vine.off)
-y=obj_hsz_vine.yy+round(power(1.22,image_index))
+
+}
+
+
+if canbetriggered==false 
+{
+if instance_exists(par_character)
+{
+if par_character.ground==true{
+canbetriggered=true;
 }
 }
+
+}
+
+y=ystart-(50*power(sin(current_time*0.002),2))
+x=xstart+(80*sin((current_time+(xstart*69))*0.002))
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="7">
+    <event eventtype="4" ename="par_character">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -94,7 +109,34 @@ y=obj_hsz_vine.yy+round(power(1.22,image_index))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale=-image_xscale
+            <string>if other.is_cpu==false{if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT{triggered=true;}}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_color($afcf93)
+draw_curve(x,y,xstart,ystart-150,x-(xstart-90),100)
+draw_curve(x-1,y,xstart-1,ystart-150,x-(xstart-90),100)
+draw_curve(x-1,y,xstart-1,ystart-150,x-(xstart-90),100)
+image_angle=x-(xstart-90)
 </string>
           </argument>
         </arguments>

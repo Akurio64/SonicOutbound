@@ -254,6 +254,7 @@
     
     hyper = false
     shield_y=floor(y)
+    vine=noone
 
 </string>
           </argument>
@@ -1076,6 +1077,15 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
           animation_index = "WIN";
        }
        }
+       
+    // Vine
+    if(state == CS_HANG)
+    {
+       if(animation_index != "VINE")
+       {
+          animation_index = "VINE";
+       }
+       }
 </string>
           </argument>
         </arguments>
@@ -1279,6 +1289,9 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
             <string>/// Sprite rotation.
  // This is used for rotating the players sprite.
  
+ if state=CS_HANG{animation_angle=vine.image_angle-100}
+ else{
+ 
  // Exit if not initialized, death or hurt.
     if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK &amp;&amp; animation_index != "3DLOOP3" &amp;&amp; animation_index != "3DLOOP2" &amp;&amp; animation_index != "3DLOOP1")
     {
@@ -1389,7 +1402,7 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
        }
        else miles_tail_direction = animation_direction;
     }
-    
+    }
 </string>
           </argument>
         </arguments>

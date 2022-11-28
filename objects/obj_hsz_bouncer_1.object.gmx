@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited()
 with instance_create(x,y,obj_hsz_bouncer_2){
-vspeed=-2
+vspeed=-1
 }
 </string>
           </argument>
@@ -54,7 +54,7 @@ vspeed=-2
             <string>gravity=0.2
 if place_meeting(x,y,par_terrain)
 {
-vspeed=-4
+vspeed=-3.5
 image_index=0
 }
 else{image_index=1}

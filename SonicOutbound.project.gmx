@@ -89,6 +89,7 @@
       <sound>sound\msc_menu</sound>
       <sound>sound\msc_menu2</sound>
       <sound>sound\msc_menu3</sound>
+      <sound>sound\msc_spiderman</sound>
       <sound>sound\msc_phantom_egg</sound>
       <sounds name="Zones">
         <sound>sound\msc_slz1</sound>
@@ -233,6 +234,7 @@
           <sprite>sprites\spr_sonic_breathe</sprite>
           <sprite>sprites\spr_sonic_death</sprite>
           <sprite>sprites\spr_sonic_drown</sprite>
+          <sprite>sprites\spr_sonic_vine</sprite>
           <sprite>sprites\spr_sonic_win</sprite>
         </sprites>
         <sprites name="Miles">
@@ -990,8 +992,9 @@
       <sprite>sprites\tile055</sprite>
       <sprite>sprites\tile056</sprite>
     </sprites>
+    <sprite>sprites\spr_vine_texture</sprite>
+    <sprite>sprites\spr_hsz_beach_ball</sprite>
     <sprite>sprites\spr_hsz_vine</sprite>
-    <sprite>sprites\spr_hsz_vine_m</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1123,6 +1126,7 @@
       <path>paths\pth_star_4</path>
       <path>paths\pth_star_5</path>
       <path>paths\pth_phantom_egg</path>
+      <path>paths\pth_vine</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -1326,7 +1330,11 @@
         <script>scripts\save_zonelist_select.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\draw_curve.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sha_red.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <fonts name="Menu">
       <font>fonts\fnt_monogram</font>
@@ -1872,6 +1880,8 @@
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
+    <object>objects\obj_enemy_destroy</object>
+    <object>objects\obj_hsz_beach_ball</object>
     <object>objects\obj_hsz_vine</object>
   </objects>
   <rooms name="rooms">
@@ -1963,7 +1973,7 @@
     <constant name="CS_SPRING_DIAGONAL">18</constant>
     <constant name="CS_TORNADO">19</constant>
     <constant name="CS_MEGA">20</constant>
-    <constant name="CS_3DLOOP">21</constant>
+    <constant name="CS_HANG">21</constant>
     <constant name="CS_WIN">-4</constant>
     <constant name="CS_HURT">-1</constant>
     <constant name="CS_DEATH">-2</constant>
