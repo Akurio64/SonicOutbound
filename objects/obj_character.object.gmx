@@ -342,6 +342,7 @@
     animation_timer           = 0; 
     draw_x                    = x;
     draw_y                    = y;
+    run                       = spr_sonic_walk
     if room=rm_t_intro{mania=true}else{mania=false}
 
 </string>
@@ -749,11 +750,12 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
        if(state == CS_DEFAULT &amp;&amp; x_speed == 0 &amp;&amp; animation_index != "SKID TURN" &amp;&amp; animation_index != "CROUCH_UP" &amp;&amp; animation_index != "LOOK_END")
        { 
           if(animation_index != "STAND" &amp;&amp;  animation_timer &lt; 288) { animation_index = "STAND";}
-          if(animation_index != "BORED_1" &amp;&amp; animation_timer = 288 &amp;&amp; animation_index != "BORED_2") { animation_index = "BORED_1"; }          
+          if(animation_index != "BORED_1" &amp;&amp; animation_timer = 288 &amp;&amp; animation_index != "BORED_2") { animation_index = "BORED_1"; }   
        }
     }
     
  // Standing state timer, to change to idle animations.
+ if(instance_exists(obj_drown_counter))=false{
     if(animation_index == "STAND")
     {
        if(animation_timer &lt; 288) {  animation_timer += 1; }
@@ -768,7 +770,7 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
        {
           animation_timer = 0;
        } 
-    }
+    }}else{animation_timer=0}
     
  // Change the animation speeds of the idle animations (once a certain frame has passed)
     if(animation_index == "BORED_1")
@@ -800,13 +802,15 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
        }
        }
        else{
-          if(animation_index != "WALK"  &amp;&amp; abs(x_speed) &lt; 3.75)                      
+          if((animation_index != "WALK" or animation_index != "WALK_W") &amp;&amp; abs(x_speed) &lt; 3.75)                      
           { 
-             animation_index = "WALK"; 
+             if physic_state == 0{
+       animation_index = "WALK"}
+       else{animation_index = "WALK_W"}
           }
           if(animation_index != "PEELOUT")
           {
-             if(animation_index != "JOG"   &amp;&amp; abs(x_speed) &gt;= 3.75 &amp;&amp; abs(x_speed) &lt; 6 &amp;&amp; ( (animation_index == "WALK" &amp;&amp; animation_frame &gt;= 2 &amp;&amp; animation_frame &lt;= 4 || animation_index != "WALK") )) 
+             if(animation_index != "JOG"   &amp;&amp; abs(x_speed) &gt;= 3.75 &amp;&amp; abs(x_speed) &lt; 6 &amp;&amp; ( ((animation_index == "WALK" or animation_index == "WALK_W") &amp;&amp; animation_frame &gt;= 2 &amp;&amp; animation_frame &lt;= 4 || (animation_index != "WALK" or animation_index != "WALK_W")) )) 
              { 
                 animation_index =  "JOG"; 
              }          
@@ -841,7 +845,7 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
  // Set the animation speed for walk, run, dashing and peelout:
     if(ground == true &amp;&amp; animation_index != "SKID TURN")
     {
-       if(animation_index == "WALK" || animation_index = "JOG")  { animation_speed = min(1, max(0.2+(abs(g_speed)*0.05))); }
+       if((animation_index == "WALK" or animation_index == "WALK_W") || animation_index = "JOG")  { animation_speed = min(1, max(0.2+(abs(g_speed)*0.05))); }
        if(animation_index == "RUN" || animation_index == "DASH") { animation_speed = 0.35+abs(x_speed)/25; }
        if(animation_index == "PEELOUT")
        {
@@ -861,7 +865,9 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     {
        if(peelout_timer &lt; 16)
        {
-          animation_index = "WALK";
+          if physic_state == 0{
+       animation_index = "WALK"}
+       else{animation_index = "WALK_W"}
        }
        else if(peelout_timer &gt;= 16 &amp;&amp; peelout_timer &lt; 32)
        {
@@ -1716,7 +1722,7 @@ part_emitter_burst(Star2,ie2,ip2,1)}
                 if(physic_state == 0)
                 {  
                    y_speed = -7;
-                }
+                }else{y_speed=-2.5}
                 angle       = 0;
                 death_timer = 128;
                 depth       = -999995;
@@ -2651,10 +2657,11 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
     character_state_jump();
     
  // Looking up:
-    character_state_look();
+ if(instance_exists(obj_drown_counter))=false{
+    character_state_look();}
     
  // Crouch:
-    character_state_crouch();
+    character_state_crouch()
     
  // Rolling:
     character_state_roll();
@@ -2900,7 +2907,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
                       }
                       
                    // Start playing the drowning jingle and create the count down.
-                      if(drown_timer == 650)
+                      if(drown_timer == 700)
                       {
                          // Audio:
                            if(global.ev_volume != 0.0)
@@ -2928,7 +2935,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
                       }
                       
                    // Alarm/Beeping sounds:
-                      if(drown_timer mod 400 == 0 &amp;&amp; drown_timer &gt; 650)
+                      if(drown_timer mod 400 == 0 &amp;&amp; drown_timer &gt; 700)
                       {
                          // Audio thing.
                             audio_play(_general_drown_alert, global.sfx_volume);
@@ -2999,7 +3006,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
                       }
                       
                    // Air bubbles:
-                      if(drown_timer mod 80 == 0 &amp;&amp; drown_timer &gt; 650)
+                      if(drown_timer mod 80 == 0 &amp;&amp; drown_timer &gt; 700)
                       {
                          // Bubble:
                             with(instance_create(x+irandom_range(-7, 8), y-6, obj_water_bubble_small))
@@ -3144,6 +3151,9 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
        draw_sprite_ext(spr_spindash_dust, current_time div 25, floor(draw_x-animation_direction*1), floor(draw_y), animation_direction, 1, 0, c_white, animation_alpha);
     }
 
+    if(instance_exists(obj_drown_counter)){
+    if animation_index="STAND"{draw_sprite_ext(spr_sonic_hold_b,0,floor(x),floor(y),animation_direction,1,animation_angle,c_white,1)}
+    run=spr_sonic_walk_h}else{if physic_state=0{run=spr_sonic_walk}else{run=spr_sonic_water}}
 </string>
           </argument>
         </arguments>

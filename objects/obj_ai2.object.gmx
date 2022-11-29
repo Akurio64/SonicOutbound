@@ -496,6 +496,14 @@
     }
     
  // Assign animation:
+ 
+ if(ground == false)
+ {
+ if animation_index="3DLOOP3"
+ {
+ animation_index="ROLL"
+ }
+ }
    
  // Standing, Idling:
     if(ground == true)
@@ -536,13 +544,33 @@
     {
        if(ground == true)
        {
-          if(animation_index != "WALK"  &amp;&amp; abs(x_speed) &lt; 3.75)                      
+       if place_meeting(x,y,par_3dloop)
+       {
+       var loopy
+       loopy=instance_nearest(x,y,obj_slz_3dloop).y+192
+       if (y &gt;= loopy &amp;&amp; y &lt;= (loopy+15))
+       {
+       animation_index="3DLOOP1"
+       }
+       else if (y &gt;= (loopy-32) &amp;&amp; y &lt;= (loopy))
+       {
+       animation_index="3DLOOP2"
+       }
+       else if (y &gt;= (loopy-64) &amp;&amp; y &lt;= (loopy-32))
+       {
+       animation_index="3DLOOP3"
+       }
+       }
+       else{
+          if((animation_index != "WALK" or animation_index != "WALK_W") &amp;&amp; abs(x_speed) &lt; 3.75)                      
           { 
-             animation_index = "WALK"; 
+             if physic_state == 0{
+       animation_index = "WALK"}
+       else{animation_index = "WALK_W"}
           }
           if(animation_index != "PEELOUT")
           {
-             if(animation_index != "JOG"   &amp;&amp; abs(x_speed) &gt;= 3.75 &amp;&amp; abs(x_speed) &lt; 6 &amp;&amp; ( (animation_index == "WALK" &amp;&amp; animation_frame &gt;= 2 &amp;&amp; animation_frame &lt;= 4 || animation_index != "WALK") )) 
+             if(animation_index != "JOG"   &amp;&amp; abs(x_speed) &gt;= 3.75 &amp;&amp; abs(x_speed) &lt; 6 &amp;&amp; ( ((animation_index == "WALK" or animation_index == "WALK_W") &amp;&amp; animation_frame &gt;= 2 &amp;&amp; animation_frame &lt;= 4 || (animation_index != "WALK" or animation_index != "WALK_W")) )) 
              { 
                 animation_index =  "JOG"; 
              }          
@@ -570,13 +598,14 @@
                 }
              }
           }   
-       }    
+       }   
     }
+}
     
  // Set the animation speed for walk, run, dashing and peelout:
     if(ground == true &amp;&amp; animation_index != "SKID TURN")
     {
-       if(animation_index == "WALK" || animation_index = "JOG")  { animation_speed = min(1, max(0.2+(abs(g_speed)*0.05))); }
+       if((animation_index == "WALK" or animation_index == "WALK_W") || animation_index = "JOG")  { animation_speed = min(1, max(0.2+(abs(g_speed)*0.05))); }
        if(animation_index == "RUN" || animation_index == "DASH") { animation_speed = 0.35+abs(x_speed)/25; }
        if(animation_index == "PEELOUT")
        {
@@ -596,7 +625,9 @@
     {
        if(peelout_timer &lt; 16)
        {
-          animation_index = "WALK";
+          if physic_state == 0{
+       animation_index = "WALK"}
+       else{animation_index = "WALK_W"}
        }
        else if(peelout_timer &gt;= 16 &amp;&amp; peelout_timer &lt; 32)
        {
@@ -773,6 +804,7 @@
           animation_index = "SLIDE";
        }
     }
+    
     
  // Respawn. 
     if(state == CS_RESPAWN &amp;&amp; character_id == CHAR_SONIC)

@@ -216,6 +216,8 @@
           <sprite>sprites\spr_sonic_crouch</sprite>
           <sprite>sprites\spr_sonic_crouch_up</sprite>
           <sprite>sprites\spr_sonic_walk</sprite>
+          <sprite>sprites\spr_sonic_water</sprite>
+          <sprite>sprites\spr_sonic_walk_h</sprite>
           <sprite>sprites\spr_sonic_jog</sprite>
           <sprite>sprites\spr_sonic_run</sprite>
           <sprite>sprites\spr_sonic_dash</sprite>
@@ -235,6 +237,7 @@
           <sprite>sprites\spr_sonic_death</sprite>
           <sprite>sprites\spr_sonic_drown</sprite>
           <sprite>sprites\spr_sonic_vine</sprite>
+          <sprite>sprites\spr_sonic_hold_b</sprite>
           <sprite>sprites\spr_sonic_win</sprite>
         </sprites>
         <sprites name="Miles">
@@ -441,9 +444,6 @@
             <sprite>sprites\spr_chopper</sprite>
             <sprite>sprites\spr_crabmeat</sprite>
             <sprite>sprites\spr_crabmeat_shoot</sprite>
-            <sprites name="Projectiles">
-              <sprite>sprites\spr_crabmeat_projectile</sprite>
-            </sprites>
           </sprites>
           <sprites name="Effects">
             <sprite>sprites\spr_badnik_explosion</sprite>
@@ -469,7 +469,16 @@
           </sprites>
           <sprites name="HSZ">
             <sprite>sprites\spr_hsz_bouncer_body</sprite>
+            <sprite>sprites\spr_hsz_dolphin_1</sprite>
+            <sprite>sprites\spr_hsz_coconuts</sprite>
+            <sprite>sprites\spr_hsz_frog</sprite>
+            <sprite>sprites\spr_hsz_liftor</sprite>
+            <sprite>sprites\spr_hsz_dolphin_2</sprite>
             <sprite>sprites\spr_hsz_bouncer_spring</sprite>
+          </sprites>
+          <sprites name="Projectiles">
+            <sprite>sprites\spr_coconut_projectile</sprite>
+            <sprite>sprites\spr_crabmeat_projectile</sprite>
           </sprites>
         </sprites>
         <sprites name="Springs">
@@ -668,6 +677,10 @@
           <sprite>sprites\spr_test_break_wall_pieces</sprite>
           <sprite>sprites\spr_test_break_wall</sprite>
           <sprite>sprites\spr_mask_null</sprite>
+        </sprites>
+        <sprites name="HSZ">
+          <sprite>sprites\spr_hsz_beach_ball</sprite>
+          <sprite>sprites\spr_hsz_vine</sprite>
         </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
@@ -992,9 +1005,7 @@
       <sprite>sprites\tile055</sprite>
       <sprite>sprites\tile056</sprite>
     </sprites>
-    <sprite>sprites\spr_hsz_beach_ball</sprite>
-    <sprite>sprites\spr_hsz_vine</sprite>
-    <sprite>sprites\spr_hsz_liftor</sprite>
+    <sprite>sprites\spr_hsz_coco_tree</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1126,7 +1137,6 @@
       <path>paths\pth_star_4</path>
       <path>paths\pth_star_5</path>
       <path>paths\pth_phantom_egg</path>
-      <path>paths\pth_vine</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -1412,11 +1422,15 @@
           <objects name="Projectiles">
             <object>objects\obj_crabmeat_projectile</object>
             <object>objects\obj_slz_proj</object>
+            <object>objects\obj_missile_coconut</object>
             <object>objects\obj_badnik_debris</object>
           </objects>
           <objects name="HSZ">
             <object>objects\obj_hsz_bouncer_2</object>
+            <object>objects\obj_hsz_coconuts</object>
             <object>objects\obj_hsz_bouncer_1</object>
+            <object>objects\obj_hsz_dolphin</object>
+            <object>objects\obj_hsz_frog</object>
             <object>objects\obj_hsz_liftor</object>
           </objects>
         </objects>
@@ -1593,6 +1607,13 @@
           <object>objects\obj_collapsing_template</object>
           <object>objects\par_collapsing_terrain_tiles</object>
           <object>objects\par_collapsing_terrain</object>
+        </objects>
+        <objects name="HSZ">
+          <object>objects\obj_hsz_beach_ball</object>
+          <object>objects\obj_hsz_cocos</object>
+          <object>objects\obj_hsz_coco_tree</object>
+          <object>objects\obj_enemy_destroy</object>
+          <object>objects\obj_hsz_vine</object>
         </objects>
       </objects>
       <objects name="Interface">
@@ -1881,9 +1902,6 @@
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
-    <object>objects\obj_enemy_destroy</object>
-    <object>objects\obj_hsz_beach_ball</object>
-    <object>objects\obj_hsz_vine</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">

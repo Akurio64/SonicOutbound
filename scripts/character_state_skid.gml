@@ -13,7 +13,9 @@
        {
           if(state == CS_SKID)
           {
-             animation_next = "WALK";           
+             if physic_state == 0{
+       animation_next = "WALK"}
+       else{animation_next = "WALK_W"}          
           }
        }    
        else
@@ -27,7 +29,9 @@
        {
           if(animation_flag == "END" || animation_frame > 2)
           { 
-             animation_index     = "WALK";
+             if physic_state == 0{
+       animation_index = "WALK"}
+       else{animation_index = "WALK_W"}
              animation_direction = -skid_direction;
           }
        }
@@ -75,7 +79,7 @@
     if (state == CS_SKID)
     {
         // Return to the normal state
-        if ((animation_index == "SKID TURN" || animation_index = "WALK" ) && animation_flag == "END") 
+        if ((animation_index == "SKID TURN" || animation_index = "WALK" || animation_index = "WALK_W" ) && animation_flag == "END") 
         {
             if (!input_left && !input_right) 
             {
@@ -134,7 +138,7 @@
      }
 
  // Cancel skid.
-    if((sign(x_speed) == 0 || animation_index = "WALK" || (angle_relative >= 25 && angle_relative <= 315)))
+    if((sign(x_speed) == 0 || animation_index = "WALK" || animation_index = "WALK_W" ||(angle_relative >= 25 && angle_relative <= 315)))
     {
        if(state == CS_SKID)
        {

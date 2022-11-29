@@ -67,7 +67,9 @@
     if((state == CS_SPRING || state == CS_SPRING_DIAGONAL) && y_speed >= 0)
     {
        state           = CS_DEFAULT;
-       animation_index = "WALK";
+       if physic_state == 0{
+       animation_index = "WALK"}
+       else{animation_index = "WALK_W"}
     }
     
  // Disable flags we previously changed after landing.

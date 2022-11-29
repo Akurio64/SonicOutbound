@@ -16,7 +16,8 @@
        set_animation("CROUCH",        spr_sonic_crouch, 0.6,   3, 0,  0, "", 0);    
        set_animation("CROUCH_UP",  spr_sonic_crouch_up, 0.40,  1, 0,  0, "STAND", 0);   
        set_animation("PUSH",            spr_sonic_push, 0.15,  9, 0, -1, "", 0);         
-       set_animation("WALK",            spr_sonic_walk, 0.25, 11, 0, -1, "", 0); 
+       set_animation("WALK",            run, 0.25, 11, 0, -1, "", 0); 
+       set_animation("WALK_W",          run, 0.25, 11, 0, -1, "", 0); 
        set_animation("JOG",              spr_sonic_jog, 0.25,  9, 0, -1, "", 0);    
        set_animation("RUN",              spr_sonic_run, 0.25,  7, 0, -1, "", 0);  
        set_animation("DASH",            spr_sonic_dash, 0.25,  4, 1, -1, "", 0);      
@@ -33,7 +34,7 @@
        set_animation("HURT",            spr_sonic_hurt, 0.18,  4, 3, -1, "", 0); 
        set_animation("BREATHE",      spr_sonic_breathe, 0.20,  5, 0,  0, "WALK", 0);              
        set_animation("DEATH",          spr_sonic_death,    0,  0, 0, -1, "", 0);        
-       set_animation("DROWN",          spr_sonic_drown,    0,  0, 0, -1, "", 0);    
+       set_animation("DROWN",          spr_sonic_drown,    0.1,  4, 4, 0, "", 0);    
        set_animation("WIN",              spr_sonic_win,  0.3,  47, 37, -1, "", 0);  
     }
 

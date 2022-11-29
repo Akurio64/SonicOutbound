@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ctr_camera.Camera_ShakeScreen   = true;
+            <string>if(in_view())
+{
+ctr_camera.Camera_ShakeScreen   = true;
 ctr_camera.Camera_ShakeDuration = 20;
-ctr_camera.Camera_ShakeForce    = 2;
+ctr_camera.Camera_ShakeForce    = 2;}
 </string>
           </argument>
         </arguments>
