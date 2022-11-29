@@ -1006,6 +1006,10 @@
       <sprite>sprites\tile056</sprite>
     </sprites>
     <sprite>sprites\spr_hsz_coco_tree</sprite>
+    <sprite>sprites\sprite595</sprite>
+    <sprite>sprites\sprite596</sprite>
+    <sprite>sprites\spr_hsz_wrecking</sprite>
+    <sprite>sprites\spr_hsz_wrecking_mask</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1250,6 +1254,8 @@
         <script>scripts\draw_sprite_tiled_vertical.gml</script>
         <script>scripts\safe_division.gml</script>
         <script>scripts\interpolate_values.gml</script>
+        <script>scripts\draw_curve.gml</script>
+        <script>scripts\bounce_object.gml</script>
         <script>scripts\wrap_value.gml</script>
         <script>scripts\draw_text_color_selected.gml</script>
         <script>scripts\string_change_if.gml</script>
@@ -1340,7 +1346,6 @@
         <script>scripts\save_zonelist_select.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\draw_curve.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sha_red.shader</shader>
@@ -1902,6 +1907,7 @@
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
+    <object>objects\object365</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">

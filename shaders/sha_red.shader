@@ -29,6 +29,6 @@ void main()
     vec4 Color = texture2D( gm_BaseTexture, v_vTexcoord );
     vec3 lum = vec3(0.299, 0.587, 0.114);
     float bw = dot( Color.rgb, lum);//black and white result
-    gl_FragColor = vec4( vec3(bw,0.0,0.0), Color.a);
+    gl_FragColor = vec4( vec3(bw,0.5,0.5), Color.a);
 }
 
