@@ -413,16 +413,16 @@ part_system_depth(FireP,0);
 
 // define the particle
 fp = part_type_create();
-part_type_shape(fp,pt_shape_flare);
-part_type_size(fp,0.2,0.3,-.001,0);
-part_type_scale(fp,1,1);
-part_type_colour2(fp,c_orange,c_red);
-part_type_alpha2(fp,0.75,0.5);
+part_type_sprite(fp,spr_fire,0,0,1);
+part_type_size(fp,0.2,0.3,-.05,0);
+part_type_orientation(fp,0,360,2,0,0);
+part_type_color2(fp,c_orange,c_red);
+part_type_alpha3(fp,1,1,0);
+part_type_blend(fp,1);
 part_type_speed(fp,.1,.5,0,0);
 part_type_direction(fp,0,359,0,0);
 part_type_gravity(fp,0.02,90);
 part_type_orientation(fp,0,359,10,0,true);
-part_type_blend(fp,true);
 part_type_life(fp,50,125);
 
 // define the emitter
@@ -3154,29 +3154,6 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
     if(instance_exists(obj_drown_counter)){
     if animation_index="STAND"{draw_sprite_ext(spr_sonic_hold_b,0,floor(x),floor(y),animation_direction,1,animation_angle,c_white,1)}
     run=spr_sonic_walk_h}else{if physic_state=0{run=spr_sonic_walk}else{run=spr_sonic_water}}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="50">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>shader_set(sha_red)
 </string>
           </argument>
         </arguments>

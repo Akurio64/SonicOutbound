@@ -26,30 +26,54 @@
           <argument>
             <kind>1</kind>
             <string>off=-100
-warning=0
 alarm[0]=1
 image_alpha=0
 
-// define the particle system
-FirstParticleSystem = part_system_create()
+//call the particle creation script
+//set up the particle system
+global.partsys_fire = part_system_create();
+part_system_depth(global.partsys_fire,depth-1);
 
-// define the depth of the particle system
-part_system_depth(FirstParticleSystem,depth+1);
+//set up the basic fire particle
+global.part_fire = part_type_create();
 
-// define the particle
-first_particle = part_type_create();
-part_type_shape(first_particle,pt_shape_flare);
-part_type_size(first_particle,0.5,2,-.001,0);
-part_type_scale(first_particle,1,1);
-part_type_colour2(first_particle,c_orange,c_red);
-part_type_alpha2(first_particle,0.75,1);
-part_type_speed(first_particle,.2,5,0.1,0);
-part_type_direction(first_particle,0,0,0,0);
-part_type_blend(first_particle,true);
-part_type_life(first_particle,50,125);
+    //how it looks
+    part_type_sprite(global.part_fire,spr_fire,0,0,1);
+    part_type_size(global.part_fire,1.5,3,-.05,0);
+    part_type_orientation(global.part_fire,0,360,2,0,0);
+    part_type_color2(global.part_fire,c_orange,c_red);
+    part_type_alpha3(global.part_fire,1,1,0);
+    part_type_blend(global.part_fire,1);
+    
+    //how it moves
+    part_type_direction(global.part_fire,5,355,0,0);
+    part_type_speed(global.part_fire,2,10,-.1,0);
 
-// define the emitter
-first_emitter = part_emitter_create(FirstParticleSystem);
+    //how long it lasts
+    part_type_life(global.part_fire,25,35);
+    
+//set up an extra cinder particle for a nice added effect
+global.part_cinder = part_type_create();
+
+    //how it looks
+    part_type_sprite(global.part_cinder,spr_cinder,0,0,1);
+    part_type_size(global.part_cinder,.5,.75,-.001,0);
+    part_type_orientation(global.part_cinder,0,360,.05,0,0);
+    part_type_color2(global.part_cinder,c_orange,c_red);
+    part_type_alpha3(global.part_cinder,1,1,0);
+    part_type_blend(global.part_cinder,1);
+    
+    //how it moves
+    part_type_direction(global.part_cinder,85,125,.01,.01);
+    part_type_speed(global.part_cinder,6,8,0,0);
+
+    //how long it lasts
+    part_type_life(global.part_cinder,45,75);
+    
+
+//set up the particle emitter
+my_emitter = part_emitter_create(global.partsys_fire);
+
 
 
 </string>
@@ -75,13 +99,10 @@ first_emitter = part_emitter_create(FirstParticleSystem);
           <argument>
             <kind>1</kind>
             <string>if obj_tmz_escape.tou=true{
-off+=0.5
+off+=0.3
 
 //define the emitter region
-part_emitter_region(FirstParticleSystem,first_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_linear);
-
-//start the emitter
-part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,15);}
+part_emitter_region(global.partsys_fire,my_emitter,view_xview-96+off,view_xview+96+off,view_yview-240,view_yview+480,ps_shape_rectangle,ps_distr_linear);}
 </string>
           </argument>
         </arguments>
@@ -131,8 +152,12 @@ if(x_speed &lt; 0)
                                     }
                                  }
                               }}
-else{x_speed=lerp(x_speed,18,0.001);visible=false}
+else{x_speed=lerp(x_speed,18,0.0025);visible=false}
 }
+
+//start the particle streams
+part_emitter_burst(global.partsys_fire,my_emitter,global.part_fire,10);
+part_emitter_burst(global.partsys_fire,my_emitter,global.part_cinder,-5);
 </string>
           </argument>
         </arguments>

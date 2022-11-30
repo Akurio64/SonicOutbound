@@ -671,6 +671,8 @@
               <sprite>sprites\spr_tmz_lockon</sprite>
               <sprite>sprites\spr_tmz_missile</sprite>
             </sprites>
+            <sprite>sprites\spr_cinder</sprite>
+            <sprite>sprites\spr_fire</sprite>
           </sprites>
         </sprites>
         <sprites name="Break Walls">
@@ -1349,6 +1351,7 @@
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sha_red.shader</shader>
+    <shader type="GLSLES">shaders\shader1.shader</shader>
   </shaders>
   <fonts name="fonts">
     <fonts name="Menu">
@@ -1603,6 +1606,7 @@
             <object>objects\obj_tmz_escape</object>
             <object>objects\obj_tmz_fade</object>
             <object>objects\obj_tmz_ending</object>
+            <object>objects\obj_tmz_shader</object>
             <object>objects\obj_tmz_chain</object>
             <object>objects\obj_tmz_alarm</object>
             <object>objects\obj_tmz_chain_drop</object>
@@ -1615,7 +1619,6 @@
         </objects>
         <objects name="HSZ">
           <object>objects\obj_hsz_beach_ball</object>
-          <object>objects\obj_hsz_cocos</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>

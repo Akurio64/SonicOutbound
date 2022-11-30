@@ -2,7 +2,7 @@
 // Simple passthrough vertex shader
 //
 attribute vec3 in_Position;                  // (x,y,z)
-//attribute vec3 in_Normal;                  // (x,y,z)     unused in this shader.
+//attribute vec3 in_Normal;                  // (x,y,z)     unused in this shader.	
 attribute vec4 in_Colour;                    // (r,g,b,a)
 attribute vec2 in_TextureCoord;              // (u,v)
 
@@ -26,9 +26,6 @@ varying vec4 v_vColour;
 
 void main()
 {
-    vec4 Color = texture2D( gm_BaseTexture, v_vTexcoord );
-    vec3 lum = vec3(0.299, 0.587, 0.114);
-    float bw = dot( Color.rgb, lum);//black and white result
-    gl_FragColor = vec4( vec3(bw,0.0,0.0), Color.a);
-    gl_FragColor.rgb *= vec3(2.0,2.0,2.0);
+    gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 }
+

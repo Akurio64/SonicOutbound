@@ -28,7 +28,7 @@
             <string>texture=sprite_get_texture(sprite_index,image_index)
 radius=16
 quality=16
-bounce=0.25
+bounce=0.1
 image_xscale=radius/80
 image_yscale=image_xscale
 </string>
@@ -82,13 +82,13 @@ y=clamp(y,0,room_height)
             <kind>1</kind>
             <string>if !place_meeting(x, y + 1, par_terrain)
    {
-   gravity = 0.05;
+   gravity = 0.075;
    friction=0
    }
 else
    {
    if vspeed&gt;0{
-   vspeed = -vspeed*0.95;
+   vspeed=-vspeed*0.9
    }
    gravity = 0;
    friction=0.2
@@ -108,6 +108,7 @@ else
 if(y &lt; 0  or  y &gt;= room_height) {
     vspeed=-vspeed
 }
+
 
 </string>
           </argument>
@@ -157,8 +158,8 @@ if(y &lt; 0  or  y &gt;= room_height) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=par_character.x_speed*1.5
-vspeed=par_character.y_speed*1.5
+            <string>hspeed=par_character.x_speed*2
+vspeed=par_character.y_speed*1.25
 </string>
           </argument>
         </arguments>
