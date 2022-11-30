@@ -1258,6 +1258,7 @@
         <script>scripts\interpolate_values.gml</script>
         <script>scripts\draw_curve.gml</script>
         <script>scripts\bounce_object.gml</script>
+        <script>scripts\roll_object.gml</script>
         <script>scripts\wrap_value.gml</script>
         <script>scripts\draw_text_color_selected.gml</script>
         <script>scripts\string_change_if.gml</script>
@@ -1619,6 +1620,7 @@
         </objects>
         <objects name="HSZ">
           <object>objects\obj_hsz_beach_ball</object>
+          <object>objects\object366</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>

@@ -244,11 +244,42 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Continue
+
+if(bonus_total &gt;= 10000)
+    {
+       if(bonus_continue == 0)
+       {
+          bonus_continue = 1;
+          global.ccontinues += 1;
+          audio_play(_ev_life, global.sfx_volume);        
+       }
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Text Positions &amp; Counting.
     
-    if(going_out == 0)
+   if(going_out == 0)
     {
-       if(result_gfx_position[0] &lt; 0)
+      /* if(result_gfx_position[0] &lt; 0)
        {
           result_gfx_position[0] += 10;
        }
@@ -285,7 +316,21 @@
        else
        {
           result_gfx_position[4] = 0;              
-       }       
+       } */
+       
+    var time=0
+    var limit=0
+    
+    if (time &lt; limit) {
+     time += 1;
+    }
+    var p = time / limit;  
+   
+    result_gfx_position[0]        = lerp(-global.display_width,0,p)
+    result_gfx_position[1]        =  lerp(global.display_width,0,p)  
+    result_gfx_position[2]        =  lerp(global.display_width+30,0,p)
+    result_gfx_position[3]        =  lerp(global.display_width+60,0,p)
+    result_gfx_position[4]        =  lerp(global.display_width+90,0,p)
        if(result_gfx_position[0] == 0 &amp;&amp; result_gfx_position[1] == 0 &amp;&amp; result_gfx_position[2] == 0 &amp;&amp;
           result_gfx_position[4] == 0 &amp;&amp; result_gfx_position_completed == false)
        {
@@ -378,37 +423,6 @@
           } 
     }       
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Continue
-
-if(bonus_total &gt;= 10000)
-    {
-       if(bonus_continue == 0)
-       {
-          bonus_continue = 1;
-          global.ccontinues += 1;
-          audio_play(_ev_life, global.sfx_volume);        
-       }
-    }
 </string>
           </argument>
         </arguments>
