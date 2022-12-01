@@ -100,3 +100,5 @@ for (i=0;i<blob_q;i+=1){
 d=degtorad(blob_a)+pi/2
 draw_vertex_texture(x,y-blob_l[0],0.5*(1+cos(d)),0.5*(1-sin(d)))
 draw_primitive_end()
+
+image_angle=degtorad(blob_a)+pi/2

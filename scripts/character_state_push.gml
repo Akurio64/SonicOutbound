@@ -33,3 +33,25 @@
       }       
     }   
 
+/* Move Pushable objects: */
+if(state == CS_PUSH)
+{
+ push_handle[0] = character_collision_check(COL_LEFT_OBJECT, MASK_MAIN, x, y, angle, par_push);
+ push_handle[1] = character_collision_check(COL_RIGHT_OBJECT, MASK_MAIN, x, y, angle, par_push);
+ 
+ if( push_handle[0] != noone )
+ {
+  if( push_handle[0].push_left == true  && push_handle[0]._ground_)
+  {
+  x -= 0.50; push_handle[0].x -= 0.50;
+  };
+ };
+ 
+ if( push_handle[1] != noone)
+ {
+  if( push_handle[1].push_right == true  && push_handle[1]._ground_ )
+  { 
+  x += 0.50; push_handle[1].x += 0.50;
+  };
+ };  
+};

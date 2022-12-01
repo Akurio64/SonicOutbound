@@ -92,9 +92,9 @@
     <instance objName="obj_hsz_frog" x="776" y="176" name="inst_4BEFFBB9" locked="0" code="image_xscale=-1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_frog" x="896" y="176" name="inst_75E0193D" locked="0" code="image_xscale=1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_coco_tree" x="120" y="64" name="inst_A7FC0F4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object366" x="160" y="160" name="inst_6ED10E12" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goofy_3" x="2416" y="192" name="inst_A98B12DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goofy_3" x="2640" y="416" name="inst_7D50B9F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="par_push" x="176" y="184" name="inst_2483CC04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tlz_hsz_bush_2" x="1248" y="56" w="96" h="96" xo="192" yo="0" id="10004755" name="inst_4E9259CF" depth="102" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

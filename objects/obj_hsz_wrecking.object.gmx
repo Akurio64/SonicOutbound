@@ -5,26 +5,12 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>par_solid</parentName>
-  <maskName>spr_hsz_wrecking_mask</maskName>
+  <parentName>par_obstacle</parentName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -39,40 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
+            <string>event_inherited()
 texture=sprite_get_texture(sprite_index,image_index)
 radius=32
 quality=16
-bounce=0
+bounce=0.25
 image_xscale=radius/80
 image_yscale=image_xscale
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hspeed=hspeed*0.99
-hspeed=clamp(hspeed,-7.5,7.5)
-x=clamp(x,0,room_width)
-y=clamp(y,0,room_height)
 </string>
           </argument>
         </arguments>
@@ -95,68 +54,18 @@ y=clamp(y,0,room_height)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gravity=0.2
-   
+            <string>x=floor(x)
+y=round(y)
+gravity=0.25
+vspeed=vspeed*0.95
 
-   
-   
-   
-   if( x &lt; 0  or  x &gt;= room_width) {
-    hspeed=-hspeed
-}
-if(y &lt; 0  or  y &gt;= room_height) {
-    vspeed=-vspeed
-}
+if hspeed=0{
+if place_meeting(x,y,par_character)
+{
+hspeed=par_character.animation_direction/2
+par_character.x+=par_character.animation_direction/2
+}}
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_terrain">
-      <action>
-        <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_character">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>x+=keyboard_check(vk_right)-keyboard_check(vk_left)
 </string>
           </argument>
         </arguments>

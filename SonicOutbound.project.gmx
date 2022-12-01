@@ -1151,6 +1151,10 @@
         <scripts name="Collision">
           <script>scripts\character_collision.gml</script>
           <script>scripts\character_collision_check.gml</script>
+          <scripts name="Sides">
+            <script>scripts\character_collision_right_object.gml</script>
+            <script>scripts\character_collision_left_object.gml</script>
+          </scripts>
         </scripts>
         <scripts name="Angle">
           <script>scripts\character_calculate_angle.gml</script>
@@ -1513,8 +1517,6 @@
             <object>objects\obj_water_bubble_medium</object>
             <object>objects\obj_water_bubble_large</object>
           </objects>
-          <object>objects\obj_g_create</object>
-          <object>objects\obj_geyser</object>
         </objects>
         <objects name="Misc.">
           <object>objects\obj_dummy_effect</object>
@@ -1619,8 +1621,10 @@
           <object>objects\par_collapsing_terrain</object>
         </objects>
         <objects name="HSZ">
+          <object>objects\obj_g_create</object>
+          <object>objects\obj_geyser</object>
           <object>objects\obj_hsz_beach_ball</object>
-          <object>objects\object366</object>
+          <object>objects\obj_hsz_wrecking</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>
@@ -1654,6 +1658,7 @@
         <objects name="Parents">
           <object>objects\par_terrain</object>
           <object>objects\par_solid</object>
+          <object>objects\par_push</object>
           <object>objects\par_platform</object>
           <object>objects\par_obstacle</object>
           <object>objects\par_layer_low</object>

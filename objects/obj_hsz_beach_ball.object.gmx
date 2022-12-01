@@ -80,7 +80,7 @@ y=clamp(y,0,room_height)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed+=0.05
+            <string>vspeed+=0.1
 
 if( x &lt; 0  or  x &gt;= room_width) {
     hspeed=-hspeed
@@ -138,8 +138,8 @@ if(y &lt; 0  or  y &gt;= room_height) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=par_character.x_speed*2
-vspeed=par_character.y_speed*1.25
+            <string>direction=point_direction(par_character.x,par_character.y,par_character.x+par_character.x_speed,par_character.y+par_character.y_speed)
+speed=5
 </string>
           </argument>
         </arguments>
