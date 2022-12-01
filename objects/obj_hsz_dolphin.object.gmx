@@ -163,14 +163,9 @@ else{if image_xscale=-1{
 image_angle += angle_difference(point_direction(x+hspeed,y+vspeed,x,y),image_angle) * 0.1}
 else{image_angle += angle_difference(point_direction(x,y,x+hspeed,y+vspeed),image_angle) * 0.1}}
 var time=0
-var limit=5
+var limit=0
 
-if (time &lt; limit) {
-  time += 1;
-}
-var p = time / limit;
-
-x=lerp(x,xx,p)
+x=lerp(x,xx,0.1)
 
 </string>
           </argument>

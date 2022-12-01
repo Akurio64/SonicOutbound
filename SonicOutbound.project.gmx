@@ -1008,10 +1008,10 @@
       <sprite>sprites\tile056</sprite>
     </sprites>
     <sprite>sprites\spr_hsz_coco_tree</sprite>
-    <sprite>sprites\sprite595</sprite>
     <sprite>sprites\sprite596</sprite>
     <sprite>sprites\spr_hsz_wrecking</sprite>
     <sprite>sprites\spr_hsz_wrecking_mask</sprite>
+    <sprite>sprites\spr_hsz_elastic</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1248,6 +1248,7 @@
     </scripts>
     <scripts name="Engine">
       <scripts name="Utils / GML Extension">
+        <script>scripts\draw_sprite_bent.gml</script>
         <script>scripts\wrap_angle.gml</script>
         <script>scripts\rotate_towards.gml</script>
         <script>scripts\string_place_number.gml</script>
@@ -1267,6 +1268,7 @@
         <script>scripts\draw_text_color_selected.gml</script>
         <script>scripts\string_change_if.gml</script>
         <script>scripts\draw_number_zero.gml</script>
+        <script>scripts\get_points_from_bend.gml</script>
       </scripts>
       <scripts name="Audio">
         <script>scripts\audio_play.gml</script>
@@ -1354,10 +1356,6 @@
       </scripts>
     </scripts>
   </scripts>
-  <shaders name="shaders">
-    <shader type="GLSLES">shaders\sha_red.shader</shader>
-    <shader type="GLSLES">shaders\shader1.shader</shader>
-  </shaders>
   <fonts name="fonts">
     <fonts name="Menu">
       <font>fonts\fnt_monogram</font>
@@ -1625,6 +1623,7 @@
           <object>objects\obj_geyser</object>
           <object>objects\obj_hsz_beach_ball</object>
           <object>objects\obj_hsz_wrecking</object>
+          <object>objects\obj_hsz_elastic</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>

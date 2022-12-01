@@ -279,7 +279,7 @@ if(bonus_total &gt;= 10000)
     
    if(going_out == 0)
     {
-      /* if(result_gfx_position[0] &lt; 0)
+      if(result_gfx_position[0] &lt; 0)
        {
           result_gfx_position[0] += 10;
        }
@@ -316,21 +316,13 @@ if(bonus_total &gt;= 10000)
        else
        {
           result_gfx_position[4] = 0;              
-       } */
-       
-    var time=0
-    var limit=0
-    
-    if (time &lt; limit) {
-     time += 1;
-    }
-    var p = time / limit;  
+       } 
    
-    result_gfx_position[0]        = lerp(-global.display_width,0,p)
-    result_gfx_position[1]        =  lerp(global.display_width,0,p)  
-    result_gfx_position[2]        =  lerp(global.display_width+30,0,p)
-    result_gfx_position[3]        =  lerp(global.display_width+60,0,p)
-    result_gfx_position[4]        =  lerp(global.display_width+90,0,p)
+    /*result_gfx_position[0]        = lerp(-global.display_width,0,0.1)
+    result_gfx_position[1]        =  lerp(global.display_width,0,0.1)  
+    result_gfx_position[2]        =  lerp(global.display_width+30,0,0.1)
+    result_gfx_position[3]        =  lerp(global.display_width+60,0,0.1)
+    result_gfx_position[4]        =  lerp(global.display_width+90,0,0.1)*/
        if(result_gfx_position[0] == 0 &amp;&amp; result_gfx_position[1] == 0 &amp;&amp; result_gfx_position[2] == 0 &amp;&amp;
           result_gfx_position[4] == 0 &amp;&amp; result_gfx_position_completed == false)
        {

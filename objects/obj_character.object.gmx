@@ -812,15 +812,15 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
           {
              if(animation_index != "JOG"   &amp;&amp; abs(x_speed) &gt;= 3.75 &amp;&amp; abs(x_speed) &lt; 6 &amp;&amp; ( ((animation_index == "WALK" or animation_index == "WALK_W") &amp;&amp; animation_frame &gt;= 2 &amp;&amp; animation_frame &lt;= 4 || (animation_index != "WALK" or animation_index != "WALK_W")) )) 
              { 
-                animation_index =  "JOG"; 
+                if physic_state=0{animation_index =  "JOG"}
              }          
              if(animation_index != "RUN"   &amp;&amp; abs(x_speed) &gt;= 6 &amp;&amp; abs(x_speed) &lt; 12) 
              { 
-                animation_index =  "RUN";
+                if physic_state=0{animation_index =  "RUN"}
              }      
              if(animation_index != "DASH"  &amp;&amp; abs(x_speed) &gt;= 12 ) 
              { 
-                animation_index = "DASH"; 
+                if physic_state=0{animation_index = "DASH"}
              }
           }  
           else

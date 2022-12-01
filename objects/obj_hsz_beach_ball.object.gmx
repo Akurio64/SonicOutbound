@@ -139,7 +139,7 @@ if(y &lt; 0  or  y &gt;= room_height) {
           <argument>
             <kind>1</kind>
             <string>direction=point_direction(par_character.x,par_character.y,par_character.x+par_character.x_speed,par_character.y+par_character.y_speed)
-speed=5
+speed=8
 </string>
           </argument>
         </arguments>
