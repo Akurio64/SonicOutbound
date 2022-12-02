@@ -1362,6 +1362,7 @@
     </fonts>
   </fonts>
   <objects name="objects">
+    <object>objects\init_audio</object>
     <object>objects\init_hzumi</object>
     <objects name="Gameplay">
       <objects name="Character">
@@ -1624,6 +1625,7 @@
           <object>objects\obj_hsz_beach_ball</object>
           <object>objects\obj_hsz_wrecking</object>
           <object>objects\obj_hsz_elastic</object>
+          <object>objects\obj_hsz_elastic_grip</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>
@@ -1921,6 +1923,7 @@
   <rooms name="rooms">
     <rooms name="Startup">
       <room>rooms\rm_init</room>
+      <room>rooms\rm_audio</room>
       <room>rooms\rm_sega</room>
       <room>rooms\rm_p255</room>
       <room>rooms\rm_sage</room>
@@ -2035,6 +2038,11 @@
   <help>
     <rtf>help.rtf</rtf>
   </help>
+  <audiogroups name="audiogroups">
+    <audiogroup name="audiogroup_default"/>
+    <audiogroup name="Music"/>
+    <audiogroup name="Sound"/>
+  </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
     <TutorialName></TutorialName>

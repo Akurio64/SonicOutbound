@@ -120,7 +120,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Init. Variables.
+            <string>
+/// Init. Variables.
 
  // First, check if the configuration folder exists. If it doesn't, create it to prevent the game from closing.
  //////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -135,6 +136,8 @@
     
  // Settings:
  ////////////////////////////////////////////////////////////////////////////////////////////////////     
+    
+    
     if(file_exists(working_directory+"\Engine\Config\Display.hzc") == false)
     {
        // Display:
@@ -337,7 +340,6 @@
  // Done, go to the next room.
  //////////////////////////////////////////////////////////////////////////////////////////////////// 
     alarm[2] = 10;
-    
 </string>
           </argument>
         </arguments>

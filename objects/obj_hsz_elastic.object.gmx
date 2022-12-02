@@ -30,6 +30,8 @@ vertex_format_add_position();
 vertex_format_add_colour();
 vertex_format_add_textcoord();
 global.vf = vertex_format_end();
+instance_create(x,y,obj_hsz_elastic_grip)
+triggered=false
 angle=0
 x_=x
 y_=y
@@ -55,15 +57,23 @@ y_=y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y,par_character){
-angle=lerp(angle,-64*sign(x-par_character.x),0.05)}
+            <string>if triggered=true{
+angle=lerp(angle,-64,0.05)}
 else{angle=lerp(angle,0,0.05)}
 
-var coords=draw_sprite_bent(global.vf, sprite_index, image_index, xstart, ystart, xstart, ystart+48, angle, 40, 1, 1, 0, c_white, 1);
+var coords=draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y+84, angle, 40, 1, 1, 0, c_white, 1);
 var points=get_points_from_bend(coords,0.5)
 
-x_ = points[8,0];
-y_ = points[8,1];
+x_ = points[7,0];
+y_ = points[7,1];
+
+if instance_exists(obj_hsz_elastic_grip)
+{
+obj_hsz_elastic_grip.x=x_
+obj_hsz_elastic_grip.y=y_
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -86,8 +96,7 @@ y_ = points[8,1];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y+48, angle, 40, 1, 1, 0, c_white, 1);
-draw_sprite(spr_hsz_vine,0,x_,y_)
+            <string>draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y+84, angle, 40, 1, 1, 0, c_white, 1);
 </string>
           </argument>
         </arguments>
