@@ -27,12 +27,13 @@
             <kind>1</kind>
             <string>jump=3
 alarm[0]=1
-x_x=0
-y_y=0
 go=1
 s=true
+move=false
 idle=false
 mis=false
+time=0
+m=0
 global.crings=18
 audio_play(_tmz_shield, global.sfx_volume);
 
@@ -285,9 +286,8 @@ alarm[4]=20}else{go=0}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (irandom((hp/3)) == 1){
-alarm[0]=150;state=10;}
-else{alarm[1]=150}
+            <string>alarm[choose(0,1)]=150
+if alarm[0]!=-1{state=10}
 idle=true
 s=true
 
@@ -348,10 +348,10 @@ mis=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>path_end()
-state=0
-if jump&lt;3{vspeed=-8}
+            <string>state=0
+if jump&lt;3{vspeed=-8}else{instance_create(x,y,obj_fade_to_white)}
 alarm[6]=2
+move=false
 jump-=1
 idle=false
 if !audio_is_playing(_tmz_jump)
@@ -384,13 +384,9 @@ if (irandom(3)=1){if mis=false{alarm[4]=120;mis=true}}
 state=0
 alarm[1]=random_range(120,240)
 alarm[4]=120
-x_x = path_get_x(pth_phantom_egg, 0);
-y_y = path_get_y(pth_phantom_egg, 0);
 idle=false
 jump=3
-path_start(pth_phantom_egg,random_range(1,5),path_action_restart,true)
-path_scale=random_range(0.5,1.25)
-path_orientation=random_range(-30,30)
+move=true
 </string>
           </argument>
         </arguments>
@@ -441,8 +437,14 @@ image_index=clamp(image_index,0,7)
 
 if state=10
 {
-y=lerp(y,y_y,0.05);x=lerp(x,x_x,0.05)
+y=lerp(y,ystart,0.05);x=lerp(x,xstart,0.05)
 }
+
+if move=true{
+y=ystart+32*sin(time*0.004)
+x=xstart+(64*2)*sin(time*0.002)
+time+=10
+}else{time=0}
 
 if dead=false{
 if hit=true{

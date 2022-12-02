@@ -52,7 +52,7 @@ time=0
             <string>time+=1
 if !audio_is_playing(_general_alarm)
 {audio_play(_general_alarm,global.sfx_volume)}
-warning=0.5*sin((2*pi/55)*time+(1.5*pi))+0.5
+warning=0.25*sin((2*pi/55)*time+(1.5*pi))+0.25
 </string>
           </argument>
         </arguments>

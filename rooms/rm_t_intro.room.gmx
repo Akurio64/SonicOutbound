@@ -56,7 +56,7 @@
     <instance objName="obj_aehz_collision_00_o" x="-32" y="208" name="inst_3E546B2F" locked="0" code="" scaleX="210.059997558594" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_t_intro_bg" x="17" y="0" name="inst_6CDA4E2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ai" x="32" y="192" name="inst_F28101FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_phantom_egg" x="212" y="64" name="inst_F8033F10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_phantom_egg" x="208" y="64" name="inst_F8033F10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="112" y="192" name="inst_0DDA35E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="144" y="192" name="inst_4F6C1DB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="176" y="192" name="inst_A40E2D56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

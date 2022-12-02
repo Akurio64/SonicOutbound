@@ -87,7 +87,7 @@ canbetriggered=true;
 
 }
 
-y=ystart-(-40*power(sin(((current_time*0.002)+(pi/2))),2))
+y=ystart-(-40*power(sin((((current_time+(xstart*50))*0.002)+(pi/2))),2))
 x=xstart+(80*sin((current_time+(xstart*50))*0.002))
 </string>
           </argument>

@@ -79,6 +79,7 @@ audio_group_load(Sound);
             <kind>1</kind>
             <string>draw_set_colour(c_white)
 draw_set_halign(fa_center)
+draw_set_font(fnt_monogram)
 draw_text(212,120-48,"Loading Audio ("+string(audio_group_load_progress(Music))+"%)")
 draw_set_halign(fa_left)
 draw_set_colour(c_gray)

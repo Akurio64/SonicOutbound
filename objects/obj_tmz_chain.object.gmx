@@ -140,7 +140,7 @@ audio_play(_tmz_shock, global.sfx_volume)
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>

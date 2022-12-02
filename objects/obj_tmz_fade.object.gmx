@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>with instance_create(x,y,obj_fade_to)
 {
-fade_to = rm_intro2
+fade_to = rm_v_intro
 }
 </string>
           </argument>

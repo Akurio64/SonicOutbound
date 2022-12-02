@@ -683,6 +683,11 @@
         <sprites name="HSZ">
           <sprite>sprites\spr_hsz_beach_ball</sprite>
           <sprite>sprites\spr_hsz_vine</sprite>
+          <sprite>sprites\spr_hsz_wrecking_mask</sprite>
+          <sprite>sprites\spr_hsz_elastic</sprite>
+          <sprite>sprites\spr_hsz_elastic_head</sprite>
+          <sprite>sprites\spr_hsz_coco_tree</sprite>
+          <sprite>sprites\spr_hsz_wrecking</sprite>
         </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
@@ -1007,11 +1012,7 @@
       <sprite>sprites\tile055</sprite>
       <sprite>sprites\tile056</sprite>
     </sprites>
-    <sprite>sprites\spr_hsz_coco_tree</sprite>
     <sprite>sprites\sprite596</sprite>
-    <sprite>sprites\spr_hsz_wrecking</sprite>
-    <sprite>sprites\spr_hsz_wrecking_mask</sprite>
-    <sprite>sprites\spr_hsz_elastic</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1940,7 +1941,7 @@
     <rooms name="Stages">
       <rooms name="Intro">
         <room>rooms\rm_t_intro</room>
-        <room>rooms\rm_intro2</room>
+        <room>rooms\rm_v_intro</room>
       </rooms>
       <rooms name="Sonic">
         <rooms name="HSZ">

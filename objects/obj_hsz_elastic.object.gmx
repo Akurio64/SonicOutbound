@@ -35,6 +35,8 @@ triggered=false
 angle=0
 x_=x
 y_=y
+x1=0
+y1=0
 </string>
           </argument>
         </arguments>
@@ -61,11 +63,17 @@ y_=y
 angle=lerp(angle,-64,0.05)}
 else{angle=lerp(angle,0,0.05)}
 
-var coords=draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y+84, angle, 40, 1, 1, 0, c_white, 1);
+var coords=draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y2, angle, 80, 1, 1, 0, c_white, 1);
 var points=get_points_from_bend(coords,0.5)
 
-x_ = points[7,0];
-y_ = points[7,1];
+x_ = points[11,0];
+y_ = points[11,1];
+
+var coords2=draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y2, angle, 80, 1, 1, 0, c_white, 1);
+var points2=get_points_from_bend(coords2,0.5)
+
+x1 = points2[19,0];
+y1 = points2[19,1];
 
 if instance_exists(obj_hsz_elastic_grip)
 {
@@ -73,7 +81,7 @@ obj_hsz_elastic_grip.x=x_
 obj_hsz_elastic_grip.y=y_
 }
 
-
+y2=ystart+96
 </string>
           </argument>
         </arguments>
@@ -96,7 +104,8 @@ obj_hsz_elastic_grip.y=y_
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y+84, angle, 40, 1, 1, 0, c_white, 1);
+            <string>draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y2, angle, 40, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_hsz_elastic_head,0,x1,y1,1,1,angle,c_white,1)
 </string>
           </argument>
         </arguments>
