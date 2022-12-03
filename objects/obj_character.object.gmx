@@ -343,6 +343,7 @@
     draw_x                    = x;
     draw_y                    = y;
     run                       = spr_sonic_walk
+    hang                      = ""
     if room=rm_t_intro{mania=true}else{mania=false}
 
 </string>
@@ -1087,9 +1088,9 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     // Vine
     if(state == CS_HANG)
     {
-       if(animation_index != "VINE")
+       if(animation_index != hang)
        {
-          animation_index = "VINE";
+          animation_index = hang;
        }
        }
 </string>

@@ -77,11 +77,6 @@
   </datafiles>
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
-    <extension index="1">extensions\SLZUpdated</extension>
-    <extension index="2">extensions\Extension1</extension>
-    <extension index="3">extensions\Extension4</extension>
-    <extension index="4">extensions\Extension3</extension>
-    <extension index="5">extensions\Extension5</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -210,9 +205,11 @@
           <sprite>sprites\spr_sonic_3dloop2</sprite>
           <sprite>sprites\spr_sonic_3dloop3</sprite>
           <sprite>sprites\spr_sonic_idle_1</sprite>
+          <sprite>sprites\spr_sonic_leap</sprite>
           <sprite>sprites\spr_sonic_idle_2</sprite>
           <sprite>sprites\spr_sonic_look_up</sprite>
           <sprite>sprites\spr_sonic_look_end</sprite>
+          <sprite>sprites\spr_sonic_hturn</sprite>
           <sprite>sprites\spr_sonic_crouch</sprite>
           <sprite>sprites\spr_sonic_crouch_up</sprite>
           <sprite>sprites\spr_sonic_walk</sprite>

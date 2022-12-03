@@ -61,6 +61,7 @@ par_character.y_speed=0;
 if par_character.state!=CS_HANG{
 par_character.state=CS_HANG}
 par_character.vine=id
+par_character.hang="VINE"
 
 if (par_character.input_action_pressed == true)
 {

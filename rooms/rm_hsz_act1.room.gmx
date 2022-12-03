@@ -75,10 +75,6 @@
     <instance objName="obj_ring" x="576" y="176" name="inst_E8521634" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="608" y="176" name="inst_47DA7B34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="640" y="176" name="inst_EF123AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="800" y="80" name="inst_C7ED46A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="1056" y="72" name="inst_395E9D0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="1248" y="72" name="inst_F49CBCCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="1472" y="72" name="inst_5078B030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_vine" x="1696" y="72" name="inst_81D7C92F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_vine" x="1920" y="72" name="inst_C5D011EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_vine" x="2144" y="72" name="inst_056FBF6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -95,7 +91,7 @@
     <instance objName="obj_Goofy_3" x="2416" y="192" name="inst_A98B12DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Goofy_3" x="2640" y="416" name="inst_7D50B9F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_push" x="176" y="184" name="inst_2483CC04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_elastic" x="240" y="120" name="inst_7F03CD89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hsz_elastic" x="1304" y="120" name="inst_7F03CD89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tlz_hsz_bush_2" x="1248" y="56" w="96" h="96" xo="192" yo="0" id="10004755" name="inst_4E9259CF" depth="102" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -169,12 +165,6 @@
     <tile bgName="tls_hsz_palmtree_trunk" x="1536" y="112" w="104" h="16" xo="0" yo="0" id="10004618" name="inst_4CDD4ED3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1408" y="176" w="104" h="16" xo="0" yo="0" id="10004619" name="inst_979E2336" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1408" y="160" w="104" h="16" xo="0" yo="0" id="10004620" name="inst_D765BDB7" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1280" y="176" w="104" h="16" xo="0" yo="0" id="10004621" name="inst_C1846546" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1280" y="160" w="104" h="16" xo="0" yo="0" id="10004622" name="inst_AC0FFF46" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1280" y="144" w="104" h="16" xo="0" yo="0" id="10004623" name="inst_86E9FD85" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1280" y="128" w="104" h="16" xo="0" yo="0" id="10004624" name="inst_29116408" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1152" y="176" w="104" h="16" xo="0" yo="0" id="10004625" name="inst_9E4FB679" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1152" y="160" w="104" h="16" xo="0" yo="0" id="10004626" name="inst_F7BF5D3F" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1024" y="176" w="104" h="16" xo="0" yo="0" id="10004627" name="inst_EB753FED" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1024" y="160" w="104" h="16" xo="0" yo="0" id="10004628" name="inst_75F9D17A" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1024" y="144" w="104" h="16" xo="0" yo="0" id="10004629" name="inst_B2022AD5" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -209,8 +199,6 @@
     <tile bgName="tls_hsz_palmtree_top" x="768" y="104" w="104" h="72" xo="0" yo="0" id="10004665" name="inst_7961C76B" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="896" y="88" w="104" h="72" xo="0" yo="0" id="10004666" name="inst_979097AB" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="1024" y="72" w="104" h="72" xo="0" yo="0" id="10004667" name="inst_76EBB15A" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_top" x="1152" y="88" w="104" h="72" xo="0" yo="0" id="10004668" name="inst_D083ABB3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_top" x="1280" y="56" w="104" h="72" xo="0" yo="0" id="10004669" name="inst_364026EC" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="1408" y="88" w="104" h="72" xo="0" yo="0" id="10004670" name="inst_CDBEECD7" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="1536" y="40" w="104" h="72" xo="0" yo="0" id="10004671" name="inst_AD2EC340" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="1664" y="88" w="104" h="72" xo="0" yo="0" id="10004672" name="inst_16C6A524" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -245,12 +233,6 @@
     <tile bgName="tls_hsz_palmtree_trunk" x="960" y="192" w="104" h="16" xo="0" yo="16" id="10004775" name="inst_BC9012C7" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1088" y="192" w="104" h="16" xo="0" yo="16" id="10004776" name="inst_99494CBE" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1344" y="192" w="104" h="16" xo="0" yo="16" id="10004777" name="inst_E69FB512" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1344" y="176" w="104" h="16" xo="0" yo="0" id="10004778" name="inst_97689380" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1344" y="160" w="104" h="16" xo="0" yo="0" id="10004779" name="inst_80BD969B" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1344" y="144" w="104" h="16" xo="0" yo="0" id="10004780" name="inst_D102F75C" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1344" y="128" w="104" h="16" xo="0" yo="0" id="10004781" name="inst_4FACB499" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1216" y="160" w="104" h="16" xo="0" yo="0" id="10004782" name="inst_2E00CE22" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_trunk" x="1216" y="144" w="104" h="16" xo="0" yo="0" id="10004783" name="inst_F9BA3ECC" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1088" y="176" w="104" h="16" xo="0" yo="0" id="10004784" name="inst_2FC909C3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1088" y="160" w="104" h="16" xo="0" yo="0" id="10004785" name="inst_ADB5A436" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="1088" y="144" w="104" h="16" xo="0" yo="0" id="10004786" name="inst_847222C6" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -281,7 +263,6 @@
     <tile bgName="tls_hsz_palmtree_top" x="832" y="56" w="104" h="72" xo="0" yo="0" id="10004813" name="inst_77414C71" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="960" y="72" w="104" h="72" xo="0" yo="0" id="10004814" name="inst_2D3B0EC5" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="1088" y="72" w="104" h="72" xo="0" yo="0" id="10004815" name="inst_F1811829" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_palmtree_top" x="1344" y="56" w="104" h="72" xo="0" yo="0" id="10004816" name="inst_92F2669C" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="512" y="192" w="104" h="16" xo="0" yo="16" id="10004838" name="inst_0335616C" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="576" y="176" w="104" h="16" xo="0" yo="0" id="10004839" name="inst_5349DA4E" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="256" y="184" w="104" h="16" xo="0" yo="0" id="10004840" name="inst_15B3CE8D" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

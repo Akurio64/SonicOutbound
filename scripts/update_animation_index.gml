@@ -6,6 +6,8 @@
     {
        set_animation("STAND",          spr_sonic_stand,    0,  0, 0, -1, "", 0);
        set_animation("VINE",            spr_sonic_vine,    0.2,  7, 0, -1, "", 0);
+       set_animation("LEAP",            spr_sonic_leap,    0.2,  2, 2, 0, "", 0);
+       set_animation("H_TURN",          spr_sonic_hturn,    0.2,  5, 0, 0, "LEAP", 0);
        set_animation("3DLOOP1",       spr_sonic_3dloop1, 0.25, 2, 0, -1, "", 0);
        set_animation("3DLOOP2",       spr_sonic_3dloop2, 0.25, 4, 0, -1, "", 0);
        set_animation("3DLOOP3",       spr_sonic_3dloop3, 0.25, 4, 0, -1, "", 0);

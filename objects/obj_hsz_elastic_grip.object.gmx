@@ -2,10 +2,10 @@
 <object>
   <spriteName>spr_hsz_vine</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>triggered=false;
 canbetriggered=true;
+go=true
+xspd=0
 </string>
           </argument>
         </arguments>
@@ -58,6 +60,7 @@ par_character.y_speed=0;
 if par_character.state!=CS_HANG{
 par_character.state=CS_HANG}
 par_character.vine=id
+par_character.hang="H_TURN"
 
 if (par_character.input_action_pressed == true)
 {
@@ -69,6 +72,15 @@ par_character.y_speed=-4;
 par_character.x_speed=4*par_character.animation_direction
 audio_play(_char_jump,global.sfx_volume)
 }
+if (par_character.animation_index == "LEAP")
+{
+triggered=false;
+canbetriggered=false;
+par_character.state=CS_ROLL;
+par_character.ground=false;
+par_character.y_speed=-(abs(xspd))
+par_character.x_speed=-xspd*1.5
+}
 
 }
 
@@ -79,6 +91,7 @@ if instance_exists(par_character)
 {
 if par_character.ground==true{
 canbetriggered=true;
+go=true
 }
 }
 
@@ -109,7 +122,9 @@ obj_hsz_elastic.triggered=true}else{obj_hsz_elastic.triggered=false}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if other.is_cpu==false{if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT{triggered=true;}}
+            <string>if abs(par_character.x_speed)&gt;3{
+if other.is_cpu==false{if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT{triggered=true;
+if go=true{xspd=par_character.x_speed;go=false}}}}
 </string>
           </argument>
         </arguments>

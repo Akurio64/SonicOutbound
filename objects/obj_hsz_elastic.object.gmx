@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -33,16 +33,18 @@ global.vf = vertex_format_end();
 instance_create(x,y,obj_hsz_elastic_grip)
 triggered=false
 angle=0
+kick=false
 x_=x
 y_=y
 x1=0
 y1=0
+y2=ystart+96
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,15 +61,17 @@ y1=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if triggered=true{
-angle=lerp(angle,-64,0.05)}
-else{angle=lerp(angle,0,0.05)}
+            <string>if obj_hsz_elastic_grip.triggered=true{
+angle=lerp(angle,abs(-64*(obj_hsz_elastic_grip.xspd/6.5))*-sign(obj_hsz_elastic_grip.xspd),abs(obj_hsz_elastic_grip.xspd*0.02))
+par_character.animation_angle=angle/2}
+else{angle=lerp(angle,0,abs(obj_hsz_elastic_grip.xspd*0.04))}
+y2=ystart+64
 
 var coords=draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y2, angle, 80, 1, 1, 0, c_white, 1);
 var points=get_points_from_bend(coords,0.5)
 
-x_ = points[11,0];
-y_ = points[11,1];
+x_ = points[14,0];
+y_ = points[14,1];
 
 var coords2=draw_sprite_bent(global.vf, sprite_index, image_index, x, y, x, y2, angle, 80, 1, 1, 0, c_white, 1);
 var points2=get_points_from_bend(coords2,0.5)
@@ -81,7 +85,6 @@ obj_hsz_elastic_grip.x=x_
 obj_hsz_elastic_grip.y=y_
 }
 
-y2=ystart+96
 </string>
           </argument>
         </arguments>
