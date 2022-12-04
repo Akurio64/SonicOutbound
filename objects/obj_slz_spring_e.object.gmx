@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index=2
+            <string>image_index=0
 image_speed=0
 spring=0
 </string>
@@ -52,7 +52,7 @@ spring=0
             <kind>1</kind>
             <string>if place_meeting(x-1,y,par_character)
 {
-spring=1}else{spring=0}
+spring=2}else{spring=1}
 </string>
           </argument>
         </arguments>
