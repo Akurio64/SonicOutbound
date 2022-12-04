@@ -77,6 +77,7 @@
   </datafiles>
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
+    <extension index="1">extensions\SLZ_ACT2</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -1106,12 +1107,13 @@
         <background>background\tls_aesthetic_32_alt</background>
       </backgrounds>
       <backgrounds name="SLZ">
-        <background>background\tls_slz1_2</background>
+        <background>background\tls_slz2_1</background>
         <background>background\bg_slz_loop1</background>
-        <background>background\tls_slz2</background>
-        <background>background\tls_slz2_2</background>
+        <background>background\tls_slz_act1_2</background>
+        <background>background\tls_slz2_2og</background>
         <background>background\bg_slz_loop2</background>
-        <background>background\tls_slz1</background>
+        <background>background\tls_slz_act1_1</background>
+        <background>background\tls_slz_act2_2</background>
       </backgrounds>
       <backgrounds name="TMZ">
         <background>background\bg_t_intro_t</background>
