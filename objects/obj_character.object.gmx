@@ -1106,9 +1106,9 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
      // Sliding
     if(state == CS_SLIDE2)
     {
-       if(animation_index != "SLIDE2")
+       if(animation_index != "HURT")
        {
-          animation_index = "SLIDE2";
+          animation_index = "HURT";
        }
        }
 </string>
@@ -1320,15 +1320,9 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
             <string>/// Sprite rotation.
  // This is used for rotating the players sprite.
  
- var handle=character_collision_check(COL_MAIN_OBJECT, x, y, par_slide) 
- 
- if state=CS_SLIDE2
- {
- animation_angle=45
- }
  
  // Exit if not initialized, death or hurt.
-    if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK &amp;&amp; animation_index != "3DLOOP3" &amp;&amp; animation_index != "3DLOOP2" &amp;&amp; animation_index != "3DLOOP1" &amp;&amp; animation_index != "SLIDE2")
+    if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK &amp;&amp; animation_index != "3DLOOP3" &amp;&amp; animation_index != "3DLOOP2" &amp;&amp; animation_index != "3DLOOP1")
     {
  
  // Change animation angle values:

@@ -238,6 +238,9 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
 
  // Draw Monitor: 
     draw_sprite(spr_monitor, 0, x, y);
+    draw_set_blend_mode(bm_add)
+    draw_sprite(spr_monitor, 1, x, y);
+    draw_set_blend_mode(bm_normal)
     
  // Draw Icon Border:
     draw_sprite(spr_monitor_icon_border, icon_border_frame, x, y-19)

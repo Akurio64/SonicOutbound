@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3072</width>
   <height>600</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -55,7 +55,7 @@
     <instance objName="obj_aehz_collision_00_o" x="0" y="192" name="inst_8D5CB486" locked="0" code="" scaleX="75.870964050293" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax_hsz1" x="16" y="24" name="inst_C144D7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="24" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_o" x="2816" y="192" name="inst_BD29BE93" locked="0" code="" scaleX="13" scaleY="6.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="2408" y="192" name="inst_BD29BE93" locked="0" code="" scaleX="22.5" scaleY="10.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="2536" y="504" name="inst_52E57613" locked="0" code="" scaleX="18.5" scaleY="3.60999989509583" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="96" y="176" name="inst_FD45F7B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="128" y="176" name="inst_1778BBAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -85,7 +85,6 @@
     <instance objName="obj_hsz_dolphin" x="328" y="184" name="inst_D7A65DFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_coco_tree" x="120" y="64" name="inst_A7FC0F4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_elastic" x="1304" y="120" name="inst_7F03CD89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ehz_corkscrew" x="2432" y="80" name="inst_83EDEAF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ramp" x="240" y="160" name="inst_D665F714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterslide2" x="536" y="64" name="inst_14222B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_waterslide2" x="600" y="96" name="inst_F8CE05FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -95,6 +94,10 @@
     <instance objName="obj_aehz_collision_05" x="664" y="128" name="inst_B185906F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_05" x="600" y="96" name="inst_8B0A6071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_05" x="536" y="64" name="inst_DB3240B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boss_camera" x="2640" y="120" name="inst_FB2B800E" locked="0" code="boss_id=obj_bigboss_1&#xA;mode=1&#xA;boss_x=x&#xA;boss_y=y-+48&#xA;offset=300&#xA;cutscene=false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_wind_shield" x="128" y="64" name="inst_625F229F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_wind_shield" x="192" y="192" name="inst_A7674D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rock_shield" x="224" y="192" name="inst_E4AEBCAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tlz_hsz_bush_2" x="1248" y="56" w="96" h="96" xo="192" yo="0" id="10004755" name="inst_4E9259CF" depth="102" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -294,8 +297,6 @@
     <tile bgName="tlz_hsz_rock" x="1536" y="128" w="128" h="128" xo="1042" yo="132" id="10004533" name="inst_970721E4" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_rock" x="1792" y="128" w="128" h="128" xo="1042" yo="132" id="10004534" name="inst_F784FBDE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_rock" x="2048" y="128" w="128" h="128" xo="1042" yo="132" id="10004535" name="inst_62504978" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="2304" y="128" w="128" h="128" xo="1042" yo="132" id="10004536" name="inst_5FBF76FC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="2176" y="128" w="128" h="128" xo="1172" yo="132" id="10004541" name="inst_67A09CD3" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_rock" x="1920" y="128" w="128" h="128" xo="1172" yo="132" id="10004542" name="inst_5652E9C2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_rock" x="1664" y="128" w="128" h="128" xo="1172" yo="132" id="10004543" name="inst_6BF1987F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_jungle" x="640" y="240" w="128" h="128" xo="2" yo="522" id="10004844" name="inst_87AA5D92" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -304,6 +305,13 @@
     <tile bgName="tlz_hsz_jungle" x="1024" y="232" w="128" h="128" xo="2" yo="522" id="10004847" name="inst_0804EE7C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_jungle" x="1152" y="232" w="128" h="128" xo="2" yo="522" id="10004848" name="inst_561562DC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tlz_hsz_jungle" x="1280" y="232" w="128" h="128" xo="2" yo="522" id="10004849" name="inst_6A9145CD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2432" y="152" w="128" h="128" xo="1172" yo="130" id="10004888" name="inst_B8A7EB8F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2560" y="152" w="128" h="128" xo="1172" yo="130" id="10004889" name="inst_804B0EDF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2688" y="152" w="128" h="128" xo="1172" yo="130" id="10004890" name="inst_4CE5368A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2816" y="152" w="128" h="128" xo="1172" yo="130" id="10004891" name="inst_7A1F0874" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2944" y="152" w="128" h="128" xo="1172" yo="130" id="10004892" name="inst_0FC5DF96" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2304" y="152" w="128" h="128" xo="1172" yo="130" id="10004893" name="inst_56520ECB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tlz_hsz_sand" x="2176" y="152" w="128" h="128" xo="1172" yo="130" id="10004894" name="inst_2BDDB397" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

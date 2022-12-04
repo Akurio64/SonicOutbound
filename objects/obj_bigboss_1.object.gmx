@@ -185,7 +185,7 @@ image_speed = 1;
 alarm[1] = 150;
 alarm[0] = -1;
 move_towards_point(obj_character.x, y, 0.25);
-audio_play(_general_lock_on,global.bgm_volume);
+audio_play(_wm_charge,global.sfx_volume);
 friction=0
 </string>
           </argument>
@@ -235,6 +235,7 @@ dash=false
           <argument>
             <kind>1</kind>
             <string>move_towards_point(obj_character.x, y, 9);
+audio_play(_wm_dash,global.bgm_volume);
 alarm[2]=100; alarm[0]=-1; vulnerable=true; friction=0.15
 sprite_index=spr_hsz_boss_2
 dash=true
