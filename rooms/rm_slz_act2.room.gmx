@@ -1206,7 +1206,7 @@
     <instance objName="obj_slz_shooting_c" x="6402" y="322" name="inst_ED9D459D" locked="0" code="spd=3&#xA;dir=225&#xA;" scaleX="3.65000009536743" scaleY="3.52999997138977" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_shooting_c" x="12415" y="1225" name="inst_38CDBAB8" locked="0" code="spd=3&#xA;dir=225&#xA;" scaleX="4.28999996185303" scaleY="7.03000020980835" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="17415" y="1039" name="inst_C156C14A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_3dloop" x="256" y="448" name="inst_2F506B28" locked="0" code="spd=18&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_3dloop" x="256" y="448" name="inst_2F506B28" locked="0" code="spd=18" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_3dloop" x="1024" y="688" name="inst_DC24FA5F" locked="0" code="spd=8&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_3dloop_ext" x="1168" y="496" name="inst_328585C1" locked="0" code="" scaleX="1" scaleY="0.75" colour="4294967295" rotation="0"/>
   </instances>

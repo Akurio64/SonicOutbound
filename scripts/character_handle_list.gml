@@ -15,3 +15,5 @@
     character_handle_tunnels();  
     character_handle_breaking_walls();
     character_handle_collapse();
+    character_handle_corkscrew();
+    character_handle_slide();

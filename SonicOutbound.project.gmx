@@ -236,6 +236,9 @@
           <sprite>sprites\spr_sonic_vine</sprite>
           <sprite>sprites\spr_sonic_hold_b</sprite>
           <sprite>sprites\spr_sonic_win</sprite>
+          <sprite>sprites\spr_sonic_hang</sprite>
+          <sprite>sprites\spr_sonic_corkscrew</sprite>
+          <sprite>sprites\spr_sonic_slide2</sprite>
         </sprites>
         <sprites name="Miles">
           <sprite>sprites\spr_miles_stand</sprite>
@@ -1010,6 +1013,12 @@
       <sprite>sprites\tile056</sprite>
     </sprites>
     <sprite>sprites\sprite596</sprite>
+    <sprite>sprites\spr_ehz_corkscrew</sprite>
+    <sprite>sprites\spr_aiz_ramp</sprite>
+    <sprite>sprites\spr_ehz_upper_corkscrew</sprite>
+    <sprite>sprites\spr_waterslide2</sprite>
+    <sprite>sprites\spr_zipline_1</sprite>
+    <sprite>sprites\spr_zipline</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1216,9 +1225,11 @@
             <script>scripts\character_handle_hurt.gml</script>
             <script>scripts\character_handle_platforms.gml</script>
             <script>scripts\character_handle_spikes.gml</script>
+            <script>scripts\character_handle_slide.gml</script>
             <script>scripts\character_handle_tunnels.gml</script>
             <script>scripts\character_handle_spring.gml</script>
             <script>scripts\character_handle_breaking_walls.gml</script>
+            <script>scripts\character_handle_corkscrew.gml</script>
             <script>scripts\character_handle_collapse.gml</script>
           </scripts>
         </scripts>
@@ -1507,12 +1518,16 @@
         </objects>
         <objects name="Water Related">
           <object>objects\obj_water_surface</object>
+          <object>objects\par_slide</object>
           <object>objects\obj_drown_counter</object>
           <object>objects\obj_water_bubbler</object>
           <objects name="Bubbles">
             <object>objects\obj_water_bubble_small</object>
             <object>objects\obj_water_bubble_medium</object>
             <object>objects\obj_water_bubble_large</object>
+          </objects>
+          <objects name="Slide">
+            <object>objects\obj_waterslide2</object>
           </objects>
         </objects>
         <objects name="Misc.">
@@ -1623,8 +1638,12 @@
           <object>objects\obj_hsz_beach_ball</object>
           <object>objects\obj_hsz_wrecking</object>
           <object>objects\obj_hsz_elastic</object>
+          <object>objects\obj_ehz_upper_corkscrew</object>
+          <object>objects\obj_ehz_corkscrew</object>
           <object>objects\obj_hsz_elastic_grip</object>
+          <object>objects\obj_ramp</object>
           <object>objects\obj_hsz_coco_tree</object>
+          <object>objects\obj_zipline</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>
         </objects>
@@ -1661,6 +1680,7 @@
           <object>objects\par_platform</object>
           <object>objects\par_obstacle</object>
           <object>objects\par_layer_low</object>
+          <object>objects\par_corkscrew</object>
           <object>objects\par_layer_high</object>
           <object>objects\par_moving_platform</object>
           <object>objects\par_falling_platform</object>
@@ -1956,7 +1976,7 @@
     </rooms>
     <room>rooms\rm_continue</room>
   </rooms>
-  <constants number="75">
+  <constants number="77">
     <constant name="GAME_NAME">"Sonic Outbound"</constant>
     <constant name="GAME_VERSION">"V0.2"</constant>
     <constant name="STG">ctr_level</constant>
@@ -2009,6 +2029,8 @@
     <constant name="CS_TORNADO">19</constant>
     <constant name="CS_MEGA">20</constant>
     <constant name="CS_HANG">21</constant>
+    <constant name="CS_CORKSCREW">22</constant>
+    <constant name="CS_SLIDE2">23</constant>
     <constant name="CS_WIN">-4</constant>
     <constant name="CS_HURT">-1</constant>
     <constant name="CS_DEATH">-2</constant>

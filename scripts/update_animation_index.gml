@@ -5,7 +5,9 @@
     if(character_id = CHAR_SONIC)
     {
        set_animation("STAND",          spr_sonic_stand,    0,  0, 0, -1, "", 0);
+       set_animation("HANG",          spr_sonic_hang,    0,  0, 0, -1, "", 0);
        set_animation("VINE",            spr_sonic_vine,    0.2,  7, 0, -1, "", 0);
+       set_animation("SLIDE2",            spr_sonic_slide2,    0.05,  1, 0, -1, "", 0);
        set_animation("LEAP",            spr_sonic_leap,    0.2,  2, 2, 0, "", 0);
        set_animation("H_TURN",          spr_sonic_hturn,    0.2,  5, 0, 0, "LEAP", 0);
        set_animation("3DLOOP1",       spr_sonic_3dloop1, 0.25, 2, 0, -1, "", 0);
@@ -37,6 +39,7 @@
        set_animation("BREATHE",      spr_sonic_breathe, 0.20,  5, 0,  0, "WALK", 0);              
        set_animation("DEATH",          spr_sonic_death,    0,  0, 0, -1, "", 0);        
        set_animation("DROWN",          spr_sonic_drown,    0.1,  4, 4, 0, "", 0);    
+       set_animation("CORKSCREW",  spr_sonic_corkscrew,    0.2,  11, 0, -1, "", 0); 
        set_animation("WIN",              spr_sonic_win,  0.3,  47, 37, -1, "", 0);  
     }
 

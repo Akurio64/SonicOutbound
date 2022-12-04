@@ -34,7 +34,7 @@ xspd=0
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -76,10 +76,10 @@ if (par_character.animation_index == "LEAP")
 {
 triggered=false;
 canbetriggered=false;
-par_character.state=CS_ROLL;
 par_character.ground=false;
-par_character.y_speed=-(abs(xspd))
-par_character.x_speed=-xspd*1.5
+par_character.y_speed=-(abs(clamp(xspd,1,6)))
+par_character.x_speed=-xspd
+par_character.animation_direction=-par_character.animation_direction
 }
 
 }
@@ -89,8 +89,10 @@ if canbetriggered==false
 {
 if instance_exists(par_character)
 {
+par_character.animation_angle+=angle_difference(par_character.animation_angle,0)
 if par_character.ground==true{
 canbetriggered=true;
+par_character.state=CS_DEFAULT;
 go=true
 }
 }
