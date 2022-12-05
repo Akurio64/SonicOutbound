@@ -3,7 +3,7 @@
   <spriteName>spr_miniboss_3_1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1000001</depth>
+  <depth>1000002</depth>
   <persistent>0</persistent>
   <parentName>par_boss</parentName>
   <maskName>&lt;undefined&gt;</maskName>

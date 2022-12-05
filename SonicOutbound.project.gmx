@@ -1654,6 +1654,7 @@
           <object>objects\obj_ramp</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_zipline</object>
+          <object>objects\obj_crane_hold</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>
         </objects>
@@ -1946,7 +1947,7 @@
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
-    <object>objects\obj_crane_test</object>
+    <object>objects\obj_slz_crane</object>
     <object>objects\object365</object>
   </objects>
   <rooms name="rooms">
