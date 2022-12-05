@@ -984,12 +984,6 @@
     <instance objName="obj_loop_switch_low" x="16064" y="816" name="inst_1C4A5B10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loop_switch_low" x="16080" y="816" name="inst_B815E249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loop_switch_low" x="16096" y="816" name="inst_033C8A1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="3457" y="833" name="inst_F3F3470E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="2864" y="448" name="inst_067B4E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="14964" y="637" name="inst_92B25BC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="16668" y="1253" name="inst_EEAC08BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="14277" y="284" name="inst_D603B6A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="14044" y="284" name="inst_28FCC13D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_bomb_2" x="12215" y="2094" name="inst_98A5E1BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_bomb_2" x="12353" y="2094" name="inst_3BF4AC80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="12139" y="2086" name="inst_95896F8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1213,6 +1207,7 @@
     <instance objName="obj_Ramp1" x="13096" y="1868" name="inst_686DB9E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_collapse" x="13822" y="1502" name="inst_65BCD36D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_spring_e" x="588" y="569" name="inst_0752B90C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crane_test" x="249" y="571" name="inst_208FE3D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz_act1_1" x="3326" y="398" w="256" h="256" xo="801" yo="1328" id="10003848" name="inst_92D59DDB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

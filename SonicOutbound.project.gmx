@@ -137,6 +137,7 @@
         <sound>sound\_general_destroy</sound>
         <sound>sound\_general_error</sound>
         <sound>sound\_general_hyper</sound>
+        <sound>sound\_general_water</sound>
         <sound>sound\_general_collapse</sound>
         <sound>sound\_general_alarm</sound>
       </sounds>
@@ -1025,6 +1026,7 @@
     <sprite>sprites\spr_zipline_1</sprite>
     <sprite>sprites\spr_zipline</sprite>
     <sprite>sprites\spr_slz_spring_e</sprite>
+    <sprite>sprites\spr_crane</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1944,6 +1946,7 @@
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
+    <object>objects\obj_crane_test</object>
     <object>objects\object365</object>
   </objects>
   <rooms name="rooms">

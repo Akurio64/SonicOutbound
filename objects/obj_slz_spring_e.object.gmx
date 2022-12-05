@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_badnik</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,7 +27,32 @@
             <kind>1</kind>
             <string>image_index=0
 image_speed=0
-spring=0
+spring1=0
+spring2=0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spring1=1
+spring2=1
 </string>
           </argument>
         </arguments>
@@ -50,9 +75,37 @@ spring=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x-1,y,par_character)
+            <string>if collision_rectangle(x-21, y-34, x-5, y-7, par_character, false, true)
 {
-spring=2}else{spring=1}
+spring1=2
+spring2=1
+par_character.ground=false
+par_character.x_speed=-5
+par_character.y_speed=-5
+par_character.state=CS_SPRING_DIAGONAL
+if !audio_is_playing(_general_spring){
+audio_play(_general_spring,global.sfx_volume)}
+}
+else
+{
+if alarm[0]=-1{alarm[0]=30}
+}
+
+if collision_rectangle(x+21, y-34, x+5, y-7, par_character, false, true)
+{
+spring2=2
+spring1=1
+par_character.ground=false
+par_character.x_speed=5
+par_character.y_speed=-5
+par_character.state=CS_SPRING_DIAGONAL
+if !audio_is_playing(_general_spring){
+audio_play(_general_spring,global.sfx_volume)}
+}
+else
+{
+if alarm[0]=-1{alarm[0]=30}
+}
 </string>
           </argument>
         </arguments>
@@ -75,8 +128,8 @@ spring=2}else{spring=1}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,spring,x-21,y,1,1,0,c_white,1)
-draw_sprite_ext(sprite_index,spring,x+32,y,-1,1,0,c_white,1)
+            <string>draw_sprite_ext(sprite_index,spring1,x-21,y,1,1,0,c_white,1)
+draw_sprite_ext(sprite_index,spring2,x+21,y,-1,1,0,c_white,1)
 draw_self()
 </string>
           </argument>

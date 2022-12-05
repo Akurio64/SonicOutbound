@@ -9,12 +9,11 @@
         animation_direction = handle_slide.Direction; // 1: Right  -1: Left Found in individual objects
          if handle_slide.water==true
          {
-        /*Create Splash Effect
-        scr_dummy_effect(spr_water_splash,0.5,x,y+6,1,-500);
- 
-        //Play Splashing Sound
-        sound_stop(snd_sfx_water_splash);
-        sound_play(snd_sfx_water_splash);*/
+
+         if !audio_is_playing(_general_water)
+         {
+         audio_play(_general_water,global.sfx_volume)
+         }
         
          }
          
