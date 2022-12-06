@@ -24,6 +24,6 @@
   <data>_ev_drown.ogg</data>
   <compressed>1</compressed>
   <streamed>0</streamed>
-  <uncompressOnLoad>1</uncompressOnLoad>
+  <uncompressOnLoad>0</uncompressOnLoad>
   <audioGroup>1</audioGroup>
 </sound>

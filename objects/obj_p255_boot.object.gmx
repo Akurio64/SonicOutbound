@@ -52,7 +52,7 @@ y=view_yview+120
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_index=404
+            <string>if image_index=180
 
 {
 

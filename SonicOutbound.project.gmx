@@ -471,6 +471,7 @@
             <sprite>sprites\spr_bomb_wire</sprite>
             <sprite>sprites\spr_missile_orbinaut</sprite>
             <sprite>sprites\spr_bomb_body</sprite>
+            <sprite>sprites\spr_slz_spring_e</sprite>
             <sprite>sprites\spr_slz_explosion</sprite>
           </sprites>
           <sprites name="HSZ">
@@ -575,10 +576,13 @@
           <sprite>sprites\spr_slz_3dloop_ext</sprite>
           <sprite>sprites\spr_slz_3dloop_m</sprite>
           <sprite>sprites\spr_3dloop_speed</sprite>
+          <sprite>sprites\spr_crane_hold</sprite>
           <sprite>sprites\spr_slz_fire</sprite>
           <sprite>sprites\spr_slz_wind</sprite>
+          <sprite>sprites\spr_crane</sprite>
           <sprite>sprites\spr_slz_fan</sprite>
           <sprite>sprites\spr_seesaw</sprite>
+          <sprite>sprites\spr_slz_swing</sprite>
           <sprite>sprites\spr_slz_swing_piece1</sprite>
           <sprite>sprites\spr_slz_swing_piece2</sprite>
           <sprite>sprites\spr_slz_swing_hurt</sprite>
@@ -691,6 +695,12 @@
           <sprite>sprites\spr_hsz_vine</sprite>
           <sprite>sprites\spr_hsz_wrecking_mask</sprite>
           <sprite>sprites\spr_hsz_elastic</sprite>
+          <sprite>sprites\spr_ehz_upper_corkscrew</sprite>
+          <sprite>sprites\spr_aiz_ramp</sprite>
+          <sprite>sprites\spr_zipline_1</sprite>
+          <sprite>sprites\spr_ehz_corkscrew</sprite>
+          <sprite>sprites\spr_zipline</sprite>
+          <sprite>sprites\spr_waterslide2</sprite>
           <sprite>sprites\spr_hsz_elastic_head</sprite>
           <sprite>sprites\spr_hsz_coco_tree</sprite>
           <sprite>sprites\spr_hsz_wrecking</sprite>
@@ -1019,14 +1029,7 @@
       <sprite>sprites\tile056</sprite>
     </sprites>
     <sprite>sprites\sprite596</sprite>
-    <sprite>sprites\spr_ehz_corkscrew</sprite>
-    <sprite>sprites\spr_aiz_ramp</sprite>
-    <sprite>sprites\spr_ehz_upper_corkscrew</sprite>
-    <sprite>sprites\spr_waterslide2</sprite>
-    <sprite>sprites\spr_zipline_1</sprite>
-    <sprite>sprites\spr_zipline</sprite>
-    <sprite>sprites\spr_slz_spring_e</sprite>
-    <sprite>sprites\spr_crane</sprite>
+    <sprite>sprites\spr_slz_blackhole</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1287,6 +1290,7 @@
         <script>scripts\string_change_if.gml</script>
         <script>scripts\draw_number_zero.gml</script>
         <script>scripts\get_points_from_bend.gml</script>
+        <script>scripts\instance_point_nearest.gml</script>
       </scripts>
       <scripts name="Audio">
         <script>scripts\audio_play.gml</script>
@@ -1564,6 +1568,9 @@
           <object>objects\obj_slz_shooting_c</object>
           <object>objects\obj_slz_swing_hurt</object>
           <object>objects\obj_slz_swing</object>
+          <object>objects\obj_slz_crane</object>
+          <object>objects\obj_slz_blackhole</object>
+          <object>objects\obj_crane_hold</object>
           <object>objects\obj_slz_shooting_s</object>
           <object>objects\obj_slz_collapse</object>
         </objects>
@@ -1654,7 +1661,6 @@
           <object>objects\obj_ramp</object>
           <object>objects\obj_hsz_coco_tree</object>
           <object>objects\obj_zipline</object>
-          <object>objects\obj_crane_hold</object>
           <object>objects\obj_enemy_destroy</object>
           <object>objects\obj_hsz_vine</object>
         </objects>
@@ -1947,7 +1953,6 @@
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
-    <object>objects\obj_slz_crane</object>
     <object>objects\object365</object>
   </objects>
   <rooms name="rooms">

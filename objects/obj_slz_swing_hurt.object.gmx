@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_slz_swing)
+            <string>if instance_exists(par)
 {
-x=obj_slz_swing.x
-y=obj_slz_swing.y
+x=par.x
+y=par.y
 }
 </string>
           </argument>
