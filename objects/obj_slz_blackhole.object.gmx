@@ -3,7 +3,7 @@
   <spriteName>spr_slz_blackhole</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1000010</depth>
   <persistent>0</persistent>
   <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,6 +30,26 @@ canbetriggered=true;
 t=270
 rx=0
 ry=0
+    
+    surf = -1;
+    surf_w = surface_get_width(application_surface);
+    surf_h = surface_get_height(application_surface);
+    tex_transform = shader_get_uniform( sh_blackhole, "tex_transform" );
+    sampler = shader_get_sampler_index( sh_blackhole, "tex_back" );
+    image_xscale = 2;
+    image_yscale = 2;
+    
+//NOTE:  without texture repeating, when blackhole is near edge of view,
+//       you will see streaks near the center
+//       where it is trying to read positions outside of the texture edges
+//       toggle on or off at your own discretion.
+    texture_set_repeat(true);
+
+
+//just for demo
+    view_center_x = 0;
+    view_center_y = 0;
+    zoom = 1;
 </string>
           </argument>
         </arguments>
@@ -56,8 +76,8 @@ ry=0
 {
 t+=5*par_character.animation_direction
 par_character.state=CS_ROLL
-rx= (x + ((sprite_width/2)-16) * cos(degtorad(t)))+8
-ry= (y - ((sprite_width/2)-16) * sin(degtorad(t)))-8
+rx= (x + (64) * cos(degtorad(t)))+8
+ry= (y - (64) * sin(degtorad(t)))-8
 par_character.x=rx
 par_character.y=ry
 if (par_character.input_action_pressed == true)
@@ -85,6 +105,7 @@ canbetriggered=true;
 }
 
 if triggered=false{t=270}
+ 
 </string>
           </argument>
         </arguments>
@@ -130,10 +151,20 @@ if triggered=false{t=270}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index,1,x,y,1,1,image_angle,c_white,1)
-draw_set_blend_mode(bm_add)
-draw_sprite_ext(sprite_index,0,x,y,1,1,image_angle,c_white,1)
-draw_set_blend_mode(bm_normal)
+            <string>
+    if !surface_exists( surf ) { surf = surface_create( surf_w, surf_h ); }
+    surface_copy( surf, 0, 0, application_surface );
+    shader_set( sh_blackhole );
+    shader_set_uniform_f( 
+        tex_transform, 
+        sprite_width  / (surf_w*zoom), 
+        sprite_height / (surf_h*zoom), 
+        ( x - sprite_width/2  - view_xview ) / view_wview, 
+        ( y - sprite_height/2 - view_yview ) / view_hview 
+    );
+    texture_set_stage( sampler, surface_get_texture( surf ) );
+    draw_self();
+    shader_reset();
 </string>
           </argument>
         </arguments>
