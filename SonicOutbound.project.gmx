@@ -1380,6 +1380,7 @@
     </scripts>
   </scripts>
   <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_tpz.shader</shader>
     <shader type="GLSLES">shaders\sh_blackhole.shader</shader>
   </shaders>
   <fonts name="fonts">
@@ -1679,6 +1680,7 @@
       <objects name="Backgrounds">
         <object>objects\par_parallax</object>
         <objects name="Templates">
+          <object>objects\obj_parallax_tpz1</object>
           <object>objects\obj_parallax_ahz</object>
           <object>objects\obj_parallax_ehz</object>
           <object>objects\obj_parallax_rpz1</object>
