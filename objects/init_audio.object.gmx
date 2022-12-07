@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_group_load(Music);
+            <string>audio_group_load(Sonic);
+audio_group_load(Misc);
 audio_group_load(Sound);
 </string>
           </argument>
@@ -49,7 +50,7 @@ audio_group_load(Sound);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (audio_group_is_loaded(Music) &amp;&amp; audio_group_is_loaded(Sound))
+            <string>if (audio_group_is_loaded(Sonic) &amp;&amp; audio_group_is_loaded(Sound))
 {
     room_goto(rm_sega)
 }
@@ -78,12 +79,12 @@ audio_group_load(Sound);
             <string>draw_set_colour(c_white)
 draw_set_halign(fa_center)
 draw_set_font(fnt_monogram)
-draw_text(212,120-48,"Loading Audio ("+string(audio_group_load_progress(Music))+"%)")
+draw_text(212,120-48,"Loading Audio ("+string(audio_group_load_progress(Sonic))+"%)")
 draw_set_halign(fa_left)
 draw_set_colour(c_gray)
 draw_rectangle(87,120-16,424-87,120+16,false)
 draw_set_colour(c_white)
-draw_rectangle(87,120-16,87+(audio_group_load_progress(Music)*2.5),120+16,false)
+draw_rectangle(87,120-16,87+(audio_group_load_progress(Sonic)*2.5),120+16,false)
 </string>
           </argument>
         </arguments>

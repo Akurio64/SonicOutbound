@@ -54,6 +54,8 @@
     <instance objName="ctr_level" x="0" y="0" name="inst_E51E976A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax_slz2" x="32" y="0" name="inst_B55A185C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stairs" x="1408" y="1344" name="inst_C9A887D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="0" y="1024" name="inst_E9AF7E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="256" y="1280" name="inst_0A3A378F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz2_1" x="0" y="1536" w="256" h="256" xo="273" yo="8" id="10004883" name="inst_FC4A0A42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -96,7 +96,7 @@ if (video_exists(v))
         {
         with(instance_create(0, 0, obj_fade_to))
 {
-fade_to = rm_hsz_act1;
+fade_to = rm_title_screen;
 }
 }
     }

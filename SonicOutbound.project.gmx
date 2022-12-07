@@ -81,17 +81,98 @@
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
-      <sound>sound\msc_title</sound>
-      <sound>sound\msc_menu</sound>
-      <sound>sound\msc_menu2</sound>
-      <sound>sound\msc_menu3</sound>
-      <sound>sound\msc_spiderman</sound>
-      <sound>sound\msc_phantom_egg</sound>
       <sounds name="Zones">
-        <sound>sound\msc_slz1</sound>
-        <sound>sound\msc_slz2</sound>
-        <sound>sound\msc_hsz1</sound>
-        <sound>sound\msc_hsz2</sound>
+        <sound>sound\msc_phantom_egg</sound>
+        <sounds name="Sonic">
+          <sounds name="SPZ">
+            <sounds name="Present">
+              <sound>sound\msc_spz1</sound>
+              <sound>sound\msc_spz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_spz1_p</sound>
+              <sound>sound\msc_spz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_spz1_g</sound>
+              <sound>sound\msc_spz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_spz1_b</sound>
+              <sound>sound\msc_spz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="SLZ">
+            <sounds name="Present">
+              <sound>sound\msc_slz1</sound>
+              <sound>sound\msc_slz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_slz1_p</sound>
+              <sound>sound\msc_slz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_slz1_g</sound>
+              <sound>sound\msc_slz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_slz1_b</sound>
+              <sound>sound\msc_slz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="RPZ">
+            <sounds name="Present">
+              <sound>sound\msc_rpz1</sound>
+              <sound>sound\msc_rpz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_rpz1_p</sound>
+              <sound>sound\msc_rpz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_rpz1_g</sound>
+              <sound>sound\msc_rpz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_rpz1_b</sound>
+              <sound>sound\msc_rpz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="TPZ">
+            <sounds name="Act 1">
+              <sound>sound\msc_tpz_1_1</sound>
+              <sound>sound\msc_tpz_1_2</sound>
+            </sounds>
+            <sounds name="Act 2">
+              <sound>sound\msc_tpz_2_1</sound>
+              <sound>sound\msc_tpz_2_2</sound>
+            </sounds>
+          </sounds>
+        </sounds>
+        <sounds name="HSZ">
+          <sounds name="Present">
+            <sound>sound\msc_hsz1</sound>
+            <sound>sound\msc_hsz2</sound>
+          </sounds>
+          <sounds name="Past">
+            <sound>sound\msc_hsz1_p</sound>
+            <sound>sound\msc_hsz2_p</sound>
+          </sounds>
+          <sounds name="G Future">
+            <sound>sound\msc_hsz1_g</sound>
+            <sound>sound\msc_hsz2_g</sound>
+          </sounds>
+          <sounds name="B Future">
+            <sound>sound\msc_hsz1_b</sound>
+            <sound>sound\msc_hsz2_b</sound>
+          </sounds>
+        </sounds>
+      </sounds>
+      <sounds name="Menus">
+        <sound>sound\msc_title</sound>
+        <sound>sound\msc_menu</sound>
+        <sound>sound\msc_menu2</sound>
+        <sound>sound\msc_menu3</sound>
       </sounds>
     </sounds>
     <sounds name="SE">
@@ -183,22 +264,30 @@
       </sounds>
     </sounds>
     <sounds name="EV">
-      <sound>sound\_ev_invincibility</sound>
-      <sound>sound\_ev_life</sound>
-      <sound>sound\_ev_continue</sound>
-      <sound>sound\_ev_sneakers</sound>
-      <sound>sound\_ev_egg_event</sound>
-      <sound>sound\_ev_robotnik2</sound>
-      <sound>sound\_ev_robotnik3</sound>
-      <sound>sound\_ev_miniboss</sound>
-      <sound>sound\_ev_act_clear</sound>
-      <sound>sound\_ev_act_clear2</sound>
-      <sound>sound\_ev_gameover</sound>
-      <sound>sound\_ev_drown</sound>
-      <sound>sound\_startup_ages</sound>
-      <sound>sound\_startup_sega</sound>
-      <sound>sound\_jingle_p255</sound>
-      <sound>sound\_ev_robotnik</sound>
+      <sounds name="Jingle">
+        <sound>sound\_ev_life</sound>
+        <sound>sound\_ev_continue</sound>
+        <sound>sound\_ev_gameover</sound>
+        <sound>sound\_ev_act_clear2</sound>
+        <sound>sound\_jingle_p255</sound>
+        <sound>sound\_ev_drown</sound>
+        <sound>sound\_startup_ages</sound>
+        <sound>sound\_ev_act_clear</sound>
+        <sound>sound\_ev_sneakers</sound>
+        <sound>sound\_startup_sega</sound>
+        <sound>sound\_ev_invincibility</sound>
+      </sounds>
+      <sounds name="Boss">
+        <sounds name="Sonic">
+          <sound>sound\_ev_robotnik3</sound>
+          <sound>sound\_ev_egg_event</sound>
+          <sound>sound\_ev_robotnik</sound>
+          <sound>sound\_ev_robotnik2</sound>
+        </sounds>
+        <sounds name="Miniboss">
+          <sound>sound\_ev_miniboss</sound>
+        </sounds>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -1150,7 +1239,6 @@
       <background>background\bg_dataselect</background>
       <background>background\bg_levelselect</background>
     </backgrounds>
-    <background>background\background82</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Template Paths">
@@ -1681,11 +1769,13 @@
         <object>objects\par_parallax</object>
         <objects name="Templates">
           <object>objects\obj_parallax_tpz1</object>
+          <object>objects\obj_parallax_tpz2</object>
           <object>objects\obj_parallax_ahz</object>
           <object>objects\obj_parallax_ehz</object>
           <object>objects\obj_parallax_rpz1</object>
           <object>objects\obj_parallax_rpz2</object>
           <object>objects\obj_parallax_ttz1</object>
+          <object>objects\obj_parallax_ttz2</object>
           <object>objects\obj_parallax_hsz1</object>
           <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_slz1</object>
@@ -1985,15 +2075,31 @@
       </rooms>
       <rooms name="Sonic">
         <rooms name="HSZ">
-          <room>rooms\rm_hsz_act1</room>
-          <room>rooms\rm_hsz_act2</room>
+          <room>rooms\rm_hssz_act1</room>
+          <room>rooms\rm_hssz_act2</room>
+        </rooms>
+        <rooms name="SPZ">
+          <room>rooms\rm_spz_act1</room>
+          <room>rooms\rm_spz_act2</room>
         </rooms>
         <rooms name="SLZ">
           <room>rooms\rm_slz_act1</room>
           <room>rooms\rm_slz_act2</room>
         </rooms>
+        <rooms name="RPZ">
+          <room>rooms\rm_rpz_act1</room>
+          <room>rooms\rm_rpz_act2</room>
+        </rooms>
+        <rooms name="TPZ">
+          <room>rooms\rm_tpz_act1</room>
+          <room>rooms\rm_tpz_act2</room>
+        </rooms>
       </rooms>
       <rooms name="Misc">
+        <rooms name="TTZ">
+          <room>rooms\rm_ttz_act1</room>
+          <room>rooms\rm_ttz_act2</room>
+        </rooms>
         <room>rooms\rm_template</room>
       </rooms>
     </rooms>
@@ -2083,8 +2189,11 @@
   </help>
   <audiogroups name="audiogroups">
     <audiogroup name="audiogroup_default"/>
-    <audiogroup name="Music"/>
+    <audiogroup name="Sonic"/>
     <audiogroup name="Sound"/>
+    <audiogroup name="Tails"/>
+    <audiogroup name="Knuckles"/>
+    <audiogroup name="Misc"/>
   </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
