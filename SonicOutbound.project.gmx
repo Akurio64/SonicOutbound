@@ -794,6 +794,21 @@
           <sprite>sprites\spr_hsz_coco_tree</sprite>
           <sprite>sprites\spr_hsz_wrecking</sprite>
         </sprites>
+        <sprites name="TTZ">
+          <sprites name="CRT">
+            <sprite>sprites\sprChromatic1</sprite>
+            <sprite>sprites\sprChromatic2</sprite>
+            <sprite>sprites\sprMask1</sprite>
+            <sprite>sprites\sprMaskWide1</sprite>
+            <sprite>sprites\sprNoise1</sprite>
+            <sprite>sprites\sprOLDTVFilter</sprite>
+            <sprite>sprites\sprOLDTVFilterIcon</sprite>
+            <sprite>sprites\sprScanline1</sprite>
+            <sprite>sprites\sprScanline2</sprite>
+            <sprite>sprites\sprScanline3</sprite>
+            <sprite>sprites\sprStatic1</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
         <sprites name="Template Tiles">
@@ -1380,6 +1395,9 @@
         <script>scripts\draw_number_zero.gml</script>
         <script>scripts\get_points_from_bend.gml</script>
         <script>scripts\instance_point_nearest.gml</script>
+        <script>scripts\scr_OLDTVFilter_Draw.gml</script>
+        <script>scripts\scr_OLDTVFilter_Settings.gml</script>
+        <script>scripts\scr_OLDTVFilter_Setup.gml</script>
       </scripts>
       <scripts name="Audio">
         <script>scripts\audio_play.gml</script>
@@ -1470,6 +1488,13 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_tpz.shader</shader>
     <shader type="GLSLES">shaders\sh_blackhole.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Composite.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Scanline.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Bleeding.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Chromatic.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Tube.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Television.shader</shader>
+    <shader type="GLSLES">shaders\sh_OLDTVFilter_Noise.shader</shader>
   </shaders>
   <fonts name="fonts">
     <fonts name="Menu">
