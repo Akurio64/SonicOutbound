@@ -82,7 +82,6 @@
   <sounds name="sound">
     <sounds name="BGM">
       <sounds name="Zones">
-        <sound>sound\msc_phantom_egg</sound>
         <sounds name="Sonic">
           <sounds name="SPZ">
             <sounds name="Present">
@@ -149,22 +148,182 @@
             </sounds>
           </sounds>
         </sounds>
-        <sounds name="HSZ">
-          <sounds name="Present">
-            <sound>sound\msc_hsz1</sound>
-            <sound>sound\msc_hsz2</sound>
+        <sounds name="Tails">
+          <sounds name="CNZ">
+            <sounds name="Present">
+              <sound>sound\msc_cnz1</sound>
+              <sound>sound\msc_cnz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_cnz1_p</sound>
+              <sound>sound\msc_cnz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_cnz1_g</sound>
+              <sound>sound\msc_cnz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_cnz1_b</sound>
+              <sound>sound\msc_cnz2_b</sound>
+            </sounds>
           </sounds>
-          <sounds name="Past">
-            <sound>sound\msc_hsz1_p</sound>
-            <sound>sound\msc_hsz2_p</sound>
+          <sounds name="SNZ">
+            <sounds name="Present">
+              <sound>sound\msc_snz1</sound>
+              <sound>sound\msc_snz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_snz1_p</sound>
+              <sound>sound\msc_snz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_snz1_g</sound>
+              <sound>sound\msc_snz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_snz1_b</sound>
+              <sound>sound\msc_snz2_b</sound>
+            </sounds>
           </sounds>
-          <sounds name="G Future">
-            <sound>sound\msc_hsz1_g</sound>
-            <sound>sound\msc_hsz2_g</sound>
+          <sounds name="LBZ">
+            <sounds name="Present">
+              <sound>sound\msc_lbz1</sound>
+              <sound>sound\msc_lbz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_lbz1_p</sound>
+              <sound>sound\msc_lbz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_lbz1_g</sound>
+              <sound>sound\msc_lbz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_lbz1_b</sound>
+              <sound>sound\msc_lbz2_b</sound>
+            </sounds>
           </sounds>
-          <sounds name="B Future">
-            <sound>sound\msc_hsz1_b</sound>
-            <sound>sound\msc_hsz2_b</sound>
+          <sounds name="CCZ">
+            <sounds name="Act1">
+              <sound>sound\msc_ccz1_1</sound>
+              <sound>sound\msc_ccz1_2</sound>
+              <sound>sound\msc_ccz1_3</sound>
+            </sounds>
+            <sounds name="Act2">
+              <sound>sound\msc_ccz2_1</sound>
+              <sound>sound\msc_ccz2_2</sound>
+              <sound>sound\msc_ccz2_3</sound>
+              <sound>sound\msc_ccz2_4</sound>
+              <sound>sound\msc_ccz2_5</sound>
+            </sounds>
+          </sounds>
+        </sounds>
+        <sounds name="Knux">
+          <sounds name="VRZ">
+            <sounds name="Present">
+              <sound>sound\msc_vrz1</sound>
+              <sound>sound\msc_vrz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_vrz1_p</sound>
+              <sound>sound\msc_vrz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_vrz1_g</sound>
+              <sound>sound\msc_vrz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_vrz1_b</sound>
+              <sound>sound\msc_vrz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="ICZ">
+            <sounds name="Present">
+              <sound>sound\msc_icz1</sound>
+              <sound>sound\msc_icz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_icz1_p</sound>
+              <sound>sound\msc_icz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_icz1_g</sound>
+              <sound>sound\msc_icz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_icz1_b</sound>
+              <sound>sound\msc_icz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="MRZ">
+            <sounds name="Present">
+              <sound>sound\msc_mrz1</sound>
+              <sound>sound\msc_mrz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_mrz1_p</sound>
+              <sound>sound\msc_mrz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_mrz1_g</sound>
+              <sound>sound\msc_mrz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_mrz1_b</sound>
+              <sound>sound\msc_mrz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="SRZ">
+            <sounds name="Act 1">
+              <sound>sound\msc_srz_1_1</sound>
+              <sound>sound\msc_srz_1_2</sound>
+              <sound>sound\msc_srz_1_3</sound>
+              <sound>sound\msc_srz_1_4</sound>
+              <sound>sound\msc_srz_1_5</sound>
+            </sounds>
+            <sounds name="Act 2">
+              <sound>sound\msc_srz_2_1</sound>
+              <sound>sound\msc_srz_2_2</sound>
+              <sound>sound\msc_srz_2_3</sound>
+              <sound>sound\msc_srz_2_4</sound>
+              <sound>sound\msc_srz_2_5</sound>
+            </sounds>
+          </sounds>
+        </sounds>
+        <sounds name="All">
+          <sounds name="HSZ">
+            <sounds name="Present">
+              <sound>sound\msc_hsz1</sound>
+              <sound>sound\msc_hsz2</sound>
+            </sounds>
+            <sounds name="Past">
+              <sound>sound\msc_hsz1_p</sound>
+              <sound>sound\msc_hsz2_p</sound>
+            </sounds>
+            <sounds name="G Future">
+              <sound>sound\msc_hsz1_g</sound>
+              <sound>sound\msc_hsz2_g</sound>
+            </sounds>
+            <sounds name="B Future">
+              <sound>sound\msc_hsz1_b</sound>
+              <sound>sound\msc_hsz2_b</sound>
+            </sounds>
+          </sounds>
+          <sounds name="TTZ">
+            <sounds name="Act 1">
+              <sound>sound\msc_ttz_1_1</sound>
+              <sound>sound\msc_ttz_1_2</sound>
+            </sounds>
+            <sounds name="Act 2">
+              <sound>sound\msc_ttz2</sound>
+            </sounds>
+          </sounds>
+          <sounds name="EBZ">
+            <sound>sound\msc_ebz1</sound>
+            <sound>sound\msc_ebz2</sound>
+          </sounds>
+          <sounds name="Misc">
+            <sound>sound\msc_phantom_egg</sound>
           </sounds>
         </sounds>
       </sounds>
@@ -1502,8 +1661,28 @@
     </fonts>
   </fonts>
   <objects name="objects">
-    <object>objects\init_audio</object>
     <object>objects\init_hzumi</object>
+    <object>objects\init_audio</object>
+    <objects name="Controllers">
+      <object>objects\ctr_indestructible</object>
+      <object>objects\ctr_culling</object>
+      <object>objects\bg_debug</object>
+      <object>objects\ctr_display</object>
+      <object>objects\ctr_audio</object>
+      <object>objects\ctr_gamepad</object>
+      <object>objects\ctr_level</object>
+    </objects>
+    <objects name="Fades">
+      <object>objects\obj_fade_in</object>
+      <object>objects\obj_fade_to</object>
+      <object>objects\obj_fade_to_white</object>
+      <object>objects\obj_fade_in_white</object>
+      <objects name="Data Select">
+        <object>objects\obj_fade_levelselect</object>
+        <object>objects\obj_fade_loadgame</object>
+        <object>objects\obj_fade_newgame</object>
+      </objects>
+    </objects>
     <objects name="Gameplay">
       <objects name="Character">
         <object>objects\ctr_camera</object>
@@ -1985,15 +2164,6 @@
         <object>objects\obj_continue_controller</object>
       </objects>
     </objects>
-    <objects name="Controllers">
-      <object>objects\ctr_indestructible</object>
-      <object>objects\ctr_culling</object>
-      <object>objects\bg_debug</object>
-      <object>objects\ctr_display</object>
-      <object>objects\ctr_audio</object>
-      <object>objects\ctr_gamepad</object>
-      <object>objects\ctr_level</object>
-    </objects>
     <objects name="Menu">
       <object>objects\_MENU_README_</object>
       <objects name="Main Menu">
@@ -2024,16 +2194,15 @@
         <object>objects\obj_level_select_controller</object>
       </objects>
     </objects>
-    <objects name="Fades">
-      <object>objects\obj_fade_in</object>
-      <object>objects\obj_fade_to</object>
-      <object>objects\obj_fade_to_white</object>
-      <object>objects\obj_fade_in_white</object>
-      <objects name="Data Select">
-        <object>objects\obj_fade_levelselect</object>
-        <object>objects\obj_fade_loadgame</object>
-        <object>objects\obj_fade_newgame</object>
-      </objects>
+    <objects name="Particules">
+      <object>objects\par_particules</object>
+      <object>objects\obj_enemy_part</object>
+      <object>objects\obj_flower</object>
+      <object>objects\obj_fire_particules2</object>
+      <object>objects\obj_wind_particule2</object>
+      <object>objects\obj_elec_particules2</object>
+      <object>objects\obj_rain</object>
+      <object>objects\obj_wind</object>
     </objects>
     <objects name="Startup">
       <objects name="SEGA">
@@ -2060,29 +2229,18 @@
       </objects>
       <object>objects\obj_p255_boot</object>
     </objects>
-    <objects name="Particules">
-      <object>objects\par_particules</object>
-      <object>objects\obj_enemy_part</object>
-      <object>objects\obj_flower</object>
-      <object>objects\obj_fire_particules2</object>
-      <object>objects\obj_wind_particule2</object>
-      <object>objects\obj_elec_particules2</object>
-      <object>objects\obj_rain</object>
-      <object>objects\obj_wind</object>
-    </objects>
     <objects name="Video">
       <object>objects\obj_intro</object>
       <object>objects\obj_intro2</object>
     </objects>
-    <object>objects\object365</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">
       <room>rooms\rm_init</room>
-      <room>rooms\rm_audio</room>
       <room>rooms\rm_sega</room>
       <room>rooms\rm_p255</room>
       <room>rooms\rm_sage</room>
+      <room>rooms\rm_audio</room>
     </rooms>
     <rooms name="Title Screen">
       <room>rooms\rm_title_screen</room>
@@ -2100,24 +2258,128 @@
       </rooms>
       <rooms name="Sonic">
         <rooms name="HSZ">
-          <room>rooms\rm_hssz_act1</room>
-          <room>rooms\rm_hssz_act2</room>
+          <rooms name="Act1">
+            <room>rooms\rm_hssz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_hssz_act2</room>
+          </rooms>
         </rooms>
         <rooms name="SPZ">
-          <room>rooms\rm_spz_act1</room>
-          <room>rooms\rm_spz_act2</room>
+          <rooms name="Act1">
+            <room>rooms\rm_spz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_spz_act2</room>
+          </rooms>
         </rooms>
         <rooms name="SLZ">
-          <room>rooms\rm_slz_act1</room>
-          <room>rooms\rm_slz_act2</room>
+          <rooms name="Act1">
+            <room>rooms\rm_slz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_slz_act2</room>
+          </rooms>
         </rooms>
         <rooms name="RPZ">
-          <room>rooms\rm_rpz_act1</room>
-          <room>rooms\rm_rpz_act2</room>
+          <rooms name="Act1">
+            <room>rooms\rm_rpz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_rpz_act2</room>
+          </rooms>
         </rooms>
         <rooms name="TPZ">
-          <room>rooms\rm_tpz_act1</room>
-          <room>rooms\rm_tpz_act2</room>
+          <rooms name="Act1">
+            <room>rooms\rm_tpz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_tpz_act2</room>
+          </rooms>
+        </rooms>
+      </rooms>
+      <rooms name="Tails">
+        <rooms name="HSZ">
+          <rooms name="Act1">
+            <room>rooms\rm_hstz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_hstz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="CNZ">
+          <rooms name="Act1">
+            <room>rooms\rm_cnz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_cnz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="SNZ">
+          <rooms name="Act1">
+            <room>rooms\rm_snz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_snz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="LBZ">
+          <rooms name="Act1">
+            <room>rooms\rm_lbz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_lbz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="CCZ">
+          <rooms name="Act1">
+            <room>rooms\rm_ccz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_ccz_act2</room>
+          </rooms>
+        </rooms>
+      </rooms>
+      <rooms name="Knux">
+        <rooms name="HSZ">
+          <rooms name="Act1">
+            <room>rooms\rm_hskz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_hskz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="VRZ">
+          <rooms name="Act1">
+            <room>rooms\rm_vrz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_vrz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="ICZ">
+          <rooms name="Act1">
+            <room>rooms\rm_icz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_icz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="MRZ">
+          <rooms name="Act1">
+            <room>rooms\rm_mrz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_mrz_act2</room>
+          </rooms>
+        </rooms>
+        <rooms name="SRZ">
+          <rooms name="Act1">
+            <room>rooms\rm_srz_act1</room>
+          </rooms>
+          <rooms name="Act2">
+            <room>rooms\rm_srz_act2</room>
+          </rooms>
         </rooms>
       </rooms>
       <rooms name="Misc">
@@ -2125,7 +2387,9 @@
           <room>rooms\rm_ttz_act1</room>
           <room>rooms\rm_ttz_act2</room>
         </rooms>
-        <room>rooms\rm_template</room>
+        <rooms name="Template">
+          <room>rooms\rm_template</room>
+        </rooms>
       </rooms>
     </rooms>
     <room>rooms\rm_continue</room>
