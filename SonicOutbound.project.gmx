@@ -2237,10 +2237,10 @@
   <rooms name="rooms">
     <rooms name="Startup">
       <room>rooms\rm_init</room>
+      <room>rooms\rm_audio</room>
       <room>rooms\rm_sega</room>
       <room>rooms\rm_p255</room>
       <room>rooms\rm_sage</room>
-      <room>rooms\rm_audio</room>
     </rooms>
     <rooms name="Title Screen">
       <room>rooms\rm_title_screen</room>
@@ -2478,11 +2478,7 @@
   </help>
   <audiogroups name="audiogroups">
     <audiogroup name="audiogroup_default"/>
-    <audiogroup name="Sonic"/>
-    <audiogroup name="Sound"/>
-    <audiogroup name="Tails"/>
-    <audiogroup name="Knuckles"/>
-    <audiogroup name="Misc"/>
+    <audiogroup name="Music"/>
   </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>

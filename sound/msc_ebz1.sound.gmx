@@ -15,7 +15,7 @@
     <sampleRate>48000</sampleRate>
   </sampleRates>
   <types>
-    <type>1</type>
+    <type>0</type>
   </types>
   <bitDepths>
     <bitDepth>16</bitDepth>
@@ -24,6 +24,6 @@
   <data>msc_ebz1.ogg</data>
   <compressed>1</compressed>
   <streamed>0</streamed>
-  <uncompressOnLoad>1</uncompressOnLoad>
-  <audioGroup>0</audioGroup>
+  <uncompressOnLoad>0</uncompressOnLoad>
+  <audioGroup>1</audioGroup>
 </sound>

@@ -69,7 +69,7 @@
                 }
                 else if global.character_index=2
                 {
-                return rm_mbz_act1
+                return rm_mrz_act1
                 }
             }
             case rm_rpz_act1:
