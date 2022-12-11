@@ -2,7 +2,8 @@ if (input_special_pressed)
 {
 miles_tornado_timer=90
 state=CS_TORNADO
-if abs(x_speed)<12{x_speed+=animation_direction}
+if abs(x_speed)<12{x_speed+=animation_direction
+x_speed-=0.1*animation_direction}
 }
 
 if miles_tornado_timer=0

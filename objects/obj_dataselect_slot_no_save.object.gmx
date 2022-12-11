@@ -93,7 +93,7 @@
        if(dataslot_combo == 1)
        {
           dataslot_character = 1;
-          dataslot_cpu       = 1;   
+          dataslot_cpu       = 0;   
        }
        if(dataslot_combo == 2)
        {

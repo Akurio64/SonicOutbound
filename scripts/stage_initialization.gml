@@ -14,6 +14,12 @@ if(global.save_selected != 0)
                  stage_set_data("TITANIC MONARCH", 2, msc_phantom_egg, false, -1, room_height, 315946, 6694951, 44100);
                  break;
            }
+           case rm_h_intro:
+           {
+              // Test Stage (Act 2)
+                 stage_set_data("HIDDEN PALACE", 0, msc_hpz, false, -1, room_height, 315946, 6694951, 44100);
+                 break;
+           }
            case rm_hssz_act1:
            {
               // Test Stage (Act 2)
@@ -147,6 +153,13 @@ if(global.save_selected != 0)
                  global.zone_id=7
                  break;
            }
+           case rm_ttkz_act1:
+           {
+              // Test Stage (Act 2)
+                 stage_set_data("TECHNO TURRET", 1, msc_ttz_1_1, false, -1, room_height, 315946, 6694951, 44100);
+                 global.zone_id=7
+                 break;
+           }
            case rm_ttz_act2:
            {
               // Test Stage (Act 2)
@@ -235,6 +248,20 @@ if(global.save_selected != 0)
            {
               // Test Stage (Act 2)
                  stage_set_data("SKY REALM", 2, msc_srz_2_1, false, -1, room_height, 315946, 6694951, 44100);
+                 global.zone_id=12
+                 break;
+           }
+           case rm_ebz_act1:
+           {
+              // Test Stage (Act 2)
+                 stage_set_data("EGG BEHEMOTH", 1, msc_ebz1, false, -1, room_height, 315946, 6694951, 44100);
+                 global.zone_id=11
+                 break;
+           }
+           case rm_ebz_act2:
+           {
+              // Test Stage (Act 2)
+                 stage_set_data("EGG BEHEMOTH", 2, msc_ebz2, false, -1, room_height, 315946, 6694951, 44100);
                  global.zone_id=12
                  break;
            }

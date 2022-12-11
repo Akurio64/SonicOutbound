@@ -3,8 +3,8 @@
   <caption></caption>
   <width>4240</width>
   <height>240</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>64</vsnap>
+  <hsnap>256</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,11 +52,29 @@
   </views>
   <instances>
     <instance objName="obj_character" x="64" y="160" name="inst_0CFB7FE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_o" x="0" y="176" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
-    <instance objName="obj_parallax_hsz1" x="16" y="0" name="inst_C144D7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="0" y="192" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="0" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parallax_snz1" x="0" y="64" name="inst_BFD6D8EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="tls_snz_1" x="0" y="192" w="256" h="256" xo="515" yo="1" id="10005066" name="inst_031BC562" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="256" y="192" w="256" h="256" xo="515" yo="1" id="10005067" name="inst_CD93264F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="512" y="192" w="256" h="256" xo="515" yo="1" id="10005068" name="inst_498DE8C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="768" y="192" w="256" h="256" xo="515" yo="1" id="10005069" name="inst_E7CDCD1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="1024" y="192" w="256" h="256" xo="515" yo="1" id="10005070" name="inst_CF70CE8F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="1280" y="192" w="256" h="256" xo="515" yo="1" id="10005071" name="inst_F8C7A5D8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="1536" y="192" w="256" h="256" xo="515" yo="1" id="10005072" name="inst_FCA5E5C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="1792" y="192" w="256" h="256" xo="515" yo="1" id="10005073" name="inst_9CFB962A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="2048" y="192" w="256" h="256" xo="515" yo="1" id="10005074" name="inst_F6611074" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="2304" y="192" w="256" h="256" xo="515" yo="1" id="10005075" name="inst_56BE3AF2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="2560" y="192" w="256" h="256" xo="515" yo="1" id="10005076" name="inst_A904A428" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="2816" y="192" w="256" h="256" xo="515" yo="1" id="10005077" name="inst_15F8447F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="3072" y="192" w="256" h="256" xo="515" yo="1" id="10005078" name="inst_F0DD5298" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="3328" y="192" w="256" h="256" xo="515" yo="1" id="10005079" name="inst_2808B2A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="3584" y="192" w="256" h="256" xo="515" yo="1" id="10005080" name="inst_D65F390B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="3840" y="192" w="256" h="256" xo="515" yo="1" id="10005081" name="inst_352132BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_snz_1" x="4096" y="192" w="256" h="256" xo="515" yo="1" id="10005082" name="inst_F306C3F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

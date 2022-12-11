@@ -13,8 +13,42 @@
             case rm_t_intro:
            {
               // Test Stage (Act 2)
-                 return rm_hssz_act1; 
-                 break;
+              if global.character_index=0
+                {
+                return rm_hssz_act1
+                break;
+                }
+              else if global.character_index=1
+                {
+                return rm_hstz_act1
+                break;
+                }
+              else if global.character_index=2
+                {
+                return rm_hskz_act1
+                break;
+                }
+                 
+           }
+           case rm_h_intro:
+           {
+              // Test Stage (Act 2)
+              if global.character_index=0
+                {
+                return rm_hssz_act1
+                break;
+                }
+              else if global.character_index=1
+                {
+                return rm_hstz_act1
+                break;
+                }
+              else if global.character_index=2
+                {
+                return rm_hskz_act1
+                break;
+                }
+                 
            }
            case rm_hssz_act1:
            {
@@ -26,6 +60,30 @@
            {
               // Test Stage (Act 2)
                  return rm_spz_act1; 
+                 break;
+           }
+           case rm_hstz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_hstz_act2; 
+                 break;
+           }
+           case rm_hstz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_cnz_act1; 
+                 break;
+           }
+           case rm_hskz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_hskz_act2; 
+                 break;
+           }
+           case rm_hskz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_vrz_act1; 
                  break;
            }
            case rm_spz_act1:
@@ -50,12 +108,70 @@
            case rm_slz_act2:
            {
                 return rm_ttz_act1
+                break;
            } 
+           
+           
+           case rm_cnz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_cnz_act2; 
+                 break;
+           }
+           case rm_cnz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_snz_act1; 
+                 break;
+           }
+           case rm_snz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_snz_act2; 
+                 break;
+           }
+           
+           case rm_vrz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_vrz_act2; 
+                 break;
+           }
+           case rm_vrz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_icz_act1; 
+                 break;
+           }
+           case rm_icz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_icz_act2; 
+                 break;
+           }
+           
+           case rm_icz_act2:
+           {
+                return rm_ttkz_act1
+                break;
+           } 
+           
+           case rm_snz_act2:
+           {
+                return rm_ttz_act1
+                break;
+           }
            
            case rm_ttz_act1:
            {
                 return rm_ttz_act2
+                break;
            } 
+           case rm_ttkz_act1:
+           {
+                return rm_ttz_act2
+                break;
+           }
            
            case rm_ttz_act2:
            {
@@ -91,6 +207,80 @@
                  break;
            }
            case rm_tpz_act2:
+           {
+              // First stage, Test Stage (Act 1)
+                 // Back to the menu:
+                 global.clives = 3;
+                 global.crings = 0;
+                 global.cscore = 0;
+                 return rm_menu;
+                 break;
+           }
+           case rm_lbz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_lbz_act2; 
+                 break;
+           }
+           case rm_lbz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_ccz_act1; 
+                 break;
+           }
+           case rm_ccz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_ccz_act2; 
+                 break;
+           }
+           case rm_ccz_act2:
+           {
+              // First stage, Test Stage (Act 1)
+                 // Back to the menu:
+                 global.clives = 3;
+                 global.crings = 0;
+                 global.cscore = 0;
+                 return rm_menu;
+                 break;
+           }
+           
+           case rm_mrz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_mrz_act2; 
+                 break;
+           }
+           case rm_mrz_act2:
+           {
+              // Test Stage (Act 2)
+                 return rm_srz_act1; 
+                 break;
+           }
+           case rm_srz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_srz_act2; 
+                 break;
+           }
+           case rm_srz_act2:
+           {
+              // First stage, Test Stage (Act 1)
+                 // Back to the menu:
+                 global.clives = 3;
+                 global.crings = 0;
+                 global.cscore = 0;
+                 return rm_menu;
+                 break;
+           }
+           
+           case rm_ebz_act1:
+           {
+              // Test Stage (Act 2)
+                 return rm_ebz_act2; 
+                 break;
+           }
+           case rm_ebz_act2:
            {
               // First stage, Test Stage (Act 1)
                  // Back to the menu:

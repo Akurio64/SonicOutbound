@@ -282,36 +282,36 @@
     <tile bgName="tls_hsz_palmtree_trunk" x="72" y="96" w="104" h="16" xo="0" yo="0" id="10004856" name="inst_9A12C165" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_trunk" x="72" y="80" w="104" h="16" xo="0" yo="0" id="10004857" name="inst_D1CAE8D1" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_palmtree_top" x="72" y="8" w="104" h="72" xo="0" yo="0" id="10004858" name="inst_14DF4536" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="0" y="152" w="128" h="128" xo="1172" yo="130" id="10004517" name="inst_02930D07" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="128" y="152" w="128" h="128" xo="1172" yo="130" id="10004518" name="inst_A337F90B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="256" y="152" w="128" h="128" xo="1172" yo="130" id="10004519" name="inst_F3220697" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="384" y="152" w="128" h="128" xo="1172" yo="130" id="10004520" name="inst_8E7D917D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="512" y="152" w="128" h="128" xo="1172" yo="130" id="10004521" name="inst_2FC1395A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="640" y="160" w="128" h="128" xo="132" yo="652" id="10004524" name="inst_474E1675" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="768" y="160" w="128" h="128" xo="132" yo="652" id="10004525" name="inst_F3093928" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="896" y="160" w="128" h="128" xo="132" yo="652" id="10004526" name="inst_6F420A26" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="1024" y="160" w="128" h="128" xo="132" yo="652" id="10004527" name="inst_3194AFB7" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="1152" y="160" w="128" h="128" xo="132" yo="652" id="10004528" name="inst_2A97011A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="1280" y="160" w="128" h="128" xo="132" yo="652" id="10004529" name="inst_85DE7E1D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="1408" y="128" w="128" h="128" xo="1172" yo="132" id="10004531" name="inst_56D06633" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="1536" y="128" w="128" h="128" xo="1042" yo="132" id="10004533" name="inst_970721E4" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="1792" y="128" w="128" h="128" xo="1042" yo="132" id="10004534" name="inst_F784FBDE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="2048" y="128" w="128" h="128" xo="1042" yo="132" id="10004535" name="inst_62504978" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="1920" y="128" w="128" h="128" xo="1172" yo="132" id="10004542" name="inst_5652E9C2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_rock" x="1664" y="128" w="128" h="128" xo="1172" yo="132" id="10004543" name="inst_6BF1987F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="640" y="240" w="128" h="128" xo="2" yo="522" id="10004844" name="inst_87AA5D92" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="768" y="232" w="128" h="128" xo="2" yo="522" id="10004845" name="inst_DD4D8D15" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="896" y="232" w="128" h="128" xo="2" yo="522" id="10004846" name="inst_98050247" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="1024" y="232" w="128" h="128" xo="2" yo="522" id="10004847" name="inst_0804EE7C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="1152" y="232" w="128" h="128" xo="2" yo="522" id="10004848" name="inst_561562DC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_jungle" x="1280" y="232" w="128" h="128" xo="2" yo="522" id="10004849" name="inst_6A9145CD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2432" y="152" w="128" h="128" xo="1172" yo="130" id="10004888" name="inst_B8A7EB8F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2560" y="152" w="128" h="128" xo="1172" yo="130" id="10004889" name="inst_804B0EDF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2688" y="152" w="128" h="128" xo="1172" yo="130" id="10004890" name="inst_4CE5368A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2816" y="152" w="128" h="128" xo="1172" yo="130" id="10004891" name="inst_7A1F0874" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2944" y="152" w="128" h="128" xo="1172" yo="130" id="10004892" name="inst_0FC5DF96" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2304" y="152" w="128" h="128" xo="1172" yo="130" id="10004893" name="inst_56520ECB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tlz_hsz_sand" x="2176" y="152" w="128" h="128" xo="1172" yo="130" id="10004894" name="inst_2BDDB397" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="0" y="152" w="128" h="128" xo="1172" yo="130" id="10004517" name="inst_02930D07" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="128" y="152" w="128" h="128" xo="1172" yo="130" id="10004518" name="inst_A337F90B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="256" y="152" w="128" h="128" xo="1172" yo="130" id="10004519" name="inst_F3220697" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="384" y="152" w="128" h="128" xo="1172" yo="130" id="10004520" name="inst_8E7D917D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="512" y="152" w="128" h="128" xo="1172" yo="130" id="10004521" name="inst_2FC1395A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="640" y="160" w="128" h="128" xo="132" yo="652" id="10004524" name="inst_474E1675" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="768" y="160" w="128" h="128" xo="132" yo="652" id="10004525" name="inst_F3093928" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="896" y="160" w="128" h="128" xo="132" yo="652" id="10004526" name="inst_6F420A26" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="1024" y="160" w="128" h="128" xo="132" yo="652" id="10004527" name="inst_3194AFB7" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="1152" y="160" w="128" h="128" xo="132" yo="652" id="10004528" name="inst_2A97011A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="1280" y="160" w="128" h="128" xo="132" yo="652" id="10004529" name="inst_85DE7E1D" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_rock" x="1408" y="128" w="128" h="128" xo="1172" yo="132" id="10004531" name="inst_56D06633" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_rock" x="1536" y="128" w="128" h="128" xo="1042" yo="132" id="10004533" name="inst_970721E4" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_rock" x="1792" y="128" w="128" h="128" xo="1042" yo="132" id="10004534" name="inst_F784FBDE" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_rock" x="2048" y="128" w="128" h="128" xo="1042" yo="132" id="10004535" name="inst_62504978" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_rock" x="1920" y="128" w="128" h="128" xo="1172" yo="132" id="10004542" name="inst_5652E9C2" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_rock" x="1664" y="128" w="128" h="128" xo="1172" yo="132" id="10004543" name="inst_6BF1987F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="640" y="240" w="128" h="128" xo="2" yo="522" id="10004844" name="inst_87AA5D92" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="768" y="232" w="128" h="128" xo="2" yo="522" id="10004845" name="inst_DD4D8D15" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="896" y="232" w="128" h="128" xo="2" yo="522" id="10004846" name="inst_98050247" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="1024" y="232" w="128" h="128" xo="2" yo="522" id="10004847" name="inst_0804EE7C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="1152" y="232" w="128" h="128" xo="2" yo="522" id="10004848" name="inst_561562DC" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_jungle" x="1280" y="232" w="128" h="128" xo="2" yo="522" id="10004849" name="inst_6A9145CD" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2432" y="152" w="128" h="128" xo="1172" yo="130" id="10004888" name="inst_B8A7EB8F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2560" y="152" w="128" h="128" xo="1172" yo="130" id="10004889" name="inst_804B0EDF" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2688" y="152" w="128" h="128" xo="1172" yo="130" id="10004890" name="inst_4CE5368A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2816" y="152" w="128" h="128" xo="1172" yo="130" id="10004891" name="inst_7A1F0874" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2944" y="152" w="128" h="128" xo="1172" yo="130" id="10004892" name="inst_0FC5DF96" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2304" y="152" w="128" h="128" xo="1172" yo="130" id="10004893" name="inst_56520ECB" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="2176" y="152" w="128" h="128" xo="1172" yo="130" id="10004894" name="inst_2BDDB397" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

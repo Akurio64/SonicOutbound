@@ -31,8 +31,9 @@
     instance_create(0, 0, ctr_culling);
     instance_create(0, 0, obj_level_hud)
     if (room=rm_t_intro)=false{
+    if (room=rm_h_intro)=false{
     instance_create(0, 0, obj_title_card)
-    }else{obj_character.input_lock_r=0
+    }}else{obj_character.input_lock_r=0
     obj_character.input_lock_l=0
     obj_character.start=true
     instance_create(0, 0, obj_fade_in)}

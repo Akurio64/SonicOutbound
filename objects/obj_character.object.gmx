@@ -278,48 +278,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Inputs keys.
- 
-    input_up               = false;
-    input_down             = false;
-    input_right            = false;
-    input_left             = false;
-    input_action           = false;
-    input_special          = false;
-    
-    input_up_pressed       = false;
-    input_down_pressed     = false;
-    input_right_pressed    = false;
-    input_left_pressed     = false;
-    input_action_pressed   = false;
-    input_special_pressed  = false;    
-    
-    input_up_released      = false;
-    input_down_released    = false;
-    input_right_released   = false;
-    input_left_released    = false;
-    input_action_released  = false;
-    input_special_released = false;    
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Animation variables.
  // This script will create variables for the animation system.
  // If you're curious how to use/create animations, see "tutorial_character_animations()"
@@ -346,8 +304,50 @@
     draw_y                    = y;
     run                       = spr_sonic_walk
     hang                      = ""
-    if room=rm_t_intro{mania=true}else{mania=false}
+    if room=rm_t_intro or room=rm_h_intro{mania=true}else{mania=false}
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Inputs keys.
+ 
+    input_up               = false;
+    input_down             = false;
+    input_right            = false;
+    input_left             = false;
+    input_action           = false;
+    input_special          = false;
+    
+    input_up_pressed       = false;
+    input_down_pressed     = false;
+    input_right_pressed    = false;
+    input_left_pressed     = false;
+    input_action_pressed   = false;
+    input_special_pressed  = false;    
+    
+    input_up_released      = false;
+    input_down_released    = false;
+    input_right_released   = false;
+    input_left_released    = false;
+    input_action_released  = false;
+    input_special_released = false;    
 </string>
           </argument>
         </arguments>
@@ -1229,7 +1229,7 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
        miles_tail_frame += miles_tail_speed;
     }
     
-    if room=rm_t_intro{mania=true}
+    if room=rm_t_intro or room=rm_h_intro{mania=true}
 
 </string>
           </argument>
@@ -1749,7 +1749,7 @@ part_emitter_burst(Star2,ie2,ip2,1)}
                    }
                    
                 // Decrease lives:
-                if (room=rm_t_intro)=false{
+                if (room=rm_t_intro or room=rm_h_intro)=false{
                    global.clives -= 1;
                    if(global.clives &lt; 0) global.clives = 0;}
                    
@@ -3174,7 +3174,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="49">
+    <event eventtype="9" enumb="50">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -3193,7 +3193,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
             <kind>1</kind>
             <string>with(instance_create(x, y, obj_fade_to))
              {
-                  fade_to = stage_order();
+                  fade_to = rm_ebz_act1
              }
 </string>
           </argument>

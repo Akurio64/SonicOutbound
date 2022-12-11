@@ -27,11 +27,6 @@
             <kind>1</kind>
             <string>/// Main variables.
 
- // Destroy if CPUs are disabled.
- // _____________________________________________________________________________________________________________________________ 
-   
-    if(global.cpu_index == -1) instance_destroy();
-  
  // Flag, checking if everything has been initialized. Prevents possible errors:
  // _____________________________________________________________________________________________________________________________ 
  
@@ -40,8 +35,9 @@
  // ID:
  // _____________________________________________________________________________________________________________________________ 
   
-    character_id = 2; // &gt; The character we're playing as.
-    is_cpu       = true;             // &gt; Is the character a cpu?
+    if global.character_index=2{
+    character_id = 0}else{character_id = 2}; // &gt; The character we're playing as.
+    is_cpu       = true;                  // &gt; Is the character a cpu?
 
  // State:
  // _____________________________________________________________________________________________________________________________ 
@@ -110,7 +106,7 @@
     platform_timer   = 30;    // &gt; Used to reset the platform check. Preventing that the character can get stuck or bump off platforms.
     swing_id         = noone; // &gt; The id of the swing platform we're grounded on.
     disable_wallstop = false; // &gt; If true, we disable the horizontal speed stop after hitting a wall. This is required for launching on slopes.
-    loop_direction   = 0;     // &gt; Keeps track in which direction we're going through a loop. Used for AI.    
+    loop_direction   = 0;     // &gt; Keeps track in which direction we're going through a loop. Used for AI.      
     
  // Angle variables:
  // _____________________________________________________________________________________________________________________________ 
@@ -154,6 +150,8 @@
     shield_object = noone; // &gt; Sets the shield object.
     shield_usable = 0;     // &gt; Checks if a shield is usable (Used for special actions)
     shield_state  = 0;     // &gt; The state of the shield. 
+    wind_timer    = 0;
+    wind_offset   = 0;
     
  // Invincibility:
  // _____________________________________________________________________________________________________________________________ 
@@ -227,7 +225,10 @@
     miles_tail_x          = 0;     // &gt; X Position for the tail.
     miles_tail_y          = 0;     // &gt; Y Position for the tail.
     miles_tail_angle      = 1;     // &gt; Angle of the tail. 
-    miles_tail_direction  = 1;     // &gt; Direction of the tail.        
+    miles_tail_direction  = 1;     // &gt; Direction of the tail.      
+    
+    miles_tornado         = false 
+    miles_tornado_timer   = 0 
     
  // Knuckles variables:
  // _____________________________________________________________________________________________________________________________
@@ -239,24 +240,73 @@
     glide_turn_a       = 0;     // &gt; ^^ 
     climb_ox           = 0;     // &gt; Position that returns the x position when grabbing. If it increases or decreases, we stop climbing.
     climb_speed        = 1;     // &gt; How fast Knuckles can climb up a wall.
-    is_ledge_grabbing  = 0;     // &gt; Returns if we're ledge climbing.         
+    is_ledge_grabbing  = 0;     // &gt; Returns if we're ledge climbing.     
+    mega               = false    
     
         
  // Misc.:
  // _____________________________________________________________________________________________________________________________
- 
-    ai_state_delay    = 16;   // &gt; Delays state change.
-    ai_ring           = 0;    // &gt; Checks if the ai has some rings.
+
     death_timer      = -5;    // &gt; See death script in the step event. 
     afterimage_draw  = false; // &gt; Should we draw a afterimage?
     afterimage_timer = 0;     // &gt; Timer that prevents the spawning of another afterimage.
-
-    mega             = false    
     char_pos         = 0
-    start            = false
+    start           = false
     
     hyper = false
     shield_y=floor(y)
+    vine=noone
+
+    relative_position = 0
+    angle_in_corkscrew = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Animation variables.
+ // This script will create variables for the animation system.
+ // If you're curious how to use/create animations, see "tutorial_character_animations()"
+  
+    animation_index           = "STAND";
+    animation_previous        = "";
+    animation_flag            = "START";
+    animation_sprite_id       = spr_sonic_stand;
+    animation_speed           = 0;
+    animation_rendering_speed = 0;
+    animation_frame           = 0;
+    animation_end             = 0;
+    animation_loop            = 0;
+    animation_loop_timer      = 0;
+    animation_next            = "";
+    animation_next_frame      = 0;
+    animation_direction       = 1;
+    animation_angle           = 0;
+    animation_angle_mod       = 0;
+    animation_blend           = c_white;
+    animation_alpha           = 1;
+    animation_timer           = 0; 
+    draw_x                    = x;
+    draw_y                    = y;
+    run                       = spr_sonic_walk
+    hang                      = ""
+    if room=rm_t_intro or room=rm_h_intro{mania=true}else{mania=false}
+
 </string>
           </argument>
         </arguments>
@@ -319,31 +369,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Animation variables.
- // This script will create variables for the animation system.
- // If you're curious how to use/create animations, see "tutorial_character_animations()"
-  
-    animation_index           = "STAND";
-    animation_previous        = "";
-    animation_flag            = "START";
-    animation_sprite_id       = spr_sonic_stand;
-    animation_speed           = 0;
-    animation_rendering_speed = 0;
-    animation_frame           = 0;
-    animation_end             = 0;
-    animation_loop            = 0;
-    animation_loop_timer      = 0;
-    animation_next            = "";
-    animation_next_frame      = 0;
-    animation_direction       = 1;
-    animation_angle           = 0;
-    animation_angle_mod       = 0;
-    animation_blend           = c_white;
-    animation_alpha           = 1;
-    animation_timer           = 0; 
-    draw_x                    = x;
-    draw_y                    = y;
+            <string>/// Finish initalization / Checkpoint respawn and camera.
 
+ // Set the init. flag. Allowing other scripts to run.
+    is_initialized = true;
+
+ // Set checkpoint position.
+    if(global.checkpoint_x != -1)
+    {
+       global.game_time = global.checkpoint_t;
+       x                = global.checkpoint_x;
+       y                = global.checkpoint_y;
+    }
+        
+ // Create the camera.
+    camera = instance_create(x, y, ctr_camera);
+    camera . x = x;
+    camera . y = y;
 </string>
           </argument>
         </arguments>
@@ -364,19 +406,221 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Finish initalization / Checkpoint respawn and camera.
+            <string>///Particle System
 
- // Set the init. flag. Allowing other scripts to run.
-    is_initialized = true;
+//Fire
+// define the particle system
+FireP = part_system_create()
 
- // Set checkpoint position.
-    if(global.checkpoint_x != -1)
-    {
-       global.game_time = global.checkpoint_t;
-       x                = global.checkpoint_x;
-       y                = global.checkpoint_y;
-    }
+// define the depth of the particle system
+part_system_depth(FireP,0);
 
+// define the particle
+fp = part_type_create();
+part_type_sprite(fp,spr_fire,0,0,1);
+part_type_size(fp,0.2,0.3,-.05,0);
+part_type_orientation(fp,0,360,2,0,0);
+part_type_color2(fp,c_orange,c_red);
+part_type_alpha3(fp,1,1,0);
+part_type_blend(fp,1);
+part_type_speed(fp,.1,.5,0,0);
+part_type_direction(fp,0,359,0,0);
+part_type_gravity(fp,0.02,90);
+part_type_orientation(fp,0,359,10,0,true);
+part_type_life(fp,50,125);
+
+// define the emitter
+fe = part_emitter_create(FireP);
+
+//define the emitter region
+part_emitter_region(FireP,fe,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian);
+
+//Bubble
+
+// define the particle system
+BubbleP = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(BubbleP,0);
+
+// define the particle
+bp = part_type_create();
+part_type_shape(bp,pt_shape_ring);
+part_type_size(bp,0.05,0.15,-.001,0);
+part_type_scale(bp,1,1);
+part_type_colour2(bp,c_aqua,c_blue);
+part_type_alpha2(bp,0.75,1);
+part_type_speed(bp,.1,.5,0,0);
+part_type_direction(bp,0,359,0,0);
+part_type_gravity(bp,0.02,90);
+part_type_orientation(bp,0,359,10,0,true);
+part_type_blend(bp,true);
+part_type_life(bp,50,125);
+
+// define the emitter
+be = part_emitter_create(BubbleP);
+
+//define the emitter region
+part_emitter_region(BubbleP,be,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian);
+
+//Electric
+
+// define the particle system
+ElectricP = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(ElectricP,0);
+
+// define the particle
+ep = part_type_create();
+part_type_shape(ep,pt_shape_spark);
+part_type_size(ep,0.4,0.6,-.001,0);
+part_type_scale(ep,1,1);
+part_type_colour2(ep,c_white,c_aqua);
+part_type_alpha2(ep,0.5,0.25);
+part_type_speed(ep,.1,.25,0,0.05);
+part_type_direction(ep,0,359,0,1);
+part_type_gravity(ep,0.02,90);
+part_type_orientation(ep,0,359,10,1,true);
+part_type_blend(ep,true);
+part_type_life(ep,50,125);
+
+// define the emitter
+ee = part_emitter_create(ElectricP);
+
+//define the emitter region
+part_emitter_region(ElectricP,ee,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian);
+
+//Wind
+
+// define the particle system
+WindP = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(WindP,0);
+
+// define the particle
+wp = part_type_create();
+part_type_shape(wp,pt_shape_cloud);
+part_type_size(wp,0.05,0.1,-.001,0);
+part_type_scale(wp,5,2);
+part_type_colour2(wp,c_white,c_ltgray);
+part_type_alpha2(wp,0.5,1);
+part_type_speed(wp,0.01,0.1,0.1,0.05);
+part_type_direction(wp,0,359,10,0);
+part_type_blend(wp,true);
+part_type_life(wp,60,120);
+
+// define the emitter
+we = part_emitter_create(WindP);
+
+//define the emitter region
+part_emitter_region(WindP,we,x-64,x+64,y-64,y+64,ps_shape_ellipse,ps_distr_invgaussian);
+
+
+//Rock
+
+// define the particle system
+RockP1 = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(RockP1,0);
+
+// define the particle
+rp1 = part_type_create();
+part_type_sprite(rp1,spr_rock_part,false,false,false);
+part_type_scale(rp1,1,1);
+part_type_alpha2(rp1,1,0);
+part_type_speed(rp1,1,1,0,0);
+part_type_direction(rp1,0,359,1,0);
+part_type_orientation(rp1,0,359,3,1,true);
+part_type_life(rp1,10,30);
+
+// define the emitter
+re1 = part_emitter_create(RockP1);
+
+//define the emitter region
+part_emitter_region(RockP1,re1,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_invgaussian);
+
+// define the particle system
+RockP2 = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(RockP2,0);
+
+// define the particle
+rp2 = part_type_create();
+part_type_shape(rp2,pt_shape_smoke);
+part_type_size(rp2,0.05,0.25,-.001,0);
+part_type_scale(rp2,1,1);
+part_type_colour2(rp2,c_maroon,c_ltgray);
+part_type_alpha2(rp2,0.25,0.5);
+part_type_speed(rp2,2,4,0,0);
+part_type_direction(rp2,80,100,0,0);
+part_type_gravity(rp2,0.25,270);
+part_type_orientation(rp2,0,359,0,0,true);
+part_type_blend(rp2,true);
+part_type_life(rp2,10,30);
+
+// define the emitter
+re2 = part_emitter_create(RockP2);
+
+//define the emitter region
+part_emitter_region(RockP2,re2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian);
+
+//Invincible
+
+// define the particle system
+Star1 = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(Star1,0);
+
+// define the particle
+ip = part_type_create();
+part_type_shape(ip,pt_shape_spark);
+part_type_size(ip,0.4,0.6,-.001,0);
+part_type_scale(ip,1,1);
+part_type_colour2(ip,c_white,c_white);
+part_type_alpha2(ip,0.5,0.25);
+part_type_speed(ip,.1,.25,0,0.05);
+part_type_direction(ip,0,359,0,1);
+part_type_gravity(ip,0.02,90);
+part_type_orientation(ip,0,359,10,1,true);
+part_type_blend(ip,true);
+part_type_life(ip,50,125);
+
+// define the emitter
+ie = part_emitter_create(Star1);
+
+//define the emitter region
+part_emitter_region(Star1,ie,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian);
+
+// define the particle system
+Star2 = part_system_create()
+
+// define the depth of the particle system
+part_system_depth(Star2,0);
+
+// define the particle
+ip2 = part_type_create();
+part_type_shape(ip2,pt_shape_flare);
+part_type_size(ip2,0.2,0.3,-.001,0);
+part_type_scale(ip2,1,1);
+part_type_colour2(ip2,c_white,c_white);
+part_type_alpha2(ip2,0.75,0.5);
+part_type_speed(ip2,.1,.5,0,0);
+part_type_direction(ip2,0,359,0,0);
+part_type_gravity(ip2,0.02,90);
+part_type_orientation(ip2,0,359,10,0,true);
+part_type_blend(ip2,true);
+part_type_life(ip2,50,125);
+
+// define the emitter
+ie2 = part_emitter_create(Star2);
+
+//define the emitter region
+part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian);
 </string>
           </argument>
         </arguments>
@@ -424,64 +668,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Keep within boundaries
-
-    if(instance_exists(ctr_camera))
-    {
-       if(x &lt;= (ctr_camera.limit_left+sprite_get_width(MASK_MAIN)/2) &amp;&amp; x_speed &lt; 0.0)
-       {
-          if(state != CS_GLIDE)
-          {
-             x_speed = 0;
-          }
-          else
-          {
-             if(x_speed &lt; -4) x_speed = -4;
-          }
-          x = (ctr_camera.limit_left+sprite_get_width(MASK_MAIN)/2);
-          if(ground)
-          {
-             animation_index = "IDLE";
-          }
-       }
-       else
-       if(x &gt;= (ctr_camera.limit_right-sprite_get_width(MASK_MAIN)/2) &amp;&amp; x_speed &gt; 0.0)
-       {
-          if(state != CS_GLIDE)
-          {
-             x_speed = 0;
-          }
-          else
-          {
-             if(x_speed &gt; 4) x_speed = 4;
-          }
-          x  = (ctr_camera.limit_right-sprite_get_width(MASK_MAIN)/2);
-          if(ground)
-          {
-             animation_index = "IDLE";
-          }
-       }
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Trigger animation / Modify animation variables.
  // Here we change which animation should play at any time.
  
@@ -511,11 +697,12 @@
        if(state == CS_DEFAULT &amp;&amp; x_speed == 0 &amp;&amp; animation_index != "SKID TURN" &amp;&amp; animation_index != "CROUCH_UP" &amp;&amp; animation_index != "LOOK_END")
        { 
           if(animation_index != "STAND" &amp;&amp;  animation_timer &lt; 288) { animation_index = "STAND";}
-          if(animation_index != "BORED_1" &amp;&amp; animation_timer = 288 &amp;&amp; animation_index != "BORED_2") { animation_index = "BORED_1"; }          
+          if(animation_index != "BORED_1" &amp;&amp; animation_timer = 288 &amp;&amp; animation_index != "BORED_2") { animation_index = "BORED_1"; }   
        }
     }
     
  // Standing state timer, to change to idle animations.
+ if(instance_exists(obj_drown_counter))=false{
     if(animation_index == "STAND")
     {
        if(animation_timer &lt; 288) {  animation_timer += 1; }
@@ -530,7 +717,7 @@
        {
           animation_timer = 0;
        } 
-    }
+    }}else{animation_timer=0}
     
  // Change the animation speeds of the idle animations (once a certain frame has passed)
     if(animation_index == "BORED_1")
@@ -572,15 +759,15 @@
           {
              if(animation_index != "JOG"   &amp;&amp; abs(x_speed) &gt;= 3.75 &amp;&amp; abs(x_speed) &lt; 6 &amp;&amp; ( ((animation_index == "WALK" or animation_index == "WALK_W") &amp;&amp; animation_frame &gt;= 2 &amp;&amp; animation_frame &lt;= 4 || (animation_index != "WALK" or animation_index != "WALK_W")) )) 
              { 
-                animation_index =  "JOG"; 
+                if physic_state=0{animation_index =  "JOG"}
              }          
              if(animation_index != "RUN"   &amp;&amp; abs(x_speed) &gt;= 6 &amp;&amp; abs(x_speed) &lt; 12) 
              { 
-                animation_index =  "RUN";
+                if physic_state=0{animation_index =  "RUN"}
              }      
              if(animation_index != "DASH"  &amp;&amp; abs(x_speed) &gt;= 12 ) 
              { 
-                animation_index = "DASH"; 
+                if physic_state=0{animation_index = "DASH"}
              }
           }  
           else
@@ -805,33 +992,69 @@
        }
     }
     
-    
- // Respawn. 
-    if(state == CS_RESPAWN &amp;&amp; character_id == CHAR_SONIC)
+    // Tornado.
+    if(state == CS_TORNADO)
     {
-       if(animation_index != "ROLL")
+       if abs(x_speed)&lt;12
        {
-          animation_index  = "ROLL";
-       } 
-    }        
-    if(state == CS_RESPAWN &amp;&amp; character_id == CHAR_TAILS)
-    {
-       if(physic_state == 0)
+       if(animation_index != "TORNADO")
        {
-          if(animation_index != "FLY") { animation_index = "FLY"; }
+          animation_index = "TORNADO";
+       }
+       animation_speed = abs(x_speed/8)
        }
        else
        {
-          if(animation_index != "SWIM") { animation_index = "SWIM"; }       
-       }
-    }   
-    if(state == CS_RESPAWN &amp;&amp; character_id == CHAR_KNUX)
-    {
-       if(animation_index != "GLIDE")
+       if(animation_index != "TORNADO FAST")
        {
-          animation_index  = "GLIDE";
-       } 
-    }     
+       animation_index="TORNADO FAST"
+       }
+       animation_speed = 0.3
+       }
+    }
+    
+    // Mega-Punch.
+    if(state == CS_MEGA)
+    {
+       if(animation_index != "MEGA")
+       {
+          animation_index = "MEGA";
+       }
+       }
+       
+    // WIN.
+    if(state == CS_WIN)
+    {
+       if(animation_index != "WIN")
+       {
+          animation_index = "WIN";
+       }
+       }
+       
+    // Hang
+    if(state == CS_HANG)
+    {
+       if(animation_index != hang)
+       {
+          animation_index = hang;
+       }
+       }
+    // Corkscrew
+    if(state == CS_CORKSCREW)
+    {
+       if(animation_index != "CORKSCREW")
+       {
+          animation_index = "CORKSCREW";
+       }
+       }
+     // Sliding
+    if(state == CS_SLIDE2)
+    {
+       if(animation_index != "HURT")
+       {
+          animation_index = "HURT";
+       }
+       }
 </string>
           </argument>
         </arguments>
@@ -870,7 +1093,13 @@
           // Start the playback of the animation:
              if(animation_flag == "START")
              {
+                if mania=false{
                 update_animation_index();
+                }
+                else
+                {
+                update_animation_index_mania();
+                }
                 animation_flag = "PLAY";
              }
 
@@ -878,7 +1107,13 @@
              if(animation_flag == "PLAY")
              {
                 // Animate:
-                   animation_frame += animation_speed;
+                if animation_index="VINE"{
+                if animation_direction=1
+                {animation_frame=((x-(vine.xstart))+80)/20}
+                else if animation_direction=-1
+                {animation_frame=(((vine.xstart)-x)+80)/20}}
+                else{
+                animation_frame += animation_speed}
                 
                 // Check if the animation has ended:                   
                    if(floor(animation_frame) &gt; animation_end)
@@ -920,7 +1155,13 @@
                    animation_flag  = "PLAY";                  
                    animation_index = animation_next; 
                    animation_frame = animation_next_frame;                                                    
-                   update_animation_index();                                                  
+                   if mania=false{
+                update_animation_index();
+                }
+                else
+                {
+                update_animation_index_mania();
+                }                                                 
                 }
              }
        }
@@ -931,6 +1172,8 @@
     {
        miles_tail_frame += miles_tail_speed;
     }
+    
+    if room=rm_t_intro or room=rm_h_intro{mania=true}
 
 </string>
           </argument>
@@ -998,25 +1241,6 @@
            if(input_right) { animation_direction =  1; }  
            if(input_left)  { animation_direction = -1; }                         
      } 
-     
- // Respawn direction.
-    if(state == CS_RESPAWN)
-    {
-       if(obj_character.x &gt; x)
-       {
-          if(x &gt; xprevious)
-          {
-             animation_direction = 1;
-          }
-       }
-       if(obj_character.x &lt; x)
-       {
-          if(x &lt; xprevious)
-          {
-             animation_direction = -1;
-          }
-       }
-    }
 </string>
           </argument>
         </arguments>
@@ -1041,7 +1265,7 @@
  // This is used for rotating the players sprite.
  
  // Exit if not initialized, death or hurt.
-    if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK)
+    if(is_initialized == true &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_HURT &amp;&amp; state != CS_FLY &amp;&amp; state != CS_FLYDROP &amp;&amp; state != CS_GLIDE &amp;&amp; state != CS_CLIMB &amp;&amp; state != CS_GLIDE_DROP &amp;&amp; state != CS_CROUCH &amp;&amp; state != CS_LOOK &amp;&amp; animation_index != "3DLOOP3" &amp;&amp; animation_index != "3DLOOP2" &amp;&amp; animation_index != "3DLOOP1")
     {
  
  // Change animation angle values:
@@ -1150,7 +1374,6 @@
        }
        else miles_tail_direction = animation_direction;
     }
-    
 </string>
           </argument>
         </arguments>
@@ -1232,6 +1455,64 @@
        }
     }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Keep within boundaries
+
+    if(instance_exists(ctr_camera))
+    {
+       if(x &lt;= (ctr_camera.limit_left+sprite_get_width(MASK_MAIN)/2) &amp;&amp; x_speed &lt; 0.0)
+       {
+          if(state != CS_GLIDE)
+          {
+             x_speed = 0;
+          }
+          else
+          {
+             if(x_speed &lt; -4) x_speed = -4;
+          }
+          x = (ctr_camera.limit_left+sprite_get_width(MASK_MAIN)/2);
+          if(ground)
+          {
+             animation_index = "IDLE";
+          }
+       }
+       else
+       if(x &gt;= (ctr_camera.limit_right-sprite_get_width(MASK_MAIN)/2) &amp;&amp; x_speed &gt; 0.0)
+       {
+          if(state != CS_GLIDE)
+          {
+             x_speed = 0;
+          }
+          else
+          {
+             if(x_speed &gt; 4) x_speed = 4;
+          }
+          x  = (ctr_camera.limit_right-sprite_get_width(MASK_MAIN)/2);
+          if(ground)
+          {
+             animation_index = "IDLE";
+          }
+       }
+    }
 </string>
           </argument>
         </arguments>
@@ -2268,7 +2549,7 @@
             <string>/// Character States.
  // Executes and/or sets each state of the character.
  
-    if(is_initialized &amp;&amp; state != CS_DEATH)
+    if(is_initialized &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_WIN &amp;&amp; start=true)
     {
        
  // Sonics insta-shield:    
@@ -2283,19 +2564,13 @@
  // Sonics peelout:    
     if(character_id == CHAR_SONIC)
     {   
-       if(global.setting_gameplay_peelout == true)
-       {
           sonic_state_peelout();
-       }
     }
     
  // Sonics drop dash:    
     if(character_id == CHAR_SONIC)
     {   
-       if(global.setting_gameplay_dropdash == true) 
-       {
           sonic_state_dropdash();
-       }
     }
     
  // Tails flying.
@@ -2304,12 +2579,18 @@
        miles_state_fly();
     }
     
+    if(character_id == CHAR_TAILS)
+    {
+       miles_state_tornado();
+    }
+    
  // Knuckles glide, climb and slide.
     if(character_id == CHAR_KNUX)
     {
        knuckles_state_glide();
        knuckles_state_climb();
        knuckles_state_slide();
+       knuckles_state_mega();
     }
     
  // Shield abilities:
@@ -2326,10 +2607,11 @@
     character_state_jump();
     
  // Looking up:
-    character_state_look();
+ if(instance_exists(obj_drown_counter))=false{
+    character_state_look();}
     
  // Crouch:
-    character_state_crouch();
+    character_state_crouch()
     
  // Rolling:
     character_state_roll();
@@ -2349,7 +2631,13 @@
  // Balance:
     character_state_balance();
     
+    character_change_id()
+    
+    character_state_ball()
     }
+    
+ // Win
+    character_state_win()
 </string>
           </argument>
         </arguments>

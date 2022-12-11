@@ -57,7 +57,8 @@
             <kind>1</kind>
             <string>/// Go to the first stage.
 
-    room_goto(rm_t_intro);
+    if global.character_index!=2{
+    room_goto(rm_t_intro)}else{room_goto(rm_h_intro)}
     audio_stop(msc_menu)
 
 </string>
