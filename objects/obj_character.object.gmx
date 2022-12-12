@@ -2577,40 +2577,6 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Air drag.
-
- // Exit if not initialized or death.
-    if(is_initialized == true &amp;&amp; state != CS_DEATH)
-    {   
-        // Air Drag:
-           if(ground == false &amp;&amp; state != CS_HURT)
-           {
-              if(y_speed &lt; 0 &amp;&amp; y_speed &gt;= -4)
-              {
-                 x_speed -= ((x_speed / 0.125) / 256);
-              }
-           }
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Character States.
  // Executes and/or sets each state of the character.
  
@@ -2646,7 +2612,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
     
     if(character_id == CHAR_TAILS)
     {
-       miles_state_tornado();
+       if mania=false{miles_state_tornado()}
     }
     
  // Knuckles glide, climb and slide.
@@ -2655,7 +2621,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
        knuckles_state_glide();
        knuckles_state_climb();
        knuckles_state_slide();
-       knuckles_state_mega();
+       if mania=false{knuckles_state_mega()}
     }
     
  // Shield abilities:
@@ -2698,11 +2664,46 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
     
     character_change_id()
     
-    character_state_ball()
+    if mania=false{
+    character_state_ball()}
     }
     
  // Win
     character_state_win()
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Air drag.
+
+ // Exit if not initialized or death.
+    if(is_initialized == true &amp;&amp; state != CS_DEATH)
+    {   
+        // Air Drag:
+           if(ground == false &amp;&amp; state != CS_HURT)
+           {
+              if(y_speed &lt; 0 &amp;&amp; y_speed &gt;= -4)
+              {
+                 x_speed -= ((x_speed / 0.125) / 256);
+              }
+           }
+    }
 </string>
           </argument>
         </arguments>
@@ -3194,6 +3195,32 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
             <string>with(instance_create(x, y, obj_fade_to))
              {
                   fade_to = rm_ebz_act1
+             }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="49">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(instance_create(x, y, obj_fade_to))
+             {
+                  fade_to = stage_order()
              }
 </string>
           </argument>

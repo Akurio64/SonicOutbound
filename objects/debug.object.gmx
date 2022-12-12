@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>fade=instance_create(x, y, obj_fade_to)
-fade.fade_to = rm_ccz_act2
+fade.fade_to = stage_order()
 </string>
           </argument>
         </arguments>

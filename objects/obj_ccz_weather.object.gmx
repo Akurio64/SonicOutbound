@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>pos=0
+tile_layer_hide(1000001)
+tile_layer_hide(1000002)
 </string>
           </argument>
         </arguments>

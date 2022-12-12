@@ -436,6 +436,7 @@
         <sound>sound\_ev_sneakers</sound>
         <sound>sound\_startup_sega</sound>
         <sound>sound\_ev_invincibility</sound>
+        <sound>sound\_ev_knux</sound>
       </sounds>
       <sounds name="Boss">
         <sounds name="Sonic">
@@ -446,6 +447,10 @@
         </sounds>
         <sounds name="Miniboss">
           <sound>sound\_ev_miniboss</sound>
+        </sounds>
+        <sounds name="Knux">
+          <sound>sound\_ev_meta_theme</sound>
+          <sound>sound\_ev_meta_b1</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -816,27 +821,6 @@
             <sprite>sprites\spr_platform_flag_move_right</sprite>
           </sprites>
         </sprites>
-        <sprites name="SLZ">
-          <sprite>sprites\spr_stairs</sprite>
-          <sprite>sprites\spr_see_ball</sprite>
-          <sprite>sprites\spr_stairpreview</sprite>
-          <sprite>sprites\spr_slz_fire_shooter</sprite>
-          <sprite>sprites\spr_slz_3dloop</sprite>
-          <sprite>sprites\spr_slz_blackhole</sprite>
-          <sprite>sprites\spr_slz_3dloop_ext</sprite>
-          <sprite>sprites\spr_slz_3dloop_m</sprite>
-          <sprite>sprites\spr_3dloop_speed</sprite>
-          <sprite>sprites\spr_crane_hold</sprite>
-          <sprite>sprites\spr_slz_fire</sprite>
-          <sprite>sprites\spr_slz_wind</sprite>
-          <sprite>sprites\spr_crane</sprite>
-          <sprite>sprites\spr_slz_fan</sprite>
-          <sprite>sprites\spr_seesaw</sprite>
-          <sprite>sprites\spr_slz_swing</sprite>
-          <sprite>sprites\spr_slz_swing_piece1</sprite>
-          <sprite>sprites\spr_slz_swing_piece2</sprite>
-          <sprite>sprites\spr_slz_swing_hurt</sprite>
-        </sprites>
         <sprites name="Bosses">
           <sprites name="HSZ">
             <sprites name="Watermobile">
@@ -940,74 +924,102 @@
           <sprite>sprites\spr_test_break_wall</sprite>
           <sprite>sprites\spr_mask_null</sprite>
         </sprites>
-        <sprites name="HSZ">
-          <sprite>sprites\spr_hsz_beach_ball</sprite>
-          <sprite>sprites\spr_hsz_vine</sprite>
-          <sprite>sprites\spr_hsz_wrecking_mask</sprite>
-          <sprite>sprites\spr_hsz_elastic</sprite>
-          <sprite>sprites\spr_ehz_upper_corkscrew</sprite>
-          <sprite>sprites\spr_aiz_ramp</sprite>
-          <sprite>sprites\spr_zipline_1</sprite>
-          <sprite>sprites\spr_ehz_corkscrew</sprite>
-          <sprite>sprites\spr_zipline</sprite>
-          <sprite>sprites\spr_waterslide2</sprite>
-          <sprite>sprites\spr_hsz_elastic_head</sprite>
-          <sprite>sprites\spr_hsz_coco_tree</sprite>
-          <sprite>sprites\spr_hsz_wrecking</sprite>
-        </sprites>
-        <sprites name="TTZ">
-          <sprites name="BG">
-            <sprite>sprites\tile000</sprite>
-            <sprite>sprites\tile001</sprite>
-            <sprite>sprites\tile002</sprite>
-            <sprite>sprites\tile003</sprite>
-            <sprite>sprites\tile004</sprite>
-            <sprite>sprites\tile005</sprite>
-            <sprite>sprites\tile006</sprite>
-            <sprite>sprites\tile007</sprite>
-            <sprite>sprites\tile008</sprite>
-            <sprite>sprites\tile009</sprite>
-            <sprite>sprites\tile010</sprite>
-            <sprite>sprites\tile011</sprite>
-            <sprite>sprites\tile012</sprite>
-            <sprite>sprites\tile013</sprite>
-            <sprite>sprites\tile014</sprite>
-            <sprite>sprites\tile015</sprite>
-            <sprite>sprites\tile016</sprite>
-            <sprite>sprites\tile017</sprite>
-            <sprite>sprites\tile018</sprite>
-            <sprite>sprites\tile019</sprite>
-            <sprite>sprites\tile020</sprite>
-            <sprite>sprites\tile021</sprite>
-            <sprite>sprites\tile022</sprite>
-            <sprite>sprites\tile023</sprite>
-            <sprite>sprites\tile024</sprite>
-            <sprite>sprites\tile025</sprite>
-            <sprite>sprites\tile026</sprite>
-            <sprite>sprites\tile027</sprite>
-            <sprite>sprites\tile028</sprite>
-            <sprite>sprites\tile029</sprite>
-            <sprite>sprites\tile030</sprite>
-            <sprite>sprites\tile031</sprite>
-            <sprite>sprites\tile032</sprite>
-            <sprite>sprites\tile033</sprite>
-            <sprite>sprites\tile034</sprite>
-            <sprite>sprites\tile035</sprite>
-            <sprite>sprites\tile036</sprite>
-            <sprite>sprites\tile037</sprite>
-            <sprite>sprites\tile038</sprite>
-            <sprite>sprites\tile039</sprite>
-            <sprite>sprites\tile040</sprite>
-            <sprite>sprites\tile041</sprite>
-            <sprite>sprites\tile042</sprite>
-            <sprite>sprites\tile043</sprite>
-            <sprite>sprites\tile044</sprite>
-            <sprite>sprites\tile045</sprite>
-            <sprite>sprites\tile046</sprite>
-            <sprite>sprites\tile053</sprite>
-            <sprite>sprites\tile054</sprite>
-            <sprite>sprites\tile055</sprite>
-            <sprite>sprites\tile056</sprite>
+        <sprites name="Zones">
+          <sprites name="HSZ">
+            <sprite>sprites\spr_hsz_beach_ball</sprite>
+            <sprite>sprites\spr_hsz_vine</sprite>
+            <sprite>sprites\spr_hsz_wrecking_mask</sprite>
+            <sprite>sprites\spr_hsz_elastic</sprite>
+            <sprite>sprites\spr_ehz_upper_corkscrew</sprite>
+            <sprite>sprites\spr_aiz_ramp</sprite>
+            <sprite>sprites\spr_zipline_1</sprite>
+            <sprite>sprites\spr_ehz_corkscrew</sprite>
+            <sprite>sprites\spr_zipline</sprite>
+            <sprite>sprites\spr_waterslide2</sprite>
+            <sprite>sprites\spr_hsz_elastic_head</sprite>
+            <sprite>sprites\spr_hsz_coco_tree</sprite>
+            <sprite>sprites\spr_hsz_wrecking</sprite>
+          </sprites>
+          <sprites name="TTZ">
+            <sprites name="BG">
+              <sprite>sprites\tile000</sprite>
+              <sprite>sprites\tile001</sprite>
+              <sprite>sprites\tile002</sprite>
+              <sprite>sprites\tile003</sprite>
+              <sprite>sprites\tile004</sprite>
+              <sprite>sprites\tile005</sprite>
+              <sprite>sprites\tile006</sprite>
+              <sprite>sprites\tile007</sprite>
+              <sprite>sprites\tile008</sprite>
+              <sprite>sprites\tile009</sprite>
+              <sprite>sprites\tile010</sprite>
+              <sprite>sprites\tile011</sprite>
+              <sprite>sprites\tile012</sprite>
+              <sprite>sprites\tile013</sprite>
+              <sprite>sprites\tile014</sprite>
+              <sprite>sprites\tile015</sprite>
+              <sprite>sprites\tile016</sprite>
+              <sprite>sprites\tile017</sprite>
+              <sprite>sprites\tile018</sprite>
+              <sprite>sprites\tile019</sprite>
+              <sprite>sprites\tile020</sprite>
+              <sprite>sprites\tile021</sprite>
+              <sprite>sprites\tile022</sprite>
+              <sprite>sprites\tile023</sprite>
+              <sprite>sprites\tile024</sprite>
+              <sprite>sprites\tile025</sprite>
+              <sprite>sprites\tile026</sprite>
+              <sprite>sprites\tile027</sprite>
+              <sprite>sprites\tile028</sprite>
+              <sprite>sprites\tile029</sprite>
+              <sprite>sprites\tile030</sprite>
+              <sprite>sprites\tile031</sprite>
+              <sprite>sprites\tile032</sprite>
+              <sprite>sprites\tile033</sprite>
+              <sprite>sprites\tile034</sprite>
+              <sprite>sprites\tile035</sprite>
+              <sprite>sprites\tile036</sprite>
+              <sprite>sprites\tile037</sprite>
+              <sprite>sprites\tile038</sprite>
+              <sprite>sprites\tile039</sprite>
+              <sprite>sprites\tile040</sprite>
+              <sprite>sprites\tile041</sprite>
+              <sprite>sprites\tile042</sprite>
+              <sprite>sprites\tile043</sprite>
+              <sprite>sprites\tile044</sprite>
+              <sprite>sprites\tile045</sprite>
+              <sprite>sprites\tile046</sprite>
+              <sprite>sprites\tile053</sprite>
+              <sprite>sprites\tile054</sprite>
+              <sprite>sprites\tile055</sprite>
+              <sprite>sprites\tile056</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="SLZ">
+            <sprite>sprites\spr_stairs</sprite>
+            <sprite>sprites\spr_see_ball</sprite>
+            <sprite>sprites\spr_stairpreview</sprite>
+            <sprite>sprites\spr_slz_fire_shooter</sprite>
+            <sprite>sprites\spr_slz_3dloop</sprite>
+            <sprite>sprites\spr_slz_blackhole</sprite>
+            <sprite>sprites\spr_slz_3dloop_ext</sprite>
+            <sprite>sprites\spr_slz_3dloop_m</sprite>
+            <sprite>sprites\spr_3dloop_speed</sprite>
+            <sprite>sprites\spr_crane_hold</sprite>
+            <sprite>sprites\spr_slz_fire</sprite>
+            <sprite>sprites\spr_slz_wind</sprite>
+            <sprite>sprites\spr_crane</sprite>
+            <sprite>sprites\spr_slz_fan</sprite>
+            <sprite>sprites\spr_seesaw</sprite>
+            <sprite>sprites\spr_slz_swing</sprite>
+            <sprite>sprites\spr_slz_swing_piece1</sprite>
+            <sprite>sprites\spr_slz_swing_piece2</sprite>
+            <sprite>sprites\spr_slz_swing_hurt</sprite>
+          </sprites>
+          <sprites name="ICZ">
+            <sprite>sprites\pbg_icz_2_2</sprite>
+            <sprite>sprites\pbg_icz_1_2</sprite>
+            <sprite>sprites\obj_icz_u</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -1384,6 +1396,34 @@
         <background>background\pbg_snz1_01</background>
         <background>background\pbg_snz2_01</background>
       </backgrounds>
+      <backgrounds name="VRZ">
+        <background>background\pbg_vrz_01</background>
+        <background>background\pbg_vrz_02</background>
+        <background>background\pbg_vrz_ref</background>
+        <background>background\pbg_vrz_03</background>
+      </backgrounds>
+      <backgrounds name="ICZ">
+        <backgrounds name="Under">
+          <background>background\pbg_icz_u_1</background>
+          <background>background\pbg_icz_u_2</background>
+          <background>background\pbg_icz_u_3</background>
+          <background>background\pbg_icz_u_4</background>
+          <background>background\pbg_icz_u_5</background>
+          <background>background\pbg_icz_u_6</background>
+          <background>background\pbg_icz_u_7</background>
+          <background>background\pbg_icz_u_8</background>
+          <background>background\pbg_icz_u_9</background>
+          <background>background\pbg_icz_u_10</background>
+        </backgrounds>
+        <backgrounds name="Out">
+          <background>background\pbg_icz_2_1</background>
+          <background>background\pbg_icz_1_1</background>
+          <background>background\pbg_icz_2_3</background>
+          <background>background\pbg_icz_1_3</background>
+          <background>background\pbg_icz_2_4</background>
+          <background>background\pbg_icz_1_4</background>
+        </backgrounds>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="Tilesets">
       <backgrounds name="SLZ">
@@ -1403,6 +1443,8 @@
         <background>background\bg_t_intro_lvl</background>
         <background>background\tls_hpz</background>
         <background>background\bg_t_intro_bg_1</background>
+        <background>background\tls_hpz_2</background>
+        <background>background\bg_h_intro</background>
       </backgrounds>
       <backgrounds name="HSZ">
         <background>background\tls_hsz_sand</background>
@@ -1431,6 +1473,12 @@
       <backgrounds name="SNZ">
         <background>background\tls_snz_1</background>
         <background>background\tls_snz_2</background>
+      </backgrounds>
+      <backgrounds name="VRZ">
+        <background>background\tls_vrz</background>
+      </backgrounds>
+      <backgrounds name="ICZ">
+        <background>background\tls_icz</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Misc">
@@ -1689,7 +1737,6 @@
     <object>objects\init_audio</object>
     <objects name="Controllers">
       <object>objects\ctr_indestructible</object>
-      <object>objects\debug</object>
       <object>objects\ctr_culling</object>
       <object>objects\bg_debug</object>
       <object>objects\ctr_display</object>
@@ -1989,6 +2036,10 @@
           </objects>
           <objects name="CCZ">
             <object>objects\obj_ccz_weather</object>
+            <object>objects\obj_time_travel</object>
+          </objects>
+          <objects name="ICZ">
+            <object>objects\obj_icz_bg</object>
           </objects>
         </objects>
       </objects>
@@ -2004,17 +2055,21 @@
         <objects name="Zones">
           <object>objects\obj_parallax_tpz1</object>
           <object>objects\obj_parallax_tpz2</object>
-          <object>objects\obj_parallax_ahz</object>
-          <object>objects\obj_parallax_ehz</object>
           <object>objects\obj_parallax_rpz1</object>
           <object>objects\obj_parallax_rpz2</object>
           <object>objects\obj_parallax_ttz1</object>
           <object>objects\obj_parallax_ttz2</object>
           <object>objects\obj_parallax_hsz1</object>
+          <object>objects\obj_parallax_vrz1</object>
           <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_slz1</object>
+          <object>objects\obj_parallax_icz1_o</object>
+          <object>objects\obj_parallax_icz1_u</object>
+          <object>objects\obj_parallax_icz2_o</object>
+          <object>objects\obj_parallax_icz2_u</object>
           <object>objects\obj_parallax_slz2</object>
-          <object>objects\obj_t_intro_bg</object>
+          <object>objects\obj_parallax_tmz</object>
+          <object>objects\obj_parallax_hpz</object>
           <object>objects\obj_parallax_spz1</object>
           <object>objects\obj_parallax_spz2</object>
           <object>objects\obj_parallax_cnz1</object>

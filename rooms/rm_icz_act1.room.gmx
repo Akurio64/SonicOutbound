@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>4240</width>
-  <height>240</height>
+  <height>2400</height>
   <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
@@ -51,10 +51,11 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_character" x="64" y="160" name="inst_0CFB7FE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_o" x="0" y="176" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
-    <instance objName="obj_parallax_hsz1" x="16" y="0" name="inst_C144D7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="112" y="1872" name="inst_0CFB7FE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="-64" y="1936" name="inst_8D5CB486" locked="0" code="" scaleX="157.419998168945" scaleY="15.4799995422363" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="0" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_icz_bg" x="448" y="-128" name="inst_8A1E2AAC" locked="0" code="" scaleX="141.940002441406" scaleY="100.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parallax_icz1_o" x="16" y="0" name="inst_2F38B73D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
