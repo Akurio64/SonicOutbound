@@ -37,7 +37,7 @@
  // Create the mountains:
     parallax_add_node(1, pbg_icz_1_1, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 512, 90);  // &lt; Parallax ID 1      
     parallax_add_node(1, pbg_icz_1_2, 0.93, 0, 0, 0, 0, bg_yoffset, 0, 0, 90, 0, 0, 0, 256, 48); // &lt; Parallax ID 2   
-    parallax_add_node(1, pbg_icz_1_4, 0.90, -1, 0, 0, 0, bg_yoffset, 0, 0, 138, 0, 0, 0, 320, 48);  // &lt; Parallax ID 1      
+    parallax_add_node(1, pbg_icz_1_4, 1.00, 0, 0, 0, 0, bg_yoffset, 0, 0, 138, 0, 0, 0, 424, 48);  // &lt; Parallax ID 1      
     parallax_add_node(1, pbg_icz_1_3, 0.87, 0, 0, 0, 0, bg_yoffset, 0, 0, 186, 0, 0, 0, 1, 72); // &lt; Parallax ID 2   
 </string>
           </argument>
@@ -66,9 +66,8 @@
  // We can change the image frame of parallax sprites by changing parallax_speed[id]
  // This obviously only works when using a sprite with multiple frames.
  
-    parallax_speed[1] += 0.25; // Mountains 1 waterfalls.
-    parallax_speed[2] += 0.25; // Mountains 2 waterfalls.    
-
+    parallax_speed[1] += 0.25;
+    parallax_speed[2] += 0.25+((ctr_camera.x-ctr_camera.xprevious)/2)
 </string>
           </argument>
         </arguments>

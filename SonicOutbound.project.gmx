@@ -1019,6 +1019,8 @@
           <sprites name="ICZ">
             <sprite>sprites\pbg_icz_2_2</sprite>
             <sprite>sprites\pbg_icz_1_2</sprite>
+            <sprite>sprites\pbg_icz_2_4</sprite>
+            <sprite>sprites\pbg_icz_1_4</sprite>
             <sprite>sprites\obj_icz_u</sprite>
           </sprites>
         </sprites>
@@ -1420,9 +1422,12 @@
           <background>background\pbg_icz_1_1</background>
           <background>background\pbg_icz_2_3</background>
           <background>background\pbg_icz_1_3</background>
-          <background>background\pbg_icz_2_4</background>
-          <background>background\pbg_icz_1_4</background>
         </backgrounds>
+      </backgrounds>
+      <backgrounds name="MRZ">
+        <background>background\pbg_mrz_1_1</background>
+        <background>background\pbg_mrz_1_2</background>
+        <background>background\pbg_mrz_1_3</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Tilesets">
@@ -1479,6 +1484,9 @@
       </backgrounds>
       <backgrounds name="ICZ">
         <background>background\tls_icz</background>
+      </backgrounds>
+      <backgrounds name="MRZ">
+        <background>background\tls_mrz</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Misc">
@@ -1626,9 +1634,9 @@
         <script>scripts\draw_number_zero.gml</script>
         <script>scripts\get_points_from_bend.gml</script>
         <script>scripts\instance_point_nearest.gml</script>
-        <script>scripts\scr_OLDTVFilter_Draw.gml</script>
-        <script>scripts\scr_OLDTVFilter_Settings.gml</script>
-        <script>scripts\scr_OLDTVFilter_Setup.gml</script>
+        <script>scripts\draw_sprite_skew_ext.gml</script>
+        <script>scripts\draw_sprite_skew.gml</script>
+        <script>scripts\draw_sprite_wave.gml</script>
       </scripts>
       <scripts name="Audio">
         <script>scripts\audio_play.gml</script>
@@ -1719,13 +1727,6 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_tpz.shader</shader>
     <shader type="GLSLES">shaders\sh_blackhole.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Composite.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Scanline.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Bleeding.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Chromatic.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Tube.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Television.shader</shader>
-    <shader type="GLSLES">shaders\sh_OLDTVFilter_Noise.shader</shader>
   </shaders>
   <fonts name="fonts">
     <fonts name="Menu">
