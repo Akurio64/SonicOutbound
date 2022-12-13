@@ -32,7 +32,7 @@
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = 0.90; // Offset for the parallax bg.
+        bg_yoffset = (room_height-(516-view_hview))/room_height; // Offset for the parallax bg.
         
  // Create the clouds:
     parallax_add_node(1, pbg_vrz_01, 0.96, -0.06, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1, 180); // &lt; Parallax ID 0
@@ -76,7 +76,7 @@
  // Draw Reflections. 
     for(i=0; i&lt;112; i+=1)
     {
-        draw_background_tiled_horizontal_part(pbg_vrz_ref, 0, i, 768, 1, (view_xview*0.92)+(cos((current_time*0.5)/220+i*0.90)*3), (view_yview*0.90)+(291)+i, 0, 0)
+        draw_background_tiled_horizontal_part(pbg_vrz_ref, 0, i, 768, 1, (view_xview*0.92)+(cos((current_time*0.5)/220+i*0.90)*3), (view_yview*(room_height-(516-view_hview))/room_height)+(291)+i, 0, 0)
     }    
 
 

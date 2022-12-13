@@ -32,7 +32,7 @@
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = 0.95; // Offset for the parallax bg.
+        bg_yoffset = (room_height-((456+104)-view_hview))/room_height
         
  // Create the sky.
     for(i=0; i&lt;25; i+=1)

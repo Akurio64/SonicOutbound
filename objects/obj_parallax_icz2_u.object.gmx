@@ -32,19 +32,20 @@
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = 0.90; // Offset for the parallax bg.
+        bg_yoffset = (room_height-((374+128)-view_hview))/room_height; // Offset for the parallax bg.
            
  // Create the mountains:
-    parallax_add_node(1, pbg_icz_u_1, 0.88, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 512, 160)
-    parallax_add_node(1, pbg_icz_u_2, 0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 160, 0, 0, 0, 512, 64)
-    parallax_add_node(1, pbg_icz_u_3, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 224, 0, 0, 0, 512, 32)
-    parallax_add_node(1, pbg_icz_u_4, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 256, 0, 0, 0, 512, 24)
-    parallax_add_node(1, pbg_icz_u_6, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, 270, 0, 0, 0, 512, 64)
-    parallax_add_node(1, pbg_icz_u_5, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 270, 0, 0, 0, 512, 64)
-    parallax_add_node(1, pbg_icz_u_7, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 334, 0, 0, 0, 512, 8)
-    parallax_add_node(1, pbg_icz_u_8, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 342, 0, 0, 0, 512, 8)
-    parallax_add_node(1, pbg_icz_u_9, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 350, 0, 0, 0, 512, 24)
+    parallax_add_node(1, pbg_icz_u_1, 0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 512, 160)
     parallax_add_node(1, pbg_icz_u_10,0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 374, 0, 0, 0, 512, 128)
+    parallax_add_node(1, pbg_icz_u_2, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 160, 0, 0, 0, 512, 64)
+    parallax_add_node(1, pbg_icz_u_9, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 350, 0, 0, 0, 512, 24)
+    parallax_add_node(1, pbg_icz_u_3, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 224, 0, 0, 0, 512, 32)
+    parallax_add_node(1, pbg_icz_u_8, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 342, 0, 0, 0, 512, 8)
+    parallax_add_node(1, pbg_icz_u_4, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 256, 0, 0, 0, 512, 24)
+    parallax_add_node(1, pbg_icz_u_7, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 334, 0, 0, 0, 512, 8)
+    
+    parallax_add_node(1, pbg_icz_u_6, 0.99, 0, 0, 0, 0, bg_yoffset, 0, 0, 270, 0, 0, 0, 512, 64)
+    parallax_add_node(1, pbg_icz_u_5, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, 270, 0, 0, 0, 512, 64)
 </string>
           </argument>
         </arguments>

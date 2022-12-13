@@ -1428,6 +1428,19 @@
         <background>background\pbg_mrz_1_1</background>
         <background>background\pbg_mrz_1_2</background>
         <background>background\pbg_mrz_1_3</background>
+        <background>background\pbg_mrz_2_1</background>
+        <background>background\pbg_mrz_2_2</background>
+        <background>background\pbg_mrz_2_3</background>
+        <background>background\pbg_mrz_2_4</background>
+        <background>background\pbg_mrz_2_5</background>
+        <background>background\pbg_mrz_2_6</background>
+        <background>background\pbg_mrz_2_7</background>
+        <background>background\pbg_mrz_2_8</background>
+        <background>background\pbg_mrz_2_9</background>
+        <background>background\pbg_mrz_2_10</background>
+        <background>background\pbg_mrz_2_11</background>
+        <background>background\pbg_mrz_2_12</background>
+        <background>background\pbg_mrz_2_13</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Tilesets">
@@ -2061,6 +2074,8 @@
           <object>objects\obj_parallax_ttz1</object>
           <object>objects\obj_parallax_ttz2</object>
           <object>objects\obj_parallax_hsz1</object>
+          <object>objects\obj_parallax_mrz1</object>
+          <object>objects\obj_parallax_mrz2</object>
           <object>objects\obj_parallax_vrz1</object>
           <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_slz1</object>
