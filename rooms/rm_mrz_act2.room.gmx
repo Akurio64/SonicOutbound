@@ -2,9 +2,9 @@
 <room>
   <caption></caption>
   <width>4240</width>
-  <height>240</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <height>6000</height>
+  <vsnap>64</vsnap>
+  <hsnap>256</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,11 +52,20 @@
   </views>
   <instances>
     <instance objName="obj_character" x="64" y="160" name="inst_0CFB7FE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_o" x="0" y="176" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
-    <instance objName="obj_parallax_hsz1" x="16" y="0" name="inst_C144D7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="0" y="192" name="inst_8D5CB486" locked="0" code="" scaleX="56" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="0" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parallax_mrz2" x="16" y="0" name="inst_D22994FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="0" y="5888" name="inst_037D19EE" locked="0" code="" scaleX="160" scaleY="10" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="tls_mrz" x="0" y="192" w="256" h="256" xo="527" yo="1571" id="10005393" name="inst_32B961F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_mrz" x="256" y="192" w="256" h="256" xo="527" yo="1571" id="10005394" name="inst_7006A299" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_mrz" x="512" y="192" w="256" h="256" xo="527" yo="1571" id="10005395" name="inst_B1702A74" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_mrz" x="768" y="192" w="256" h="256" xo="527" yo="1571" id="10005396" name="inst_ED3C6161" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_mrz" x="1024" y="192" w="256" h="256" xo="527" yo="1571" id="10005397" name="inst_F3375AD4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_mrz" x="1280" y="192" w="256" h="256" xo="527" yo="1571" id="10005398" name="inst_FDA5B95A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_mrz" x="1536" y="192" w="256" h="256" xo="527" yo="1571" id="10005399" name="inst_8A7B36F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

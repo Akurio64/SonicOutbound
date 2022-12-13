@@ -32,7 +32,7 @@
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = 0.98; // Offset for the parallax bg.
+        bg_yoffset = (room_height-((162+150)-view_hview))/room_height
         
     parallax_add_node(1, pbg_spz_01, 1, -0.06, 0, 0, 0, 1, 0, 0, -30, 0, 0, 0, 480, 328); // &lt; Parallax ID 0
         
@@ -43,7 +43,7 @@
     // Create the ocean.
     for(i=0; i&lt;6; i+=1)
     {
-        parallax_add_node(1, pbg_spz1_05, (0.88-(i*0.04)), -(0.3+i*0.03), 0, 0, 0, bg_yoffset, 0, 0, (162)+i*6, 0, 0, i*6, 1024, 3000);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
+        parallax_add_node(1, pbg_spz1_05, (0.88-(i*0.04)), -(0.3+i*0.03), 0, 0, 0, bg_yoffset, 0, 0, (162)+i*6, 0, 0, i*6, 1024, 150);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
                   
     }    
 </string>
