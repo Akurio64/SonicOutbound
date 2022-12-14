@@ -1758,32 +1758,6 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Respawn.
-  
-    if(state == CS_RESPAWN)
-    {
-       character_state_respawn(2);
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Collision &amp; Instance Detection.
  // Handles how the character interacts with collision and instances.
 
@@ -2170,6 +2144,32 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Respawn.
+  
+    if(state == CS_RESPAWN)
+    {
+       character_state_respawn(2);
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Horizontal Movement.
  // Handles how the character moves and acts horizontally.
  
@@ -2511,44 +2511,10 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Air drag.
-
- // Exit if not initialized or death.
-    if(is_initialized == true &amp;&amp; state != CS_DEATH)
-    {   
-        // Air Drag:
-           if(ground == false &amp;&amp; state != CS_HURT)
-           {
-              if(y_speed &lt; 0 &amp;&amp; y_speed &gt;= -4)
-              {
-                 x_speed -= ((x_speed / 0.125) / 256);
-              }
-           }
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Character States.
  // Executes and/or sets each state of the character.
  
-    if(is_initialized &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_WIN &amp;&amp; start=true)
+    if(is_initialized &amp;&amp; state != CS_DEATH &amp;&amp; state != CS_WIN)
     {
        
  // Sonics insta-shield:    
@@ -2637,6 +2603,40 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     
  // Win
     character_state_win()
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Air drag.
+
+ // Exit if not initialized or death.
+    if(is_initialized == true &amp;&amp; state != CS_DEATH)
+    {   
+        // Air Drag:
+           if(ground == false &amp;&amp; state != CS_HURT)
+           {
+              if(y_speed &lt; 0 &amp;&amp; y_speed &gt;= -4)
+              {
+                 x_speed -= ((x_speed / 0.125) / 256);
+              }
+           }
+    }
 </string>
           </argument>
         </arguments>

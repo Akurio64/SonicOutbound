@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>par_particules</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -36,7 +36,7 @@ surf = surface_create(424, 240);
 // create a raindrop particle
 rain = part_type_create();
 // optional angle, this will create some kind of wind effect
-rain_angle = -10
+rain_angle = -15
 
 // Raindrop
 rain = part_type_create();
@@ -47,9 +47,10 @@ part_type_orientation(rain, rain_angle, rain_angle, 0, 0, 0);
 part_type_color3(rain, 15133336, 15328923, 15702044);
 part_type_alpha3(rain, 1, 1, 1);
 part_type_blend(rain, 0);
-part_type_life(rain, 120, 120);
-part_type_speed(rain, 20, 20, 0, 0);
+part_type_life(rain, 100, 150);
+part_type_speed(rain, 6, 16, 0, 0);
 part_type_direction(rain, 270+rain_angle, 270+rain_angle, 0, 0);
+part_system_depth(rain,-1000)
 </string>
           </argument>
         </arguments>
@@ -76,9 +77,6 @@ part_type_direction(rain, 270+rain_angle, 270+rain_angle, 0, 0);
 repeat(20) {
     part_particles_create(global.ps, random_range(-100, room_width+100), random_range(-100, 0), rain, 1);
 }
-
-x=par_character.x
-y=par_character.y
 </string>
           </argument>
         </arguments>

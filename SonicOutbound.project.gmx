@@ -381,6 +381,7 @@
         <sound>sound\_general_water</sound>
         <sound>sound\_general_collapse</sound>
         <sound>sound\_general_alarm</sound>
+        <sound>sound\_general_thunder</sound>
       </sounds>
       <sounds name="Menu">
         <sound>sound\_general_menu_vo_sonic</sound>
@@ -1023,6 +1024,24 @@
             <sprite>sprites\pbg_icz_1_4</sprite>
             <sprite>sprites\obj_icz_u</sprite>
           </sprites>
+          <sprites name="MRZ">
+            <sprites name="Lava">
+              <sprite>sprites\pbg_mrz_2_3</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="EBZ">
+            <sprites name="BG">
+              <sprite>sprites\pbg_ebz_sky_1</sprite>
+              <sprite>sprites\pbg_ebz_sky_2</sprite>
+              <sprite>sprites\pbg_ebz_sky_3</sprite>
+              <sprite>sprites\pbg_ebz_sky_3_5</sprite>
+              <sprite>sprites\pbg_ebz_sky_4</sprite>
+              <sprite>sprites\pbg_ebz_sky_5</sprite>
+              <sprite>sprites\pbg_ebz_sky_6</sprite>
+              <sprite>sprites\pbg_ebz_sky_7</sprite>
+              <sprite>sprites\pbg_ebz_sky_8</sprite>
+            </sprites>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
@@ -1430,17 +1449,6 @@
         <background>background\pbg_mrz_1_3</background>
         <background>background\pbg_mrz_2_1</background>
         <background>background\pbg_mrz_2_2</background>
-        <background>background\pbg_mrz_2_3</background>
-        <background>background\pbg_mrz_2_4</background>
-        <background>background\pbg_mrz_2_5</background>
-        <background>background\pbg_mrz_2_6</background>
-        <background>background\pbg_mrz_2_7</background>
-        <background>background\pbg_mrz_2_8</background>
-        <background>background\pbg_mrz_2_9</background>
-        <background>background\pbg_mrz_2_10</background>
-        <background>background\pbg_mrz_2_11</background>
-        <background>background\pbg_mrz_2_12</background>
-        <background>background\pbg_mrz_2_13</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Tilesets">
@@ -2089,6 +2097,8 @@
           <object>objects\obj_parallax_spz1</object>
           <object>objects\obj_parallax_spz2</object>
           <object>objects\obj_parallax_cnz1</object>
+          <object>objects\obj_parallax_ebz1</object>
+          <object>objects\obj_parallax_ebz2</object>
           <object>objects\obj_parallax_cnz2</object>
           <object>objects\obj_parallax_lbz1</object>
           <object>objects\obj_parallax_lbz2</object>
@@ -2490,7 +2500,7 @@
           </rooms>
         </rooms>
       </rooms>
-      <rooms name="Misc">
+      <rooms name="All">
         <rooms name="TTZ">
           <room>rooms\rm_ttz_act1</room>
           <room>rooms\rm_ttkz_act1</room>
