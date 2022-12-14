@@ -33,12 +33,8 @@
  // Create the parallax background:
     var bg_yoffset;
         bg_yoffset = (room_height-((474+538)-view_hview))/room_height; // Offset for the parallax bg.
-        
- // Create the clouds:
-    parallax_add_node(1, pbg_rpz2_03, 1, -0.2, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 512, 270); // &lt; Parallax ID 0
-        
+    
  // Create the mountains:
-    parallax_add_node(1, psr_rpz2_01, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 512, 512);  // &lt; Parallax ID 1 
     parallax_add_node(1, pbg_rpz2_07, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 96, 0, 0, 0, 256, 270);  // &lt; Parallax ID 1 
     parallax_add_node(1, pbg_rpz2_02, 0.88, 0, 0, 0, 0, bg_yoffset, 0, 0, 96, 0, 0, 0, 512, 270);  // &lt; Parallax ID 1 
     parallax_add_node(1, pbg_rpz2_06, 0.84, 0, 0, 0, 0, bg_yoffset, 0, 0, 232, 0, 0, 0, 240, 124); // &lt; Parallax ID 2        
@@ -56,7 +52,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -73,13 +69,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Animation speeds.
- 
- // We can change the image frame of parallax sprites by changing parallax_speed[id]
- // This obviously only works when using a sprite with multiple frames.
- 
-    parallax_speed[1] += 0.25; // Mountains 1 waterfalls.   
+            <string>draw_background_tiled_horizontal_part(pbg_rpz2_03, 0, 0, 512, 270, (view_xview*0.96)-(global.game_time/300), 0+(view_yview*((room_height-((474+538)-view_hview))/room_height)), 0, 0)
 
+draw_set_blend_mode(bm_add)
+draw_background_tiled_horizontal_part(psr_rpz2_01, 0, 0, 512, 512, (view_xview*0.96), 0+(view_yview*((room_height-((474+538)-view_hview))/room_height)), 0, 0.25)
+draw_set_blend_mode(bm_normal)
+
+event_inherited()
 </string>
           </argument>
         </arguments>

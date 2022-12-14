@@ -941,61 +941,6 @@
             <sprite>sprites\spr_hsz_coco_tree</sprite>
             <sprite>sprites\spr_hsz_wrecking</sprite>
           </sprites>
-          <sprites name="TTZ">
-            <sprites name="BG">
-              <sprite>sprites\tile000</sprite>
-              <sprite>sprites\tile001</sprite>
-              <sprite>sprites\tile002</sprite>
-              <sprite>sprites\tile003</sprite>
-              <sprite>sprites\tile004</sprite>
-              <sprite>sprites\tile005</sprite>
-              <sprite>sprites\tile006</sprite>
-              <sprite>sprites\tile007</sprite>
-              <sprite>sprites\tile008</sprite>
-              <sprite>sprites\tile009</sprite>
-              <sprite>sprites\tile010</sprite>
-              <sprite>sprites\tile011</sprite>
-              <sprite>sprites\tile012</sprite>
-              <sprite>sprites\tile013</sprite>
-              <sprite>sprites\tile014</sprite>
-              <sprite>sprites\tile015</sprite>
-              <sprite>sprites\tile016</sprite>
-              <sprite>sprites\tile017</sprite>
-              <sprite>sprites\tile018</sprite>
-              <sprite>sprites\tile019</sprite>
-              <sprite>sprites\tile020</sprite>
-              <sprite>sprites\tile021</sprite>
-              <sprite>sprites\tile022</sprite>
-              <sprite>sprites\tile023</sprite>
-              <sprite>sprites\tile024</sprite>
-              <sprite>sprites\tile025</sprite>
-              <sprite>sprites\tile026</sprite>
-              <sprite>sprites\tile027</sprite>
-              <sprite>sprites\tile028</sprite>
-              <sprite>sprites\tile029</sprite>
-              <sprite>sprites\tile030</sprite>
-              <sprite>sprites\tile031</sprite>
-              <sprite>sprites\tile032</sprite>
-              <sprite>sprites\tile033</sprite>
-              <sprite>sprites\tile034</sprite>
-              <sprite>sprites\tile035</sprite>
-              <sprite>sprites\tile036</sprite>
-              <sprite>sprites\tile037</sprite>
-              <sprite>sprites\tile038</sprite>
-              <sprite>sprites\tile039</sprite>
-              <sprite>sprites\tile040</sprite>
-              <sprite>sprites\tile041</sprite>
-              <sprite>sprites\tile042</sprite>
-              <sprite>sprites\tile043</sprite>
-              <sprite>sprites\tile044</sprite>
-              <sprite>sprites\tile045</sprite>
-              <sprite>sprites\tile046</sprite>
-              <sprite>sprites\tile053</sprite>
-              <sprite>sprites\tile054</sprite>
-              <sprite>sprites\tile055</sprite>
-              <sprite>sprites\tile056</sprite>
-            </sprites>
-          </sprites>
           <sprites name="SLZ">
             <sprite>sprites\spr_stairs</sprite>
             <sprite>sprites\spr_see_ball</sprite>
@@ -1016,31 +961,6 @@
             <sprite>sprites\spr_slz_swing_piece1</sprite>
             <sprite>sprites\spr_slz_swing_piece2</sprite>
             <sprite>sprites\spr_slz_swing_hurt</sprite>
-          </sprites>
-          <sprites name="ICZ">
-            <sprite>sprites\pbg_icz_2_2</sprite>
-            <sprite>sprites\pbg_icz_1_2</sprite>
-            <sprite>sprites\pbg_icz_2_4</sprite>
-            <sprite>sprites\pbg_icz_1_4</sprite>
-            <sprite>sprites\obj_icz_u</sprite>
-          </sprites>
-          <sprites name="MRZ">
-            <sprites name="Lava">
-              <sprite>sprites\pbg_mrz_2_3</sprite>
-            </sprites>
-          </sprites>
-          <sprites name="EBZ">
-            <sprites name="BG">
-              <sprite>sprites\pbg_ebz_sky_1</sprite>
-              <sprite>sprites\pbg_ebz_sky_2</sprite>
-              <sprite>sprites\pbg_ebz_sky_3</sprite>
-              <sprite>sprites\pbg_ebz_sky_3_5</sprite>
-              <sprite>sprites\pbg_ebz_sky_4</sprite>
-              <sprite>sprites\pbg_ebz_sky_5</sprite>
-              <sprite>sprites\pbg_ebz_sky_6</sprite>
-              <sprite>sprites\pbg_ebz_sky_7</sprite>
-              <sprite>sprites\pbg_ebz_sky_8</sprite>
-            </sprites>
           </sprites>
         </sprites>
       </sprites>
@@ -1118,7 +1038,79 @@
           <sprite>sprites\psr_aesthetic_lines</sprite>
         </sprites>
         <sprites name="Misc">
+          <sprite>sprites\pbg_mrz_2_3</sprite>
           <sprite>sprites\psr_rpz2_01</sprite>
+        </sprites>
+        <sprites name="EBZ">
+          <sprite>sprites\pbg_ebz_sky_1</sprite>
+          <sprite>sprites\pbg_ebz_sky_2</sprite>
+          <sprite>sprites\pbg_ebz_sky_3</sprite>
+          <sprite>sprites\pbg_ebz_sky_3_5</sprite>
+          <sprite>sprites\pbg_ebz_sky_4</sprite>
+          <sprite>sprites\pbg_ebz_sky_5</sprite>
+          <sprite>sprites\pbg_ebz_sky_6</sprite>
+          <sprite>sprites\pbg_ebz_sky_7</sprite>
+          <sprite>sprites\pbg_ebz_sky_8</sprite>
+        </sprites>
+        <sprites name="ICZ">
+          <sprite>sprites\pbg_icz_2_2</sprite>
+          <sprite>sprites\pbg_icz_1_2</sprite>
+          <sprite>sprites\pbg_icz_2_4</sprite>
+          <sprite>sprites\pbg_icz_1_4</sprite>
+          <sprite>sprites\obj_icz_u</sprite>
+        </sprites>
+        <sprites name="TTZ">
+          <sprite>sprites\tile000</sprite>
+          <sprite>sprites\tile001</sprite>
+          <sprite>sprites\tile002</sprite>
+          <sprite>sprites\tile003</sprite>
+          <sprite>sprites\tile004</sprite>
+          <sprite>sprites\tile005</sprite>
+          <sprite>sprites\tile006</sprite>
+          <sprite>sprites\tile007</sprite>
+          <sprite>sprites\tile008</sprite>
+          <sprite>sprites\tile009</sprite>
+          <sprite>sprites\tile010</sprite>
+          <sprite>sprites\tile011</sprite>
+          <sprite>sprites\tile012</sprite>
+          <sprite>sprites\tile013</sprite>
+          <sprite>sprites\tile014</sprite>
+          <sprite>sprites\tile015</sprite>
+          <sprite>sprites\tile016</sprite>
+          <sprite>sprites\tile017</sprite>
+          <sprite>sprites\tile018</sprite>
+          <sprite>sprites\tile019</sprite>
+          <sprite>sprites\tile020</sprite>
+          <sprite>sprites\tile021</sprite>
+          <sprite>sprites\tile022</sprite>
+          <sprite>sprites\tile023</sprite>
+          <sprite>sprites\tile024</sprite>
+          <sprite>sprites\tile025</sprite>
+          <sprite>sprites\tile026</sprite>
+          <sprite>sprites\tile027</sprite>
+          <sprite>sprites\tile028</sprite>
+          <sprite>sprites\tile029</sprite>
+          <sprite>sprites\tile030</sprite>
+          <sprite>sprites\tile031</sprite>
+          <sprite>sprites\tile032</sprite>
+          <sprite>sprites\tile033</sprite>
+          <sprite>sprites\tile034</sprite>
+          <sprite>sprites\tile035</sprite>
+          <sprite>sprites\tile036</sprite>
+          <sprite>sprites\tile037</sprite>
+          <sprite>sprites\tile038</sprite>
+          <sprite>sprites\tile039</sprite>
+          <sprite>sprites\tile040</sprite>
+          <sprite>sprites\tile041</sprite>
+          <sprite>sprites\tile042</sprite>
+          <sprite>sprites\tile043</sprite>
+          <sprite>sprites\tile044</sprite>
+          <sprite>sprites\tile045</sprite>
+          <sprite>sprites\tile046</sprite>
+          <sprite>sprites\tile053</sprite>
+          <sprite>sprites\tile054</sprite>
+          <sprite>sprites\tile055</sprite>
+          <sprite>sprites\tile056</sprite>
         </sprites>
       </sprites>
       <sprites name="Glow">
@@ -2104,6 +2096,7 @@
           <object>objects\obj_parallax_lbz2</object>
           <object>objects\obj_parallax_snz1</object>
           <object>objects\obj_parallax_snz2</object>
+          <object>objects\obj_parallax_vrz2</object>
         </objects>
       </objects>
       <objects name="Terrain / Collision Masks">

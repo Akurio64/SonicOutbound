@@ -45,13 +45,12 @@
     parallax_add_node(1, pbg_slz1_03, 0.82, 0, 0, 0, 0, bg_yoffset, 0, 0, 270, 0, 0, 0, 512, 72); // &lt; Parallax ID 2    
     parallax_add_node(1, pgb_slz2_03, 0.78, 0, 0, 0, 0, bg_yoffset, 0, 0, 300, 0, 0, 0, 512, 104); // &lt; Parallax ID 2  
     parallax_add_node(1, pbg_slz2_04, 0.74, 0, 0, 0, 0, bg_yoffset, 0, 0, 242, 0, 0, 0, 512, 480); // &lt; Parallax ID 2   
-    parallax_add_node(1, pbg_slz_light, 0.78, 0, 0, 0, 0, bg_yoffset, 0, 0, 192, 0, 0, 0, 512, 640); // &lt; Parallax ID 2 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -68,14 +67,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Animation speeds.
- 
- // We can change the image frame of parallax sprites by changing parallax_speed[id]
- // This obviously only works when using a sprite with multiple frames.
- 
-    parallax_speed[1] += 0.25; // Mountains 1 waterfalls.
-    parallax_speed[2] += 0.25; // Mountains 2 waterfalls.    
+            <string>event_inherited();
 
+draw_set_blend_mode(bm_add)
+draw_background_tiled_horizontal_part(pbg_slz_light, 0, 0, 512, 640, (view_xview*0.78), 192+(view_yview*((room_height-((242+480)-view_hview))/room_height)), 0, 0)
+draw_set_blend_mode(bm_normal)
 </string>
           </argument>
         </arguments>
