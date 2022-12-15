@@ -1112,6 +1112,11 @@
           <sprite>sprites\tile055</sprite>
           <sprite>sprites\tile056</sprite>
         </sprites>
+        <sprites name="TPZ">
+          <sprite>sprites\pbg_tpz_1_1</sprite>
+          <sprite>sprites\pbg_tpz_1_2</sprite>
+          <sprite>sprites\pbg_tpz_1_3</sprite>
+        </sprites>
       </sprites>
       <sprites name="Glow">
         <sprite>sprites\spr_red_glow</sprite>
@@ -1500,6 +1505,9 @@
       </backgrounds>
       <backgrounds name="MRZ">
         <background>background\tls_mrz</background>
+      </backgrounds>
+      <backgrounds name="TPZ">
+        <background>background\tls_tpz</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Misc">
