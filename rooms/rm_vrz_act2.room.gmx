@@ -2,9 +2,9 @@
 <room>
   <caption></caption>
   <width>4240</width>
-  <height>240</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <height>2400</height>
+  <vsnap>64</vsnap>
+  <hsnap>256</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,11 +52,38 @@
   </views>
   <instances>
     <instance objName="obj_character" x="64" y="160" name="inst_0CFB7FE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_o" x="0" y="176" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
-    <instance objName="obj_parallax_hsz1" x="16" y="0" name="inst_C144D7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="0" y="192" name="inst_8D5CB486" locked="0" code="" scaleX="64" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="0" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="0" y="2304" name="inst_586ADD7C" locked="0" code="" scaleX="192" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parallax_vrz2" x="0" y="64" name="inst_2E9F6C80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="tls_vrz" x="0" y="192" w="256" h="256" xo="0" yo="3072" id="10005300" name="inst_96742534" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="256" y="192" w="256" h="256" xo="0" yo="3072" id="10005301" name="inst_064E6E9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="512" y="192" w="256" h="256" xo="0" yo="3072" id="10005302" name="inst_28C6C811" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="768" y="192" w="256" h="256" xo="0" yo="3072" id="10005303" name="inst_CDC4B324" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1024" y="192" w="256" h="256" xo="0" yo="3072" id="10005304" name="inst_0A103E6E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1280" y="192" w="256" h="256" xo="0" yo="3072" id="10005305" name="inst_9D1CEE90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1536" y="192" w="256" h="256" xo="0" yo="3072" id="10005306" name="inst_4D07DBE9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1792" y="192" w="256" h="256" xo="0" yo="3072" id="10005307" name="inst_1DA87DEA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="0" y="2304" w="256" h="256" xo="768" yo="256" id="10005333" name="inst_67A0E767" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="256" y="2304" w="256" h="256" xo="768" yo="256" id="10005334" name="inst_7971108C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="512" y="2304" w="256" h="256" xo="768" yo="256" id="10005335" name="inst_58613A21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="768" y="2304" w="256" h="256" xo="768" yo="256" id="10005336" name="inst_BD3D657B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1024" y="2304" w="256" h="256" xo="768" yo="256" id="10005337" name="inst_2E5C84D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1280" y="2304" w="256" h="256" xo="768" yo="256" id="10005341" name="inst_78DC2207" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1536" y="2304" w="256" h="256" xo="768" yo="256" id="10005342" name="inst_C0EBEA22" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="1792" y="2304" w="256" h="256" xo="768" yo="256" id="10005343" name="inst_020BBC5E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="2048" y="2304" w="256" h="256" xo="768" yo="256" id="10005344" name="inst_35ABA44D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="2304" y="2304" w="256" h="256" xo="768" yo="256" id="10005345" name="inst_525A7D4B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="2560" y="2304" w="256" h="256" xo="768" yo="256" id="10005346" name="inst_942FBC27" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="2816" y="2304" w="256" h="256" xo="768" yo="256" id="10005347" name="inst_3B7A1994" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="3072" y="2304" w="256" h="256" xo="768" yo="256" id="10005348" name="inst_B8CC2942" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="3328" y="2304" w="256" h="256" xo="768" yo="256" id="10005349" name="inst_C08B353B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="3584" y="2304" w="256" h="256" xo="768" yo="256" id="10005350" name="inst_CC501313" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="3840" y="2304" w="256" h="256" xo="768" yo="256" id="10005351" name="inst_994FDBB0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_vrz" x="4096" y="2304" w="256" h="256" xo="768" yo="256" id="10005353" name="inst_D78DCBFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

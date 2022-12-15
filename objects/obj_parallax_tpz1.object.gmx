@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>99999999</depth>
+  <depth>1999999</depth>
   <persistent>0</persistent>
   <parentName>par_parallax</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -32,139 +32,9 @@
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = (room_height-((346+210)-view_hview))/room_height; // Offset for the parallax bg.
-        
-    parallax_add_node(1, pbg_tpz_1_3, 0.95, 0, 0, 0, 0, bg_yoffset, 0, 0, 168, 0, 0, 0, 512, 210); // &lt; Parallax ID 0
-    parallax_add_node(1, pbg_tpz_1_3, 0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 346, 0, 0, 0, 512, 210); // &lt; Parallax ID 0
-          
+        bg_yoffset = (room_height-((240+200)-view_hview))/room_height; // Offset for the parallax bg.                        
 
-image_speed=0.3
-cloudTex = sprite_get_texture(pbg_tpz_1_1, image_index);
-cloudTexY = 0;
-front_surface=noone; //We are going to create the card's texture from a surface.
-back_surface=noone;  //So we define these here.
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>event_inherited()
-
-///Create card surface we are going to use for textures.
-
-//If the surfaces don't exist, create them!  Always do this!!!  Surfaces can disappear for like... no reason.
-if(!surface_exists(front_surface))
-{
-  front_surface=surface_create(424,240);
-  //Create the actual surface content.  Only happens once when the object is created to be more efficient, but if you wanted the card to animate, you could.
-  surface_set_target(front_surface)
-  {
-    draw_clear_alpha(0,0);///Always clear a clear color to your new surface, as the memory that is being utilized will not have been initilized, and there could literally be anything in there.
-  }
-  surface_reset_target();
-  
-}
-if(!surface_exists(back_surface))
-{
-  back_surface=surface_create(424,240);
-  surface_set_target(back_surface)
-  {
-    draw_clear_alpha(0,0);
-  }
-  surface_reset_target();
-}
-
-///Done creating our surfaces.  Let's go draw and spin them.
-cloudTex = sprite_get_texture(pbg_tpz_1_1, image_index);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw the card
-
-if(surface_exists(front_surface) &amp;&amp; surface_exists(back_surface)) //Again, ALWAYS check for this!
-{
-  // Set up 3D Perspectve
-        d3d_set_projection_ext(0, 0, 0, 0, 0, 3000, 0, -1, 0, 35, 424/240, 1, 3000);       
-        d3d_set_perspective(true);
-        draw_set_color(c_white);
-        d3d_set_hidden(false);
-        // Draw 2 polygons to render a quad.
-        d3d_primitive_begin_texture(pr_trianglelist, cloudTex);
-        
-        d3d_vertex_texture(-1000, -100, 0, 0, cloudTexY);
-        d3d_vertex_texture(1000, -100, 0, 0+1, cloudTexY);
-        d3d_vertex_texture(1000, -100, 1600, 0+1, 0.5+0);
-        
-        d3d_vertex_texture(-1000, -100, 0, 0, cloudTexY);
-        d3d_vertex_texture(-1000, -100, 1600, 0, 0.5+0);
-        d3d_vertex_texture(1000, -100, 1600, 0+1, 0.5+0);
-        
-        d3d_primitive_end();
-        
-        d3d_set_hidden(true);
-        
-        // Set up 3D Perspectve
-        d3d_set_projection_ext(0, 0, 0, 0, 0, 3000, 0, -1, 0, 35, 424/240, 1, 3000);       
-        d3d_set_perspective(true);
-        draw_set_color(c_white);
-        d3d_set_hidden(false);
-        // Draw 2 polygons to render a quad.
-        d3d_primitive_begin_texture(pr_trianglelist, cloudTex);
-        
-        d3d_vertex_texture(-2048, 149, 2048, 0, cloudTexY);
-        d3d_vertex_texture(2048, 149, 2048, 0+1, cloudTexY);
-        d3d_vertex_texture(2048, 149, 0, 0+1, 0.5+0);
-        
-        d3d_vertex_texture(-2048, 149, 2048, 0, cloudTexY);
-        d3d_vertex_texture(-2048, 149, 0, 0, 0.5+0);
-        d3d_vertex_texture(2048, 149, 0, 0+1, 0.5+0);
-        
-        d3d_primitive_end();
-
-        d3d_set_hidden(true);
-        // Set projection back to 2D
-        d3d_set_projection_ortho(view_xview, view_yview, 0+424, 0+240, cloudTexY);
-}
-
-draw_sprite(pbg_tpz_1_2,0,view_xview,view_yview)
-
-event_inherited()
+instance_create(0,0,obj_parallax_tpz)
 </string>
           </argument>
         </arguments>

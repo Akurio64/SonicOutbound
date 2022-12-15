@@ -29,6 +29,21 @@
 cloudTexY = 0;
 front_surface=noone; //We are going to create the card's texture from a surface.
 back_surface=noone;  //So we define these here.
+
+/// Create parallax.
+
+ // First, call the parent. We do this to receive all variables from it.
+    event_inherited()
+    
+ // Create the parallax background:
+    var bg_yoffset;
+        bg_yoffset = (room_height-(180+112-view_hview))/room_height; // Offset for the parallax bg.
+        
+ // Create the clouds:
+    parallax_add_node(1, pbg_vrz_01, 0.96, -0.06, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1, 180); // &lt; Parallax ID 0
+        
+ // Create the mountains:
+    parallax_add_node(1, pbg_vrz_02, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 180, 0, 0, 0, 768, 112);  // &lt; Parallax ID 1      
 </string>
           </argument>
         </arguments>
@@ -51,7 +66,9 @@ back_surface=noone;  //So we define these here.
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Create card surface we are going to use for textures.
+            <string>event_inherited()
+
+///Create card surface we are going to use for textures.
 
 //If the surfaces don't exist, create them!  Always do this!!!  Surfaces can disappear for like... no reason.
 if(!surface_exists(front_surface))
@@ -123,7 +140,12 @@ if(!surface_exists(back_surface))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw the card
+            <string>/// Reflections.
+        
+ // Call parents draw event.
+    event_inherited()
+
+///Draw the card
 
 if(surface_exists(front_surface) &amp;&amp; surface_exists(back_surface)) //Again, ALWAYS check for this!
 {
@@ -147,7 +169,7 @@ if(surface_exists(front_surface) &amp;&amp; surface_exists(back_surface)) //Agai
         
         d3d_set_hidden(true);
         // Set projection back to 2D
-        d3d_set_projection_ortho(0, 0, 424, 240, 0);
+        d3d_set_projection_ortho(view_xview, view_yview, 424, 240, 0);
 }
 </string>
           </argument>

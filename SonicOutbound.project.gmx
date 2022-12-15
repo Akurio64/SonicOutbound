@@ -1116,6 +1116,8 @@
           <sprite>sprites\pbg_tpz_1_1</sprite>
           <sprite>sprites\pbg_tpz_1_2</sprite>
           <sprite>sprites\pbg_tpz_1_3</sprite>
+          <sprite>sprites\pbg_tpz_1_4</sprite>
+          <sprite>sprites\pbg_tpz_1_5</sprite>
         </sprites>
       </sprites>
       <sprites name="Glow">
@@ -2075,6 +2077,7 @@
       <objects name="Backgrounds">
         <object>objects\par_parallax</object>
         <objects name="Zones">
+          <object>objects\obj_parallax_tpz</object>
           <object>objects\obj_parallax_tpz1</object>
           <object>objects\obj_parallax_tpz2</object>
           <object>objects\obj_parallax_rpz1</object>
@@ -2085,6 +2088,7 @@
           <object>objects\obj_parallax_mrz1</object>
           <object>objects\obj_parallax_mrz2</object>
           <object>objects\obj_parallax_vrz1</object>
+          <object>objects\obj_parallax_vrz2</object>
           <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_slz1</object>
           <object>objects\obj_parallax_icz1_o</object>
@@ -2104,7 +2108,6 @@
           <object>objects\obj_parallax_lbz2</object>
           <object>objects\obj_parallax_snz1</object>
           <object>objects\obj_parallax_snz2</object>
-          <object>objects\obj_parallax_vrz2</object>
         </objects>
       </objects>
       <objects name="Terrain / Collision Masks">
