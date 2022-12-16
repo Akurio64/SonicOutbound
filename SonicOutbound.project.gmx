@@ -1127,6 +1127,9 @@
           <sprite>sprites\pbg_srz_1_5</sprite>
           <sprite>sprites\pbg_srz_1_6</sprite>
         </sprites>
+        <sprites name="CCZ">
+          <sprite>sprites\pbg_ccz_1_1</sprite>
+        </sprites>
       </sprites>
       <sprites name="Glow">
         <sprite>sprites\spr_red_glow</sprite>
