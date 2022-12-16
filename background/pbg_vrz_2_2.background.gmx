@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1</width>
-  <height>292</height>
-  <data>images\pbg_vrz_01.png</data>
+  <width>768</width>
+  <height>168</height>
+  <data>images\pbg_vrz_2_2.png</data>
 </background>

@@ -817,11 +817,11 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
              { 
                 if physic_state=0{animation_index =  "JOG"}
              }          
-             if(animation_index != "RUN"   &amp;&amp; abs(x_speed) &gt;= 6 &amp;&amp; abs(x_speed) &lt; 12) 
+             if(animation_index != "RUN"   &amp;&amp; abs(x_speed) &gt;= x_speed_top &amp;&amp; abs(x_speed) &lt; 12) 
              { 
                 if physic_state=0{animation_index =  "RUN"}
              }      
-             if(animation_index != "DASH"  &amp;&amp; abs(x_speed) &gt;= 12 ) 
+             if(animation_index != "DASH"  &amp;&amp; abs(x_speed) &gt;= (x_speed_top*2)/(speedshoe_state+1) ) 
              { 
                 if physic_state=0{animation_index = "DASH"}
              }

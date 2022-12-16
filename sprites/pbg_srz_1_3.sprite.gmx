@@ -8,18 +8,18 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>1023</bbox_right>
+  <bbox_right>255</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>255</bbox_bottom>
+  <bbox_bottom>15</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
-  <For3D>-1</For3D>
-  <width>1024</width>
-  <height>256</height>
+  <For3D>0</For3D>
+  <width>256</width>
+  <height>16</height>
   <frames>
-    <frame index="0">images\sprSeaTexture_0.png</frame>
+    <frame index="0">images\pbg_srz_1_3_0.png</frame>
   </frames>
 </sprite>
