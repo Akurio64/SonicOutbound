@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>99999999</depth>
   <persistent>0</persistent>
   <parentName>par_parallax</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -37,11 +37,12 @@ back_surface=noone;  //So we define these here.
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = (room_height-(0+240-view_hview))/room_height; // Offset for the parallax bg.
+        bg_yoffset = (room_height-(165+75-view_hview))/room_height; // Offset for the parallax bg.
         
  // Create the clouds:
-    parallax_add_node(1, pbg_vrz_01, 0.96, -0.06, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1, 292); // &lt; Parallax ID 0
-    
+    parallax_add_node(1, pbg_vrz_01, 1.00, -0.06, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1, 292); // &lt; Parallax ID 0
+    parallax_add_node(1, pbg_vrz_2_3, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, 100, 0, 0, 0, 768, 150);  // &lt; Parallax ID 1      
+    parallax_add_node(1, pbg_vrz_2_2, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 140, 0, 0, 0, 768, 150);  // &lt; Parallax ID 1      
 </string>
           </argument>
         </arguments>

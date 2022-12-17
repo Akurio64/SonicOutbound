@@ -1423,6 +1423,8 @@
       <backgrounds name="VRZ">
         <background>background\pbg_vrz_01</background>
         <background>background\pbg_vrz_02</background>
+        <background>background\pbg_vrz_2_2</background>
+        <background>background\pbg_vrz_2_3</background>
         <background>background\pbg_vrz_ref</background>
         <background>background\pbg_vrz_03</background>
       </backgrounds>
@@ -1452,6 +1454,10 @@
         <background>background\pbg_mrz_1_3</background>
         <background>background\pbg_mrz_2_1</background>
         <background>background\pbg_mrz_2_2</background>
+      </backgrounds>
+      <backgrounds name="CCZ">
+        <background>background\pbg_ccz_1</background>
+        <background>background\pbg_ccz_1_2</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Tilesets">
