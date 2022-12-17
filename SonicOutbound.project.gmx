@@ -1030,13 +1030,6 @@
         <sprite>sprites\spr_outbound_t_logo</sprite>
       </sprites>
       <sprites name="Parallax">
-        <sprites name="Green Hill (Template)">
-          <sprite>sprites\psr_green_hill_02</sprite>
-          <sprite>sprites\psr_green_hill_03</sprite>
-        </sprites>
-        <sprites name="Aesthetic Hill (Test Stage)">
-          <sprite>sprites\psr_aesthetic_lines</sprite>
-        </sprites>
         <sprites name="Misc">
           <sprite>sprites\pbg_mrz_2_3</sprite>
           <sprite>sprites\psr_rpz2_01</sprite>
@@ -2115,8 +2108,9 @@
           <object>objects\obj_parallax_spz2</object>
           <object>objects\obj_parallax_cnz1</object>
           <object>objects\obj_parallax_cnz2</object>
-          <object>objects\obj_parallax_ebz1</object>
           <object>objects\obj_parallax_srz1</object>
+          <object>objects\obj_parallax_srz2</object>
+          <object>objects\obj_parallax_ebz1</object>
           <object>objects\obj_parallax_ebz2</object>
           <object>objects\obj_parallax_lbz1</object>
           <object>objects\obj_parallax_lbz2</object>

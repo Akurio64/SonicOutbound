@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cloudTex = sprite_get_texture(sprCloudTexture, 0);
+            <string>cloudTex = sprite_get_texture(pbg_ccz_1_1, 0);
 cloudTexY = 0;
 front_surface=noone; //We are going to create the card's texture from a surface.
 back_surface=noone;  //So we define these here.

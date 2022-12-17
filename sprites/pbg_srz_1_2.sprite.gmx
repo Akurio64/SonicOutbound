@@ -21,5 +21,6 @@
   <height>17</height>
   <frames>
     <frame index="0">images\pbg_srz_1_2_0.png</frame>
+    <frame index="1">images\pbg_srz_1_2_1.png</frame>
   </frames>
 </sprite>
