@@ -151,7 +151,8 @@ if(surface_exists(front_surface) &amp;&amp; surface_exists(back_surface)) //Agai
         d3d_set_perspective(true);
         draw_set_color(c_white);
         d3d_set_hidden(false);
-        // Draw 2 polygons to render a quad.
+        
+       // Draw 2 polygons to render a quad.
         d3d_primitive_begin_texture(pr_trianglelist, cloudTex);
         
         d3d_vertex_texture(-1000, -100, 0, 0, cloudTexY);
