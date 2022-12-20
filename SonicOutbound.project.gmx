@@ -773,21 +773,6 @@
           <sprite>sprites\spr_spike_left</sprite>
           <sprite>sprites\spr_spike_right</sprite>
         </sprites>
-        <sprites name="Monitors">
-          <sprite>sprites\spr_monitor</sprite>
-          <sprite>sprites\spr_monitor_broken</sprite>
-          <sprite>sprites\spr_monitor_mask</sprite>
-          <sprites name="Icons">
-            <sprite>sprites\spr_monitor_icon_border</sprite>
-            <sprite>sprites\spr_monitor_icon</sprite>
-          </sprites>
-          <sprites name="Effects">
-            <sprite>sprites\spr_monitor_explosion</sprite>
-            <sprite>sprites\spr_monitor_shard</sprite>
-            <sprite>sprites\spr_monitor_static</sprite>
-          </sprites>
-          <sprite>sprites\spr_monitor_icon_disappear</sprite>
-        </sprites>
         <sprites name="Bridges">
           <sprite>sprites\spr_bridge_node_common</sprite>
           <sprite>sprites\spr_bridge_6_node_wide_common</sprite>
@@ -919,6 +904,21 @@
             <sprite>sprites\spr_cinder</sprite>
             <sprite>sprites\spr_fire</sprite>
           </sprites>
+          <sprites name="Monitors">
+            <sprite>sprites\spr_monitor</sprite>
+            <sprite>sprites\spr_monitor_broken</sprite>
+            <sprite>sprites\spr_monitor_mask</sprite>
+            <sprites name="Icons">
+              <sprite>sprites\spr_monitor_icon_border</sprite>
+              <sprite>sprites\spr_monitor_icon</sprite>
+            </sprites>
+            <sprites name="Effects">
+              <sprite>sprites\spr_monitor_explosion</sprite>
+              <sprite>sprites\spr_monitor_shard</sprite>
+              <sprite>sprites\spr_monitor_static</sprite>
+            </sprites>
+            <sprite>sprites\spr_monitor_icon_disappear</sprite>
+          </sprites>
         </sprites>
         <sprites name="Break Walls">
           <sprite>sprites\spr_test_break_wall_pieces</sprite>
@@ -1007,6 +1007,7 @@
           <sprite>sprites\spr_hud_h_numbers</sprite>
           <sprite>sprites\spr_hud_time_seperator</sprite>
           <sprite>sprites\spr_hyper_sign</sprite>
+          <sprite>sprites\sprite641</sprite>
         </sprites>
         <sprites name="Fonts">
           <sprite>sprites\fnt_hud_numbers</sprite>
