@@ -1953,6 +1953,7 @@
         </objects>
         <objects name="Bosses">
           <object>objects\obj_boss_camera</object>
+          <object>objects\goal_ground</object>
           <objects name="Misc">
             <object>objects\obj_robotnik_escape</object>
             <object>objects\obj_robotnik_escape_2</object>
@@ -2199,7 +2200,6 @@
       <objects name="Test Stage">
         <objects name="Collision (S)">
           <object>objects\obj_aehz_collision_00_o</object>
-          <object>objects\goal_ground</object>
           <object>objects\obj_aehz_collision_00_a</object>
           <object>objects\obj_aehz_collision_00_l</object>
           <object>objects\obj_aehz_collision_01</object>
