@@ -3,11 +3,11 @@
   <type>0</type>
   <xorig>-144</xorig>
   <yorigin>-16</yorigin>
-  <colkind>1</colkind>
+  <colkind>0</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
-  <bbox_left>48</bbox_left>
+  <bbox_left>51</bbox_left>
   <bbox_right>111</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>255</bbox_bottom>
