@@ -7,11 +7,11 @@
        // Horizontal:
           if(speedshoe_state == 0)
           {
-             x_speed_top = 7;
+             x_speed_top = 6;
           }
           else
           {
-             x_speed_top = 14;          
+             x_speed_top = 12;          
           }
  
           if(speedshoe_state == 0)

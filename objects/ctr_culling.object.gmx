@@ -30,6 +30,7 @@
  // Global and Tiles (L Region)
     instance_deactivate_all(true);
     instance_activate_object(ctr_indestructible);
+    instance_activate_object(par_3dloop);
     instance_activate_object(obj_monitor_collision);
     instance_activate_region(view_xview[0]-global.display_width/2, view_yview[0]-global.display_height/2, view_wview[0]+global.display_width, view_hview[0]+global.display_height, true);
 

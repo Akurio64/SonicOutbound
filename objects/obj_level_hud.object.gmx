@@ -36,7 +36,7 @@
        // Score:
           draw_sprite(spr_hud_score, -1, view_xview+16, view_yview+12);
           draw_set_halign(fa_right);
-          draw_text(view_xview+117+(8*(global.game_time &gt;= 600000)), view_yview+8, global.cscore);
+          draw_text(view_xview+117+(8*(global.game_time &gt;= 600000)), view_yview+12, global.cscore);
     
        // Time:
           draw_set_halign(fa_left);
@@ -51,15 +51,15 @@
        // Rings:
           draw_set_halign(fa_right); 
           draw_sprite(spr_hud_ring, 0, view_xview+16, view_yview+44);        
-          if obj_character.hyper=false{draw_set_font(global.font_hud_number){draw_text(view_xview+117+(8*(global.game_time &gt;= 600000)), view_yview+48, global.crings)}}
-          if obj_character.hyper=true{draw_set_font(global.font_hud_h_number){draw_text(view_xview+117+(8*(global.game_time &gt;= 600000)), view_yview+48, global.crings)};
+          if obj_character.hyper=false{draw_set_font(global.font_hud_number){draw_text(view_xview+117+(8*(global.game_time &gt;= 600000)), view_yview+44, global.crings)}}
+          if obj_character.hyper=true{draw_set_font(global.font_hud_h_number){draw_text(view_xview+117+(8*(global.game_time &gt;= 600000)), view_yview+44, global.crings)};
           draw_sprite(spr_hyper_sign,0,view_xview+117, view_yview+48)}
           
        // Lives:
           draw_set_font(global.font_hud_number);
           draw_set_halign(fa_left) 
           draw_sprite(spr_hud_lives, global.character_index, view_xview+16, view_yview+view_hview-31);
-          draw_text(view_xview+56, view_yview+view_hview-30, global.clives);
+          draw_text(view_xview+56, view_yview+view_hview-26, global.clives);
     
        // Reset halign.
           draw_set_halign(-1);

@@ -460,11 +460,11 @@ if(bonus_total &gt;= 10000)
     draw_set_color(c_white)
     draw_set_halign(fa_right)
     
-    draw_sprite(spr_results_bg, 0, view_xview+220-0+result_gfx_position[2], view_yview+122);  
+    draw_sprite(spr_results_bg, 0, view_xview+220-0+result_gfx_position[2], view_yview+120);  
     draw_number_zero(view_xview+283+0+9+result_gfx_position[2], view_yview+116,''+ string(bonus_time),  0);
-    draw_sprite(spr_results_bg, 0, view_xview+220-0+result_gfx_position[3], view_yview+138);     
+    draw_sprite(spr_results_bg, 0, view_xview+220-0+result_gfx_position[3], view_yview+136);     
     draw_number_zero(view_xview+283+0+9+result_gfx_position[3], view_yview+136,''+ string(bonus_ring), 0);
-    draw_sprite(spr_results_bg, 0, view_xview+220-0+result_gfx_position[4], view_yview+194);      
+    draw_sprite(spr_results_bg, 0, view_xview+220-0+result_gfx_position[4], view_yview+192);      
     draw_number_zero(view_xview+283+0+9+result_gfx_position[4], view_yview+192,    string(bonus_total), 0);
     
     draw_set_halign(-1)    
