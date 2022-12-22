@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>256</width>
-  <height>256</height>
+  <height>224</height>
   <frames>
     <frame index="0">images\spr_slz_3dloop_0.png</frame>
   </frames>

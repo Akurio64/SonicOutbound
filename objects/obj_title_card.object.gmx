@@ -248,7 +248,7 @@ draw_set_color(c_white);
     draw_text(view_xview[0]+zone_text_x[1], view_yview[0]+64, STG.zone_name);
     draw_sprite(spr_zone_text,0,view_xview[0]+zone_text_x[1], view_yview[0]+100);
     draw_text(view_xview[0]-128, view_yview[0]+100, "ACT ");
-    draw_sprite(spr_title_card_act, STG.zone_act, view_xview[0]+zone_text_x[2]+1, view_yview[0]+88);
+    draw_sprite(spr_title_card_act, STG.zone_act, view_xview[0]+zone_text_x[2]+1, view_yview[0]+120);
  };
  draw_set_halign(fa_left);
 }

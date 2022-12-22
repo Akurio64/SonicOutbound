@@ -963,6 +963,15 @@
             <sprite>sprites\spr_slz_swing_hurt</sprite>
           </sprites>
         </sprites>
+        <sprites name="Penalty">
+          <sprites name="Egg">
+            <sprite>sprites\spr_egg_penalty_1</sprite>
+            <sprite>sprites\spr_egg_penalty_2</sprite>
+            <sprite>sprites\spr_egg_penalty_4</sprite>
+            <sprite>sprites\spr_egg_penalty_3</sprite>
+            <sprite>sprites\spr_egg_penalty_5</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
         <sprites name="Template Tiles">
@@ -1007,7 +1016,6 @@
           <sprite>sprites\spr_hud_h_numbers</sprite>
           <sprite>sprites\spr_hud_time_seperator</sprite>
           <sprite>sprites\spr_hyper_sign</sprite>
-          <sprite>sprites\sprite641</sprite>
         </sprites>
         <sprites name="Fonts">
           <sprite>sprites\fnt_hud_numbers</sprite>
@@ -2077,6 +2085,10 @@
           <objects name="ICZ">
             <object>objects\obj_icz_bg</object>
           </objects>
+        </objects>
+        <objects name="Penalty">
+          <object>objects\obj_egg_penalty</object>
+          <object>objects\obj_egg_penalty_b</object>
         </objects>
       </objects>
       <objects name="Interface">
