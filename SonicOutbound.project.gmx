@@ -77,7 +77,6 @@
   </datafiles>
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
-    <extension index="1">extensions\SLZ_ACT2</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
