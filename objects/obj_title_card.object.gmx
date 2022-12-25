@@ -261,6 +261,7 @@ draw_set_color(c_white);
     draw_sprite(spr_title_card_act, STG.zone_act, view_xview[0]+zone_text_x[2]+1, view_yview[0]+120);
  };
  draw_set_halign(fa_left);
+ 
 }
 </string>
           </argument>
