@@ -36,6 +36,7 @@ i_speed=0.3
 
 //Boss variables
 move=false
+start=false
 dir=1
 hp=6
 spe=0
@@ -205,6 +206,7 @@ instance_create(x,y-((sprite_height)+24),obj_miniboss_laser)
 obj_miniboss_laser.image_index=0}
 alarm[3]=120
 if hp&gt;2{hspeed=0}else{hspeed=hspeed/1.5}sound=0
+start=true
 
 
 </string>
@@ -234,6 +236,29 @@ hspeed=2*sign(obj_character.x-x)
 if alarm[2]=-1{alarm[2]=160}
 move=false
 if sound=0{audio_play(_general_lock_on,global.bgm_volume);sound=1}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if start=true{x=clamp(x,obj_boss_camera.x-192,obj_boss_camera.x+192)}
 </string>
           </argument>
         </arguments>

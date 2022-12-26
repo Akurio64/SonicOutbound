@@ -132,7 +132,7 @@ if global.character_index=0
         {
         with(instance_create(0, 0, obj_fade_to))
 {
-fade_to = rm_hstz_act1;
+fade_to = rm_hssz_act1;
 }
 }
 }
@@ -142,7 +142,7 @@ else if global.character_index=1
         {
         with(instance_create(0, 0, obj_fade_to))
 {
-fade_to = rm_hskz_act1;
+fade_to = rm_hstz_act1;
 }
 }
 }

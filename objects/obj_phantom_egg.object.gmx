@@ -484,6 +484,7 @@ else
 
 if !instance_exists(obj_tmz_missile){
 alarm[5]=1}
+
 </string>
           </argument>
         </arguments>

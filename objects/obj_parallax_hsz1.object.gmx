@@ -115,7 +115,7 @@
  // Draw Reflections. 
     for(i=0; i&lt;56; i+=1)
     {
-        draw_background_tiled_horizontal_part(pbg_ref_1, 0, i, 1024, 1, (view_xview*0.88)+(cos((current_time*0.5)/220+i*0.86)*3), (view_yview*0.96)+(141)+i, 0, 0)
+        draw_background_tiled_horizontal_part(pbg_ref_1, 0, i, 1024, 1, (view_xview*0.88)+(cos((current_time*0.5)/220+i*0.86)*3), (view_yview*((room_height-((244+192)-view_hview))/room_height))+(141)+i, 0, 0)
     }    
 
 

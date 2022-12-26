@@ -76,10 +76,7 @@ fade_to = rm_v_intro
             <kind>1</kind>
             <string>if obj_character.x&gt;x{
 alpha=lerp(alpha,1,0.08)
-       with(ctr_audio)
-                   {
-                        fadeout_flag = false;
-                   }}
+global.ev_volume=lerp(global.ev_volume,1,0.08)}
 
 if alpha&gt;=0.9{if alarm[0]=-1{alarm[0]=120}}
 </string>
