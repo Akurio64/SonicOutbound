@@ -1150,6 +1150,9 @@
         <sprite>sprites\spr_m_menu_corner</sprite>
         <sprite>sprites\spr_m_menu_text_bar</sprite>
         <sprite>sprites\spr_m_menu_transition</sprite>
+        <sprite>sprites\spr_tc_back</sprite>
+        <sprite>sprites\spr_t_m_transition</sprite>
+        <sprite>sprites\spr_t_m2_transition</sprite>
         <sprite>sprites\spr_black_rec</sprite>
         <sprite>sprites\spr_m_menu_character</sprite>
       </sprites>

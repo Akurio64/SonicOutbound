@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>wind=instance_create(x,y,obj_slz_wind)
+wind.image_xscale=image_xscale
 force=0.5
 on=1
 timer=-1
@@ -108,7 +109,7 @@ if place_meeting(x,y,par_character)
 {
 with instance_nearest(x,y,par_character)
 {
-x_speed-=(instance_nearest(x,y,obj_slz_fan).force*instance_nearest(x,y,obj_slz_fan).image_xscale)*instance_nearest(x,y,obj_slz_fan).on
+x_speed+=(instance_nearest(x,y,obj_slz_fan).force*instance_nearest(x,y,obj_slz_fan).image_xscale)*(instance_nearest(x,y,obj_slz_fan).on*1.5)
 }
 }
 }

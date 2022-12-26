@@ -819,7 +819,7 @@
     <instance objName="obj_aehz_collision_00_o" x="15503" y="1610" name="inst_77BDD98B" locked="0" code="" scaleX="1" scaleY="6.96774196624756" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="15503" y="1833" name="inst_8C4519DE" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="15599" y="1610" name="inst_D29CA8C9" locked="0" code="" scaleX="1" scaleY="6.96774196624756" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_fan" x="15768" y="2061" name="inst_310C2278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_fan" x="15768" y="2061" name="inst_310C2278" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_life" x="15760" y="2093" name="inst_4B424799" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="15631" y="1705" name="inst_B7B6F1CE" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_srping_up_red" x="15477" y="2093" name="inst_22F01A2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
