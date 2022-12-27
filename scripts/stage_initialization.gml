@@ -11,13 +11,13 @@ if(global.save_selected != 0)
            case rm_t_intro:
            {
               // Test Stage (Act 2)
-                 stage_set_data("TITANIC MONARCH", 2, msc_phantom_egg, false, -1, room_height, 315946, 6694951, 44100);
+                 stage_set_data("INTRODUCTION STAGE", 0, msc_phantom_egg, false, -1, room_height, 315946, 6694951, 44100);
                  break;
            }
            case rm_h_intro:
            {
               // Test Stage (Act 2)
-                 stage_set_data("HIDDEN PALACE", 0, msc_hpz, false, -1, room_height, 315946, 6694951, 44100);
+                 stage_set_data("INTRODUCTION STAGE", 0, msc_hpz, false, -1, room_height, 315946, 6694951, 44100);
                  break;
            }
            case rm_hssz_act1:

@@ -2521,10 +2521,7 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
  // Sonics insta-shield:    
     if(character_id == CHAR_SONIC)
     {   
-       if(global.setting_gameplay_instashield == true)
-       {
           sonic_state_insta_shield();
-       }
     }
     
  // Sonics peelout:    
@@ -2583,10 +2580,8 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     character_state_roll();
     
  // Spindash:
-    if(global.setting_gameplay_spindash == true) 
-    {
        character_state_spindash();
-    }
+ 
     
  // Skidding:
     character_state_skid();

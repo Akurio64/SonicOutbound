@@ -30,6 +30,7 @@ canbetriggered=true;
 t=270
 rx=0
 ry=0
+spd=0
     
     surf = -1;
     surf_w = surface_get_width(application_surface);
@@ -43,7 +44,7 @@ ry=0
 //       you will see streaks near the center
 //       where it is trying to read positions outside of the texture edges
 //       toggle on or off at your own discretion.
-    texture_set_repeat(true);
+    texture_set_repeat(false);
 
 
 //just for demo
@@ -74,7 +75,9 @@ ry=0
             <kind>1</kind>
             <string>if triggered==true
 {
-t+=5*par_character.animation_direction
+spd+=0.01
+spd=clamp(spd,0,15)
+t+=spd*par_character.animation_direction
 par_character.state=CS_ROLL
 rx= (x + (64) * cos(degtorad(t)))+8
 ry= (y - (64) * sin(degtorad(t)))-8
@@ -82,10 +85,11 @@ par_character.x=rx
 par_character.y=ry
 if (par_character.input_action_pressed == true)
 {
+spd=0
 triggered=false;
 canbetriggered=false;
-par_character.x_speed=lengthdir_x(8,t)
-par_character.y_speed=lengthdir_y(8,t)
+par_character.x_speed=lengthdir_x(spd*1.5,t)
+par_character.y_speed=lengthdir_y(spd*1.5,t)
 audio_play(_char_spindash_release,global.sfx_volume)
 }
 

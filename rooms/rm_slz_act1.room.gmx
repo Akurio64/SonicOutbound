@@ -256,7 +256,6 @@
     <instance objName="obj_layer_switch_high" x="5469" y="690" name="inst_212A3135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_layer_switch_high" x="5485" y="690" name="inst_2AE239A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stairs" x="3967" y="749" name="inst_7AADA367" locked="0" code="state = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monitor_life" x="4330" y="258" name="inst_EDD54233" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp1" x="4607" y="398" name="inst_5EDA2582" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp1" x="4607" y="398" name="inst_6095EB56" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp1" x="5119" y="398" name="inst_0BCFD0C0" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>

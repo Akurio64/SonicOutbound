@@ -512,7 +512,7 @@
     }
     
  // Page Name:
-    draw_sprite(spr_s_menu_selection_options, option_selected, floor(view_xview+view_wview/2-sprite_get_width(spr_s_menu_selection_options)/2), view_yview-240+_y+8);
+    //draw_sprite(spr_s_menu_selection_options, option_selected, floor(view_xview+view_wview/2-sprite_get_width(spr_s_menu_selection_options)/2), view_yview-240+_y+8);
         
  // Change page.
     if(keyboard_check_pressed(global.ip_button_a) || joy_pressed(0, global.dip_button_a)) 
@@ -650,17 +650,13 @@
     } 
     if(option_selected == 3)
     {
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12,     "Spindash",               (option_selected_in_page==0), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16,  "Dropdash",               (option_selected_in_page==1), c_yellow, c_white); 
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*2, "Peel-Out",              (option_selected_in_page==2), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*3, "Insta-Shield",          (option_selected_in_page==3), c_yellow, c_white);   
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*4, "Aerial Roll Lock",      (option_selected_in_page==4), c_yellow, c_white);   
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*5, "Ground Roll Trigger",   (option_selected_in_page==5), c_yellow, c_white);  
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*6, "Camera Lag",            (option_selected_in_page==6), c_yellow, c_white);   
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*7, "Rotation Method",       (option_selected_in_page==7), c_yellow, c_white);         
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*8, "Time Over",             (option_selected_in_page==8), c_yellow, c_white);             
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*0, "Aerial Roll Lock",      (option_selected_in_page==0), c_yellow, c_white);   
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*1, "Ground Roll Trigger",   (option_selected_in_page==1), c_yellow, c_white);  
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*2, "Camera Lag",            (option_selected_in_page==2), c_yellow, c_white);   
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*3, "Rotation Method",       (option_selected_in_page==3), c_yellow, c_white);   
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*4, "Discord Rich Presence",   (option_selected_in_page==4), c_yellow, c_white);                   
        framework_option_gameplay();
-       option_selected_in_page = wrap_value(option_selected_in_page, 0, 9);         
+       option_selected_in_page = wrap_value(option_selected_in_page, 0, 5);         
     }       
     
  // Option Values:       
@@ -680,29 +676,26 @@
     }  
     if(option_selected == 2)
     { 
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12,      global.ip_up,        (option_selected_in_page==0), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16,   global.ip_down,      (option_selected_in_page==1), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*2, global.ip_left,      (option_selected_in_page==2), c_yellow, c_white);  
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*3, global.ip_right,     (option_selected_in_page==3), c_yellow, c_white);    
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*4, global.ip_button_a,  (option_selected_in_page==4), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*5, global.ip_button_b,  (option_selected_in_page==5), c_yellow, c_white);     
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*6, global.ip_button_s,  (option_selected_in_page==6), c_yellow, c_white);  
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*7, global.dip_button_a, (option_selected_in_page==7), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*8, global.dip_button_b, (option_selected_in_page==8), c_yellow, c_white);     
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*9, global.dip_button_s, (option_selected_in_page==9), c_yellow, c_white);       
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*10, global.setting_input_gamepad_deadzone, (option_selected_in_page==10), c_yellow, c_white);                                               
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12,      global.ip_up,        (option_selected_in_page==0), c_yellow, c_white);
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16,   global.ip_down,      (option_selected_in_page==1), c_yellow, c_white);
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*2, global.ip_left,      (option_selected_in_page==2), c_yellow, c_white);  
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*3, global.ip_right,     (option_selected_in_page==3), c_yellow, c_white);    
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*4, global.ip_button_a,  (option_selected_in_page==4), c_yellow, c_white);
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*5, global.ip_button_b,  (option_selected_in_page==5), c_yellow, c_white);     
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*6, global.ip_button_s,  (option_selected_in_page==6), c_yellow, c_white);  
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*7, global.dip_button_a, (option_selected_in_page==7), c_yellow, c_white);
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*8, global.dip_button_b, (option_selected_in_page==8), c_yellow, c_white);     
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*9, global.dip_button_s, (option_selected_in_page==9), c_yellow, c_white);       
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*10, global.setting_input_gamepad_deadzone, (option_selected_in_page==10), c_yellow, c_white);                                               
     } 
     if(option_selected == 3)
     { 
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12,      string_change_if(global.setting_gameplay_spindash,     true, "Enabled", false, "Disabled"), (option_selected_in_page==0), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16,   string_change_if(global.setting_gameplay_dropdash,     true, "Enabled", false, "Disabled"), (option_selected_in_page==1), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*2, string_change_if(global.setting_gameplay_peelout,      true, "Enabled", false, "Disabled"), (option_selected_in_page==2), c_yellow, c_white);  
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*3, string_change_if(global.setting_gameplay_instashield,  true, "Enabled", false, "Disabled"), (option_selected_in_page==3), c_yellow, c_white);    
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*4, string_change_if(global.setting_gameplay_aerial_lock,  true, "Enabled", false, "Disabled"), (option_selected_in_page==4), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*5, string_change_if(global.setting_gameplay_roll_trigger, true, "Enabled", false, "Disabled"), (option_selected_in_page==5), c_yellow, c_white);     
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*6, string_change_if(global.setting_gameplay_camera_lag,   true, "Enabled", false, "Disabled"), (option_selected_in_page==6), c_yellow, c_white);  
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*7, string_change_if(global.setting_gameplay_rotation,     true,   "Mania", false,  "Classic"), (option_selected_in_page==7), c_yellow, c_white);                   
-       draw_text_color_selected(floor((view_xview-page_x-424-32)-page_x_pan), (page_y-total_height/2)+12-16*8, string_change_if(global.setting_gameplay_time_over,    true, "Enabled", false, "Disabled"), (option_selected_in_page==8), c_yellow, c_white);                                                            
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*0, string_change_if(global.setting_gameplay_aerial_lock,  true, "Enabled", false, "Disabled"), (option_selected_in_page==4), c_yellow, c_white);
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*1, string_change_if(global.setting_gameplay_roll_trigger, true, "Enabled", false, "Disabled"), (option_selected_in_page==5), c_yellow, c_white);     
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*2, string_change_if(global.setting_gameplay_camera_lag,   true, "Enabled", false, "Disabled"), (option_selected_in_page==6), c_yellow, c_white);  
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*3, string_change_if(global.setting_gameplay_rotation,     true,   "Mania", false,  "Classic"), (option_selected_in_page==7), c_yellow, c_white);    
+       draw_text_color_selected(floor((view_xview-page_x+424-32)+page_x_pan), (page_y-total_height/2)+12+16*4, string_change_if(global.setting_gameplay_discord,      true, "Enabled", false, "Disabled"), (option_selected_in_page==9), c_yellow, c_white);               
+                                                          
     }                    
     draw_set_halign(-1)    
 

@@ -203,28 +203,20 @@
     if(file_exists(working_directory+"\Engine\Config\Gameplay.hzc") == false)
     {        
        // Gameplay:
-          global.setting_gameplay_spindash      = true;
-          global.setting_gameplay_dropdash      = true;
-          global.setting_gameplay_peelout       = true;
-          global.setting_gameplay_instashield   = true;
           global.setting_gameplay_aerial_lock   = false;
           global.setting_gameplay_roll_trigger  = true;
           global.setting_gameplay_camera_lag    = true;
-          global.setting_gameplay_rotation      = true;          
-          global.setting_gameplay_time_over     = true;        
+          global.setting_gameplay_rotation      = true;            
+          global.setting_gameplay_discord       = true;      
           config_save_gameplay();
     }
     else
     {
-          global.setting_gameplay_spindash     = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 0);
-          global.setting_gameplay_dropdash     = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 1);
-          global.setting_gameplay_peelout      = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 2);
-          global.setting_gameplay_instashield  = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 3);
-          global.setting_gameplay_aerial_lock  = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 4);
-          global.setting_gameplay_roll_trigger = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 5);
-          global.setting_gameplay_camera_lag   = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 6);
-          global.setting_gameplay_rotation     = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 7);                 
-          global.setting_gameplay_time_over    = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 8);          
+          global.setting_gameplay_aerial_lock  = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 0);
+          global.setting_gameplay_roll_trigger = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 1);
+          global.setting_gameplay_camera_lag   = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 2);
+          global.setting_gameplay_rotation     = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 3);                
+          global.setting_gameplay_discord      = text_readline(working_directory+"\Engine\Config\Gameplay.hzc", false, 4);          
     }
 
     
@@ -332,6 +324,7 @@
     instance_create(0, 0, ctr_display);
     instance_create(0, 0, ctr_gamepad);
     instance_create(0, 0, ctr_audio);
+    instance_create(0, 0, ctr_discord);
  
  // Resize Window.
  ////////////////////////////////////////////////////////////////////////////////////////////////////

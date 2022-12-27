@@ -1758,9 +1758,9 @@ part_emitter_burst(Star2,ie2,ip2,1)}
                    }
                    
                 // Decrease lives:
-                if (room=rm_t_intro or room=rm_h_intro)=false{
+               /*no lives: if (room=rm_t_intro or room=rm_h_intro)=false{
                    global.clives -= 1;
-                   if(global.clives &lt; 0) global.clives = 0;}
+                   if(global.clives &lt; 0) global.clives = 0;}*/
                    
                 // Play death/drown sound.
                    if(has_drowned == false)
@@ -2595,10 +2595,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
  // Sonics insta-shield:    
     if(character_id == CHAR_SONIC)
     {   
-       if(global.setting_gameplay_instashield == true)
-       {
           sonic_state_insta_shield();
-       }
     }
     
  // Sonics peelout:    
@@ -2657,10 +2654,8 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
     character_state_roll();
     
  // Spindash:
-    if(global.setting_gameplay_spindash == true) 
-    {
        character_state_spindash();
-    }
+    
     
  // Skidding:
     character_state_skid();

@@ -59,7 +59,8 @@ yy=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_phantom_egg){
+            <string>
+if instance_exists(obj_phantom_egg){
     var xx;
         xx = (x-sprite_get_xoffset(sprite_index)+(sprite_get_width(sprite_index)/2));
     var yy;

@@ -61,7 +61,7 @@ explosion=8
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if explosion&gt;0{
+            <string>if explosion&gt;=0{
 explosion-=1
 ChainCount-=1
 dummy_effect_create(spr_boss_explosion, 0.35, x+lengthdir_x(explosion*ChainGap, ChainAngle), y+lengthdir_y(explosion*ChainGap, ChainAngle)+(offset*i/3), -5, 0)

@@ -162,6 +162,7 @@ alarm[6]=-1
 alarm[7]=-1
 alarm[8]=-1
 instance_destroy(obj_tmz_shield)
+instance_destroy(obj_tmz_missile)
 obj_level_hud.visible=false
 </string>
           </argument>
@@ -456,7 +457,7 @@ else{sprite_index=spr_phantom_egg}}
 else{sprite_index=spr_phantom_egg}
 
 if dead=true and instance_exists(obj_tmz_chain)=false{
-y=lerp(y,64,0.05);x=lerp(x,212,0.05);obj_tmz_missile.alarm[2]=1}
+y=lerp(y,64,0.05);x=lerp(x,212,0.05)}
 
 if dead=false{
 if (state=10 or state=2)=false{
@@ -482,8 +483,8 @@ else
    if !(state=2){if splay=false{audio_play(_tmz_land,global.sfx_volume);splay=true}}
    }}else if state=2{vspeed = 0;gravity = 0;}}
 
-if !instance_exists(obj_tmz_missile){
-alarm[5]=1}
+if dead=false{if !instance_exists(obj_tmz_missile){
+alarm[5]=1}}
 
 </string>
           </argument>

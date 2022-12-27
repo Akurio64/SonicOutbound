@@ -4,7 +4,7 @@
  // Initialize Drop Dash:
     if(state == CS_JUMP && dropdash_state == 0 && shield_usable == 1 && shield_index <= 1)
     {
-       if((global.setting_gameplay_instashield == false && input_action_pressed && input_action) || (global.setting_gameplay_instashield == true && input_special_pressed && input_special))
+       if((input_special_pressed && input_special))
        {
           dropdash_state     = 1;
           dropdash_timer     = 0;
@@ -90,7 +90,7 @@
     
  // Cancel drop dash:
  // Do this when we release the action/special button.
-    if((dropdash_state != 0 && ((global.setting_gameplay_instashield == false && !input_action) || (global.setting_gameplay_instashield == true && !input_special))) || (state != CS_JUMP && dropdash_state != 0))
+    if((dropdash_state != 0 && ((!input_special))) || (state != CS_JUMP && dropdash_state != 0))
     {
        dropdash_state     = 0;
        dropdash_timer     = 0;

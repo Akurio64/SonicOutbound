@@ -231,7 +231,10 @@
              audio_play(_general_menu_accept, global.sfx_volume);  
              global.checkpoint_x = -1; 
              global.checkpoint_y = -1;
-             global.checkpoint_t =  0;            
+             global.checkpoint_t =  0;       
+             discord_set_details("Not playing right now")
+             discord_set_state("Getting ready for the time of his life")
+             discord_presence_update()     
           }                   
     }
 </string>
