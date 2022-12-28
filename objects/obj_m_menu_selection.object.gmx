@@ -137,7 +137,15 @@
                      {
                         with(instance_create(0, 0, obj_fade_to))
                         {
-                             fade_to = rm_data_select;
+                             //fade_to = rm_data_select;
+                             global.zone_id          = 0;
+                               global.character_index  = 0;
+                               global.cpu_index        = 1;
+                               global.clives           = 3;
+                               global.ccontinues       = 0;
+                               global.cemeralds        = 0;
+                               global.game_completed   = 0;
+                             fade_to = rm_slz_act1;
                              
                         }
                         menu_selection_freeze = -1;
