@@ -75,12 +75,13 @@ spd=0
             <kind>1</kind>
             <string>if triggered==true
 {
-spd+=0.01
-spd=clamp(spd,0,15)
+spd=5
+if (obj_character.input_right or obj_character.input_left)
+{spd+=0.025}
 t+=spd*par_character.animation_direction
 par_character.state=CS_ROLL
-rx= (x + (64) * cos(degtorad(t)))+8
-ry= (y - (64) * sin(degtorad(t)))-8
+rx= (x + (48) * cos(degtorad(t)))+8
+ry= (y - (48) * sin(degtorad(t)))-8
 par_character.x=rx
 par_character.y=ry
 if (par_character.input_action_pressed == true)

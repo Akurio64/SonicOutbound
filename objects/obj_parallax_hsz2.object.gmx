@@ -42,14 +42,14 @@
     parallax_add_node(1, pbg_hsz_03, 0.88, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1024, 144); // &lt; Parallax ID 2   
     
  // Create the ocean.
-    for(i=0; i&lt;6; i+=1)
+    for(i=0; i&lt;30; i+=1)
     {
-        parallax_add_node(1, pbg_hsz_04, (0.84-(i*0.04)), -(0.3+i*0.03), 0, 0, 0, bg_yoffset, 0, 0, (142)+i*6, 0, 0, i*6, 1024, 3000);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
+        parallax_add_node(1, pbg_hsz_04, (0.84-(i*0.0075)), -(0.3+i*0.03), 0, 0, 0, bg_yoffset, 0, 0, (142)+i*5, 0, 0, i*5, 1024, 150);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
                   
-    }    
+    }   
     
             // Create the last layer.
-    parallax_add_node(1, pbg_hsz_06, 0.80, 0, 0, 0, 0, bg_yoffset, 0, 0, 244, 0, 0, 0, 1024, 192); // &lt; Parallax ID 9    
+    parallax_add_node(1, pbg_hsz_06, 0.64, 0, 0, 0, 0, bg_yoffset, 0, 0, 244, 0, 0, 0, 1024, 192); // &lt; Parallax ID 9    
     
  
     

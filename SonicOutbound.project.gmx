@@ -2113,13 +2113,13 @@
           <object>objects\obj_parallax_ttz1</object>
           <object>objects\obj_parallax_ttz2</object>
           <object>objects\obj_parallax_hsz1</object>
+          <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_mrz1</object>
           <object>objects\obj_parallax_mrz2</object>
           <object>objects\obj_parallax_vrz1</object>
           <object>objects\obj_parallax_vrz2</object>
           <object>objects\obj_parallax_ccz1</object>
           <object>objects\obj_parallax_ccz2</object>
-          <object>objects\obj_parallax_hsz2</object>
           <object>objects\obj_parallax_slz1</object>
           <object>objects\obj_parallax_slz2</object>
           <object>objects\obj_parallax_icz1_o</object>
