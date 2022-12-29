@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>discord_presence_init("1025484143074758666");
+            <string>if global.setting_gameplay_discord=true
+{discord_presence_init("1025484143074758666")}
 </string>
           </argument>
         </arguments>
@@ -79,7 +80,7 @@ discord_presence_update()
 }
 else
 {
-discord_presence_clear()
+discord_presence_shutdown()
 }
 </string>
           </argument>
