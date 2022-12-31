@@ -1275,6 +1275,7 @@
         <sprite>sprites\spr_ramp_3</sprite>
         <sprite>sprites\spr_ramp2</sprite>
         <sprite>sprites\spr_Goofy_1</sprite>
+        <sprite>sprites\spr_if_only_I_could_rotate</sprite>
         <sprite>sprites\spr_Goofy_2</sprite>
         <sprite>sprites\spr_Goofy_3</sprite>
         <sprite>sprites\spr_Goofy_4</sprite>
@@ -1475,6 +1476,7 @@
     <backgrounds name="Tilesets">
       <backgrounds name="SLZ">
         <background>background\tls_slz2_1</background>
+        <background>background\tls_slz2_rot</background>
         <background>background\bg_slz_loop1</background>
         <background>background\tls_slz_act1_2</background>
         <background>background\tls_slz2_2og</background>
@@ -2300,6 +2302,7 @@
           <object>objects\obj_ramp_3</object>
           <object>objects\obj_ramp4</object>
           <object>objects\obj_Goofy_1</object>
+          <object>objects\obj_if_only_I_could_rotate</object>
           <object>objects\obj_Goofy_2</object>
           <object>objects\obj_Goofy_3</object>
           <object>objects\obj_Goofy_4</object>

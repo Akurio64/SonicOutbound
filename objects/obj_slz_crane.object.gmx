@@ -32,6 +32,7 @@ tx_s=0
 dif=0
 hold=instance_create(x,y,obj_crane_hold)
 hold.par=id
+h=128
 </string>
           </argument>
         </arguments>
@@ -128,7 +129,7 @@ tx=clamp(tx,xstart-96,xstart+96)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_pos(spr_crane,2,xstart-10,ystart-8,xstart+12,ystart-8,xstart+10,ystart+distance_to_object(par_terrain)+32,xstart-10,ystart+distance_to_object(par_terrain)+32,1)
+            <string>draw_sprite_pos(spr_crane,2,xstart-10,ystart-8,xstart+12,ystart-8,xstart+10,ystart+h+8,xstart-10,ystart+h+8,1)
 
 if (tx-xstart)&gt;0{
 draw_sprite_pos(spr_crane,0, tx+16-a, y-8, xstart+16, y-8, xstart+16, y + 8, tx+16-a, y+8, 1)
