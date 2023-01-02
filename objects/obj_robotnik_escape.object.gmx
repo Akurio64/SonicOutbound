@@ -52,7 +52,8 @@ offset=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(view_xview+212,view_yview,obj_falling_signpost)
+            <string>instance_create(view_xview+212,obj_boss_camera.y,obj_results)
+instance_create(view_xview+212, obj_boss_camera.y, obj_sign_post_camera);
 </string>
           </argument>
         </arguments>

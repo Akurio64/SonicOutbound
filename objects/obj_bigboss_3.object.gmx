@@ -165,7 +165,7 @@ path_end()
 visible=true
 instance_create(x,y,obj_fade_to_white)
 audio_play(_general_super,global.bgm_volume)
-x=random_range(obj_boss_camera.x-270,obj_boss_camera.x+270)
+x=random_range(view_xview,view_xview+424)
 
 if !instance_exists(obj_slz_star)
 {
@@ -447,7 +447,7 @@ alarm[1]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp&gt;=4{
+            <string>if hp&gt;=5{
 if teleporting=true
 {
 with(instance_create(x, y, obj_character_afterimage))

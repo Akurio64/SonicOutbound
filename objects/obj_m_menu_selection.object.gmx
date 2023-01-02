@@ -145,7 +145,7 @@
                                global.ccontinues       = 0;
                                global.cemeralds        = 0;
                                global.game_completed   = 0;
-                             fade_to = rm_slz_act1;
+                             fade_to = rm_data_select;
                              
                         }
                         menu_selection_freeze = -1;

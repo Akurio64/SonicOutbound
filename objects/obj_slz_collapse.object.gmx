@@ -25,13 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/* Set the Block Width/Height */
-block_width  = 16;
-block_height = 16;
-
-event_inherited()
-
-image_speed=0
+            <string>image_speed=0
 if room=rm_slz_act1
 {
 image_index=0
@@ -40,6 +34,12 @@ else if room=rm_slz_act2
 {
 image_index=1
 }
+
+/* Set the Block Width/Height */
+block_width  = 16;
+block_height = 16;
+
+event_inherited()
 </string>
           </argument>
         </arguments>

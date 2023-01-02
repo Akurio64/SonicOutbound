@@ -306,18 +306,7 @@
        draw_sprite(spr_dataselect_icon, sprite_get_number(spr_dataselect_icon)-1, x+5, y+5);    
     }
     
- // Draw Characters.
-    if(dataslot_cpu != -1)
-    {
-       if(dataslot_zone == 0)
-       {
-          draw_sprite_ext(spr_dataselect_characters, dataslot_cpu, (x+sprite_get_width(sprite_index)/2)+8, y+sprite_get_height(sprite_index)-64, -1, 1, 0, c_white, 1); 
-       }       
-       else
-       {
-          draw_sprite_ext(spr_dataselect_characters, dataslot_cpu, (x+sprite_get_width(sprite_index)/2)+8, y+sprite_get_height(sprite_index)-97, -1, 1, 0, c_white, 1);        
-       }
-    }     
+ // Draw Characters.   
     if(dataslot_character != -1)
     {
        if(dataslot_cpu == -1)
@@ -335,11 +324,11 @@
        {
           if(dataslot_zone == 0)
           {
-             draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-12, y+sprite_get_height(sprite_index)-64, 1, 1, 0, c_white, 1);    
+             draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-2, y+sprite_get_height(sprite_index)-64, 1, 1, 0, c_white, 1);    
           }  
           else
           {
-             draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-12, y+sprite_get_height(sprite_index)-97, 1, 1, 0, c_white, 1);           
+             draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-2, y+sprite_get_height(sprite_index)-97, 1, 1, 0, c_white, 1);           
           }  
        }
     }
@@ -348,17 +337,13 @@
     if(dataslot_zone != 0)
     {
        draw_sprite(spr_dataselect_lives, dataslot_character-1, x+29, y+131);
-       draw_sprite(spr_continues, dataslot_character-1, x+38, y+173);
-       if(dataslot_emeralds &gt; 0)
-       {
+          
           dataslot_emerald_frame += 0.20;
           draw_sprite(spr_dataselect_emeralds, floor(dataslot_emerald_frame), x+29, y+113);
           draw_text(x+29+24, y+115, string_place_number(dataslot_emeralds, 2, 0)); 
-       }
+       
        draw_set_font(global.dataselect_font);
        draw_set_color(c_white);
-       draw_text(x+29+24, y+133, string_place_number(dataslot_lives, 2, 0)); 
-       draw_text(x+29+24, y+159, string_place_number(dataslot_continues, 2, 0)); 
     }
      
  // Draw arrows.

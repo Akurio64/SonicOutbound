@@ -10,12 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.zone_id      =7;
-// Back to the menu:
-                 global.clives = 3;
-                 global.crings = 0;
-                 global.cscore = 0;
-room_goto(rm_menu)</code>
+  <code>global.zone_id      =7;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

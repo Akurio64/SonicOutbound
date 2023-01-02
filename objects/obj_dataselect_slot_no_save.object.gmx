@@ -184,21 +184,7 @@
     draw_sprite(sprite_index, -1, x, y);
         
  // Draw Characters.
-    if(dataslot_cpu != -1)
-    {
-       draw_sprite_ext(spr_dataselect_characters, dataslot_cpu, (x+sprite_get_width(sprite_index)/2)+8, y+sprite_get_height(sprite_index)-52, -1, 1, 0, c_white, 1);       
-    }     
-    if(dataslot_character != -1)
-    {
-       if(dataslot_cpu == -1)
-       {
-          draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-2, y+sprite_get_height(sprite_index)-52, 1, 1, 0, c_white, 1);  
-       }
-       else
-       {
-          draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-12, y+sprite_get_height(sprite_index)-52, 1, 1, 0, c_white, 1);         
-       }
-    }
+    draw_sprite_ext(spr_dataselect_characters, dataslot_character, (x+sprite_get_width(sprite_index)/2)-2, y+sprite_get_height(sprite_index)-52, 1, 1, 0, c_white, 1);  
     
  // Draw arrows.
     if(obj_dataselect_cursor.datacursor_slot_index == 0 &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)

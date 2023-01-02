@@ -83,7 +83,7 @@ for (i=0;i&lt;ww;i+=chunk) { //we loop 4 pixel at a time all the way across
  }
  }
  
- instance_destroy(obj_miniboss_3_solid)
+
 </string>
           </argument>
         </arguments>
@@ -125,6 +125,7 @@ move=false
 alarm[0]=-1
 alarm[2]=-1
 alarm[3]=-1
+instance_destroy(obj_miniboss_3_solid)
 </string>
           </argument>
         </arguments>

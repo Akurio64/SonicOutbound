@@ -152,7 +152,9 @@ rec_y2=(view_yview+view_hview)+ry2
 x=obj_character.x
 y=obj_character.y
 
-if start=true{frame+=0.24}
+if start=true{frame+=0.24;
+if audio_is_playing(_ev_egg_event)=false
+{alarm[1]=1}}
 </string>
           </argument>
         </arguments>
@@ -186,8 +188,7 @@ if start=true
 draw_sprite(sprite_index,frame,rec_x1+85,rec_y1+81)
 if frame&gt;image_number
 {
-image_single=image_number-1
-alarm[1]=1}
+image_single=image_number}
 }
 </string>
           </argument>
