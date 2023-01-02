@@ -3,8 +3,8 @@
   <caption></caption>
   <width>20000</width>
   <height>3000</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>2</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -1178,7 +1178,6 @@
     <instance objName="obj_badnik_block" x="11532" y="593" name="inst_D1DF3B31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="11572" y="593" name="inst_D04CFB9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_seesaw" x="11840" y="896" name="inst_8FFA47E6" locked="0" code="force = 8&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monitor_rings" x="11644" y="670" name="inst_F8CF12F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_bomb_2" x="11616" y="616" name="inst_9DC31082" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_bomb_2" x="11560" y="616" name="inst_E088E6F0" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_bomb_2" x="11672" y="616" name="inst_C06C818F" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
@@ -1206,6 +1205,9 @@
     <instance objName="obj_Ramp1" x="13096" y="1868" name="inst_686DB9E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_collapse" x="13822" y="1502" name="inst_65BCD36D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="17360" y="1040" name="inst_0B1BE9E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_hyper" x="11648" y="670" name="inst_29D995D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="11616" y="670" name="inst_E330DF88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="11584" y="670" name="inst_E05E646F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz_act1_1" x="12282" y="1611" w="256" h="256" xo="273" yo="8" id="10004152" name="inst_6929E005" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
