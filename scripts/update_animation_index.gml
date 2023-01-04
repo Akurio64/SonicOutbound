@@ -9,12 +9,12 @@
        set_animation("VINE",            spr_sonic_vine,    0.2,  7, 0, -1, "", 0);
        set_animation("SLIDE2",            spr_sonic_slide2,    0.05,  1, 0, -1, "", 0);
        set_animation("LEAP",            spr_sonic_leap,    0.2,  2, 2, 0, "", 0);
-       set_animation("H_TURN",          spr_sonic_hturn,    0.2,  5, 0, 0, "LEAP", 0);
+       set_animation("H_TURN",          spr_sonic_hturn,    0.2,  7, 0, 0, "LEAP", 0);
        set_animation("3DLOOP1",       spr_sonic_3dloop1, 0.25, 2, 0, -1, "", 0);
        set_animation("3DLOOP2",       spr_sonic_3dloop2, 0.25, 4, 0, -1, "", 0);
        set_animation("3DLOOP3",       spr_sonic_3dloop3, 0.25, 4, 0, -1, "", 0);
        set_animation("BORED_1",       spr_sonic_idle_1, 0.25,  9, 4, 12, "BORED_2", 0);    
-       set_animation("BORED_2",       spr_sonic_idle_2, 0.25, 23, 0, -1, "BORED_2", 0);        
+       set_animation("BORED_2",       spr_sonic_idle_2, 0.25, 15, 0, -1, "BORED_2", 0);        
        set_animation("LOOK",         spr_sonic_look_up, 0.35,  4, 0,  0, "", 0);    
        set_animation("LOOK_END",    spr_sonic_look_end, 0.18,  1, 0,  0, "STAND", 0);            
        set_animation("CROUCH",        spr_sonic_crouch, 0.6,   3, 0,  0, "", 0);    
@@ -27,7 +27,7 @@
        set_animation("DASH",            spr_sonic_dash, 0.25,  4, 1, -1, "", 0);      
        set_animation("PEELOUT",      spr_sonic_peelout, 0.60,  4, 1, -1, "", 0);          
        set_animation("ROLL",            spr_sonic_roll, 0.5,  15, 0, -1, "", 0);
-       set_animation("SPINDASH",    spr_sonic_spindash, 0.8,  15, 0, -1, "", 0);
+       set_animation("SPINDASH",    spr_sonic_spindash, 0.8,  18, 3, -1, "", 0);
        set_animation("DROPDASH",    spr_sonic_dropdash,   1,  15, 0, -1, "", 0); 
        set_animation("SPRING",        spr_sonic_spring, 0.15,  1, 0, -1, "", 0);                 
        set_animation("TWIRL",          spr_sonic_twirl, 0.5,  9, 0, -1, "", 0);         

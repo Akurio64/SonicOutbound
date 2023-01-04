@@ -417,16 +417,16 @@ part_system_depth(FireP,0);
 
 // define the particle
 fp = part_type_create();
-part_type_sprite(fp,spr_fire,0,0,1);
-part_type_size(fp,0.2,0.3,-.05,0);
-part_type_orientation(fp,0,360,2,0,0);
-part_type_color2(fp,c_orange,c_red);
-part_type_alpha3(fp,1,1,0);
-part_type_blend(fp,1);
+part_type_shape(fp,pt_shape_flare);
+part_type_size(fp,0.2,0.3,-.001,0);
+part_type_scale(fp,1,1);
+part_type_colour2(fp,c_red,c_orange);
+part_type_alpha2(fp,0.75,0.5);
 part_type_speed(fp,.1,.5,0,0);
 part_type_direction(fp,0,359,0,0);
 part_type_gravity(fp,0.02,90);
 part_type_orientation(fp,0,359,10,0,true);
+part_type_blend(fp,true);
 part_type_life(fp,50,125);
 
 // define the emitter
