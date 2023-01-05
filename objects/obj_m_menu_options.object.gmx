@@ -589,7 +589,7 @@
             }  
             if(option_selected == 3)
             {        
-               total_height = (11*14)+8;
+               total_height = (6*14)+8;
             }                           
             page_x_pan += (0-page_x_pan)*0.1;
             if(page_x_pan &lt; 0)
@@ -627,8 +627,8 @@
     if(option_selected == 1)
     {
        draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12, "Music Volume",    (option_selected_in_page==0), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16, "Sound Volume", (option_selected_in_page==1), c_yellow, c_white);
-       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*2, "Event Volume", (option_selected_in_page==2), c_yellow, c_white);           
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16, "SFX Volume", (option_selected_in_page==1), c_yellow, c_white);
+       draw_text_color_selected(floor((view_xview+page_x+32)+page_x_pan), (page_y-total_height/2)+12+16*2, "Events Volume", (option_selected_in_page==2), c_yellow, c_white);           
        framework_option_audio();          
        option_selected_in_page = wrap_value(option_selected_in_page, 0, 3);           
     }   

@@ -84,11 +84,6 @@
              { 
                   instance_destroy();
              }  
-             with(instance_create(0, 0, obj_m_menu_create))
-             {
-                  menu_selection        = 1;             
-                  menu_selection_freeze = 60;
-             }
              if(instance_exists(obj_m_credits))
              {
                 with(obj_m_credits)
@@ -130,6 +125,15 @@
              { 
                   instance_destroy();
              }  
+             with(obj_menu_ring)
+             {
+                choice=0
+                turn=-90
+                click=false
+                time=0
+                move=0
+                ar=0
+             }
              with(obj_level_pause)
              { 
                   option_paused = false;

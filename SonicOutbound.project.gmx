@@ -1156,6 +1156,12 @@
         <sprite>sprites\spr_t_m2_transition</sprite>
         <sprite>sprites\spr_black_rec</sprite>
         <sprite>sprites\spr_m_menu_character</sprite>
+        <sprites name="New">
+          <sprite>sprites\spr_circle_bg</sprite>
+          <sprite>sprites\spr_menu_arrow</sprite>
+          <sprite>sprites\spr_menu_icon</sprite>
+          <sprite>sprites\spr_menu_ring</sprite>
+        </sprites>
       </sprites>
       <sprites name="Settings Menu">
         <sprite>sprites\spr_s_menu_backdrop</sprite>
@@ -1684,6 +1690,8 @@
         <script>scripts\draw_sprite_skew_ext.gml</script>
         <script>scripts\draw_sprite_skew.gml</script>
         <script>scripts\draw_sprite_wave.gml</script>
+        <script>scripts\draw_text_circle.gml</script>
+        <script>scripts\menu_text.gml</script>
       </scripts>
       <scripts name="Audio">
         <script>scripts\audio_play.gml</script>
@@ -2328,6 +2336,7 @@
         <object>objects\obj_m_ls_background</object>
         <object>objects\obj_m_menu_selection</object>
         <object>objects\obj_m_menu_sketch</object>
+        <object>objects\obj_menu_ring</object>
       </objects>
       <objects name="Settings Menu">
         <object>objects\par_menu_1</object>

@@ -204,13 +204,13 @@
     
     
     
-    if(keyboard_check_pressed(global.ip_button_b) || (joy_pressed(0, global.dip_button_b)))
+    if !instance_exists(obj_m_menu_options){if(keyboard_check_pressed(global.ip_button_b) || (joy_pressed(0, global.dip_button_b)))
        {
        with(instance_create(0, 0, obj_fade_to))
 {
 fade_to = rm_title_screen;
 }
-}
+}}
     
 </string>
           </argument>
