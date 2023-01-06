@@ -1161,6 +1161,7 @@
           <sprite>sprites\spr_menu_arrow</sprite>
           <sprite>sprites\spr_menu_icon</sprite>
           <sprite>sprites\spr_menu_ring</sprite>
+          <sprite>sprites\spr_m_ring_i</sprite>
         </sprites>
       </sprites>
       <sprites name="Settings Menu">
