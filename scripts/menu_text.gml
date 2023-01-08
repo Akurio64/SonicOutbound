@@ -19,9 +19,16 @@ if argument0=0
         "Only in Ohio",
         "Geometry Dash and Shadow Fight 2 are the best mobile games ever",
         "Meta had enough of being redesigned",
-        "Death Note is peak",
-        "The Promised Neverland is peak (except Season 2, go read the manga)",
         '"'+"Long time no see!!!!!."+'" +10000 sins',
+        
+        //Plasmariel
+        
+        "Hop in! Time for a brand new Sonic the Hedgehog adventure!",
+        "Quick! An exciting perilous mission awaits our beloved hero, gotta juice!",
+        "The biggest and most ambitious Sonic game of the Classic Saga, with never-seen-before mechanics and storylines",
+        "Sometink on your mind? Wrench something isn't quite fixed, better speed by Tails' Wacky Workbench",
+        "Admire the wonderful crew that brought you Sonic Outbound",
+        "Touch some grass.",
         
         //Quotes
         
@@ -34,16 +41,14 @@ if argument0=0
         "It doesn't matter, who is wrong and who is right...",
         "It's time to face your FEAR!",
         
-        
         //Comical
         
-        "Go watch Jojo's Bizzare adventure",
         "Shadow the Hedgehog is the best Sonic game",
         "It's time for Arin Hanson to be bad at this game",
         "Comical is tired, let him sleep. (jk go wake him up)",
-        "Of course you like Sakura from Naruto, you are both useless.",
         
         //Other
+        
         "Welcome To The Sonic Mania 2 But Good", //ShyDev
         "Yeast- I love it", //Dimiotis
         "Deez nuts", //Saph

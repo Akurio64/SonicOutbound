@@ -21,6 +21,5 @@
   <height>1232</height>
   <frames>
     <frame index="0">images\spr_circle_bg_0.png</frame>
-    <frame index="1">images\spr_circle_bg_1.png</frame>
   </frames>
 </sprite>

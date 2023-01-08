@@ -103,7 +103,7 @@ alarm[0]=1;click=false
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>obj_menu_ring</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -252,10 +252,10 @@ fade_to = rm_title_screen;
 }
 }
 
-if choice=0{col=make_colour_rgb(30,210,240)}
-else if choice=1{col=make_colour_rgb(135,200,50)}
-else if choice=2{col=make_colour_rgb(64,128,224)}
-else if choice=3{col=make_colour_rgb(40,200,120)}
+if choice=0{col=make_colour_rgb(224,128,0)}
+else if choice=1{col=make_colour_rgb(90,160,30)}
+else if choice=2{col=make_colour_rgb(40,30,120)}
+else if choice=3{col=make_colour_rgb(50,70,95)}
 </string>
           </argument>
         </arguments>
