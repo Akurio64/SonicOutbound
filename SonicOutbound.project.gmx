@@ -1140,6 +1140,7 @@
         <sprite>sprites\spr_default_glow</sprite>
         <sprite>sprites\spr_slz_light</sprite>
       </sprites>
+      <sprite>sprites\sprite657</sprite>
     </sprites>
     <sprites name="Menu">
       <sprites name="Main Menu">
@@ -1336,6 +1337,8 @@
       <sprite>sprites\spr_continue1</sprite>
       <sprite>sprites\spr_continues</sprite>
     </sprites>
+    <sprite>sprites\sprite655</sprite>
+    <sprite>sprites\sprite656</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
