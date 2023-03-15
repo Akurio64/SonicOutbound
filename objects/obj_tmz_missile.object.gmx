@@ -127,7 +127,7 @@ x=lerp(x,obj_phantom_egg.x,0.05)
             <string>if launch=true{
 hurt=true
 xx=obj_character.x
-yy=obj_character.y
+yy=192
 move_towards_point(obj_character.x,192,5)
 point_direction(x,y,obj_character.x,192)
 image_angle=direction}

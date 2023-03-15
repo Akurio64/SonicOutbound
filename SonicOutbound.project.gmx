@@ -78,6 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
+    <extension index="2">extensions\Extension3</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">

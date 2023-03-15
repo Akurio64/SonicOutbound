@@ -47,6 +47,8 @@ part_type_life(first_particle,50,125);
 
 // define the emitter
 first_emitter = part_emitter_create(FirstParticleSystem);
+state=0
+star=""
 </string>
           </argument>
         </arguments>
@@ -97,6 +99,39 @@ part_emitter_region(FirstParticleSystem,first_emitter,x-sprite_width,x+sprite_wi
 
 if visible=true{
 part_emitter_burst(FirstParticleSystem,first_emitter,first_particle,-2);}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if state=1{
+y=view_yview-64+150+64*sin(0.0033*current_time)+64
+x+=1.5}
+else if state=2{
+y=view_yview-64+212+32*sin(0.00075*current_time)+32
+x+=2.5}
+else if state=3{
+y+=1.5
+x=(ctr_camera.limit_left+(ctr_camera.limit_right-ctr_camera.limit_left)/2)+((ctr_camera.limit_right-ctr_camera.limit_left)/2)*sin(0.001*current_time);
+if alarm[1]=-1{alarm[1]=60}}
+image_yscale=image_xscale
 </string>
           </argument>
         </arguments>

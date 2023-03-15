@@ -3,7 +3,7 @@
   <caption></caption>
   <width>20000</width>
   <height>3124</height>
-  <vsnap>8</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -307,7 +307,6 @@
     <instance objName="obj_Ramp1" x="3072" y="2048" name="inst_11DB82BB" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp2" x="2816" y="1792" name="inst_986F6E95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp2" x="6400" y="768" name="inst_1D70C41A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character" x="160" y="1744" name="inst_36C33361" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp2" x="512" y="1792" name="inst_DD0EFCA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ramp_3" x="256" y="1792" name="inst_680D9342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ramp_3" x="2560" y="1792" name="inst_0C0014B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -763,6 +762,7 @@
     <instance objName="obj_slz_light" x="3808" y="1400" name="inst_A3556C52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_light" x="3936" y="1400" name="inst_1331A99B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_light" x="4064" y="1408" name="inst_6E91C141" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="12720" y="720" name="inst_5480E675" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz2_1" x="6656" y="1536" w="256" h="256" xo="273" yo="7" id="10006028" name="inst_831517EB" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
