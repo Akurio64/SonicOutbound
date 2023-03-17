@@ -3,8 +3,8 @@
   <name>Extension3</name>
   <version>1.0.0</version>
   <packageID></packageID>
-  <ProductID>F3D00DAD3DDB83EFFDD568E8093FC7AA</ProductID>
-  <date>15/03/23</date>
+  <ProductID></ProductID>
+  <date>16/03/23</date>
   <license>Free to use, also for commercial games.</license>
   <description></description>
   <helpfile></helpfile>
@@ -30,32 +30,18 @@
   </ConfigOptions>
   <androidPermissions/>
   <IncludedResources>
-    <Resource>Sprites\Startup\Title\Emblem\sprite974</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite976</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite977</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite978</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite979</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite980</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite981</Resource>
-    <Resource>Sprites\Startup\Title\Emblem\sprite1052</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\spr_ts_sonic</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\spr_ts_ring</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\sprSonicTransition</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\spr_ts_sonic_h</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\BG\sprBack</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\BG\sprBackgroundLayers</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\BG\sprCloudTexture</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\BG\sprIslands</Resource>
+    <Resource>Sprites\Startup\Title\Emblem\BG\sprSeaTexture</Resource>
     <Resource>Sprites\Startup\Title\Menu\spr_title_press_start</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprBack</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprBackgroundLayers</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprCloudTexture</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprIslands</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprSeaTexture</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprSonicOld</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprSonicTransition</Resource>
-    <Resource>Sprites\Startup\Title\Test\sprSonic</Resource>
-    <Resource>Objects\Startup\Title\Emblem\object936</Resource>
-    <Resource>Objects\Startup\Title\Emblem\object932</Resource>
-    <Resource>Objects\Startup\Title\Emblem\object934</Resource>
-    <Resource>Objects\Startup\Title\Emblem\object933</Resource>
-    <Resource>Objects\Startup\Title\Emblem\object931</Resource>
-    <Resource>Objects\Startup\Title\Emblem\object935</Resource>
+    <Resource>Objects\Startup\Title\Emblem\objTitleScreen</Resource>
     <Resource>Objects\Startup\Title\Menu\obj_press_start</Resource>
-    <Resource>Objects\Startup\Title\Test\objTitleScreen</Resource>
-    <Resource>Rooms\Title Screen\rm_title_screen</Resource>
   </IncludedResources>
   <files/>
 </extension>
