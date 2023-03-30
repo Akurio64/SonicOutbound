@@ -33,7 +33,7 @@
     d3d_set_shading(false)
     
     waterParallaxX = 0;
-    audio_play(msc_title, global.bgm_volume);
+   //audio_play(msc_title, global.bgm_volume);
     
     cloudTexY = 0;
     seaTexY = 0;
@@ -77,6 +77,13 @@
     fadeOutRoom = rm_menu;
     
     X = 0
+    
+    frame=0
+vertex_format_begin();
+vertex_format_add_position();
+vertex_format_add_colour();
+vertex_format_add_textcoord();
+global.vf = vertex_format_end();
 </string>
           </argument>
         </arguments>
@@ -192,7 +199,7 @@
     
     // Animate wagging finger
     if(draw3D == true &amp;&amp; drawBG == true){
-        sonicIndex += 0.6
+        sonicIndex += 0.3
     }
     
     // Animate Fade out
@@ -305,18 +312,8 @@
         }
     
     draw_sprite_tiled(sprIslands,0,X,-71)
-    
-    // Draw Ring
-    if(drawBG)
-        draw_sprite(sprite_index, 2, x, y);
-        
-    // If Sonic isn't in his initial transition animation, draw normally, otherwise draw with colour of fade.
-    if(transition &gt; 1)
-        draw_sprite(sprSonic, floor(sonicIndex), 0, 0);
-    else     
-        draw_sprite_ext(sprSonicTransition, floor(sonicIndex), 0, 0, 1, 1, 0, make_color_rgb(sonicFade, sonicFade, sonicFade), 1);
-        
-    // Draw foreground elements.
+ draw_sprite(spr_ts_ring,0,230,84)
+   draw_sprite(spr_ts_ring,1,230,84)     // Draw foreground elements.
     if(drawBG){
         
         // Draw Banner
@@ -330,6 +327,22 @@
         if(frameTimer mod 60 &lt; 30 &amp;&amp; draw3D == true)
             draw_sprite(sprite_index, 5, x, y);
     }
+       
+    // Draw Ring
+    if(drawBG)
+        draw_sprite(sprite_index, 2, x, y);
+        
+    // If Sonic isn't in his initial transition animation, draw normally, otherwise draw with colour of fade.
+    if(transition &gt; 1){
+        
+        draw_sprite_bent(global.vf, spr_ts_sonic, 0, 230, 84, 230, 84+(sprite_height/2), 2*sin(0.001*current_time), 40, 1, 1, 0, c_white, 1);
+        draw_sprite_ext(spr_ts_sonic_h, sonicIndex, 230-2*sin(0.001*current_time), 84, image_xscale, image_yscale, -20, c_white, 1)
+        draw_sprite(sprite_index, 6, x, y);
+        }
+    else{
+        draw_sprite_ext(sprSonicTransition, floor(sonicIndex), 0, 0, 1, 1, 0, make_color_rgb(sonicFade, sonicFade, sonicFade), 1)}
+        
+
     
     // If the white fade is in effect, draw a white additive overlay.
     if(transition &gt;= 2){

@@ -52,7 +52,7 @@
 {
 fade_to=rm_menu
 }
-audio_play(_general_menu_accept,global.sfx_volume)
+//audio_play(_general_menu_accept,global.sfx_volume)
 </string>
           </argument>
         </arguments>

@@ -1308,27 +1308,20 @@
       </sprites>
       <sprites name="Title">
         <sprites name="Emblem">
-          <sprite>sprites\sprite974</sprite>
-          <sprite>sprites\sprite976</sprite>
-          <sprite>sprites\sprite977</sprite>
-          <sprite>sprites\sprite978</sprite>
-          <sprite>sprites\sprite979</sprite>
-          <sprite>sprites\sprite980</sprite>
-          <sprite>sprites\sprite981</sprite>
-          <sprite>sprites\sprite1052</sprite>
+          <sprite>sprites\spr_ts_sonic</sprite>
+          <sprite>sprites\spr_ts_ring</sprite>
+          <sprite>sprites\sprSonicTransition</sprite>
+          <sprite>sprites\spr_ts_sonic_h</sprite>
+          <sprites name="BG">
+            <sprite>sprites\sprBack</sprite>
+            <sprite>sprites\sprBackgroundLayers</sprite>
+            <sprite>sprites\sprCloudTexture</sprite>
+            <sprite>sprites\sprIslands</sprite>
+            <sprite>sprites\sprSeaTexture</sprite>
+          </sprites>
         </sprites>
         <sprites name="Menu">
           <sprite>sprites\spr_title_press_start</sprite>
-        </sprites>
-        <sprites name="Test">
-          <sprite>sprites\sprBack</sprite>
-          <sprite>sprites\sprBackgroundLayers</sprite>
-          <sprite>sprites\sprCloudTexture</sprite>
-          <sprite>sprites\sprIslands</sprite>
-          <sprite>sprites\sprSeaTexture</sprite>
-          <sprite>sprites\sprSonicOld</sprite>
-          <sprite>sprites\sprSonicTransition</sprite>
-          <sprite>sprites\sprSonic</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -2381,23 +2374,15 @@
       <objects name="SAGE">
         <object>objects\object948</object>
       </objects>
+      <object>objects\obj_p255_boot</object>
       <objects name="Title">
         <objects name="Emblem">
-          <object>objects\object936</object>
-          <object>objects\object932</object>
-          <object>objects\object934</object>
-          <object>objects\object933</object>
-          <object>objects\object931</object>
-          <object>objects\object935</object>
+          <object>objects\objTitleScreen</object>
         </objects>
         <objects name="Menu">
           <object>objects\obj_press_start</object>
         </objects>
-        <objects name="Test">
-          <object>objects\objTitleScreen</object>
-        </objects>
       </objects>
-      <object>objects\obj_p255_boot</object>
     </objects>
     <objects name="Video">
       <object>objects\obj_intro</object>
