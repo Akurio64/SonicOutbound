@@ -77,7 +77,7 @@ if (par_character.animation_index == "LEAP")
 triggered=false;
 canbetriggered=false;
 par_character.ground=false;
-par_character.y_speed=-(abs(clamp(xspd,1,6)))
+par_character.y_speed=-5
 par_character.x_speed=-xspd
 par_character.animation_direction=-par_character.animation_direction
 }

@@ -1541,12 +1541,15 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
           <argument>
             <kind>1</kind>
             <string>///Shield center
-
+if animation_index!="VINE"
+{
 if(animation_index != "ROLL" &amp;&amp; animation_index != "DROPDASH")
 {
  shield_y = floor(y-9)
 };
 else {shield_y = floor(y)}
+}
+else {shield_y = floor(y+22)}
 </string>
           </argument>
         </arguments>

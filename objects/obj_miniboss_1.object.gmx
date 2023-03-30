@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_bigboss_1_solid</parentName>
+  <parentName>par_boss</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -170,9 +170,12 @@ if alarm[9]=-1{alarm[9]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(obj_character.x,obj_character.y,obj_miniboss_lock_on)
+            <string>instance_destroy(obj_miniboss_lock_on)
+instance_create(par_character.x,par_character.y,obj_miniboss_lock_on)
 audio_play(_general_lock_on,global.bgm_volume)
-alarm[choose(0,1)]=160
+gravity=0
+alarm[choose(0,0)]=160
+friction=0
 </string>
           </argument>
         </arguments>
@@ -197,7 +200,7 @@ alarm[choose(0,1)]=160
             <kind>1</kind>
             <string>gravity = 0.15;
 x=obj_miniboss_lock_on.x
-move_towards_point(x, obj_miniboss_lock_on.y, 9);
+move_towards_point(x, obj_miniboss_lock_on.y, 7);
 state=1
 image_index=0
 sprite_index=spr_shark_3
@@ -206,14 +209,66 @@ image_yscale=1
 hspeed=0
 image_angle=0
 y=view_yview+300
-alarm[2]=180
 instance_destroy(obj_miniboss_lock_on)
+alarm[2]=120
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>105</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move_point</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>view_xview+212</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>view_yview</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>7</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>107</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_gravity</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>270</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.15</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -241,8 +296,39 @@ else{image_xscale=-1;image_yscale=-1}
 image_angle=0
 y=obj_boss_camera.boss_y
 
+alarm[2]=120
+instance_destroy(obj_miniboss_lock_on)
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state=0
+image_index=0
+sprite_index=spr_shark_1
+if view_xview+212&lt;x{image_xscale=1;image_yscale=-1}
+else{image_xscale=-1;image_yscale=-1}
+image_angle=0
+y=view_yview+240
+
 alarm[2]=180
 instance_destroy(obj_miniboss_lock_on)
+
 </string>
           </argument>
         </arguments>

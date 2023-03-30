@@ -76,22 +76,9 @@
     <instance objName="obj_hsz_vine" x="1920" y="72" name="inst_C5D011EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_vine" x="2144" y="72" name="inst_056FBF6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_vine" x="2296" y="80" name="inst_6AEA87AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="3008" y="72" name="inst_40372214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_liftor" x="480" y="112" name="inst_6B7C61BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_coconuts" x="312" y="120" name="inst_2A1B20C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_dolphin" x="328" y="184" name="inst_D7A65DFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_coco_tree" x="120" y="64" name="inst_A7FC0F4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_elastic" x="1304" y="120" name="inst_7F03CD89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ramp" x="240" y="160" name="inst_D665F714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_waterslide2" x="536" y="64" name="inst_14222B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_waterslide2" x="600" y="96" name="inst_F8CE05FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_waterslide2" x="728" y="160" name="inst_268C8254" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_waterslide2" x="664" y="128" name="inst_421A3853" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_05" x="728" y="160" name="inst_D07DE899" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_05" x="664" y="128" name="inst_B185906F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_05" x="600" y="96" name="inst_8B0A6071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_05" x="536" y="64" name="inst_DB3240B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boss_camera" x="2640" y="120" name="inst_FB2B800E" locked="0" code="boss_id=obj_bigboss_1&#xA;mode=1&#xA;boss_x=x&#xA;boss_y=y-+48&#xA;offset=300&#xA;cutscene=false" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boss_camera" x="2640" y="120" name="inst_FB2B800E" locked="0" code="boss_id=obj_miniboss_1&#xA;mode=1&#xA;boss_x=x&#xA;boss_y=y+128&#xA;offset=300&#xA;cutscene=false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_wind_shield" x="128" y="64" name="inst_625F229F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_wind_shield" x="192" y="192" name="inst_A7674D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rock_shield" x="224" y="192" name="inst_E4AEBCAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
