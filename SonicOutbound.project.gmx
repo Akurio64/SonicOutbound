@@ -1332,7 +1332,7 @@
     </sprites>
     <sprite>sprites\sprite655</sprite>
     <sprite>sprites\sprite656</sprite>
-    <sprite>sprites\sprite658</sprite>
+    <sprite>sprites\spr_other_characters</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
