@@ -26,6 +26,7 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_hsz_bungee</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,6 +45,7 @@
         </objects>
       </objects>
     </objects>
+    <object>objects\obj_hsz_bungee</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Title Screen">

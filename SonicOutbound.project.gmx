@@ -2089,6 +2089,7 @@
             <object>objects\obj_zipline</object>
             <object>objects\obj_enemy_destroy</object>
             <object>objects\obj_hsz_vine</object>
+            <object>objects\obj_hsz_bungee</object>
           </objects>
           <objects name="CCZ">
             <object>objects\obj_ccz_weather</object>
