@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -74,6 +74,7 @@ reuse=true
             par_character.state=CS_ROLL;
             par_character.ground=false;
             par_character.y_speed=-force;
+            par_character.image_yscale=1
             audio_play(_char_jump,global.sfx_volume)
         }
             
@@ -89,7 +90,7 @@ reuse=true
         else if used==true &amp;&amp; reuse==false
         {
             par_character.x=floor(x)
-            par_character.y=floor(y1);
+            par_character.y=floor(y1+20);
             par_character.x_speed=0;
             par_character.y_speed=0;
             if par_character.state!=CS_HANG{
