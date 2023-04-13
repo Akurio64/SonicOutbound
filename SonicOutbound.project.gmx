@@ -78,7 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension1</extension>
+    <extension index="2">extensions\Extension2</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -485,6 +485,8 @@
           <sprite>sprites\spr_sonic_dropdash</sprite>
           <sprite>sprites\spr_sonic_spindash</sprite>
           <sprite>sprites\spr_sonic_spring</sprite>
+          <sprite>sprites\spr_sonic_bungee</sprite>
+          <sprite>sprites\spr_sonic_glider</sprite>
           <sprite>sprites\spr_sonic_twirl</sprite>
           <sprite>sprites\spr_sonic_push</sprite>
           <sprite>sprites\spr_sonic_balance_1</sprite>
@@ -937,6 +939,8 @@
             <sprite>sprites\spr_zipline_1</sprite>
             <sprite>sprites\spr_ehz_corkscrew</sprite>
             <sprite>sprites\spr_zipline</sprite>
+            <sprite>sprites\spr_hsz_glider</sprite>
+            <sprite>sprites\spr_hsz_glide_hang</sprite>
             <sprite>sprites\spr_hsz_bungee</sprite>
             <sprite>sprites\spr_waterslide2</sprite>
             <sprite>sprites\spr_hsz_elastic_head</sprite>
@@ -1142,7 +1146,6 @@
         <sprite>sprites\spr_default_glow</sprite>
         <sprite>sprites\spr_slz_light</sprite>
       </sprites>
-      <sprite>sprites\sprite657</sprite>
     </sprites>
     <sprites name="Menu">
       <sprites name="Main Menu">
@@ -2088,6 +2091,7 @@
             <object>objects\obj_hsz_elastic_grip</object>
             <object>objects\obj_ramp</object>
             <object>objects\obj_hsz_coco_tree</object>
+            <object>objects\obj_hsz_glider</object>
             <object>objects\obj_zipline</object>
             <object>objects\obj_hsz_bungee</object>
             <object>objects\obj_enemy_destroy</object>

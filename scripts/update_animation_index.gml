@@ -29,7 +29,9 @@
        set_animation("ROLL",            spr_sonic_roll, 0.5,  15, 0, -1, "", 0);
        set_animation("SPINDASH",    spr_sonic_spindash, 0.8,  18, 3, -1, "", 0);
        set_animation("DROPDASH",    spr_sonic_dropdash,   1,  15, 0, -1, "", 0); 
-       set_animation("SPRING",        spr_sonic_spring, 0.15,  1, 0, -1, "", 0);                 
+       set_animation("SPRING",        spr_sonic_spring, 0.15,  1, 0, -1, "", 0);    
+       set_animation("BUNGEE",        spr_sonic_bungee, 0.15,  1, 0, 0, "", 0);    
+       set_animation("GLIDER",        spr_sonic_glider, 0.15,  1, 0, -1, "", 0);                   
        set_animation("TWIRL",          spr_sonic_twirl, 0.5,  9, 0, -1, "", 0);         
        set_animation("SKID",            spr_sonic_skid, 0.35,  8, 5,  0, "", 0); 
        set_animation("SKID TURN",  spr_sonic_skid_turn, 0.25,  2, 0,  0, "", 0);             

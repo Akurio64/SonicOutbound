@@ -90,15 +90,15 @@ reuse=true
         else if used==true &amp;&amp; reuse==false
         {
             par_character.x=floor(x)
-            par_character.y=floor(y1+20);
+            par_character.y=floor(y1+28);
             par_character.x_speed=0;
             par_character.y_speed=0;
             if par_character.state!=CS_HANG{
             par_character.state=CS_HANG}
-            par_character.hang="SPRING"
+            par_character.hang="BUNGEE"
         }
         
-        if par_character.y&lt;y-64
+        if par_character.y&lt;y-32 or par_character.x&lt;x-8 or par_character.x&gt;x+8
         {
         reuse=true
         }
