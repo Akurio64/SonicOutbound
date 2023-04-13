@@ -33,7 +33,7 @@
     d3d_set_shading(false)
     
     waterParallaxX = 0;
-   //audio_play(msc_title, global.bgm_volume);
+   audio_play(msc_title, global.bgm_volume);
     
     cloudTexY = 0;
     seaTexY = 0;

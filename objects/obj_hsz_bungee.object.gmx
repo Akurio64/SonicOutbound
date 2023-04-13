@@ -31,6 +31,7 @@ y1=y
 force=0
 time_passed=0
 used=false
+reuse=true
 </string>
           </argument>
         </arguments>
@@ -61,23 +62,19 @@ used=false
             {
                 time_passed+=1
                 y1+=clamp(force,4,12)
-                
-                    if time_passed&lt;(clamp(force,4,12)*4)-1
-                    {
-                        y1-=0.25*time_passed
-                    }
-                    else
-                    {
-                        y1-=(clamp(force,4,12)/500)*time_passed*time_passed
-                    }
-                    
+                y1-=0.25*time_passed  
                 used=true
+                reuse=false
             }
         }
         
-        if time_passed&gt;(clamp(force,4,12)*4)
+        if time_passed&gt;(clamp(force,4,12)*8)-1
         {
             used=false
+            par_character.state=CS_ROLL;
+            par_character.ground=false;
+            par_character.y_speed=-force;
+            audio_play(_char_jump,global.sfx_volume)
         }
             
         if used=false
@@ -87,6 +84,22 @@ used=false
                 time_passed=0
                 y1=y
             }
+        }
+        
+        else if used==true &amp;&amp; reuse==false
+        {
+            par_character.x=floor(x)
+            par_character.y=floor(y1);
+            par_character.x_speed=0;
+            par_character.y_speed=0;
+            if par_character.state!=CS_HANG{
+            par_character.state=CS_HANG}
+            par_character.hang="SPRING"
+        }
+        
+        if par_character.y&lt;y-64
+        {
+        reuse=true
         }
 </string>
           </argument>
@@ -110,11 +123,12 @@ used=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var spd = point_distance(0, 0, obj_character.x_speed, obj_character.y_speed);
-
-if used=false{force=spd}
-obj_character.x=x
-obj_character.y=y1
+            <string>if other.is_cpu==false{
+if used=false &amp;&amp; reuse=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT{
+used=true;
+var spd = point_distance(0, 0, obj_character.x_speed, obj_character.y_speed);
+force=spd
+}}
 </string>
           </argument>
         </arguments>
