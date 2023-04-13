@@ -946,6 +946,10 @@
             <sprite>sprites\spr_hsz_elastic_head</sprite>
             <sprite>sprites\spr_hsz_coco_tree</sprite>
             <sprite>sprites\spr_hsz_wrecking</sprite>
+            <sprites name="Surfing">
+              <sprite>sprites\spr_surfing_ground</sprite>
+              <sprite>sprites\spr_surfing_ground_m</sprite>
+            </sprites>
           </sprites>
           <sprites name="SLZ">
             <sprite>sprites\spr_stairs</sprite>
@@ -1519,6 +1523,7 @@
           </backgrounds>
           <background>background\tls_hsz_flower</background>
           <background>background\tls_hsz_umbrella</background>
+          <background>background\tls_hsz_surf_trans</background>
         </backgrounds>
       </backgrounds>
       <backgrounds name="CNZ">
@@ -2096,6 +2101,9 @@
             <object>objects\obj_hsz_bungee</object>
             <object>objects\obj_enemy_destroy</object>
             <object>objects\obj_hsz_vine</object>
+            <objects name="Surfing">
+              <object>objects\obj_surfing_ground</object>
+            </objects>
           </objects>
           <objects name="CCZ">
             <object>objects\obj_ccz_weather</object>

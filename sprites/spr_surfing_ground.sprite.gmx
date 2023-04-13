@@ -7,21 +7,19 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>4</bbox_left>
-  <bbox_right>75</bbox_right>
-  <bbox_top>5</bbox_top>
-  <bbox_bottom>50</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>1423</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>255</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>80</width>
-  <height>51</height>
+  <width>1424</width>
+  <height>256</height>
   <frames>
-    <frame index="0">images\sprite657_0.png</frame>
-    <frame index="1">images\sprite657_1.png</frame>
-    <frame index="2">images\sprite657_2.png</frame>
+    <frame index="0">images\spr_surfing_ground_0.png</frame>
   </frames>
 </sprite>

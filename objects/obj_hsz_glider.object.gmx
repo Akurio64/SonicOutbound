@@ -160,6 +160,7 @@ par_character.ground=false;
 par_character.y_speed=-4;
 par_character.x_speed=4*par_character.animation_direction
 audio_play(_char_jump,global.sfx_volume)
+par_character.input_lock_l=0
 }
 
 }
