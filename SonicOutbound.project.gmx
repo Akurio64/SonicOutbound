@@ -78,6 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
+    <extension index="2">extensions\Extension1</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -936,6 +937,7 @@
             <sprite>sprites\spr_zipline_1</sprite>
             <sprite>sprites\spr_ehz_corkscrew</sprite>
             <sprite>sprites\spr_zipline</sprite>
+            <sprite>sprites\spr_hsz_bungee</sprite>
             <sprite>sprites\spr_waterslide2</sprite>
             <sprite>sprites\spr_hsz_elastic_head</sprite>
             <sprite>sprites\spr_hsz_coco_tree</sprite>
@@ -2087,9 +2089,9 @@
             <object>objects\obj_ramp</object>
             <object>objects\obj_hsz_coco_tree</object>
             <object>objects\obj_zipline</object>
+            <object>objects\obj_hsz_bungee</object>
             <object>objects\obj_enemy_destroy</object>
             <object>objects\obj_hsz_vine</object>
-            <object>objects\obj_hsz_bungee</object>
           </objects>
           <objects name="CCZ">
             <object>objects\obj_ccz_weather</object>

@@ -61,18 +61,21 @@ used=false
             {
                 time_passed+=1
                 y1+=clamp(force,4,12)
+                
                     if time_passed&lt;(clamp(force,4,12)*4)-1
                     {
                         y1-=0.25*time_passed
                     }
                     else
                     {
-                        y1-=0.25*time_passed*2
+                        y1-=(clamp(force,4,12)/500)*time_passed*time_passed
                     }
+                    
                 used=true
             }
         }
-        if time_passed&gt;(clamp(force,4,12)*8)-1
+        
+        if time_passed&gt;(clamp(force,4,12)*4+8)
         {
             used=false
         }
@@ -85,6 +88,27 @@ used=false
                 y1=y
             }
         }
+        
+if (keyboard_check(ord('1')))
+{if used=false{force=1}}
+if (keyboard_check(ord('2')))
+{if used=false{force=2}}
+if (keyboard_check(ord('3')))
+{if used=false{force=3}}
+if (keyboard_check(ord('4')))
+{if used=false{force=4}}
+if (keyboard_check(ord('5')))
+{if used=false{force=5}}
+if (keyboard_check(ord('6')))
+{if used=false{force=6}}
+if (keyboard_check(ord('7')))
+{if used=false{force=7}}
+if (keyboard_check(ord('8')))
+{if used=false{force=8}}
+if (keyboard_check(ord('9')))
+{if used=false{force=9}}
+if (keyboard_check(ord('0')))
+{if used=false{force=16}}
 </string>
           </argument>
         </arguments>
@@ -118,7 +142,7 @@ draw_sprite_ext(sprite_index,1,x,y+((dis_y/8)*7),0.5,0.5,0,c_white,1)
 draw_sprite_ext(sprite_index,1,x,y1,1,1,0,c_white,1)
 draw_sprite(sprite_index,0,x,y)
 
-draw_text(0,0,y1)
+draw_text(0,0,y1-y)
 draw_text(0,16,dis_y)
 draw_text(0,32,force)
 draw_text(0,48,time_passed)
@@ -128,7 +152,7 @@ draw_text(0,64,used)
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="49">
+    <event eventtype="9" enumb="65">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -145,7 +169,7 @@ draw_text(0,64,used)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if used=false{force=12}
+            <string>game_restart()
 </string>
           </argument>
         </arguments>
