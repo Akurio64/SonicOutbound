@@ -31,6 +31,9 @@
     <sprite>sprites\spr_hsz_bungee</sprite>
     <sprite>sprites\spr_hsz_glide_hang</sprite>
     <sprite>sprites\spr_hsz_glider</sprite>
+    <sprite>sprites\spr_sonic_surf</sprite>
+    <sprite>sprites\spr_surf_wave</sprite>
+    <sprite>sprites\spr_surf_sea</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -51,6 +54,9 @@
     </objects>
     <object>objects\obj_hsz_bungee</object>
     <object>objects\obj_hsz_glider</object>
+    <object>objects\obj_sonic_surf</object>
+    <object>objects\obj_surf_wave</object>
+    <object>objects\obj_surf_sea</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Title Screen">

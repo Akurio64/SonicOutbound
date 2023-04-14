@@ -1,7 +1,7 @@
 /// character_state_hurt(object id, spike?)
  // State for getting hurt by objects.
  
-    if(state != CS_HURT && state != CS_DEATH && invincibility == 0)
+    if(state != CS_HURT && state != CS_DEATH && invincibility == 0 && surf == false)
     {
        // Hurt the character:
           if(global.crings > 0 || shield_index != 0)

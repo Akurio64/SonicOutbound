@@ -3,7 +3,7 @@
   <caption></caption>
   <width>30720</width>
   <height>1200</height>
-  <vsnap>4</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -75,7 +75,56 @@
     <instance objName="obj_monitor_wind_shield" x="192" y="592" name="inst_A7674D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rock_shield" x="224" y="592" name="inst_E4AEBCAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax_hsz1" x="32" y="432" name="inst_D965A020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_surfing_ground" x="0" y="484" name="inst_56482079" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surfing_ground" x="0" y="484" name="inst_56482079" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_sea" x="656" y="564" name="inst_086DD569" locked="0" code="" scaleX="5" scaleY="1.10000002384186" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hsz_surf" x="720" y="624" name="inst_56120514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="1824" y="704" name="inst_7EAC5227" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="2512" y="608" name="inst_35431C27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="2256" y="672" name="inst_548A210C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="2048" y="608" name="inst_0C99FBF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="2816" y="688" name="inst_DAC08EE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3056" y="592" name="inst_A3D22481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="2624" y="720" name="inst_C50C5964" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3200" y="656" name="inst_52FA666E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3504" y="688" name="inst_522FA1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3616" y="608" name="inst_E8A1436E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3888" y="672" name="inst_7A64DCCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3680" y="704" name="inst_F51BCED5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3072" y="704" name="inst_11CA0FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="1632" y="640" name="inst_2F12E831" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="3344" y="656" name="inst_32D981DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4112" y="608" name="inst_2CBB1042" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4192" y="688" name="inst_95084BAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4560" y="640" name="inst_CEF41D35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4928" y="672" name="inst_31C2F8B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4432" y="688" name="inst_7C089FE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="5168" y="608" name="inst_AFD29E3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="5472" y="704" name="inst_81255444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4752" y="704" name="inst_A20A64FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="5744" y="672" name="inst_84D7102C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="5280" y="688" name="inst_6454F3F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="5984" y="656" name="inst_C0AB26BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6208" y="672" name="inst_2031A1DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="5584" y="640" name="inst_ADBA4B8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6384" y="736" name="inst_F4F2BE21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6912" y="688" name="inst_E92ADC8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6608" y="640" name="inst_9F73C614" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="7168" y="656" name="inst_6B4DD588" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="7328" y="704" name="inst_F5D20422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="7456" y="640" name="inst_45607E0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="7712" y="688" name="inst_E75FED2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6784" y="656" name="inst_A2CCA590" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="7904" y="656" name="inst_D5A4706A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="8096" y="688" name="inst_FE1D870A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="8288" y="656" name="inst_74BF81D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="8496" y="688" name="inst_D721B63B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="4800" y="592" name="inst_210C0018" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6384" y="592" name="inst_71465344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="6960" y="592" name="inst_C7ACEA08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="7728" y="592" name="inst_49FCEF24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="8784" y="592" name="inst_35ED202B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="8736" y="688" name="inst_6A6C9D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_surf_rock" x="8960" y="704" name="inst_EF26B357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_hsz_sand" x="0" y="552" w="128" h="128" xo="1172" yo="130" id="10004517" name="inst_02930D07" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

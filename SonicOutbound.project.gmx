@@ -78,7 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension2</extension>
+    <extension index="4">extensions\wave</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -946,8 +946,13 @@
             <sprite>sprites\spr_hsz_elastic_head</sprite>
             <sprite>sprites\spr_hsz_coco_tree</sprite>
             <sprite>sprites\spr_hsz_wrecking</sprite>
+            <sprite>sprites\spr_sonic_surf</sprite>
             <sprites name="Surfing">
               <sprite>sprites\spr_surfing_ground</sprite>
+              <sprite>sprites\spr_surf_sea</sprite>
+              <sprite>sprites\spr_surf_rock</sprite>
+              <sprite>sprites\spr_surf_wave</sprite>
+              <sprite>sprites\spr_hsz_surf</sprite>
               <sprite>sprites\spr_surfing_ground_m</sprite>
             </sprites>
           </sprites>
@@ -2097,12 +2102,17 @@
             <object>objects\obj_ramp</object>
             <object>objects\obj_hsz_coco_tree</object>
             <object>objects\obj_hsz_glider</object>
-            <object>objects\obj_zipline</object>
             <object>objects\obj_hsz_bungee</object>
             <object>objects\obj_enemy_destroy</object>
+            <object>objects\obj_zipline</object>
             <object>objects\obj_hsz_vine</object>
             <objects name="Surfing">
               <object>objects\obj_surfing_ground</object>
+              <object>objects\obj_surf_wave</object>
+              <object>objects\obj_sonic_surf</object>
+              <object>objects\obj_surf_rock</object>
+              <object>objects\obj_surf_sea</object>
+              <object>objects\obj_hsz_surf</object>
             </objects>
           </objects>
           <objects name="CCZ">
