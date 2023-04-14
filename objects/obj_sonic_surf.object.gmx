@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -41,6 +41,38 @@ bouncespeed=3
 image_speed=0.2
 triggered=false;
 canbetriggered=true;
+dead=false
+alarm[10]=60
+over=false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>par_character.surf=false
+par_character.depth=0
+par_character.input_lock_l=0
+par_character.input_lock_r=0
+par_character.state=CS_DEFAULT;
+par_character.ground=false;
+par_character.x_speed=4*par_character.animation_direction
 </string>
           </argument>
         </arguments>
@@ -91,6 +123,8 @@ hit=false
             <string>with instance_create(x-(48*image_xscale),y+(18*image_yscale),obj_surf_wave){
 image_xscale=obj_sonic_surf.image_xscale
 }
+
+if dead=false{alarm[10]=15}
 </string>
           </argument>
         </arguments>
@@ -113,11 +147,8 @@ image_xscale=obj_sonic_surf.image_xscale
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x=clamp(x,instance_nearest(x,y,obj_surf_sea).x,instance_nearest(x,y,obj_surf_sea).x+instance_nearest(x,y,obj_surf_sea).sprite_width)
-y=clamp(y,instance_nearest(x,y,obj_surf_sea).y,instance_nearest(x,y,obj_surf_sea).y+instance_nearest(x,y,obj_surf_sea).sprite_height-32)
-
-x = xprevious
-y = yprevious
+            <string>var sea = obj_surf_sea
+y=clamp(y,sea.y,sea.y+sea.sprite_height-32)
 </string>
           </argument>
         </arguments>
@@ -140,11 +171,9 @@ y = yprevious
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=image_xscale*4
+            <string>if dead=false{hspeed=image_xscale*4}
+audio_play(_general_water,global.sfx_volume)
 
-if (abs(hspd) &gt; 5){
-if alarm[10]=-1{alarm[10]=10}
-}
 up=-keyboard_check(vk_up);
 down=keyboard_check(vk_down);
 vdir=(up+down); // get the key dir
@@ -176,49 +205,82 @@ if(place_meeting(x+hspd, y+vspd,par_hurt_indestructible)){
 if(place_meeting(x, y,par_hurt_indestructible)){
    
        if hit=false
-        {
-        par_character.invincibility=1
+       {
         hit=true
         alarm[11]=90
-        audio_play(_char_lose_rings, global.sfx_volume);   
-            
-        rings_total = 4
-        rings_angle = 101.25;
-        rings_speed = 4;
         
-        if global.crings&gt;4{
-        global.crings-=4}
-        else{state = CS_DEATH}
-        
-        while(rings_total)
+        with par_character
         {
-            ring = instance_create(x, y, obj_ring);
-            ring.timer   = 720;        
-            ring.y_speed = -dsin(round(rings_angle))*rings_speed;
-            ring.x_speed =  dcos(round(rings_angle))*rings_speed;
-            ring.motion  =  true;
-            if(rings_total mod 2 != 0)
-            {
-                rings_angle  += 22.5;
-                ring.x_speed *= -1;
-            }   
-            rings_total -= 1;
-            if(rings_total == 16)
-            {
-                rings_speed = 2;
-                rings_angle = 101.25;
+                  if(global.crings &gt; 0 || shield_index != 0)
+                  {
+
+                        invincibility       =  1;
+                        invincibility_timer = -1;   
+                        
+                        audio_play(_char_hurt, global.sfx_volume);  
+                                                
+                     // Ring Drop:
+                       if(shield_index == 0)
+                       {
+                       if is_cpu=false
+                       {
+                            audio_play(_char_lose_rings, global.sfx_volume);   
+                            rings_total = clamp(global.crings,0,4)
+                            rings_angle = 101.25;
+                            rings_speed = 4;    
+                                
+                           while(rings_total)
+                            {   
+                                ring = instance_create(x, y, obj_ring);
+                                ring.timer   = 720;    
+                                ring.y_speed = -dsin(round(rings_angle))*rings_speed;
+                                ring.x_speed =  dcos(round(rings_angle))*rings_speed;
+                                ring.motion  =  true;
+                                if(rings_total mod 2 != 0)
+                                {
+                                    rings_angle  += 22.5;
+                                    ring.x_speed *= -1;
+                                }   
+                                rings_total -= 1;
+                                if(rings_total == 16)
+                                {
+                                    rings_speed = 2;
+                                    rings_angle = 101.25;
+                                }
+                            }
+                            
+                            if global.crings&gt;4{global.crings-=4}
+                            else{global.crings=0}
+                            
+                          }
+                       }
+                       else
+                       {
+                          with(shield_object)
+                          {
+                               instance_destroy();
+                          }
+                          shield_object = noone;
+                          shield_index  = 0;
+                       }            
+                  }
+                  else
+                  {
+                     state = CS_DEATH;
+                     obj_sonic_surf.dead=true
+                  }
             }
         }
     }
-}
 
-if y&lt;instance_nearest(x,y,obj_surf_rock).y{
+if y&lt;instance_nearest(x,y,obj_surf_rock).y-16{
     depth=1
 }
 else{
     depth=-1
 }
 
+if dead=false{
 par_character.x=floor(x)
 par_character.y=floor(y);
 par_character.x_speed=0;
@@ -230,8 +292,12 @@ if par_character.state!=CS_HANG{
 par_character.state=CS_HANG
 par_character.hang="SLIDE2"
 par_character.surf=true
-}
+ctr_camera.limit_bottom=obj_surf_sea.y+obj_surf_sea.sprite_height
+}}
 
+if place_meeting(x,y,obj_surfing_ground){
+if obj_surfing_ground.end_s=true{
+instance_destroy()}}
 </string>
           </argument>
         </arguments>
