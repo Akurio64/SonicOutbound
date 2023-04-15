@@ -73,6 +73,9 @@ par_character.input_lock_r=0
 par_character.state=CS_DEFAULT;
 par_character.ground=false;
 par_character.x_speed=4*par_character.animation_direction
+ctr_camera.limit_bottom = room_height;
+surf=instance_create(x,y,obj_hsz_surf)
+surf.use=false
 </string>
           </argument>
         </arguments>

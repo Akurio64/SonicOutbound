@@ -258,6 +258,7 @@
 
     relative_position = 0
     angle_in_corkscrew = 0
+    surf=false
 </string>
           </argument>
         </arguments>
