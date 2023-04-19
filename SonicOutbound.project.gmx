@@ -1555,6 +1555,9 @@
       <backgrounds name="TPZ">
         <background>background\tls_tpz</background>
       </backgrounds>
+      <backgrounds name="SPZ">
+        <background>background\tls_spz</background>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="Misc">
       <background>background\bg_dataselect</background>
