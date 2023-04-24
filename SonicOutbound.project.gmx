@@ -79,7 +79,7 @@
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
     <extension index="2">extensions\Extension2</extension>
-    <extension index="4">extensions\wave</extension>
+    <extension index="3">extensions\wave</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -746,6 +746,11 @@
             <sprite>sprites\spr_coconut_projectile</sprite>
             <sprite>sprites\spr_crabmeat_projectile</sprite>
           </sprites>
+          <sprites name="SPZ">
+            <sprite>sprites\spr_spz_ridal_e</sprite>
+            <sprite>sprites\spr_spz_ridal_p</sprite>
+            <sprite>sprites\spr_spz_moto</sprite>
+          </sprites>
         </sprites>
         <sprites name="Springs">
           <sprites name="Horizontal">
@@ -977,6 +982,13 @@
             <sprite>sprites\spr_slz_swing_piece1</sprite>
             <sprite>sprites\spr_slz_swing_piece2</sprite>
             <sprite>sprites\spr_slz_swing_hurt</sprite>
+          </sprites>
+          <sprites name="SPZ">
+            <sprite>sprites\spr_spz_mis_p</sprite>
+            <sprite>sprites\spr_spz_fan_1</sprite>
+            <sprite>sprites\spr_spz_fan_2</sprite>
+            <sprite>sprites\spr_spz_cart</sprite>
+            <sprite>sprites\spr_spz_pendulum</sprite>
           </sprites>
         </sprites>
         <sprites name="Penalty">
@@ -1900,6 +1912,7 @@
             <object>objects\obj_crabmeat_projectile</object>
             <object>objects\obj_slz_proj</object>
             <object>objects\obj_missile_coconut</object>
+            <object>objects\obj_spz_ridal_b</object>
             <object>objects\obj_badnik_debris</object>
           </objects>
           <objects name="HSZ">
@@ -1910,6 +1923,11 @@
             <object>objects\obj_hsz_dolphin</object>
             <object>objects\obj_hsz_frog</object>
             <object>objects\obj_hsz_liftor</object>
+          </objects>
+          <objects name="SPZ">
+            <object>objects\obj_spz_ridal_p</object>
+            <object>objects\obj_spz_ridal_e</object>
+            <object>objects\obj_spz_moto</object>
           </objects>
         </objects>
         <objects name="Springs">
@@ -2125,6 +2143,12 @@
           </objects>
           <objects name="ICZ">
             <object>objects\obj_icz_bg</object>
+          </objects>
+          <objects name="SPZ">
+            <object>objects\obj_spz_cart</object>
+            <object>objects\obj_spz_mis_p</object>
+            <object>objects\obj_spz_turbine</object>
+            <object>objects\obj_spz_pendulum</object>
           </objects>
         </objects>
         <objects name="Penalty">
