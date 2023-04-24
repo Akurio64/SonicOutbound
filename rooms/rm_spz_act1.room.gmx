@@ -64,12 +64,15 @@
     <instance objName="obj_spz_mis_p" x="1088" y="1072" name="inst_9E1864DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_mis_p" x="1152" y="1072" name="inst_27C2A88A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_mis_p" x="1120" y="1072" name="inst_7568A5DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz_ridal_p" x="1728" y="944" name="inst_807E1766" locked="0" code="y_spd=2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_cart" x="224" y="1056" name="inst_8E376092" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="416" y="1040" name="inst_51B4A6FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="160" y="1040" name="inst_D38600A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_pendulum" x="640" y="944" name="inst_9AEAD744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz_pendulum" x="672" y="912" name="inst_DF47C298" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_pendulum" x="960" y="944" name="inst_316B0863" locked="0" code="angle=180" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_pendulum" x="640" y="944" name="inst_08D968D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_pendulum" x="1504" y="944" name="inst_07D791D1" locked="0" code="angle=270&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_pendulum" x="1888" y="944" name="inst_2B0C1FC7" locked="0" code="angle=360*2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_pendulum" x="2400" y="944" name="inst_35349F61" locked="0" code="angle=90&#xA;image_xscale=-1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz" x="0" y="1072" w="128" h="128" xo="0" yo="80" id="10006289" name="inst_4B58E5AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

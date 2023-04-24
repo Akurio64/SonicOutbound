@@ -81,7 +81,15 @@
     <instance objName="obj_tmz_boom" x="6268" y="80" name="inst_C0144988" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bg_t_intro_lvl" x="-28" y="-48" w="6400" h="432" xo="0" yo="0" id="10004506" name="inst_44704A9C" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_intro_lvl_1" x="-28" y="-48" w="6400" h="432" xo="0" yo="0" id="10004506" name="inst_44704A9C" depth="100" locked="-1" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="" x="5440" y="192" w="16" h="16" xo="0" yo="0" id="10006331" name="inst_05C3D49B" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="" x="3232" y="208" w="16" h="16" xo="0" yo="0" id="10006332" name="inst_5DA53DF3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="" x="4624" y="192" w="16" h="16" xo="0" yo="0" id="10006333" name="inst_68F23561" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="" x="2080" y="192" w="16" h="16" xo="0" yo="0" id="10006334" name="inst_1B31C6D9" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_intro_lvl_2" x="1744" y="-48" w="1280" h="432" xo="0" yo="0" id="10006337" name="inst_7646E97D" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_intro_lvl_2" x="3024" y="-48" w="1280" h="432" xo="0" yo="0" id="10006338" name="inst_4712A7E9" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_intro_lvl_2" x="4304" y="-48" w="1280" h="432" xo="0" yo="0" id="10006339" name="inst_C76C402A" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_t_intro_lvl_2" x="4816" y="-48" w="1280" h="432" xo="0" yo="0" id="10006341" name="inst_EDB5466B" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_t_intro_t" x="-12" y="0" w="256" h="128" xo="0" yo="0" id="10004508" name="inst_754491B5" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_t_intro_t" x="436" y="0" w="256" h="128" xo="0" yo="0" id="10004509" name="inst_73BE2DBE" depth="-100" locked="0" colour="4294967295" scaleX="-1" scaleY="1"/>
     <tile bgName="bg_t_ground" x="-28" y="208" w="424" h="176" xo="0" yo="0" id="10004512" name="inst_7705A6DD" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

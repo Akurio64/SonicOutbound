@@ -29,7 +29,7 @@
 image_index=2
 triggered=false;
 canbetriggered=true;
-image_angle=315
+angle=360
 xspeed=0
 </string>
           </argument>
@@ -79,32 +79,53 @@ par_character.animation_angle=image_angle}
             <kind>1</kind>
             <string>if triggered==true
     {
-        par_character.x=floor(x)+lengthdir_x(124, image_angle-90);
-        par_character.y=floor(y)+lengthdir_y(124, image_angle-90);
+        par_character.x=floor(x)+lengthdir_x(108, image_angle-90);
+        par_character.y=floor(y)+lengthdir_y(108, image_angle-90);
         par_character.x_speed=0;
         par_character.y_speed=0;
         if par_character.state!=CS_HANG{
         par_character.state=CS_HANG}
-        par_character.hang="HANG"
+        par_character.hang="ROLL"
         
-        if image_angle&lt;360+135
+        if image_xscale=1
             {
-                image_angle+=3*(image_angle/300)
-                }
+                if image_angle&lt;=angle
+                    {
+                        image_angle += (3*((image_angle/135)+1))
+                        xspeed = (3*((image_angle/90)))
+                        }
+                            else
+                                {
+                                    triggered             = false;
+                                    canbetriggered        = false;
+                                    par_character.state   = CS_ROLL;
+                                    par_character.ground  = false;
+                                    par_character.y_speed = lengthdir_x(xspeed,image_angle+90)
+                                    par_character.x_speed = lengthdir_y(xspeed,image_angle-90)
+                                    }
+                                }
+                                
+        else if image_xscale=-1
+            {
+                if image_angle&lt;=-angle
+                    {
+                        image_angle -= (3/((image_angle/135)+1))
+                        xspeed = (3/((image_angle/90)))
+                        }
+                            else
+                                {
+                                    triggered             = false;
+                                    canbetriggered        = false;
+                                    par_character.state   = CS_ROLL;
+                                    par_character.ground  = false;
+                                    par_character.y_speed = lengthdir_x(xspeed,image_angle+90)
+                                    par_character.x_speed = lengthdir_y(xspeed,image_angle-90)
+                                    }
+                                }
+                            }
             else
                 {
-                    triggered             = false;
-                    canbetriggered        = false;
-                    par_character.state   = CS_ROLL;
-                    par_character.ground  = false;
-                    par_character.y_speed = -xspeed
-                    par_character.x_speed = xspeed
-                    }
-                }
-            else
-                {
-                    xspeed=par_character.x_speed
-                    image_angle=lerp(image_angle,315,0.1)
+                    image_angle=lerp(image_angle,0,0.1)
                     }
         
         if canbetriggered == false 
@@ -138,16 +159,33 @@ par_character.animation_angle=image_angle}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if par_character.x_speed&gt;3
+            <string>if image_xscale=1
     {
-        if other.is_cpu==false
+        if par_character.x_speed&gt;5
             {
-                if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT
+                if other.is_cpu==false
                     {
-                        triggered=true;
+                        if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT
+                            {
+                                triggered=true;
+                                }
+                            }
                         }
                     }
-                }
+
+if image_xscale=-1
+    {
+        if par_character.x_speed&lt;-5
+            {
+                if other.is_cpu==false
+                    {
+                        if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT
+                            {
+                                triggered=true;
+                                }
+                            }
+                        }
+                    }
 </string>
           </argument>
         </arguments>
