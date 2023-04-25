@@ -3,7 +3,7 @@
   <spriteName>spr_spz_roller</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,8 +51,12 @@
             <string>if place_meeting(x,y,obj_character)
 {
 x=par_character.x
-y=par_character.y-4
-par_character.x_speed=12
+y=par_character.y
+if par_character.state!=CS_HANG{
+par_character.state=CS_HANG}
+par_character.hang="SLIDE2"
+image_angle=par_character.animation_angle
+par_character.x_speed=clamp(par_character.x_speed,8,16)
 par_character.input_lock_r=1
 par_character.input_lock_l=1
 image_speed=0.3
@@ -60,6 +64,22 @@ image_speed=0.3
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_spz_destroy">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

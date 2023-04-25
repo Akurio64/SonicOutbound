@@ -78,8 +78,6 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension2</extension>
-    <extension index="3">extensions\wave</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -2153,6 +2151,7 @@
             <object>objects\obj_spz_mis_p</object>
             <object>objects\obj_spz_turbine</object>
             <object>objects\obj_spz_pendulum</object>
+            <object>objects\obj_spz_destroy</object>
             <object>objects\obj_spz_roller</object>
           </objects>
         </objects>
@@ -2318,6 +2317,8 @@
           <object>objects\obj_aehz_collision_32</object>
           <object>objects\obj_aehz_collision_33</object>
           <object>objects\obj_aehz_collision_34</object>
+          <object>objects\obj_lay_low</object>
+          <object>objects\obj_lay_high</object>
           <object>objects\obj_aehz_collision_35</object>
           <object>objects\obj_aehz_collision_36</object>
         </objects>

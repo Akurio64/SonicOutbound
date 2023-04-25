@@ -93,6 +93,28 @@
     <instance objName="obj_aehz_collision_00_o" x="2560" y="832" name="inst_9CC69B56" locked="0" code="" scaleX="12" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_roller_2" x="2357" y="880" name="inst_B15B8ED5" locked="0" code="" scaleX="0.8671875" scaleY="1.14285719394684" colour="2164260863" rotation="0"/>
     <instance objName="obj_aehz_collision_18" x="2439" y="864" name="inst_D5E9CFB9" locked="0" code="" scaleX="2.25" scaleY="4.5" colour="2164260863" rotation="0"/>
+    <instance objName="obj_lay_low" x="2048" y="896" name="inst_2A01BCDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lay_low" x="2048" y="896" name="inst_6D1734A5" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lay_high" x="2048" y="896" name="inst_098A036B" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lay_high" x="2048" y="896" name="inst_9A9FB18C" locked="0" code="" scaleX="-1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="1904" y="768" name="inst_63327CD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="1904" y="800" name="inst_C2D8C23D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="1904" y="832" name="inst_5C420D26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="1904" y="864" name="inst_815F567E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="1904" y="896" name="inst_F451130D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="1904" y="928" name="inst_6B3BA9E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_low" x="2048" y="768" name="inst_30B1D10E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2032" y="768" name="inst_7F8F20A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="768" name="inst_BE6EE315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="800" name="inst_3CCB7D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="832" name="inst_1A7CCDD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="864" name="inst_CF08B7CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="896" name="inst_DA37F627" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="928" name="inst_5C8370B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="960" name="inst_AC44DD48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loop_switch_high" x="2176" y="992" name="inst_384F25F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_roller" x="1312" y="1012" name="inst_8EE55FC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_destroy" x="1792" y="640" name="inst_19F7553F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz_roller" x="1792" y="768" w="128" h="128" xo="650" yo="390" id="10006370" name="inst_3B7B4335" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
