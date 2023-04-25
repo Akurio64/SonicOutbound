@@ -92,7 +92,7 @@ par_character.animation_angle=image_angle}
                 if image_angle&lt;=angle
                     {
                         image_angle += (3*((image_angle/135)+1))
-                        xspeed = (3*((image_angle/90)))
+                        xspeed = power(1.0025,image_angle)+15
                         }
                             else
                                 {
@@ -107,10 +107,10 @@ par_character.animation_angle=image_angle}
                                 
         else if image_xscale=-1
             {
-                if image_angle&lt;=-angle
+                if image_angle&gt;=-angle
                     {
                         image_angle -= (3/((image_angle/135)+1))
-                        xspeed = (3/((image_angle/90)))
+                        xspeed = power(1.0025,image_angle)+15
                         }
                             else
                                 {

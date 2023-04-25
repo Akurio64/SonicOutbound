@@ -988,6 +988,7 @@
             <sprite>sprites\spr_spz_fan_1</sprite>
             <sprite>sprites\spr_spz_fan_2</sprite>
             <sprite>sprites\spr_spz_cart</sprite>
+            <sprite>sprites\spr_spz_roller</sprite>
             <sprite>sprites\spr_spz_pendulum</sprite>
           </sprites>
         </sprites>
@@ -1315,7 +1316,10 @@
         <sprite>sprites\spr_Goofy_3</sprite>
         <sprite>sprites\spr_Goofy_4</sprite>
         <sprite>sprites\spr_Goofy_5</sprite>
+        <sprite>sprites\spr_roller_3</sprite>
+        <sprite>sprites\spr_roller_2</sprite>
         <sprite>sprites\spr_Goofy_6</sprite>
+        <sprite>sprites\spr_roller_1</sprite>
       </sprites>
       <sprites name="Custom Breakable Wall">
         <sprite>sprites\spr_slz_break_wall</sprite>
@@ -1357,8 +1361,6 @@
       <sprite>sprites\spr_continue1</sprite>
       <sprite>sprites\spr_continues</sprite>
     </sprites>
-    <sprite>sprites\sprite655</sprite>
-    <sprite>sprites\sprite656</sprite>
     <sprite>sprites\spr_characters</sprite>
   </sprites>
   <backgrounds name="background">
@@ -1570,6 +1572,7 @@
       </backgrounds>
       <backgrounds name="SPZ">
         <background>background\tls_spz</background>
+        <background>background\tls_spz_roller</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Misc">
@@ -2150,6 +2153,7 @@
             <object>objects\obj_spz_mis_p</object>
             <object>objects\obj_spz_turbine</object>
             <object>objects\obj_spz_pendulum</object>
+            <object>objects\obj_spz_roller</object>
           </objects>
         </objects>
         <objects name="Penalty">
@@ -2366,6 +2370,9 @@
           <object>objects\obj_Goofy_2</object>
           <object>objects\obj_Goofy_3</object>
           <object>objects\obj_Goofy_4</object>
+          <object>objects\obj_roller_1</object>
+          <object>objects\obj_roller_3</object>
+          <object>objects\obj_roller_2</object>
           <object>objects\obj_Goofy_5</object>
           <object>objects\obj_Goofy_6</object>
         </objects>

@@ -50,7 +50,7 @@ y=view_yview+120
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_index=85
+            <string>if image_index=90
 
 {
 
@@ -105,7 +105,7 @@ fade_to=rm_sage
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_single=99
+            <string>image_single=101
 with instance_create(x,y,obj_fade_to)
 {
 fade_to=rm_sage
