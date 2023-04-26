@@ -29,10 +29,38 @@
 canbetriggered=true;
 enemy=true
 image_speed=0
+roll=0
 
 moto=instance_create(x,y,obj_spz_moto)
 moto.parent=id
 image_speed=0.3
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if par_character.state!=CS_ROLL &amp;&amp; triggered = true &amp;&amp; roll=1
+    {
+        triggered             = false;
+        canbetriggered        = false;
+        }
 </string>
           </argument>
         </arguments>
@@ -66,63 +94,72 @@ image_speed=0.3
                 if par_character.state != CS_ROLL
                     {
                         par_character.state = CS_ROLL
+                        roll=1
                         }
                 
-                        if(par_character.input_special_pressed == true)
-                            {
-                                audio_stop(_char_spindash_charge)
-                                par_character.x_speed += par_character.animation_direction*1
-                                par_character.x_speed = clamp(par_character.x_speed,-12,12)
-                                audio_play(_char_spindash_charge,global.sfx_volume)
-                                }
-                                
-                        if (par_character.input_action_pressed == true)
-                            {
-                                triggered             = false;
-                                canbetriggered        = false;
-                                par_character.state   = CS_ROLL;
-                                par_character.ground  = false;
-                                par_character.y_speed = -6;
-                                audio_play(_char_jump,global.sfx_volume)
-                                }
-                        if par_character.state != CS_ROLL
-                            {
-                                triggered             = false;
-                                canbetriggered        = false;
-                                }
-                            }
-                            else
-                            {
-                                image_speed = 0
-                                if place_meeting(x,y,par_terrain)=false
+                            if(par_character.input_special_pressed == true)
                                 {
-                                    gravity=0.1
-                                    }
-                                else
-                                    {
-                                        gravity=0;
-                                        vspeed=0
+                                    if par_character.ground = true
+                                        {
+                                            audio_stop(_char_spindash_charge)
+                                            par_character.x_speed += par_character.animation_direction*1
+                                            par_character.x_speed = clamp(par_character.x_speed,-12,12)
+                                            audio_play(_char_spindash_charge,global.sfx_volume)
+                                            }
                                         }
-                                    }
-                        
-                                
-        if canbetriggered == false 
-            {
-                if instance_exists(par_character)
-                    {
-                    if par_character.ground == true{
-                    canbetriggered = true;
-                }
-            }
-        }
-    }
-
-else
-    {
-        image_speed = 0.3
-        x=moto.x
-        
-        }
+                                    
+                                    if (par_character.input_action_pressed == true)
+                                        {
+                                            triggered             = false;
+                                            canbetriggered        = false;
+                                            par_character.state   = CS_ROLL;
+                                            par_character.ground  = false;
+                                            par_character.y_speed = -6;
+                                            audio_play(_char_jump,global.sfx_volume)
+                                            }
+                                            
+                                        }
+                                        else
+                                        {
+                                            image_speed = 0
+                                            
+                                            if !place_meeting(x, y + 1, par_terrain)
+                                               {
+                                                   gravity = 0.1;
+                                                   }
+                                                else
+                                                   {
+                                                       if vspeed&gt;0
+                                                           {
+                                                               vspeed = 0;
+                                                               }
+                                                   gravity = 0;
+                                                   }
+                                                            
+                                             if place_meeting(x,y,par_terrain){
+                                               y-=1;
+                                               }
+                                            }
+                                    
+                                            
+                                        if canbetriggered == false 
+                                            {
+                                                if instance_exists(par_character)
+                                                    {
+                                                        if par_character.ground == true{
+                                                        canbetriggered = true;
+                                                        roll=0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        
+                                        else
+                                            {
+                                                image_speed = 0.3
+                                                x=moto.x
+                                                
+                                                }
 </string>
           </argument>
         </arguments>

@@ -29,7 +29,7 @@
 image_index=2
 triggered=false;
 canbetriggered=true;
-angle=360
+angle=1
 xspeed=0
 </string>
           </argument>
@@ -89,7 +89,7 @@ par_character.animation_angle=image_angle}
         
         if image_xscale=1
             {
-                if image_angle&lt;=angle
+                if image_angle&lt;=angle*360
                     {
                         image_angle += (3*((image_angle/135)+1))
                         xspeed = power(1.0025,image_angle)+15
@@ -107,10 +107,10 @@ par_character.animation_angle=image_angle}
                                 
         else if image_xscale=-1
             {
-                if image_angle&gt;=-angle
+                if image_angle&gt;=-angle*360
                     {
                         image_angle -= (3/((image_angle/135)+1))
-                        xspeed = power(1.0025,image_angle)+15
+                        xspeed = clamp(power(1.0025,image_angle)+15,-24,24)
                         }
                             else
                                 {
