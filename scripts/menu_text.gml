@@ -12,12 +12,11 @@ if argument0=0
         "This is Sonic Mania 2",
         "Who even reads this?",
         "Early story idea was literally a ripped off version of IDW Chapter 1.",
-        "If Sonic Mania is Sonic Adventure 1, then Sonic Outbound is Sonic Adventure 2",
         "Sonic Adventure 1 is way better than Sonic Adventure 2",
         "Sonic 06 was ruined by SEGA, not Sonic Team.",
-        "I should play Frontiers soon",
+        "Frontiers final boss and ending is disappointing",
         "Only in Ohio",
-        "Geometry Dash and Shadow Fight 2 are the best mobile games ever",
+        "Geometry Dash  is the best mobile game ever",
         "Meta had enough of being redesigned",
         '"'+"Long time no see!!!!!."+'" +10000 sins',
         
@@ -34,7 +33,6 @@ if argument0=0
         
         "Ah, Yeah! This is happenin'!",
         "Ask not what others can do for you, but what you can do for others.",
-        "Sonic races through the green fields. The sun races through a blue sky filled with white clouds. The ways of his heart are much like the sun. Sonic runs and rests; the sun rises and sets. Don't give up on the sun. Don't make the sun laugh at you.",
         "Extraordinary things can happen, if you believe in yourself,",
         "You've got to have some faith in yourself, if you want respect from your friends!",
         "Inside your mind you will see cosmic eternity!",
