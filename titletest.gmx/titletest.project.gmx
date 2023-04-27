@@ -34,6 +34,8 @@
     <sprite>sprites\spr_sonic_surf</sprite>
     <sprite>sprites\spr_surf_wave</sprite>
     <sprite>sprites\spr_surf_sea</sprite>
+    <sprite>sprites\spr_spz_bicycle_wheel</sprite>
+    <sprite>sprites\spr_spz_bicycle</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -57,6 +59,7 @@
     <object>objects\obj_sonic_surf</object>
     <object>objects\obj_surf_wave</object>
     <object>objects\obj_surf_sea</object>
+    <object>objects\obj_spz_bicycle</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Title Screen">
