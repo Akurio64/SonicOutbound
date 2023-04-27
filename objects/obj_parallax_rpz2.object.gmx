@@ -36,6 +36,9 @@
     
  // Create the mountains:
     parallax_add_node(1, pbg_rpz2_07, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 96, 0, 0, 0, 256, 270);  // &lt; Parallax ID 1 
+    
+    parallax_add_node(1, psr_rpz2_01, 0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 506, 298);  // &lt; Parallax ID 1 
+    
     parallax_add_node(1, pbg_rpz2_02, 0.88, 0, 0, 0, 0, bg_yoffset, 0, 0, 96, 0, 0, 0, 512, 270);  // &lt; Parallax ID 1 
     parallax_add_node(1, pbg_rpz2_06, 0.84, 0, 0, 0, 0, bg_yoffset, 0, 0, 232, 0, 0, 0, 240, 124); // &lt; Parallax ID 2        
     parallax_add_node(1, pbg_rpz2_05, 0.80, 0, 0, 0, 0, bg_yoffset, 0, 0, 232, 0, 0, 0, 640, 96); // &lt; Parallax ID 2    
@@ -47,6 +50,36 @@
     parallax_add_node(1, pbg_rpz2_05, 0.56, 0, 0, 0, 0, bg_yoffset, 0, 0, 442, 0, 0, 0, 640, 96); // &lt; Parallax ID 2     
     parallax_add_node(1, pbg_rpz2_04, 0.52, 0, 0, 0, 0, bg_yoffset, 0, 0, 474, 0, 0, 0, 1280, 538); // &lt; Parallax ID 2  
           
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Animation speeds.
+ 
+ // We can change the image frame of parallax sprites by changing parallax_speed[id]
+ // This obviously only works when using a sprite with multiple frames.
+ 
+    parallax_speed[1] += 0.25; // Mountains 1 waterfalls.
+    parallax_speed[2] += 0.25; // Mountains 2 waterfalls.    
+
 </string>
           </argument>
         </arguments>
@@ -70,11 +103,6 @@
           <argument>
             <kind>1</kind>
             <string>draw_background_tiled_horizontal_part(pbg_rpz2_03, 0, 0, 512, 270, (view_xview*0.96)-(global.game_time/300), 0+(view_yview*((room_height-((474+538)-view_hview))/room_height)), 0, 0)
-
-draw_set_blend_mode(bm_add)
-draw_background_tiled_horizontal_part(psr_rpz2_01, 0, 0, 512, 512, (view_xview*0.96), 0+(view_yview*((room_height-((474+538)-view_hview))/room_height)), 0, 0.25)
-draw_set_blend_mode(bm_normal)
-
 event_inherited()
 </string>
           </argument>

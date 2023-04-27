@@ -1070,7 +1070,6 @@
       </sprites>
       <sprites name="Parallax">
         <sprites name="Misc">
-          <sprite>sprites\pbg_mrz_2_3</sprite>
           <sprite>sprites\psr_rpz2_01</sprite>
         </sprites>
         <sprites name="EBZ">
