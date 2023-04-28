@@ -135,8 +135,8 @@ canbetriggered=true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_spz_bicycle_wheel,0,x+18-47,y-4,1,1,w_rot,c_white,1)
-draw_sprite_ext(spr_spz_bicycle_wheel,0,x+76-47,y-4,1,1,w_rot,c_white,1)
+            <string>draw_sprite_ext(spr_spz_bicycle_wheel,0,x+18-47,y,1,1,w_rot,c_white,1)
+draw_sprite_ext(spr_spz_bicycle_wheel,0,x+76-47,y,1,1,w_rot,c_white,1)
 draw_self()
 </string>
           </argument>
