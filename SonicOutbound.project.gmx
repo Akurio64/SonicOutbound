@@ -991,6 +991,8 @@
             <sprite>sprites\spr_spz_roller</sprite>
             <sprite>sprites\spr_spz_pendulum</sprite>
             <sprite>sprites\spr_spz_tower</sprite>
+            <sprite>sprites\spr_spz_bicycle</sprite>
+            <sprite>sprites\spr_spz_bicycle_wheel</sprite>
           </sprites>
         </sprites>
         <sprites name="Penalty">
@@ -2156,6 +2158,7 @@
             <object>objects\obj_spz_destroy</object>
             <object>objects\obj_spz_roller</object>
             <object>objects\obj_spz_tower</object>
+            <object>objects\obj_spz_bicycle</object>
           </objects>
         </objects>
         <objects name="Penalty">
