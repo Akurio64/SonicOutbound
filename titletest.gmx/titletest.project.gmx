@@ -6,7 +6,9 @@
   <NewExtensions>
     <extension index="0">extensions\Extension2</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\_ev_sage</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Startup">
       <sprites name="Title">
@@ -36,6 +38,7 @@
     <sprite>sprites\spr_surf_sea</sprite>
     <sprite>sprites\spr_spz_bicycle_wheel</sprite>
     <sprite>sprites\spr_spz_bicycle</sprite>
+    <sprite>sprites\spr_sage_logo</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -60,8 +63,14 @@
     <object>objects\obj_surf_wave</object>
     <object>objects\obj_surf_sea</object>
     <object>objects\obj_spz_bicycle</object>
+    <object>objects\obj_sage_logo</object>
+    <object>objects\obj_fade_in_white</object>
+    <object>objects\obj_fade_to_white</object>
+    <object>objects\obj_fade_to</object>
+    <object>objects\obj_fade_in</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_sage</room>
     <rooms name="Title Screen">
       <room>rooms\rm_title_screen</room>
       <room>rooms\rm_menu</room>

@@ -1334,8 +1334,7 @@
         <sprite>sprites\spr_sega_startup2</sprite>
       </sprites>
       <sprites name="SAGE">
-        <sprite>sprites\spr_sage_logo_1</sprite>
-        <sprite>sprites\spr_sage_logo_2</sprite>
+        <sprite>sprites\spr_sage_logo</sprite>
         <sprite>sprites\spr_p255_boot</sprite>
       </sprites>
       <sprites name="Title">
@@ -1533,8 +1532,11 @@
       </backgrounds>
       <backgrounds name="HSZ">
         <background>background\tls_hsz_sand</background>
+        <background>background\tls_hsz_sand_32</background>
         <background>background\tls_hsz_jungle</background>
+        <background>background\tls_hsz_jungle_32</background>
         <background>background\tls_hsz_rock</background>
+        <background>background\tls_hsz_rock_32</background>
         <backgrounds name="Misc">
           <backgrounds name="Palmtree">
             <background>background\tls_hsz_palmtree_top</background>

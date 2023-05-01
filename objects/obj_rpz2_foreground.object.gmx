@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_blend_mode(bm_add)
-draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 212+(view_xview*0.5), view_yview+512, 0.7, 10000,  75*sin(current_time*0.001)-84, c_white, 0.7)
-draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 390+(view_xview*0.5), view_yview+512, 0.5, 10000,  45*sin(current_time*0.001)+56, c_white, 0.5)
-draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 562+(view_xview*0.5), view_yview+512, 0.6, 10000, -45*sin(current_time*0.001)+36, c_white, 0.6)
-draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 737+(view_xview*0.5), view_yview+512, 0.8, 10000, -75*sin(current_time*0.001)-64, c_white, 0.8)
+draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 212+(view_xview*0.5), view_yview+512, 0.7, 10000,  75*sin(current_time*0.00080)-84, c_white, 0.7)
+draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 390+(view_xview*0.5), view_yview+512, 0.5, 10000,  45*sin(current_time*0.00070)+56, c_white, 0.5)
+draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 562+(view_xview*0.5), view_yview+512, 0.6, 10000, -45*sin(current_time*0.00060)+36, c_white, 0.6)
+draw_sprite_tiled_horizontal(psr_rpz2_01, 0.25, 737+(view_xview*0.5), view_yview+512, 0.8, 10000, -75*sin(current_time*0.00050)-64, c_white, 0.8)
 draw_set_blend_mode(bm_normal)
 </string>
           </argument>
