@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="12" name="datafiles">
-    <datafiles number="12" name="Misc">
+  <datafiles number="16" name="datafiles">
+    <datafiles number="16" name="Misc">
       <datafile>
         <name>Intro.webm</name>
         <exists>-1</exists>
@@ -78,8 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension2</extension>
-    <extension index="3">extensions\wave</extension>
+    <extension index="2">extensions\Input Dog</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -440,6 +439,7 @@
         <sound>sound\_startup_sega</sound>
         <sound>sound\_ev_invincibility</sound>
         <sound>sound\_ev_knux</sound>
+        <sound>sound\_ev_sage</sound>
       </sounds>
       <sounds name="Boss">
         <sounds name="Sonic">
@@ -1815,7 +1815,6 @@
     </scripts>
   </scripts>
   <shaders name="shaders">
-    <shader type="GLSLES">shaders\sh_tpz.shader</shader>
     <shader type="GLSLES">shaders\sh_blackhole.shader</shader>
   </shaders>
   <fonts name="fonts">
@@ -2211,6 +2210,7 @@
           <object>objects\obj_parallax_lbz2</object>
           <object>objects\obj_parallax_snz1</object>
           <object>objects\obj_parallax_snz2</object>
+          <object>objects\obj_rpz2_foreground</object>
         </objects>
       </objects>
       <objects name="Terrain / Collision Masks">
@@ -2439,7 +2439,7 @@
         <object>objects\obj_sega_startup</object>
       </objects>
       <objects name="SAGE">
-        <object>objects\object948</object>
+        <object>objects\obj_sage_logo</object>
       </objects>
       <object>objects\obj_p255_boot</object>
       <objects name="Title">

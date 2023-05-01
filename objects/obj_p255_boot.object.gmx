@@ -25,9 +25,65 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0.4
-x=view_xview+212
-y=view_yview+120
+            <string>rec_a=1
+p255_s1=0.5
+p255_s2=0.5
+p255_b=0
+p255_w=0
+zoom=false
+time=0
+alarm[0]=210
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(instance_create(0, 0, obj_fade_to))
+{
+fade_to = rm_sage;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>zoom=true
+alarm[1]=60
+audio_play(_jingle_p255,global.sfx_volume)
 </string>
           </argument>
         </arguments>
@@ -50,19 +106,66 @@ y=view_yview+120
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_index=90
+            <string>if zoom=false
+    {
+        if rec_a &gt; 0
+            {
+                rec_a -= 1/90
+                }
+        
+        if p255_w &lt; 1
+            {
+                p255_w += 1/210
+                }
+        
+        if p255_b &lt; 1
+            {
+                p255_b += 1/210
+                }
+        
+        if p255_s1 &lt; 1
+            {
+                p255_s1 += 1/420
+                }
+        
+        if p255_s2 &lt; 1
+            {
+                p255_s2 += 1/420
+                }
+            }
 
-{
-
-audio_play(_jingle_p255, global.bgm_volume);
-
-}
+else
+    {
+        if rec_a &lt; 1
+                {
+                    rec_a += 1/30
+                    }
+            
+            
+            if p255_b &gt; 0
+                {
+                    p255_b -= 1/30
+                    }
+            
+            time +=1       
+            
+            if p255_s1 &lt; 9
+                {
+                    p255_s1 += time*0.2/15
+                    
+                    }
+            
+            if p255_s2 &lt; 3
+                {
+                    p255_s2 += time*0.0665/15
+                    }
+                }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="13">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -79,16 +182,27 @@ audio_play(_jingle_p255, global.bgm_volume);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with instance_create(x,y,obj_fade_to)
-{
-fade_to=rm_sage
-}
+            <string>// P255 logo 
+
+draw_sprite_ext(sprite_index,0,212,120,p255_s1,p255_s1,0,c_white,p255_w)
+draw_sprite_ext(sprite_index,1,212,120,p255_s2,p255_s2,0,c_white,p255_w)
+
+draw_sprite_ext(sprite_index,0,212,120,p255_s1,p255_s1,0,c_black,p255_b)
+draw_sprite_ext(sprite_index,1,212,120,p255_s2,p255_s2,0,c_black,p255_b)
+
+// Rectangle
+
+draw_set_alpha(rec_a)
+draw_set_colour(c_black)
+draw_rectangle(0,0,424,240,false)
+draw_set_colour(c_white)
+draw_set_alpha(1)
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="7">
+    <event eventtype="9" enumb="13">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -105,10 +219,9 @@ fade_to=rm_sage
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_single=101
-with instance_create(x,y,obj_fade_to)
+            <string>with(instance_create(0, 0, obj_fade_to))
 {
-fade_to=rm_sage
+fade_to = rm_sage;
 }
 </string>
           </argument>

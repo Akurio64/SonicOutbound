@@ -1,4 +1,4 @@
-/// draw_sprite_tiled_horizontal(sprite, image, x, y, xscale, yscale, rot, blend, alpha);
+/// draw_sprite_tiled_horizontal(sprite, subimg, x, y, xscale, yscale, rot, blend, alpha);
  // Draw a sprite horizontally tiled. 
 
     var sprite_start, sprite_end, sprite_current, sprite_step;

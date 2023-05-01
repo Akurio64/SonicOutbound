@@ -31,7 +31,7 @@ global.ps = part_system_create();
 part_system_automatic_draw(global.ps, false);
 
 // we will draw particles on this surface
-surf = surface_create(424, 240);
+surf = surface_create(848, 240);
 
 // create a raindrop particle
 rain = part_type_create();

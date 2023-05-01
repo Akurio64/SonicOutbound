@@ -46,7 +46,9 @@
           <argument>
             <kind>1</kind>
             <string>sage=0
-alarm[1]=60
+alarm[2]=30
+audio_play(_ev_sage,global.sfx_volume)
+image_speed=0
 </string>
           </argument>
         </arguments>
@@ -70,33 +72,10 @@ alarm[1]=60
           <argument>
             <kind>1</kind>
             <string>instance_create(x,y,obj_fade_to_white)
-instance_create(x,y,obj_parallax_hsz1)
+instance_create(x,y,obj_slzb_bg)
 background_visible[0]=true
-audio_play(_ev_life,global.sfx_volume)
-alarm[0]=300
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if sage&lt;1{sage+=0.06;alarm[1]=1}else{if alarm[2]=-1{alarm[2]=60}}
+sage=1
+alarm[0]=510
 </string>
           </argument>
         </arguments>
@@ -146,7 +125,7 @@ fade_to = rm_title_screen;
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_sprite_ext(spr_sage_logo_2,0,x,y,1,1,0,c_white,sage)
+draw_sprite_ext(spr_sage_logo_1,1,x,y,1,1,0,c_white,sage)
 </string>
           </argument>
         </arguments>

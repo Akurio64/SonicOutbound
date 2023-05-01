@@ -335,7 +335,7 @@ global.vf = vertex_format_end();
     // If Sonic isn't in his initial transition animation, draw normally, otherwise draw with colour of fade.
     if(transition &gt; 1){
         
-        draw_sprite_bent(global.vf, spr_ts_sonic, 0, 230, 84, 230, 84+(sprite_height/2), 2*sin(0.001*current_time), 40, 1, 1, 0, c_white, 1);
+        draw_sprite_bent(global.vf, spr_ts_sonic, 0, 230, 84, 230, 84+(sprite_height/2), 3*sin(0.001*current_time), 120, 1, 1, 0, c_white, 1);
         draw_sprite_ext(spr_ts_sonic_h, sonicIndex, 230-2*sin(0.001*current_time), 84, image_xscale, image_yscale, -20, c_white, 1)
         draw_sprite(sprite_index, 6, x, y);
         }

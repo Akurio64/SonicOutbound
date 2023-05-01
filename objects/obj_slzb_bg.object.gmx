@@ -74,6 +74,7 @@ part_type_life(second_particle,50,125);
 // define the emitter
 second_emitter = part_emitter_create(SecondParticleSystem);
 
+if room=rm_slz_act2{
 //define the emitter region
 part_emitter_region(FirstParticleSystem,second_emitter,ctr_camera.limit_left,ctr_camera.limit_right,obj_boss_camera.y+64,obj_boss_camera.y+96,ps_shape_rectangle,ps_distr_linear);
 
@@ -82,6 +83,18 @@ part_emitter_region(FirstParticleSystem,second_emitter,ctr_camera.limit_left,ctr
 
 //define the emitter region
 part_emitter_region(SecondParticleSystem,second_emitter,ctr_camera.limit_left,ctr_camera.limit_right,obj_boss_camera.y+64,obj_boss_camera.y+96,ps_shape_rectangle,ps_distr_linear);
+}
+else
+{
+//define the emitter region
+part_emitter_region(FirstParticleSystem,second_emitter,0,424,120+64,120+96,ps_shape_rectangle,ps_distr_linear);
+
+//define the emitter region
+part_emitter_region(FirstParticleSystem,second_emitter,0,424,120+64,120+96,ps_shape_rectangle,ps_distr_invgaussian);
+
+//define the emitter region
+part_emitter_region(FirstParticleSystem,second_emitter,0,424,120+64,120+96,ps_shape_rectangle,ps_distr_linear);
+}
 
  // Create the sky.
     for(i=0; i&lt;12; i+=1)
@@ -189,7 +202,8 @@ part_emitter_destroy(SecondParticleSystem,second_emitter)
     event_inherited();
 
 draw_set_colour(c_black)
-draw_rectangle(ctr_camera.limit_left,obj_boss_camera.y+48,ctr_camera.limit_right,view_yview+240,false)
+if room=rm_slz_act2{
+draw_rectangle(ctr_camera.limit_left,obj_boss_camera.y+48,ctr_camera.limit_right,view_yview+240,false)}
 </string>
           </argument>
         </arguments>
