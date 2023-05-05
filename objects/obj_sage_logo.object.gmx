@@ -45,8 +45,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0.6
+            <string>image_speed=1
 audio_play(_ev_sage,global.sfx_volume)
+Res = shader_get_uniform(sh_sage_bg,"iResolution"); 
+Time = shader_get_uniform(sh_sage_bg,"iGlobalTime"); 
 </string>
           </argument>
         </arguments>
@@ -73,7 +75,36 @@ audio_play(_ev_sage,global.sfx_volume)
 {
 fade_to = rm_title_screen;
 }
-image_single=367
+image_single=599
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>shader_set(sh_sage_bg) 
+shader_set_uniform_f(Res,512,512,0); 
+shader_set_uniform_f(Time,current_time/1000); 
+draw_sprite(spr_sage_bg,0,x,y)
+shader_reset(); 
+
+draw_self()
 </string>
           </argument>
         </arguments>

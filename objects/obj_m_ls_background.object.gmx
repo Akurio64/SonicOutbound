@@ -125,7 +125,7 @@
     draw_set_color(c_white);
  
  // Draw GHZ:     
-    draw_sprite_tiled_horizontal(spr_m_menu_green_hill_zone, 0, view_xview + background_scroll[0], y, 1, 1, 0, make_color_rgb(ghz_blend_r_av, ghz_blend_g_av, ghz_blend_b_av), 1);
+    draw_sprite_tiled_horizontal(spr_m_menu_green_hill_zone, 0, view_xview + background_scroll[0], 0, 1, 1, 0, make_color_rgb(ghz_blend_r_av, ghz_blend_g_av, ghz_blend_b_av), 1);
  
  // Draw blue corner:   
     draw_sprite(spr_m_menu_corner, -1, view_xview, view_yview);

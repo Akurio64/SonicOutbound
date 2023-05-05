@@ -33,6 +33,7 @@ p255_w=0
 zoom=false
 time=0
 alarm[0]=210
+audio_play(_jingle_p255,global.sfx_volume)
 </string>
           </argument>
         </arguments>
@@ -83,7 +84,6 @@ fade_to = rm_sage;
             <kind>1</kind>
             <string>zoom=true
 alarm[1]=60
-audio_play(_jingle_p255,global.sfx_volume)
 </string>
           </argument>
         </arguments>
