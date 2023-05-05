@@ -3,7 +3,7 @@
   <caption></caption>
   <width>20000</width>
   <height>3000</height>
-  <vsnap>2</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -1175,21 +1175,21 @@
     <instance objName="obj_ring" x="8992" y="880" name="inst_64794D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="9056" y="880" name="inst_1F2FE207" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="9024" y="880" name="inst_834E4F12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11532" y="593" name="inst_D1DF3B31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11572" y="593" name="inst_D04CFB9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_seesaw" x="11840" y="896" name="inst_8FFA47E6" locked="0" code="force = 8&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_bomb_2" x="11616" y="616" name="inst_9DC31082" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_bomb_2" x="11560" y="616" name="inst_E088E6F0" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_bomb_2" x="11672" y="616" name="inst_C06C818F" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_bomb_2" x="11728" y="616" name="inst_0E5C0A0B" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11628" y="593" name="inst_F0C4B4C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11588" y="593" name="inst_D7634B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11644" y="593" name="inst_2DD08E8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11684" y="593" name="inst_3983F830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11700" y="593" name="inst_7AD45545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11740" y="593" name="inst_A80C7214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11756" y="593" name="inst_F78671BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="11516" y="593" name="inst_22B26CE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11536" y="704" name="inst_D1DF3B31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11576" y="704" name="inst_D04CFB9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_seesaw" x="11840" y="848" name="inst_8FFA47E6" locked="0" code="force = 7&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_bomb_2" x="11620" y="727" name="inst_9DC31082" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_bomb_2" x="11564" y="727" name="inst_E088E6F0" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_bomb_2" x="11676" y="726" name="inst_C06C818F" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_bomb_2" x="11732" y="726" name="inst_0E5C0A0B" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11632" y="704" name="inst_F0C4B4C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11592" y="704" name="inst_D7634B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11648" y="704" name="inst_2DD08E8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11688" y="704" name="inst_3983F830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11704" y="704" name="inst_7AD45545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11744" y="704" name="inst_A80C7214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11760" y="704" name="inst_F78671BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="11520" y="704" name="inst_22B26CE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="9472" y="908" name="inst_55827E5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_camera" x="17828" y="951" name="inst_CEC19D6D" locked="0" code="boss_id=obj_miniboss_3&#xA;mode=1&#xA;boss_x=x+424+45&#xA;boss_y=730&#xA;offset=300&#xA;cutscene=false" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="goal_ground" x="17292" y="1039" name="inst_A4EAB391" locked="0" code="" scaleX="31.375" scaleY="4.73999977111816" colour="4294967295" rotation="0"/>
@@ -1205,10 +1205,10 @@
     <instance objName="obj_Ramp1" x="13096" y="1868" name="inst_686DB9E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_collapse" x="13822" y="1502" name="inst_65BCD36D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkpoint" x="17360" y="1040" name="inst_0B1BE9E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monitor_hyper" x="11648" y="670" name="inst_29D995D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monitor_rings" x="11616" y="670" name="inst_E330DF88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monitor_rings" x="11584" y="670" name="inst_E05E646F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_trundull" x="3856" y="728" name="inst_4779662D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_hyper" x="11648" y="795" name="inst_29D995D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="11616" y="795" name="inst_E330DF88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="11584" y="795" name="inst_E05E646F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_trundull" x="384" y="638" name="inst_4779662D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz_act1_1" x="12282" y="1611" w="256" h="256" xo="273" yo="8" id="10004152" name="inst_6929E005" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

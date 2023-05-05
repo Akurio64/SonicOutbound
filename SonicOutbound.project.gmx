@@ -1177,7 +1177,6 @@
       <sprites name="Main Menu">
         <sprite>sprites\spr_m_menu_selection</sprite>
         <sprite>sprites\spr_m_menu_selection_options</sprite>
-        <sprite>sprites\spr_m_menu_spike_backdrop</sprite>
         <sprite>sprites\spr_m_menu_green_hill_zone</sprite>
         <sprite>sprites\spr_m_menu_selection_alpha</sprite>
         <sprite>sprites\spr_m_menu_corner</sprite>
@@ -1186,6 +1185,7 @@
         <sprite>sprites\spr_tc_back</sprite>
         <sprite>sprites\spr_t_m_transition</sprite>
         <sprite>sprites\spr_t_m2_transition</sprite>
+        <sprite>sprites\spr_m_menu_spike_backdrop</sprite>
         <sprite>sprites\spr_black_rec</sprite>
         <sprite>sprites\spr_m_menu_character</sprite>
         <sprites name="New">
