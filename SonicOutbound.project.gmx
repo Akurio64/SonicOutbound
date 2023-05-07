@@ -2034,6 +2034,9 @@
               <object>objects\par_boss</object>
               <object>objects\obj_camera</object>
             </objects>
+            <objects name="Chase Boss Engine">
+              <object>objects\obj_terrain_generator</object>
+            </objects>
           </objects>
           <objects name="HSZ">
             <objects name="Mini">
