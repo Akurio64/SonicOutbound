@@ -962,6 +962,7 @@
               <sprite>sprites\spr_hsz_surf</sprite>
               <sprite>sprites\spr_surfing_ground_m</sprite>
             </sprites>
+            <sprite>sprites\spr_hsz_minib_p</sprite>
           </sprites>
           <sprites name="SLZ">
             <sprite>sprites\spr_stairs</sprite>
@@ -1715,6 +1716,7 @@
         <script>scripts\text_readline.gml</script>
         <script>scripts\draw_sprite_tiled_horizontal.gml</script>
         <script>scripts\draw_sprite_tiled_vertical.gml</script>
+        <script>scripts\draw_sprite_tiled_area.gml</script>
         <script>scripts\safe_division.gml</script>
         <script>scripts\interpolate_values.gml</script>
         <script>scripts\draw_curve.gml</script>
@@ -2036,12 +2038,13 @@
             </objects>
             <objects name="Chase Boss Engine">
               <object>objects\obj_terrain_generator</object>
+              <object>objects\obj_run_terrain</object>
             </objects>
           </objects>
           <objects name="HSZ">
             <objects name="Mini">
-              <object>objects\obj_mecha_shark</object>
               <object>objects\obj_miniboss_1</object>
+              <object>objects\obj_mecha_shark</object>
             </objects>
             <objects name="Big">
               <object>objects\obj_bigboss_1</object>

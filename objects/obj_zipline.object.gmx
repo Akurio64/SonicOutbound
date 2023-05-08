@@ -56,10 +56,10 @@ y=clamp(y,y,ey)
 
 if triggered==true
 {
+move_towards_point(ex,ey,clamp((spd+(abs(y-ystart)/5)),-16,16))
 par_character.x_speed=0;
 par_character.y_speed=0;
 par_character.state=CS_HANG;
-move_towards_point(ex,ey,clamp((1+(abs(y-ystart)/10)),-8,8))
 par_character.hang="HANG"
 if (par_character.input_action_pressed == true)
 {
@@ -70,6 +70,15 @@ par_character.ground=false;
 par_character.y_speed=-4;
 par_character.x_speed=4*par_character.animation_direction
 audio_play(_char_jump,global.sfx_volume)
+}
+
+if x=ex
+{
+triggered=false;
+par_character.state=CS_DEFAULT;
+canbetriggered=false;
+par_character.ground=false;
+par_character.x_speed=speed
 }
 
 
@@ -113,6 +122,7 @@ canbetriggered=true;
 par_character.x=x
 par_character.y=y+38;
 }
+else{spd=par_character.x_speed}
 </string>
           </argument>
         </arguments>
