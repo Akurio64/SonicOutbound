@@ -23,7 +23,7 @@ if(global.save_selected != 0)
            case rm_hssz_act1:
            {
               // Test Stage (Act 2)
-                 stage_set_data("HEAVEN SHORE", 1, msc_hsz1, true, 976, room_height, 315946, 6694951, 44100);
+                 stage_set_data("HEAVEN SHORE", 1, msc_hsz1, true, 512+16, room_height, 315946, 6694951, 44100);
                  global.zone_id=1
                  break;
            }

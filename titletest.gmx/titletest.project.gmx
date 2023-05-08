@@ -44,6 +44,7 @@
     <sprite>sprites\spr_ter_4</sprite>
     <sprite>sprites\spr_sage_logo</sprite>
     <sprite>sprites\spr_terrain_generator</sprite>
+    <sprite>sprites\sprite24</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -62,12 +63,14 @@
     <object>objects\obj_sonic_surf</object>
     <object>objects\obj_surf_wave</object>
     <object>objects\obj_surf_sea</object>
+    <object>objects\par_character</object>
     <object>objects\obj_spz_bicycle</object>
     <object>objects\obj_sage_logo</object>
     <object>objects\obj_fade_in_white</object>
     <object>objects\obj_fade_to_white</object>
     <object>objects\obj_fade_to</object>
     <object>objects\obj_ter_1</object>
+    <object>objects\obj_miniboss_1</object>
     <object>objects\obj_ter_2</object>
     <object>objects\obj_ter_3</object>
     <object>objects\obj_ter_4</object>

@@ -35,21 +35,21 @@
         bg_yoffset = (room_height-((244+192)-view_hview))/room_height; // Offset for the parallax bg.
         
  // Create the clouds:
-    parallax_add_node(1, pbg_green_hill_01, 0.96, -0.06, 0, 0, 0, bg_yoffset, 0, 0, -180, 0, 0, 0, 512, 64); // &lt; Parallax ID 0
+    parallax_add_node(1, pbg_green_hill_01, 0.96, -0.06, 0, -(parallax_offset/0.96), 0, bg_yoffset, 0, 0, -180, 0, 0, 0, 512, 64); // &lt; Parallax ID 0
         
  // Create the mountains:
-    parallax_add_node(1, pbg_green_hill_02, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, -124, 0, 0, 0, 1024, 192);  // &lt; Parallax ID 1      
-    parallax_add_node(1, pbg_green_hill_03, 0.88, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1024, 144); // &lt; Parallax ID 2   
+    parallax_add_node(1, pbg_green_hill_02, 0.92, 0, 0, (parallax_offset/0.92), 0, bg_yoffset, 0, 0, -124, 0, 0, 0, 1024, 192);  // &lt; Parallax ID 1      
+    parallax_add_node(1, pbg_green_hill_03, 0.88, 0, 0, -(parallax_offset/0.88), 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 1024, 144); // &lt; Parallax ID 2   
     
  // Create the ocean.
     for(i=0; i&lt;30; i+=1)
     {
-        parallax_add_node(1, pbg_green_hill_04, (0.88-(i*0.0075)), -(0.3+i*0.03), 0, 0, 0, bg_yoffset, 0, 0, (142)+i*5, 0, 0, i*5, 1024, 150);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
+        parallax_add_node(1, pbg_green_hill_04, (0.88-(i*0.0075)), -(0.3+i*0.03), 0, -(parallax_offset/0.88), 0, bg_yoffset, 0, 0, (142)+i*5, 0, 0, i*5, 1024, 150);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
                   
     }    
     
             // Create the last layer.
-    parallax_add_node(1, pbg_green_hill_06, 0.64, 0, 0, 0, 0, bg_yoffset, 0, 0, 244, 0, 0, 0, 1024, 192); // &lt; Parallax ID 9    
+    parallax_add_node(1, pbg_green_hill_06, 0.64, 0, -(parallax_offset/0.64), 0, 0, bg_yoffset, 0, 0, 244, 0, 0, 0, 1024, 192); // &lt; Parallax ID 9    
     
  
     
@@ -115,7 +115,7 @@
  // Draw Reflections. 
     for(i=0; i&lt;56; i+=1)
     {
-        draw_background_tiled_horizontal_part(pbg_ref_1, 0, i, 1024, 1, (view_xview*0.88)+(cos((current_time*0.5)/220+i*0.86)*3), (view_yview*((room_height-((244+192)-view_hview))/room_height))+(141)+i, 0, 0)
+        draw_background_tiled_horizontal_part(pbg_ref_1, 0, i, 1024, 1, (view_xview*0.88)+(cos((current_time*0.5)/220+i*0.86)*3)-parallax_offset, (view_yview*((room_height-((244+192)-view_hview))/room_height))+(141)+i, 0, 0)
     }    
 
 
