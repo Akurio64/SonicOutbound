@@ -31,9 +31,11 @@ main_sprite=spr_shark_1
 dead_sprite=spr_shark_1
 act_clear=_ev_act_clear
 theme=_ev_miniboss
+alarm[1]=240
 state=0
-alarm[0]=180
+ang=0
 i_speed=0.3
+image_xscale=-1
 </string>
           </argument>
         </arguments>
@@ -127,7 +129,34 @@ if alarm[9]=-1{alarm[9]=180}
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ang=0
+vspeed=-8
+gravity=0.1
+hspeed=sign(obj_boss_camera.x-x)
+state=2
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -146,6 +175,34 @@ if alarm[9]=-1{alarm[9]=180}
             <kind>1</kind>
             <string>state=1
 vulnerable=true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state=0
+x=xstart
+y=ystart
+hspeed=0
+vspeed=0
+gravity=0
 </string>
           </argument>
         </arguments>
@@ -170,8 +227,8 @@ vulnerable=true
             <kind>1</kind>
             <string>if state=0
 {
-    vulnerable=false
-    hspeed=image_xscale*8
+    vulnerable=true
+    hspeed=image_xscale*5
     if x&lt;=ctr_camera.limit_left+sprite_width
         {
             image_xscale=1
@@ -181,6 +238,29 @@ vulnerable=true
                 image_xscale=-1
                 }
             }
+            
+        if state=1
+            {
+                var _dir = point_direction(x, y, par_character.x, view_yview+424)+(-90*image_xscale+90)/2
+                var _diff = angle_difference(_dir*sign(par_character.x-x), image_angle);
+                ang     += 1
+                image_angle += _diff*(0.001*ang)
+                hspeed=0.5*sign(par_character.x-x)
+                vspeed=0.05+vspeed
+                
+                if alarm[2]=-1
+                    {
+                        alarm[2]=90
+                        }
+                    }
+                    
+                if state = 2
+                    {
+                        image_angle=vspeed*10*sign(x-par_character.x)
+                        alarm[0]=30
+                        alarm[1]=-1
+                        alarm[2]=-1
+                        }
 </string>
           </argument>
         </arguments>

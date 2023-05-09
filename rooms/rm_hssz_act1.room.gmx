@@ -137,7 +137,7 @@
     <instance objName="obj_zipline" x="10960" y="1712" name="inst_C1785B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_terrain_00" x="12128" y="528" name="inst_30C28EC6" locked="0" code="" scaleX="70.25" scaleY="15.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_character" x="16448" y="432" name="inst_C656A17E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boss_camera" x="17488" y="432" name="inst_237CD79A" locked="0" code="boss_id=obj_miniboss_1&#xA;mode=1&#xA;boss_x=x&#xA;boss_y=y+80&#xA;offset=300&#xA;cutscene=false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boss_camera" x="17488" y="432" name="inst_237CD79A" locked="0" code="boss_id=obj_miniboss_1&#xA;mode=0&#xA;boss_x=x+256&#xA;boss_y=y+80&#xA;cutscene=false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_run_terrain" x="16640" y="496" name="inst_77B3225C" locked="0" code="" scaleX="52" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
