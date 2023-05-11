@@ -31,9 +31,9 @@ main_sprite=spr_shark_1
 dead_sprite=spr_shark_1
 act_clear=_ev_act_clear
 theme=_ev_miniboss
-alarm[1]=240
 state=0
 ang=0
+char=1
 i_speed=0.3
 image_xscale=-1
 </string>
@@ -147,10 +147,12 @@ if alarm[9]=-1{alarm[9]=180}
           <argument>
             <kind>1</kind>
             <string>ang=0
-vspeed=-8
+vspeed=-6
 gravity=0.1
-hspeed=sign(obj_boss_camera.x-x)
+hspeed=sign(obj_boss_camera.x-x)*(1+(par_character.x-ctr_camera.limit_left)/424*4)
 state=2
+char=sign(x-par_character.x)
+image_xscale=-image_xscale
 </string>
           </argument>
         </arguments>
@@ -226,41 +228,45 @@ gravity=0
           <argument>
             <kind>1</kind>
             <string>if state=0
-{
-    vulnerable=true
-    hspeed=image_xscale*5
-    if x&lt;=ctr_camera.limit_left+sprite_width
-        {
-            image_xscale=1
-            }
-        else if x&gt;=ctr_camera.limit_right+sprite_width
+    {
+        vulnerable=true
+        hspeed=image_xscale*5
+        if alarm[2]=-1
             {
-                image_xscale=-1
+                alarm[2]=424/abs(hspeed)+30
                 }
             }
-            
-        if state=1
-            {
-                var _dir = point_direction(x, y, par_character.x, view_yview+424)+(-90*image_xscale+90)/2
-                var _diff = angle_difference(_dir*sign(par_character.x-x), image_angle);
-                ang     += 1
-                image_angle += _diff*(0.001*ang)
-                hspeed=0.5*sign(par_character.x-x)
-                vspeed=0.05+vspeed
+                if x&lt;=ctr_camera.limit_left+sprite_width
+                    {
+                        image_xscale=1
+                        }
+                    else if x&gt;=ctr_camera.limit_right+sprite_width
+                        {
+                            image_xscale=-1
+                            }
                 
-                if alarm[2]=-1
-                    {
-                        alarm[2]=90
-                        }
-                    }
+            if state=1
+                {
+                    var _dir = point_direction(x, y, par_character.x, view_yview+424)+(-90*image_xscale+90)/2
+                    var _diff = angle_difference(_dir*sign(par_character.x-x), image_angle);
+                    ang     += 1
+                    image_angle += _diff*(0.001*ang)
+                    hspeed=0.5*sign(par_character.x-x)
+                    vspeed=0.05+vspeed
                     
-                if state = 2
-                    {
-                        image_angle=vspeed*10*sign(x-par_character.x)
-                        alarm[0]=30
-                        alarm[1]=-1
-                        alarm[2]=-1
+                    if alarm[2]=-1
+                        {
+                            alarm[2]=90
+                            }
                         }
+                        
+                    if state = 2
+                        {
+                            image_angle=vspeed*10*char
+                            alarm[0]=30
+                            alarm[1]=-1
+                            alarm[2]=-1
+                            }
 </string>
           </argument>
         </arguments>
