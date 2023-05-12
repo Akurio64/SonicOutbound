@@ -829,6 +829,7 @@
             </sprites>
             <sprites name="Mecha-Shark">
               <sprite>sprites\spr_shark_1</sprite>
+              <sprite>sprites\spr_shark_hurt</sprite>
               <sprite>sprites\spr_shark_2</sprite>
               <sprite>sprites\spr_shark_3</sprite>
             </sprites>
@@ -2052,11 +2053,6 @@
               <object>objects\obj_hszb_missile</object>
             </objects>
           </objects>
-          <objects name="SPZ">
-            <objects name="Big">
-              <object>objects\obj_fang_test</object>
-            </objects>
-          </objects>
           <objects name="SLZ">
             <objects name="Mini">
               <object>objects\obj_miniboss_3</object>
@@ -2094,6 +2090,11 @@
             <object>objects\obj_tmz_chain</object>
             <object>objects\obj_tmz_alarm</object>
             <object>objects\obj_tmz_chain_drop</object>
+          </objects>
+          <objects name="SPZ">
+            <objects name="Big">
+              <object>objects\obj_fang_test</object>
+            </objects>
           </objects>
         </objects>
         <objects name="Collapse">

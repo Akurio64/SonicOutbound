@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited()
-hurt_sprite=spr_shark_1
+hurt_sprite=spr_shark_hurt
 main_sprite=spr_shark_1
 dead_sprite=spr_shark_1
 act_clear=_ev_act_clear
@@ -34,8 +34,12 @@ theme=_ev_miniboss
 state=0
 ang=0
 char=1
+alarm[0]=-1
+targ=par_character.x
 i_speed=0.3
 image_xscale=-1
+targe=false
+start=false
 </string>
           </argument>
         </arguments>
@@ -58,13 +62,8 @@ image_xscale=-1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop(theme);
-ctr_audio.clear_bgm = false;    
-
-instance_destroy(obj_glow)
-instance_create(x,y,obj_fade_to_white)
-instance_create(x,y,obj_robotnik_escape)
-audio_play(_boss_destroy, global.sfx_volume); 
+            <string>event_inherited()
+instance_create(view_xview+212,view_yview,obj_falling_signpost)
 </string>
           </argument>
         </arguments>
@@ -101,6 +100,10 @@ with obj_dummy_effect{image_xscale=random_range(0.1,1);image_yscale=image_xscale
 if instance_exists(obj_glow)=false{instance_create(x,y,obj_glow)}
 alarm[10]=8
 if alarm[9]=-1{alarm[9]=180}
+alarm[2]=-1
+alarm[3]=-1
+alarm[1]=-1
+alarm[0]=-1
 </string>
           </argument>
         </arguments>
@@ -129,6 +132,31 @@ if alarm[9]=-1{alarm[9]=180}
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hspeed=0
+targe=true
+alarm[2]=60
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -147,12 +175,16 @@ if alarm[9]=-1{alarm[9]=180}
           <argument>
             <kind>1</kind>
             <string>ang=0
-vspeed=-6
+vspeed=-7
+hspeed=0
 gravity=0.1
-hspeed=sign(obj_boss_camera.x-x)*(1+(par_character.x-ctr_camera.limit_left)/424*4)
+x=targ-(128*image_xscale)
+y+=128
 state=2
-char=sign(x-par_character.x)
-image_xscale=-image_xscale
+targe=false
+hspeed=2*image_xscale
+alarm[0]=180
+start=true
 </string>
           </argument>
         </arguments>
@@ -200,11 +232,17 @@ vulnerable=true
           <argument>
             <kind>1</kind>
             <string>state=0
-x=xstart
-y=ystart
+ang=0
+char=1
+targ=par_character.x
+targe=false
 hspeed=0
 vspeed=0
 gravity=0
+friction=0
+x=obj_boss_camera.x+(image_xscale*320)
+y=ystart
+image_angle=0
 </string>
           </argument>
         </arguments>
@@ -230,43 +268,42 @@ gravity=0
             <string>if state=0
     {
         vulnerable=true
-        hspeed=image_xscale*5
-        if alarm[2]=-1
+        if targe=false
             {
-                alarm[2]=424/abs(hspeed)+30
+                hspeed=image_xscale*5
+                if alarm[3]=-1
+                    {
+                        alarm[3]=600/abs(hspeed)+60
+                        }
+                    }
                 }
-            }
+                
                 if x&lt;=ctr_camera.limit_left+sprite_width
                     {
                         image_xscale=1
+                        if start=false{if alarm[3]&lt;100{hspeed=0}}
                         }
                     else if x&gt;=ctr_camera.limit_right+sprite_width
                         {
                             image_xscale=-1
+                            if start=false{if alarm[3]&lt;100{hspeed=0}}
                             }
-                
-            if state=1
-                {
-                    var _dir = point_direction(x, y, par_character.x, view_yview+424)+(-90*image_xscale+90)/2
-                    var _diff = angle_difference(_dir*sign(par_character.x-x), image_angle);
-                    ang     += 1
-                    image_angle += _diff*(0.001*ang)
-                    hspeed=0.5*sign(par_character.x-x)
-                    vspeed=0.05+vspeed
-                    
-                    if alarm[2]=-1
-                        {
-                            alarm[2]=90
-                            }
-                        }
+                        else
+                            {
+                                if targe=false
+                                    {
+                                        targ=par_character.x
+                                        }
+                                    else
+                                        {
+                                            char=sign(par_character.x-x)
+                                            }
+                                        }
                         
-                    if state = 2
-                        {
-                            image_angle=vspeed*10*char
-                            alarm[0]=30
-                            alarm[1]=-1
-                            alarm[2]=-1
-                            }
+                            if state = 2
+                                {
+                                    image_angle=vspeed*10*-image_xscale
+                                    }
 </string>
           </argument>
         </arguments>
@@ -294,8 +331,13 @@ gravity=0
 if instance_exists(obj_glow){
 d3d_set_fog(true,c_red,0,0);
 //draw code
-draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,c_white,obj_glow.image_alpha);
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,obj_glow.image_alpha);
 d3d_set_fog(false,c_black,0,0)}
+
+if targe=true
+    {
+        draw_sprite(spr_miniboss_locker,0,targ,obj_boss_camera.y+24)
+        }
 </string>
           </argument>
         </arguments>

@@ -3,7 +3,7 @@
   <spriteName>spr_aehz_collision_00_o</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>par_solid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -114,11 +114,11 @@ if instance_exists(par_boss)
             <kind>1</kind>
             <string>draw_sprite_tiled_area(spr_hsz_minib_p,0,
 x+sp,
-y-8,
+y,
 x,
-y-8,
+y,
 x+sprite_width,
-y+sprite_height-8)
+y+sprite_height)
 </string>
           </argument>
         </arguments>
