@@ -40,6 +40,8 @@ i_speed=0.3
 image_xscale=-1
 targe=false
 start=false
+bounce=false
+go=false
 </string>
           </argument>
         </arguments>
@@ -175,7 +177,7 @@ alarm[2]=60
           <argument>
             <kind>1</kind>
             <string>ang=0
-vspeed=-7
+vspeed=-7.5
 hspeed=0
 gravity=0.1
 x=targ-(128*image_xscale)
@@ -231,7 +233,8 @@ vulnerable=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state=0
+            <string>randomize()
+state=0
 ang=0
 char=1
 targ=par_character.x
@@ -243,6 +246,8 @@ friction=0
 x=obj_boss_camera.x+(image_xscale*320)
 y=ystart
 image_angle=0
+go=choose(true,false)
+bounce=false
 </string>
           </argument>
         </arguments>
@@ -302,8 +307,50 @@ image_angle=0
                         
                             if state = 2
                                 {
-                                    image_angle=vspeed*10*-image_xscale
-                                    }
+                                    if bounce=false{image_angle=vspeed*10*-image_xscale}
+                                    else
+                                        {
+                                            var _dir = 0
+                                            var _diff = angle_difference(_dir, image_angle);
+                                            image_angle += _diff * 0.25;
+                                            }
+                                        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_run_terrain">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if go=false
+    {
+        if bounce=false
+            {
+                if state = 2
+                    {
+                        if vspeed&gt;0
+                            {
+                                vspeed=-6
+                                bounce=true
+                            }
+                        }
+                    }
+                }
 </string>
           </argument>
         </arguments>

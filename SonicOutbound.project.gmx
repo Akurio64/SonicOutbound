@@ -1367,6 +1367,12 @@
       <sprite>sprites\spr_continues</sprite>
     </sprites>
     <sprite>sprites\spr_characters</sprite>
+    <sprites name="Pain">
+      <sprites name="Intro">
+        <sprite>sprites\spr_intro_pain_1</sprite>
+        <sprite>sprites\spr_intro_pain_2</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -2467,6 +2473,7 @@
     <objects name="Video">
       <object>objects\obj_intro</object>
       <object>objects\obj_v_intro</object>
+      <object>objects\obj_pain_intro</object>
     </objects>
   </objects>
   <rooms name="rooms">
