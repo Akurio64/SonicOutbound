@@ -74,8 +74,6 @@ if global.fmv_init == true {
    //Disallow the screen from turning off (Android/iOS/WinPhone)
    os_powersave_enable(false);
       
-   //Enable vsync to prevent tearing
-   display_reset(0, true);
 
    //End initialization
    global.fmv_init = false;

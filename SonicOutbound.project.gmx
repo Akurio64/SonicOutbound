@@ -78,11 +78,29 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Video</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
+      <sound>sound\_ev_life</sound>
       <sounds name="Zones">
+        <sounds name="HSZ">
+          <sounds name="Present">
+            <sound>sound\msc_hsz1</sound>
+            <sound>sound\msc_hsz2</sound>
+          </sounds>
+          <sounds name="Past">
+            <sound>sound\msc_hsz1_p</sound>
+            <sound>sound\msc_hsz2_p</sound>
+          </sounds>
+          <sounds name="G Future">
+            <sound>sound\msc_hsz1_g</sound>
+            <sound>sound\msc_hsz2_g</sound>
+          </sounds>
+          <sounds name="B Future">
+            <sound>sound\msc_hsz1_b</sound>
+            <sound>sound\msc_hsz2_b</sound>
+          </sounds>
+        </sounds>
         <sounds name="Sonic">
           <sounds name="SPZ">
             <sounds name="Present">
@@ -118,6 +136,15 @@
             <sounds name="B Future">
               <sound>sound\msc_slz1_b</sound>
               <sound>sound\msc_slz2_b</sound>
+              <sounds name="TTZ">
+                <sounds name="Act 1">
+                  <sound>sound\msc_ttz_1_1</sound>
+                  <sound>sound\msc_ttz_1_2</sound>
+                </sounds>
+                <sounds name="Act 2">
+                  <sound>sound\msc_ttz2</sound>
+                </sounds>
+              </sounds>
             </sounds>
           </sounds>
           <sounds name="RPZ">
@@ -292,33 +319,6 @@
           </sounds>
         </sounds>
         <sounds name="All">
-          <sounds name="HSZ">
-            <sounds name="Present">
-              <sound>sound\msc_hsz1</sound>
-              <sound>sound\msc_hsz2</sound>
-            </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_hsz1_p</sound>
-              <sound>sound\msc_hsz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_hsz1_g</sound>
-              <sound>sound\msc_hsz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_hsz1_b</sound>
-              <sound>sound\msc_hsz2_b</sound>
-            </sounds>
-          </sounds>
-          <sounds name="TTZ">
-            <sounds name="Act 1">
-              <sound>sound\msc_ttz_1_1</sound>
-              <sound>sound\msc_ttz_1_2</sound>
-            </sounds>
-            <sounds name="Act 2">
-              <sound>sound\msc_ttz2</sound>
-            </sounds>
-          </sounds>
           <sounds name="EBZ">
             <sound>sound\msc_ebz1</sound>
             <sound>sound\msc_ebz2</sound>
@@ -427,7 +427,6 @@
     </sounds>
     <sounds name="EV">
       <sounds name="Jingle">
-        <sound>sound\_ev_life</sound>
         <sound>sound\_ev_continue</sound>
         <sound>sound\_ev_gameover</sound>
         <sound>sound\_ev_act_clear2</sound>
@@ -2451,6 +2450,9 @@
       <objects name="Level Select">
         <object>objects\obj_level_select_controller</object>
       </objects>
+      <objects name="Sound Test">
+        <object>objects\obj_sound_test</object>
+      </objects>
     </objects>
     <objects name="Particules">
       <object>objects\par_particules</object>
@@ -2478,8 +2480,8 @@
           <object>objects\obj_press_start</object>
         </objects>
       </objects>
+      <object>objects\obj_intro</object>
     </objects>
-    <object>objects\obj_intro</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">
@@ -2497,6 +2499,7 @@
       <room>rooms\rm_menu</room>
       <room>rooms\rm_data_select</room>
       <room>rooms\rm_level_select</room>
+      <room>rooms\rm_soundtest</room>
     </rooms>
     <rooms name="Stages">
       <rooms name="Intro">
