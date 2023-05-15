@@ -3,12 +3,12 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="16" name="datafiles">
-    <datafiles number="16" name="Misc">
+  <datafiles number="17" name="datafiles">
+    <datafiles number="17" name="Misc">
       <datafile>
-        <name>Intro.webm</name>
+        <name>Intro.fmv</name>
         <exists>-1</exists>
-        <size>18610931</size>
+        <size>63373573</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -20,7 +20,7 @@
             <CopyToMask>9223372036854775807</CopyToMask>
           </Config>
         </ConfigOptions>
-        <filename>Intro.webm</filename>
+        <filename>Intro.fmv</filename>
       </datafile>
     </datafiles>
     <datafile>
@@ -78,6 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
+    <extension index="2">extensions\Video</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -422,9 +423,6 @@
           <sound>sound\_wm_charge</sound>
           <sound>sound\_wm_dash</sound>
         </sounds>
-      </sounds>
-      <sounds name="Video">
-        <sound>sound\_v_intro</sound>
       </sounds>
     </sounds>
     <sounds name="EV">
@@ -1369,12 +1367,6 @@
       <sprite>sprites\spr_continues</sprite>
     </sprites>
     <sprite>sprites\spr_characters</sprite>
-    <sprites name="Pain">
-      <sprites name="Intro">
-        <sprite>sprites\spr_intro_pain_1</sprite>
-        <sprite>sprites\spr_intro_pain_2</sprite>
-      </sprites>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1827,6 +1819,21 @@
         <script>scripts\save_zonelist.gml</script>
         <script>scripts\save_zonelist_select.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Edge FMV">
+      <scripts name="Control">
+        <script>scripts\edgefmv_pause.gml</script>
+        <script>scripts\edgefmv_skip.gml</script>
+        <script>scripts\edgefmv_seek.gml</script>
+        <script>scripts\edgefmv_set_volume.gml</script>
+        <script>scripts\edgefmv_get_time.gml</script>
+      </scripts>
+      <scripts name="Misc">
+        <script>scripts\edgefmv_draw_progress.gml</script>
+      </scripts>
+      <script>scripts\edgefmv_load.gml</script>
+      <script>scripts\edgefmv_play.gml</script>
+      <script>scripts\edgefmv_unload.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -2472,11 +2479,7 @@
         </objects>
       </objects>
     </objects>
-    <objects name="Video">
-      <object>objects\obj_intro</object>
-      <object>objects\obj_v_intro</object>
-      <object>objects\obj_pain_intro</object>
-    </objects>
+    <object>objects\obj_intro</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">

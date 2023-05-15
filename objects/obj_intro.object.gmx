@@ -11,12 +11,12 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>605</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
@@ -25,37 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///And so it begins
-
-v = -1; is_playing = false;
-fname = working_directory+"\Misc\Intro.webm";
-if (file_exists(fname)) {
-  v = video_add(fname);
-  video_play(v);
-  w = video_get_width(v);
-  h = video_get_height(v);
-
-  chan = buffer_sizeof(buffer_u64); // size of one pixel
-  buff = buffer_create(chan * w * h, buffer_fixed, chan);
-  surf = -1; // surfaces should be created in Draw events only!
-
-  // a hackfix for GM's internal 'used bytes' counter:
-  //buffer_poke(buff, buffer_get_size(buff) - 1, buffer_u8, 0);
-  // just poke 0 at the very end, so we ensure everything is allocated properly.
-  // probably not needed since GMS2.3+?
-  
-  bg = 0;
-}
-
-// fixes window close button on unix-likes with kwin/kde.
-window_set_size(window_get_width(), window_get_height());
-//show_debug_overlay(true);
-</string>
+            <string>Load video</string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -72,78 +45,8 @@ window_set_size(window_get_width(), window_get_height());
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Update the frame buffer
-
-if (video_exists(v))
-{
-    if (video_is_playing(v))
-    {
-        //video_grab_frame_buffer(v, buffer_get_address(buff));
-        video_grab_frame_image(v,"frame.png");
-        if (bg = 0)
-        {
-            bg = background_add("frame.png",false,false);
-        }
-        else
-        {
-            background_replace(bg,"frame.png",false,false);
-        }
-        is_playing = true; // video takes roughly 1 step to load before playing
-    }
-    else if (is_playing and !video_is_paused(v))
-    {
-        if !instance_exists(obj_fade_to)
-        {
-        with(instance_create(0, 0, obj_fade_to))
-{
-fade_to = rm_title_screen;
-}
-}
-    }
-}
-else if (is_playing)
-{
-            if !instance_exists(obj_fade_to)
-        {
-        with(instance_create(0, 0, obj_fade_to))
-{
-fade_to = rm_title_screen;
-}
-}
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Don't forget to *always* free buffers and surfaces.
-
-if (video_exists(v)) {
-
-  buffer_delete(buff);
-  surface_free(surf);
-
-  video_stop(v);
-  video_delete(v);
-
-}
+            <string>///Execute script: edgefmv_load
+edgefmv_load("Demo\intro.fmv");
 </string>
           </argument>
         </arguments>
@@ -152,12 +55,12 @@ if (video_exists(v)) {
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>605</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
@@ -166,43 +69,10 @@ if (video_exists(v)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw the frame to the screen
-
-draw_set_color(c_black);
-draw_set_alpha(0.5)
-draw_rectangle(0,0,424,240,false)
-draw_set_alpha(1)
-
-display_set_gui_size(window_get_width(), window_get_height());
-
-// rembember to check if video exists when interacting with video.
-// if you get a crash it is likely because you a trying to interact
-// with memory that no longer exists or doesn't exist yet (video).
-if (video_exists(v)) {
-
-  if (!surface_exists(surf)) {
-    // create a squeaky clean totally empty surface for our needs.
-    surf = surface_create(w, h);
-    surface_set_target(surf);
-    draw_clear_alpha(c_black, 0);
-    surface_reset_target();
-  }
-
-  // then we just slap the video frame on that surf.
-  surface_set_target(surf);
-    draw_background(bg,x,y);
-    surface_reset_target();
-  draw_surface_stretched(surf, 0, 0, 424, 240);
-  
-  
-}
-
-</string>
+            <string>Play video</string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="9" enumb="13">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -219,17 +89,87 @@ if (video_exists(v)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Don't forget to *always* free buffers and surfaces.
-
-if (video_exists(v)) {
-
-  buffer_delete(buff);
-  surface_free(surf);
-
-  video_stop(v);
-  video_delete(v);
-
-}
+            <string>//Play loaded video
+edgefmv_play(30,0,0,0,(424/1920)*2,(240/1080)*2,0,c_white,1,true, true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Skip video</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room=rm_v_intro
+    {
+        if global.character_index=0
+            {
+                if !instance_exists(obj_fade_to)
+                    {
+                        with(instance_create(0, 0, obj_fade_to))
+                            {
+                                fade_to = rm_hssz_act1;
+                            }
+                        }
+                    }
+                else if global.character_index=1
+                    {
+                        if !instance_exists(obj_fade_to)
+                            {
+                                with(instance_create(0, 0, obj_fade_to))
+                                    {
+                                        fade_to = rm_hstz_act1;
+                                    }
+                                }
+                            }
+                        else if global.character_index=2
+                            {
+                                if !instance_exists(obj_fade_to)
+                                    {
+                                        with(instance_create(0, 0, obj_fade_to))
+                                            {
+                                                fade_to = rm_hskz_act1;
+                                            }
+                                        }
+                                    }
+                                }
+                            else if room=rm_intro
+                                {
+                                    room_goto(rm_title_screen)
+                                    }
 </string>
           </argument>
         </arguments>
