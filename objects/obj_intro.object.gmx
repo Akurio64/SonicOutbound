@@ -46,7 +46,7 @@
           <argument>
             <kind>1</kind>
             <string>///Execute script: edgefmv_load
-edgefmv_load("Demo\intro.fmv");
+edgefmv_load("Demo\Intro.fmv");
 </string>
           </argument>
         </arguments>
