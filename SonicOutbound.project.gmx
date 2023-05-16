@@ -81,7 +81,6 @@
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
-      <sound>sound\_ev_life</sound>
       <sounds name="Zones">
         <sounds name="HSZ">
           <sounds name="Present">
@@ -143,6 +142,7 @@
                 </sounds>
                 <sounds name="Act 2">
                   <sound>sound\msc_ttz2</sound>
+                  <sound>sound\msc_ttz2_2</sound>
                 </sounds>
               </sounds>
             </sounds>
@@ -428,6 +428,7 @@
     <sounds name="EV">
       <sounds name="Jingle">
         <sound>sound\_ev_continue</sound>
+        <sound>sound\_ev_life</sound>
         <sound>sound\_ev_gameover</sound>
         <sound>sound\_ev_act_clear2</sound>
         <sound>sound\_jingle_p255</sound>
@@ -1817,6 +1818,11 @@
         <script>scripts\save_reload_all.gml</script>
         <script>scripts\save_zonelist.gml</script>
         <script>scripts\save_zonelist_select.gml</script>
+      </scripts>
+      <scripts name="Sound Test">
+        <script>scripts\msc_sound_test.gml</script>
+        <script>scripts\ev_sound_test.gml</script>
+        <script>scripts\sfx_sound_test.gml</script>
       </scripts>
     </scripts>
     <scripts name="Edge FMV">
