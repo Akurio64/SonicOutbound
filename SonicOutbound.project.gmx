@@ -336,6 +336,39 @@
         <sound>sound\msc_menu3</sound>
       </sounds>
     </sounds>
+    <sounds name="EV">
+      <sounds name="Jingle">
+        <sound>sound\_ev_continue</sound>
+        <sound>sound\_ev_life</sound>
+        <sound>sound\_ev_gameover</sound>
+        <sound>sound\_ev_act_clear</sound>
+        <sound>sound\_ev_act_clear2</sound>
+        <sound>sound\_jingle_p255</sound>
+        <sound>sound\_ev_drown</sound>
+        <sound>sound\_startup_ages</sound>
+        <sound>sound\_startup_sega</sound>
+        <sound>sound\_ev_sneakers</sound>
+        <sound>sound\_ev_invincibility</sound>
+        <sound>sound\_ev_knux</sound>
+        <sound>sound\_ev_sage</sound>
+      </sounds>
+      <sounds name="Boss">
+        <sounds name="Sonic">
+          <sound>sound\_ev_egg_event</sound>
+          <sound>sound\_ev_robotnik</sound>
+          <sound>sound\_ev_robotnik2</sound>
+          <sound>sound\_ev_robotnik3</sound>
+        </sounds>
+        <sounds name="Miniboss">
+          <sound>sound\_ev_miniboss</sound>
+          <sound>sound\_ev_miniboss2</sound>
+        </sounds>
+        <sounds name="Knux">
+          <sound>sound\_ev_meta_theme</sound>
+          <sound>sound\_ev_meta_b1</sound>
+        </sounds>
+      </sounds>
+    </sounds>
     <sounds name="SE">
       <sounds name="Badniks">
         <sound>sound\_badnik_shot</sound>
@@ -422,38 +455,6 @@
         <sounds name="Watermobile">
           <sound>sound\_wm_charge</sound>
           <sound>sound\_wm_dash</sound>
-        </sounds>
-      </sounds>
-    </sounds>
-    <sounds name="EV">
-      <sounds name="Jingle">
-        <sound>sound\_ev_continue</sound>
-        <sound>sound\_ev_life</sound>
-        <sound>sound\_ev_gameover</sound>
-        <sound>sound\_ev_act_clear2</sound>
-        <sound>sound\_jingle_p255</sound>
-        <sound>sound\_ev_drown</sound>
-        <sound>sound\_startup_ages</sound>
-        <sound>sound\_ev_act_clear</sound>
-        <sound>sound\_ev_sneakers</sound>
-        <sound>sound\_startup_sega</sound>
-        <sound>sound\_ev_invincibility</sound>
-        <sound>sound\_ev_knux</sound>
-        <sound>sound\_ev_sage</sound>
-      </sounds>
-      <sounds name="Boss">
-        <sounds name="Sonic">
-          <sound>sound\_ev_robotnik3</sound>
-          <sound>sound\_ev_egg_event</sound>
-          <sound>sound\_ev_robotnik</sound>
-          <sound>sound\_ev_robotnik2</sound>
-        </sounds>
-        <sounds name="Miniboss">
-          <sound>sound\_ev_miniboss</sound>
-        </sounds>
-        <sounds name="Knux">
-          <sound>sound\_ev_meta_theme</sound>
-          <sound>sound\_ev_meta_b1</sound>
         </sounds>
       </sounds>
     </sounds>

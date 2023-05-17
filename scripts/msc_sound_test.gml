@@ -131,7 +131,7 @@ if sound!=0
                         if sound=111{draw_text(212,96-32,"Title Theme");}
                         if sound=112{draw_text(212,96-32,"Menu Theme");}
                         if sound=113{draw_text(212,96-32,"Data Select Theme");}
-                        if sound=114{draw_text(212,96-32,"Unknown Menu Theme");}
+                        if sound=114{draw_text(212,96-32,"Level Select Theme");}
                         }
 
 if sound<=24
