@@ -177,15 +177,14 @@ alarm[2]=60
           <argument>
             <kind>1</kind>
             <string>ang=0
-vspeed=-7.5
 hspeed=0
-gravity=0.1
+if go=true{gravity=0.15;vspeed=-8.5}else{gravity=0.1;vspeed=-7.5}
 x=targ-(128*image_xscale)
 y+=128
 state=2
 targe=false
 hspeed=2*image_xscale
-alarm[0]=180
+if go=true{alarm[0]=180}else{alarm[0]=240}
 start=true
 </string>
           </argument>
@@ -307,7 +306,7 @@ bounce=false
                         
                             if state = 2
                                 {
-                                    if bounce=false{image_angle=vspeed*10*-image_xscale}
+                                    if bounce=false and go = true{image_angle=vspeed*10*-image_xscale}
                                     else
                                         {
                                             var _dir = 0
@@ -315,6 +314,7 @@ bounce=false
                                             image_angle += _diff * 0.25;
                                             }
                                         }
+                                        if go = true{vulnerable=false}else{vulnerable=true}
 </string>
           </argument>
         </arguments>
@@ -345,8 +345,11 @@ bounce=false
                     {
                         if vspeed&gt;0
                             {
-                                vspeed=-6
+                                vspeed=-vspeed
                                 bounce=true
+                                ctr_camera.Camera_ShakeScreen   = true;
+                                ctr_camera.Camera_ShakeDuration = 20;
+                                ctr_camera.Camera_ShakeForce    = 4;
                             }
                         }
                     }
@@ -384,6 +387,11 @@ d3d_set_fog(false,c_black,0,0)}
 if targe=true
     {
         draw_sprite(spr_miniboss_locker,0,targ,obj_boss_camera.y+24)
+        }
+        
+if state=0
+    {
+        draw_sprite_ext(spr_surf_wave,current_time/90,x-(image_xscale*128),STG.zone_water_position-8,image_xscale,1,0,c_white,1)
         }
 </string>
           </argument>

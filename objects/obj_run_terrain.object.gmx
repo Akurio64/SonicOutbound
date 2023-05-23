@@ -27,7 +27,40 @@
             <kind>1</kind>
             <string>spd=4
 sp=0
+ring=4
 event_inherited()
+alarm[0]=random_range(30,120)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_exists(par_boss)
+    {
+        with instance_create(view_xview+450,y-12,obj_ring)
+        {hspeed=-obj_run_terrain.spd}
+        if ring&gt;0{ring-=1}
+        }
+
+if ring=0{alarm[0]=random_range(60,120)ring=irandom_range(3,5)}else{alarm[0]=32/spd}
+randomize()
 </string>
           </argument>
         </arguments>
