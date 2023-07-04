@@ -48,12 +48,13 @@ if argument0=0
         //Suds
         
         " All Toasters Toast Toast! NO THEY DO NOT! They toast bread dumba%&! Also who says that? Thats not a saying thats an actual fact! It's like saying 'Oh you know what they say, fire burns!' OF COURSE FIRE F!#KING BURNS! And do you just carry that bread with you? It has your LITERAL ENEMY on it! Why would you buy his product? *Toast pops out of the toasters* Why the f*ck would toast pop out when you UNPLUG the toaster!?",
-"Work that sucker to death, come on now! Work that sucker to death!",
-"Suds Was Here",
-"One thing I don't know why It doesn't even matter how hard you try",
-"Hey look! Ramps! We can use them as ramps!",
-"So yeah, you’re gay. *plays Enter Sandman*",
-"Hey yo look who fell asleep first. prank him, John. you already know",
+        "Work that sucker to death, come on now! Work that sucker to death!",
+        "Suds Was Here",
+        "I'm supposed to be the fastest, but I was too slow to save my buddy.",
+        "Hey look! Ramps! We can use them as ramps!",
+        "So yeah, You're gay. *plays Enter Sandman*",
+        "Prank him, John. You already know",
+        "DOOR STUCK! DOOR STUCK!",
 
         //Other
         
