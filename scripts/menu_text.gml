@@ -47,15 +47,18 @@ if argument0=0
         
         //Suds
         
-        " All Toasters Toast Toast! NO THEY DO NOT! They toast bread dumba%&! Also who says that? Thats not a saying thats an actual fact! It's like saying 'Oh you know what they say, fire burns!' OF COURSE FIRE F!#KING BURNS! And do you just carry that bread with you? It has your LITERAL ENEMY on it! Why would you buy his product? *Toast pops out of the toasters* Why the f*ck would toast pop out when you UNPLUG the toaster!?",
+        "All Toasters Toast Toast!",
+        "It's a Stone Luigi, You Didn't Make It.",
         "Work that sucker to death, come on now! Work that sucker to death!",
         "Suds Was Here",
-        "I'm supposed to be the fastest, but I was too slow to save my buddy.",
-        "Hey look! Ramps! We can use them as ramps!",
-        "So yeah, You're gay. *plays Enter Sandman*",
-        "Prank him, John. You already know",
-        "DOOR STUCK! DOOR STUCK!",
-
+        "Me? Gongaga.",
+        "Wii Play. Do You? Is that a threat?",
+        "And then there's Chunky, He's dead.",
+        "First of all I am Vegeta. Second of all you're not Vegeta. Third of all you wanna be Vegeta but you can't be Vegeta because I'm Vegeta.",
+        "BRRONTO BURT!",
+        "YOU MIGHT KNOW EVERYTHING I'M GOING TO DO, BUT THATS NOT GOING TO HELP YOU SINCE I KNOW EVERYTHING YOUR GOING TO DO! STRANGE ISN'T IT???",
+        
+        
         //Other
         
         "Welcome To The Sonic Mania 2 But Good", //ShyDev
