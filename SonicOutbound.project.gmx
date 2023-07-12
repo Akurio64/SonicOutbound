@@ -2540,9 +2540,6 @@
           </rooms>
         </rooms>
         <rooms name="SPZ">
-          <rooms name="Act1">
-            <room>rooms\rm_spz_act1</room>
-          </rooms>
           <rooms name="Act2">
             <room>rooms\rm_spz_act2</room>
           </rooms>
