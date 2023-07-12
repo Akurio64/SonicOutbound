@@ -30,6 +30,7 @@
  // Variables:
     clear_bgm    = false; // Used to set the bgm volume to 0 when the stage has been cleared.
     fadeout_flag = false;
+    fadein_flag = false;
     clear_fade   = false; // Used to fade out the sfx volume when the stage has been cleared.
     death_fade   = false; // Used to fade out the bgm and sfx volume when the character has died.
     act_clear    = ""
@@ -161,7 +162,7 @@
        {
           if(global.bgm_volume &lt; backup_bgm_volume)
           {
-             global.bgm_volume += 0.01;
+             global.bgm_volume += 0.02;
           }
           else
           {
@@ -357,7 +358,7 @@
  // Disable flags and reset volumes:
     clear_bgm         = false;
     fadeout_flag      = false;
-    global.bgm_volume = backup_bgm_volume;
+    global.bgm_volume = backup_bgm_volume
     global.sfx_volume = backup_sfx_volume;
              
  // Main Menu:

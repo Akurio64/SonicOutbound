@@ -55,18 +55,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Go to a specific room.
-
-    if(fade_to = -1)
-    {
-       game_end();
-    }
-    else
-    {    
-       global._bgmHandle = -1;
-       audio_stop_all();
-       room_goto(fade_to);
-    }
+            <string>room_goto(fade_to)
 </string>
           </argument>
         </arguments>

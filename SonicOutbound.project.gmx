@@ -752,6 +752,13 @@
             <sprite>sprites\spr_spz_ridal_e</sprite>
             <sprite>sprites\spr_spz_ridal_p</sprite>
             <sprite>sprites\spr_spz_moto</sprite>
+            <sprites name="Destruction Trio">
+              <sprite>sprites\spr_destruction_trio</sprite>
+              <sprite>sprites\spr_destruction_trio_turn</sprite>
+              <sprite>sprites\spr_destruction_trio_1</sprite>
+              <sprite>sprites\spr_destruction_trio_2</sprite>
+              <sprite>sprites\spr_destruction_trio_3</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Springs">
@@ -1967,6 +1974,7 @@
             <object>objects\obj_spz_ridal_p</object>
             <object>objects\obj_spz_ridal_e</object>
             <object>objects\obj_spz_moto</object>
+            <object>objects\obj_destruction_trio_1</object>
           </objects>
         </objects>
         <objects name="Springs">

@@ -108,25 +108,24 @@
  // Blue: 
     if(color_blue &gt; 0)
     {
-       color_blue -= 20;
+       if room!=rm_t_intro{color_blue -= 20}else{color_blue -= 5}
     }
     
  // Green:
     if(color_green &gt; 0 &amp;&amp; color_blue &lt; 170)
     {
-       color_green -= 20;
+       if room!=rm_t_intro{color_green -= 20}else{color_green -= 5}
     }
  
  // Red:
     if(color_red &gt; 0 &amp;&amp; color_green &lt; 170)
     {
-       color_red -= 20;
+       if room!=rm_t_intro{color_red -= 20}else{color_red -= 5}
     }
     else if(color_red == 0)
     {
             instance_destroy();
     }
- 
 
 </string>
           </argument>

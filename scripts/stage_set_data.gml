@@ -36,7 +36,9 @@
     }}else{obj_character.input_lock_r=0
     obj_character.input_lock_l=0
     obj_character.start=true
+    if (room=rm_t_intro)=false{
     instance_create(0, 0, obj_fade_in)}
+    else{instance_create(0, 0, obj_fade_in_white)}}
     if(zone_water == true)
     {
        instance_create(0, 0, obj_water_surface);
