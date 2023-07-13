@@ -78,6 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
+    <extension index="2">extensions\Extension3</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -755,33 +756,12 @@
             <sprites name="Destruction Trio">
               <sprite>sprites\spr_destruction_trio</sprite>
               <sprite>sprites\spr_destruction_trio_turn</sprite>
-              <sprite>sprites\spr_destruction_trio_1</sprite>
-              <sprite>sprites\spr_destruction_trio_2</sprite>
-              <sprite>sprites\spr_destruction_trio_3</sprite>
-            </sprites>
-          </sprites>
-        </sprites>
-        <sprites name="Springs">
-          <sprites name="Horizontal">
-            <sprite>sprites\spr_spring_horizontal</sprite>
-            <sprite>sprites\spr_spring_horizontal_alt</sprite>
-            <sprite>sprites\spr_spring_horizontal_red</sprite>
-            <sprite>sprites\spr_spring_horizontal_red_alt</sprite>
-          </sprites>
-          <sprites name="Vertical">
-            <sprite>sprites\spr_spring_vertical</sprite>
-            <sprite>sprites\spr_spring_vertical_alt</sprite>
-            <sprite>sprites\spr_spring_vertical_red</sprite>
-            <sprite>sprites\spr_spring_vertical_red_alt</sprite>
-          </sprites>
-          <sprites name="Diagonal">
-            <sprite>sprites\spr_spring_diagonal_right</sprite>
-            <sprite>sprites\spr_spring_diagonal_left</sprite>
-            <sprite>sprites\spr_spring_diagonal_right_red</sprite>
-            <sprite>sprites\spr_spring_diagonal_left_red</sprite>
-            <sprites name="Masks">
-              <sprite>sprites\msk_spring_diagonal_right</sprite>
-              <sprite>sprites\msk_spring_diagonal_left</sprite>
+              <sprite>sprites\spr_dt_hitbox</sprite>
+              <sprites name="DT Graphics">
+                <sprite>sprites\spr_destruction_trio_1</sprite>
+                <sprite>sprites\spr_destruction_trio_2</sprite>
+                <sprite>sprites\spr_destruction_trio_3</sprite>
+              </sprites>
             </sprites>
           </sprites>
         </sprites>
@@ -1013,6 +993,30 @@
             <sprite>sprites\spr_egg_penalty_4</sprite>
             <sprite>sprites\spr_egg_penalty_3</sprite>
             <sprite>sprites\spr_egg_penalty_5</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="Springs">
+          <sprites name="Horizontal">
+            <sprite>sprites\spr_spring_horizontal_new</sprite>
+            <sprite>sprites\spr_spring_horizontal_alt_new</sprite>
+            <sprite>sprites\spr_spring_horizontal_red_new</sprite>
+            <sprite>sprites\spr_spring_horizontal_red_alt_new</sprite>
+          </sprites>
+          <sprites name="Vertical">
+            <sprite>sprites\spr_spring_vertical_new</sprite>
+            <sprite>sprites\spr_spring_vertical_alt_new</sprite>
+            <sprite>sprites\spr_spring_vertical_red_new</sprite>
+            <sprite>sprites\spr_spring_vertical_red_alt_new</sprite>
+          </sprites>
+          <sprites name="Diagonal">
+            <sprite>sprites\spr_spring_diagonal_right_new</sprite>
+            <sprite>sprites\spr_spring_diagonal_left_new</sprite>
+            <sprite>sprites\spr_spring_diagonal_right_red_new</sprite>
+            <sprite>sprites\spr_spring_diagonal_left_red_new</sprite>
+            <sprites name="Masks">
+              <sprite>sprites\msk_spring_diagonal_right_new</sprite>
+              <sprite>sprites\msk_spring_diagonal_left_new</sprite>
+            </sprites>
           </sprites>
         </sprites>
       </sprites>
@@ -1976,6 +1980,7 @@
             <object>objects\obj_spz_moto</object>
             <object>objects\obj_destruction_trio_1</object>
           </objects>
+          <object>objects\obj_hurt</object>
         </objects>
         <objects name="Springs">
           <object>objects\par_spring</object>
@@ -2665,6 +2670,9 @@
         <rooms name="EBZ">
           <room>rooms\rm_ebz_act1</room>
           <room>rooms\rm_ebz_act2</room>
+        </rooms>
+        <rooms name="TEST">
+          <room>rooms\rm_robotnik_fun_room</room>
         </rooms>
       </rooms>
     </rooms>
