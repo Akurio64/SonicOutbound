@@ -997,26 +997,26 @@
         </sprites>
         <sprites name="Springs">
           <sprites name="Horizontal">
-            <sprite>sprites\spr_spring_horizontal_new</sprite>
-            <sprite>sprites\spr_spring_horizontal_alt_new</sprite>
-            <sprite>sprites\spr_spring_horizontal_red_new</sprite>
-            <sprite>sprites\spr_spring_horizontal_red_alt_new</sprite>
+            <sprite>sprites\spr_spring_horizontal</sprite>
+            <sprite>sprites\spr_spring_horizontal_alt</sprite>
+            <sprite>sprites\spr_spring_horizontal_red</sprite>
+            <sprite>sprites\spr_spring_horizontal_red_alt</sprite>
           </sprites>
           <sprites name="Vertical">
-            <sprite>sprites\spr_spring_vertical_new</sprite>
-            <sprite>sprites\spr_spring_vertical_alt_new</sprite>
-            <sprite>sprites\spr_spring_vertical_red_new</sprite>
-            <sprite>sprites\spr_spring_vertical_red_alt_new</sprite>
+            <sprite>sprites\spr_spring_vertical</sprite>
+            <sprite>sprites\spr_spring_vertical_alt</sprite>
+            <sprite>sprites\spr_spring_vertical_red</sprite>
+            <sprite>sprites\spr_spring_vertical_red_alt</sprite>
           </sprites>
           <sprites name="Diagonal">
-            <sprite>sprites\spr_spring_diagonal_right_new</sprite>
-            <sprite>sprites\spr_spring_diagonal_left_new</sprite>
-            <sprite>sprites\spr_spring_diagonal_right_red_new</sprite>
-            <sprite>sprites\spr_spring_diagonal_left_red_new</sprite>
             <sprites name="Masks">
-              <sprite>sprites\msk_spring_diagonal_right_new</sprite>
-              <sprite>sprites\msk_spring_diagonal_left_new</sprite>
+              <sprite>sprites\msk_spring_diagonal_right</sprite>
+              <sprite>sprites\msk_spring_diagonal_left</sprite>
             </sprites>
+            <sprite>sprites\spr_spring_diagonal_right</sprite>
+            <sprite>sprites\spr_spring_diagonal_left</sprite>
+            <sprite>sprites\spr_spring_diagonal_right_red</sprite>
+            <sprite>sprites\spr_spring_diagonal_left_red</sprite>
           </sprites>
         </sprites>
       </sprites>
