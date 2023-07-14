@@ -44,13 +44,39 @@
  //Variant variables
     roll_angle=0
     r_time=0
+    d_time=0
     ball_angle=0
     b_time=0
+    dr=0
     alarm[0]=1
     drill_y=0
     ro=false
     bo=false
     hurt=""
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited()
+instance_destroy(hurt)
 </string>
           </argument>
         </arguments>
@@ -202,12 +228,12 @@ hurt.image_index  = variant-1
             if ro=true
                 {
                     r_time+=1
-                    roll_angle=45*sin(r_time/15)+35
+                    roll_angle=45*sin((r_time/15)-0.5*pi)+35
                     }
             
             if ro = false
                 {
-                    if roll_angle&gt;=-9{roll_angle=45*sin(r_time/15)+35;r_time+=1}
+                    if roll_angle&gt;=-9{roll_angle=45*sin((r_time/15)-0.5*pi)+35;r_time+=1}
                     else{r_time=0;roll_angle=-10}
                     }
             
@@ -228,26 +254,61 @@ hurt.image_index  = variant-1
             if bo=true
                 {
                     b_time+=1
-                    ball_angle=45*sin(b_time/20)+15
+                    ball_angle=45*sin((b_time/15)-arcsin(1/3))+15
                     }
             
             if bo = false
                 {
-                    if ball_angle&gt;=0{ball_angle=45*sin(b_time/20)+15;b_time+=1}
-                    else{b_time=0;ball_angle=-10}
+                    if sprite_direction=-1
+                        {
+                            if ball_angle&gt;=1{ball_angle=45*sin((b_time/15)-arcsin(1/3))+15;b_time+=1}
+                            }
+                        else if sprite_direction=1
+                        {
+                            if ball_angle&lt;=-1{ball_angle=45*sin((b_time/15)-arcsin(1/3))+15;b_time+=1}
+                            }
+                    else{b_time=0;ball_angle=0}
                     }
             
             if distance_to_object(par_character)&lt;128
                 {
-                    ro=true
+                    bo=true
                     }
                 else
                     {
-                        ro=false
+                        bo=false
                         }
                     }
+                    
+ //Variant 3
+ 
+    if variant=3
+        {
+            if dr=true
+                {
+                    d_time+=1
+                    drill_y=floor(12*sin((d_time/15)-arcsin(1/3)))
+                    }
             
- if variant = 1
+            if dr = false
+                {
+                    if drill_y!=0{drill_y=floor(12*sin((d_time/15)-arcsin(1/3)));d_time+=1}
+                    else{d_time=0;drill_y=0}
+                    }
+            
+            if distance_to_object(par_character)&lt;128
+                {
+                    dr=true
+                    }
+                else
+                    {
+                        dr=false
+                        }
+                    }
+ 
+ //Hurt objects                   
+
+  if variant = 1
     {
         hurt.x=floor(x)-24*sprite_direction+lengthdir_x(37*sprite_direction, roll_angle)
         hurt.y=floor(y)+3+lengthdir_y(37, roll_angle)
@@ -261,11 +322,14 @@ hurt.image_index  = variant-1
             hurt.image_angle=ball_angle*sprite_direction
             hurt.y=floor(y)-30
             }
-                    
- //Variant 3
-    drill_y=1*sin(current_time / 10)
+            
+        if variant = 3
+            {
+                hurt.x=floor(x)
+                hurt.y=floor(y)+drill_y+4
+                hurt.image_xscale=sprite_direction
+                }
     
-
 </string>
           </argument>
         </arguments>
@@ -302,7 +366,7 @@ if sprite=spr_destruction_trio
                 
    // Body 
                
-        draw_sprite_ext(sprite, variant, floor(x), floor(y), sprite_direction, 1, 0, c_white, 1);
+        draw_sprite_ext(sprite, variant-1, floor(x), floor(y), sprite_direction, 1, 0, c_white, 1);
         
 // FG graphics for each variant
 
@@ -324,7 +388,7 @@ if sprite=spr_destruction_trio
             if variant == 3
                 {
                     draw_sprite_ext(spr_destruction_trio_3, 0, floor(x), floor(y), sprite_direction, 1, 0, c_white, 1);
-                    draw_sprite_ext(spr_destruction_trio_3, 1, floor(x), floor(y)+drill_y-4, sprite_direction, 1, 0, c_white, 1);
+                    draw_sprite_ext(spr_destruction_trio_3, 1, floor(x), floor(y)+drill_y+4, sprite_direction, 1, 0, c_white, 1);
                     }
                 }
 </string>

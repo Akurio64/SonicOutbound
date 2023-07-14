@@ -8,8 +8,8 @@
   <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>54</bbox_left>
-  <bbox_right>90</bbox_right>
-  <bbox_top>59</bbox_top>
+  <bbox_right>100</bbox_right>
+  <bbox_top>31</bbox_top>
   <bbox_bottom>131</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -22,5 +22,6 @@
   <frames>
     <frame index="0">images\spr_dt_hitbox_0.png</frame>
     <frame index="1">images\spr_dt_hitbox_1.png</frame>
+    <frame index="2">images\spr_dt_hitbox_2.png</frame>
   </frames>
 </sprite>

@@ -78,7 +78,6 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension3</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -88,18 +87,6 @@
             <sound>sound\msc_hsz1</sound>
             <sound>sound\msc_hsz2</sound>
           </sounds>
-          <sounds name="Past">
-            <sound>sound\msc_hsz1_p</sound>
-            <sound>sound\msc_hsz2_p</sound>
-          </sounds>
-          <sounds name="G Future">
-            <sound>sound\msc_hsz1_g</sound>
-            <sound>sound\msc_hsz2_g</sound>
-          </sounds>
-          <sounds name="B Future">
-            <sound>sound\msc_hsz1_b</sound>
-            <sound>sound\msc_hsz2_b</sound>
-          </sounds>
         </sounds>
         <sounds name="Sonic">
           <sounds name="SPZ">
@@ -107,73 +94,26 @@
               <sound>sound\msc_spz1</sound>
               <sound>sound\msc_spz2</sound>
             </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_spz1_p</sound>
-              <sound>sound\msc_spz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_spz1_g</sound>
-              <sound>sound\msc_spz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_spz1_b</sound>
-              <sound>sound\msc_spz2_b</sound>
-            </sounds>
           </sounds>
           <sounds name="SLZ">
             <sounds name="Present">
               <sound>sound\msc_slz1</sound>
               <sound>sound\msc_slz2</sound>
             </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_slz1_p</sound>
-              <sound>sound\msc_slz2_p</sound>
+          </sounds>
+          <sounds name="TTZ">
+            <sounds name="Act 1">
+              <sound>sound\msc_ttz_1_1</sound>
+              <sound>sound\msc_ttz_1_2</sound>
             </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_slz1_g</sound>
-              <sound>sound\msc_slz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_slz1_b</sound>
-              <sound>sound\msc_slz2_b</sound>
-              <sounds name="TTZ">
-                <sounds name="Act 1">
-                  <sound>sound\msc_ttz_1_1</sound>
-                  <sound>sound\msc_ttz_1_2</sound>
-                </sounds>
-                <sounds name="Act 2">
-                  <sound>sound\msc_ttz2</sound>
-                  <sound>sound\msc_ttz2_2</sound>
-                </sounds>
-              </sounds>
+            <sounds name="Act 2">
+              <sound>sound\msc_ttz2</sound>
             </sounds>
           </sounds>
           <sounds name="RPZ">
             <sounds name="Present">
               <sound>sound\msc_rpz1</sound>
               <sound>sound\msc_rpz2</sound>
-            </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_rpz1_p</sound>
-              <sound>sound\msc_rpz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_rpz1_g</sound>
-              <sound>sound\msc_rpz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_rpz1_b</sound>
-              <sound>sound\msc_rpz2_b</sound>
-            </sounds>
-          </sounds>
-          <sounds name="TPZ">
-            <sounds name="Act 1">
-              <sound>sound\msc_tpz_1_1</sound>
-              <sound>sound\msc_tpz_1_2</sound>
-            </sounds>
-            <sounds name="Act 2">
-              <sound>sound\msc_tpz_2_1</sound>
-              <sound>sound\msc_tpz_2_2</sound>
             </sounds>
           </sounds>
         </sounds>
@@ -183,67 +123,17 @@
               <sound>sound\msc_cnz1</sound>
               <sound>sound\msc_cnz2</sound>
             </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_cnz1_p</sound>
-              <sound>sound\msc_cnz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_cnz1_g</sound>
-              <sound>sound\msc_cnz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_cnz1_b</sound>
-              <sound>sound\msc_cnz2_b</sound>
-            </sounds>
           </sounds>
           <sounds name="SNZ">
             <sounds name="Present">
               <sound>sound\msc_snz1</sound>
               <sound>sound\msc_snz2</sound>
             </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_snz1_p</sound>
-              <sound>sound\msc_snz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_snz1_g</sound>
-              <sound>sound\msc_snz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_snz1_b</sound>
-              <sound>sound\msc_snz2_b</sound>
-            </sounds>
           </sounds>
           <sounds name="LBZ">
             <sounds name="Present">
               <sound>sound\msc_lbz1</sound>
               <sound>sound\msc_lbz2</sound>
-            </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_lbz1_p</sound>
-              <sound>sound\msc_lbz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_lbz1_g</sound>
-              <sound>sound\msc_lbz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_lbz1_b</sound>
-              <sound>sound\msc_lbz2_b</sound>
-            </sounds>
-          </sounds>
-          <sounds name="CCZ">
-            <sounds name="Act1">
-              <sound>sound\msc_ccz1_1</sound>
-              <sound>sound\msc_ccz1_2</sound>
-              <sound>sound\msc_ccz1_3</sound>
-            </sounds>
-            <sounds name="Act2">
-              <sound>sound\msc_ccz2_1</sound>
-              <sound>sound\msc_ccz2_2</sound>
-              <sound>sound\msc_ccz2_3</sound>
-              <sound>sound\msc_ccz2_4</sound>
-              <sound>sound\msc_ccz2_5</sound>
             </sounds>
           </sounds>
         </sounds>
@@ -253,53 +143,11 @@
               <sound>sound\msc_vrz1</sound>
               <sound>sound\msc_vrz2</sound>
             </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_vrz1_p</sound>
-              <sound>sound\msc_vrz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_vrz1_g</sound>
-              <sound>sound\msc_vrz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_vrz1_b</sound>
-              <sound>sound\msc_vrz2_b</sound>
-            </sounds>
           </sounds>
           <sounds name="ICZ">
             <sounds name="Present">
               <sound>sound\msc_icz1</sound>
               <sound>sound\msc_icz2</sound>
-            </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_icz1_p</sound>
-              <sound>sound\msc_icz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_icz1_g</sound>
-              <sound>sound\msc_icz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_icz1_b</sound>
-              <sound>sound\msc_icz2_b</sound>
-            </sounds>
-          </sounds>
-          <sounds name="MRZ">
-            <sounds name="Present">
-              <sound>sound\msc_mrz1</sound>
-              <sound>sound\msc_mrz2</sound>
-            </sounds>
-            <sounds name="Past">
-              <sound>sound\msc_mrz1_p</sound>
-              <sound>sound\msc_mrz2_p</sound>
-            </sounds>
-            <sounds name="G Future">
-              <sound>sound\msc_mrz1_g</sound>
-              <sound>sound\msc_mrz2_g</sound>
-            </sounds>
-            <sounds name="B Future">
-              <sound>sound\msc_mrz1_b</sound>
-              <sound>sound\msc_mrz2_b</sound>
             </sounds>
           </sounds>
           <sounds name="SRZ">
@@ -1160,13 +1008,6 @@
           <sprite>sprites\tile055</sprite>
           <sprite>sprites\tile056</sprite>
         </sprites>
-        <sprites name="TPZ">
-          <sprite>sprites\pbg_tpz_1_1</sprite>
-          <sprite>sprites\pbg_tpz_1_2</sprite>
-          <sprite>sprites\pbg_tpz_1_3</sprite>
-          <sprite>sprites\pbg_tpz_1_4</sprite>
-          <sprite>sprites\pbg_tpz_1_5</sprite>
-        </sprites>
         <sprites name="SRZ">
           <sprite>sprites\pbg_srz_1_1</sprite>
           <sprite>sprites\pbg_srz_1_2</sprite>
@@ -1174,9 +1015,6 @@
           <sprite>sprites\pbg_srz_1_4</sprite>
           <sprite>sprites\pbg_srz_1_5</sprite>
           <sprite>sprites\pbg_srz_1_6</sprite>
-        </sprites>
-        <sprites name="CCZ">
-          <sprite>sprites\pbg_ccz_1_1</sprite>
         </sprites>
       </sprites>
       <sprites name="Glow">
@@ -1515,17 +1353,6 @@
           <background>background\pbg_icz_1_3</background>
         </backgrounds>
       </backgrounds>
-      <backgrounds name="MRZ">
-        <background>background\pbg_mrz_1_1</background>
-        <background>background\pbg_mrz_1_2</background>
-        <background>background\pbg_mrz_1_3</background>
-        <background>background\pbg_mrz_2_1</background>
-        <background>background\pbg_mrz_2_2</background>
-      </backgrounds>
-      <backgrounds name="CCZ">
-        <background>background\pbg_ccz_1</background>
-        <background>background\pbg_ccz_1_2</background>
-      </backgrounds>
     </backgrounds>
     <backgrounds name="Tilesets">
       <backgrounds name="SLZ">
@@ -1587,12 +1414,6 @@
       </backgrounds>
       <backgrounds name="ICZ">
         <background>background\tls_icz</background>
-      </backgrounds>
-      <backgrounds name="MRZ">
-        <background>background\tls_mrz</background>
-      </backgrounds>
-      <backgrounds name="TPZ">
-        <background>background\tls_tpz</background>
       </backgrounds>
       <backgrounds name="SPZ">
         <background>background\tls_spz</background>
@@ -2193,10 +2014,6 @@
               <object>objects\obj_hsz_surf</object>
             </objects>
           </objects>
-          <objects name="CCZ">
-            <object>objects\obj_ccz_weather</object>
-            <object>objects\obj_time_travel</object>
-          </objects>
           <objects name="ICZ">
             <object>objects\obj_icz_bg</object>
           </objects>
@@ -2226,21 +2043,14 @@
       <objects name="Backgrounds">
         <object>objects\par_parallax</object>
         <objects name="Zones">
-          <object>objects\obj_parallax_tpz</object>
-          <object>objects\obj_parallax_tpz1</object>
-          <object>objects\obj_parallax_tpz2</object>
           <object>objects\obj_parallax_rpz1</object>
           <object>objects\obj_parallax_rpz2</object>
           <object>objects\obj_parallax_ttz1</object>
           <object>objects\obj_parallax_ttz2</object>
           <object>objects\obj_parallax_hsz1</object>
           <object>objects\obj_parallax_hsz2</object>
-          <object>objects\obj_parallax_mrz1</object>
-          <object>objects\obj_parallax_mrz2</object>
           <object>objects\obj_parallax_vrz1</object>
           <object>objects\obj_parallax_vrz2</object>
-          <object>objects\obj_parallax_ccz1</object>
-          <object>objects\obj_parallax_ccz2</object>
           <object>objects\obj_parallax_slz1</object>
           <object>objects\obj_parallax_slz2</object>
           <object>objects\obj_parallax_icz1_o</object>
@@ -2568,14 +2378,6 @@
             <room>rooms\rm_rpz_act2</room>
           </rooms>
         </rooms>
-        <rooms name="TPZ">
-          <rooms name="Act1">
-            <room>rooms\rm_tpz_act1</room>
-          </rooms>
-          <rooms name="Act2">
-            <room>rooms\rm_tpz_act2</room>
-          </rooms>
-        </rooms>
       </rooms>
       <rooms name="Tails">
         <rooms name="HSZ">
@@ -2610,14 +2412,6 @@
             <room>rooms\rm_lbz_act2</room>
           </rooms>
         </rooms>
-        <rooms name="CCZ">
-          <rooms name="Act1">
-            <room>rooms\rm_ccz_act1</room>
-          </rooms>
-          <rooms name="Act2">
-            <room>rooms\rm_ccz_act2</room>
-          </rooms>
-        </rooms>
       </rooms>
       <rooms name="Knux">
         <rooms name="HSZ">
@@ -2642,14 +2436,6 @@
           </rooms>
           <rooms name="Act2">
             <room>rooms\rm_icz_act2</room>
-          </rooms>
-        </rooms>
-        <rooms name="MRZ">
-          <rooms name="Act1">
-            <room>rooms\rm_mrz_act1</room>
-          </rooms>
-          <rooms name="Act2">
-            <room>rooms\rm_mrz_act2</room>
           </rooms>
         </rooms>
         <rooms name="SRZ">

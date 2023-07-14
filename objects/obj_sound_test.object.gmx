@@ -92,7 +92,7 @@ if(keyboard_check_pressed(global.ip_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dp
         if(keyboard_check_pressed(global.ip_right) || (joy_hat_x(0) == 1 &amp;&amp; (GMP.dpad_right == 0)))
             {
                 audio_stop_all()
-                if sound&lt;114{sound+=1}else{sound=1}
+                if sound&lt;39{sound+=1}else{sound=1}
                 audio_play(sound-1,global.bgm_volume)
                 }
                 

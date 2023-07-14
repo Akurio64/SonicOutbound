@@ -181,20 +181,6 @@ if(global.save_selected != 0)
                  global.zone_id=10
                  break;
            }
-           case rm_tpz_act1:
-           {
-              // Test Stage (Act 2)
-                 stage_set_data("TIME PALACE", 1, msc_tpz_1_1, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=11
-                 break;
-           }
-           case rm_tpz_act2:
-           {
-              // Test Stage (Act 2)
-                 stage_set_data("TIME PALACE", 2, msc_tpz_2_1, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=12
-                 break;
-           }
            case rm_lbz_act1:
            {
               // Test Stage (Act 2)
@@ -206,34 +192,6 @@ if(global.save_selected != 0)
            {
               // Test Stage (Act 2)
                  stage_set_data("LAUNCH BASE", 2, msc_lbz2, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=10
-                 break;
-           }
-           case rm_ccz_act1:
-           {
-              // Test Stage (Act 2)
-                 stage_set_data("CLIMATE CHAOS", 1, msc_ccz1_1, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=11
-                 break;
-           }
-           case rm_ccz_act2:
-           {
-              // Test Stage (Act 2)
-                 stage_set_data("CLIMATE CHAOS", 2, msc_ccz2_1, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=12
-                 break;
-           }
-           case rm_mrz_act1:
-           {
-              // Test Stage (Act 2)
-                 stage_set_data("MARBLE", 1, msc_mrz1, false, -1, room_height, 315946, 6694951, 44100);
-                 global.zone_id=9
-                 break;
-           }
-           case rm_mrz_act2:
-           {
-              // Test Stage (Act 2)
-                 stage_set_data("MARBLE", 2, msc_mrz2, false, -1, room_height, 315946, 6694951, 44100);
                  global.zone_id=10
                  break;
            }

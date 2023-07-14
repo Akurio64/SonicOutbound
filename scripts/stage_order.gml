@@ -185,7 +185,7 @@
                 }
                 else if global.character_index=2
                 {
-                return rm_mrz_act1
+                return rm_srz_act1
                 }
             }
             case rm_rpz_act1:
@@ -196,20 +196,7 @@
            }
            case rm_rpz_act2:
            {
-              // Test Stage (Act 2)
-                 return rm_tpz_act1; 
-                 break;
-           }
-           case rm_tpz_act1:
-           {
-              // Test Stage (Act 2)
-                 return rm_tpz_act2; 
-                 break;
-           }
-           case rm_tpz_act2:
-           {
-              // First stage, Test Stage (Act 1)
-                 // Back to the menu:
+              // Back to the menu:
                  global.clives = 3;
                  global.crings = 0;
                  global.cscore = 0;
@@ -225,18 +212,6 @@
            case rm_lbz_act2:
            {
               // Test Stage (Act 2)
-                 return rm_ccz_act1; 
-                 break;
-           }
-           case rm_ccz_act1:
-           {
-              // Test Stage (Act 2)
-                 return rm_ccz_act2; 
-                 break;
-           }
-           case rm_ccz_act2:
-           {
-              // First stage, Test Stage (Act 1)
                  // Back to the menu:
                  global.clives = 3;
                  global.crings = 0;
@@ -245,18 +220,6 @@
                  break;
            }
            
-           case rm_mrz_act1:
-           {
-              // Test Stage (Act 2)
-                 return rm_mrz_act2; 
-                 break;
-           }
-           case rm_mrz_act2:
-           {
-              // Test Stage (Act 2)
-                 return rm_srz_act1; 
-                 break;
-           }
            case rm_srz_act1:
            {
               // Test Stage (Act 2)
