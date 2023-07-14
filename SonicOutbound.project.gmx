@@ -1788,7 +1788,6 @@
           </objects>
           <objects name="HSZ">
             <object>objects\obj_hsz_bouncer_2</object>
-            <object>objects\obj_hsz_splats</object>
             <object>objects\obj_hsz_coconuts</object>
             <object>objects\obj_hsz_bouncer_1</object>
             <object>objects\obj_hsz_dolphin</object>
@@ -1797,6 +1796,7 @@
           </objects>
           <objects name="SPZ">
             <object>objects\obj_spz_ridal_p</object>
+            <object>objects\obj_spz_splats</object>
             <object>objects\obj_spz_ridal_e</object>
             <object>objects\obj_spz_moto</object>
             <object>objects\obj_destruction_trio_1</object>
