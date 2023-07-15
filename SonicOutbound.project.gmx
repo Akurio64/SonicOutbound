@@ -611,6 +611,9 @@
                 <sprite>sprites\spr_destruction_trio_3</sprite>
               </sprites>
             </sprites>
+            <sprites name="Gun">
+              <sprite>sprites\spr_spz_gun</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Spikes">
@@ -623,18 +626,6 @@
           <sprite>sprites\spr_bridge_node_common</sprite>
           <sprite>sprites\spr_bridge_6_node_wide_common</sprite>
           <sprite>sprites\spr_bridge_12_node_wide_common</sprite>
-        </sprites>
-        <sprites name="Water Related">
-          <sprite>sprites\spr_water_surface</sprite>
-          <sprite>sprites\spr_water_splash</sprite>
-          <sprite>sprites\spr_water_drown_counter</sprite>
-          <sprite>sprites\spr_water_bubbler</sprite>
-          <sprite>sprites\spr_water_bubble_small</sprite>
-          <sprite>sprites\spr_water_bubble_medium</sprite>
-          <sprite>sprites\spr_water_bubble_large</sprite>
-          <sprite>sprites\spr_water_bubble_burst</sprite>
-          <sprite>sprites\spr_g_create</sprite>
-          <sprite>sprites\spr_geyser</sprite>
         </sprites>
         <sprites name="Sensors">
           <sprite>sprites\spr_layer_switch</sprite>
@@ -651,6 +642,18 @@
             <sprite>sprites\spr_platform_flag_move_down</sprite>
             <sprite>sprites\spr_platform_flag_move_left</sprite>
             <sprite>sprites\spr_platform_flag_move_right</sprite>
+          </sprites>
+          <sprites name="Water Related">
+            <sprite>sprites\spr_water_surface</sprite>
+            <sprite>sprites\spr_water_splash</sprite>
+            <sprite>sprites\spr_water_drown_counter</sprite>
+            <sprite>sprites\spr_water_bubbler</sprite>
+            <sprite>sprites\spr_water_bubble_small</sprite>
+            <sprite>sprites\spr_water_bubble_medium</sprite>
+            <sprite>sprites\spr_water_bubble_large</sprite>
+            <sprite>sprites\spr_water_bubble_burst</sprite>
+            <sprite>sprites\spr_g_create</sprite>
+            <sprite>sprites\spr_geyser</sprite>
           </sprites>
         </sprites>
         <sprites name="Bosses">
@@ -1800,6 +1803,7 @@
             <object>objects\obj_spz_ridal_e</object>
             <object>objects\obj_spz_moto</object>
             <object>objects\obj_destruction_trio_1</object>
+            <object>objects\obj_spz_gun</object>
           </objects>
           <object>objects\obj_hurt</object>
         </objects>
