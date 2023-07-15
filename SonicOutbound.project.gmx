@@ -613,6 +613,9 @@
             </sprites>
             <sprites name="Gun">
               <sprite>sprites\spr_spz_gun</sprite>
+              <sprite>sprites\spr_spz_gun_spike</sprite>
+              <sprite>sprites\spr_spz_gun_bullet</sprite>
+              <sprite>sprites\spr_spz_gun_robotnik</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -1806,6 +1809,7 @@
             <object>objects\obj_spz_gun</object>
           </objects>
           <object>objects\obj_hurt</object>
+          <object>objects\obj_bg_enemy</object>
         </objects>
         <objects name="Springs">
           <object>objects\par_spring</object>
