@@ -108,7 +108,7 @@ event_inherited()
         bullet.direction=gun_angle
         bullet.visible=true
         
-        alarm[0]=60
+        alarm[0]=90
         }
 </string>
           </argument>

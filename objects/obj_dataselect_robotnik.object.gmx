@@ -99,7 +99,7 @@
  // Deactivate on delete slot.
     if(active == true &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == 9)
     {
-       if(keyboard_check_pressed(global.ip_button_a))
+       if(keyboard_check_pressed(ord("A")))
        {
           active     = false;
           sign_index = 0;
@@ -110,7 +110,7 @@
     }   
         
  // Trigger 
-    if(keyboard_check_pressed(global.ip_button_a) &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == 9 &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)
+    if(keyboard_check_pressed(ord("A")) &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == 9 &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)
     {
        if(active == false)
        {      
@@ -126,7 +126,7 @@
        // Trigger selection.
           if(state == "idle")
           {
-             if(keyboard_check_pressed(global.ip_button_a))
+             if(keyboard_check_pressed(ord("A")))
              {
                 with(obj_dataselect_slot)
                 {  
@@ -163,7 +163,7 @@
        // Delete Slot.
           if(state == "selection")
           {
-             if(keyboard_check_pressed(global.ip_left))
+             if(keyboard_check_pressed(vk_left))
              {
                 with(obj_dataselect_slot)
                 {  
@@ -183,7 +183,7 @@
        // Backout.
           if(state == "selection")
           {
-             if(keyboard_check_pressed(global.ip_right) || keyboard_check_pressed(global.ip_button_b))
+             if(keyboard_check_pressed(vk_right) || keyboard_check_pressed("S"))
              {  
                  sign_index = 1;
                  state      = "spin";

@@ -180,7 +180,7 @@
      
     if(option_selected == 0)
     {
-       if(keyboard_check_pressed(global.ip_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
+       if(keyboard_check_pressed(vk_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
        {
           option_selected = 1; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -189,7 +189,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }
-       if(keyboard_check_pressed(global.ip_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
+       if(keyboard_check_pressed(vk_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
        {
           option_selected = 3; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -198,7 +198,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }       
-       if(keyboard_check_pressed(global.ip_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
+       if(keyboard_check_pressed(vk_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
        {
           option_selected = 2; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -207,7 +207,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }    
-       if(keyboard_check_pressed(global.ip_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
+       if(keyboard_check_pressed(vk_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
        {
           option_selected = 2; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -221,7 +221,7 @@
     else
     if(option_selected == 1)
     {
-       if(keyboard_check_pressed(global.ip_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
+       if(keyboard_check_pressed(vk_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
        {
           option_selected = 2; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -230,7 +230,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }
-       if(keyboard_check_pressed(global.ip_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
+       if(keyboard_check_pressed(vk_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
        {
           option_selected = 0;
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -239,7 +239,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);           
        }       
-       if(keyboard_check_pressed(global.ip_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
+       if(keyboard_check_pressed(vk_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
        {
           option_selected = 3; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -248,7 +248,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }      
-       if(keyboard_check_pressed(global.ip_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
+       if(keyboard_check_pressed(vk_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
        {
           option_selected = 3; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -261,7 +261,7 @@
     else 
     if(option_selected == 2)
     {
-       if(keyboard_check_pressed(global.ip_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
+       if(keyboard_check_pressed(vk_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
        {
           option_selected = 3; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -270,7 +270,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }
-       if(keyboard_check_pressed(global.ip_left) || (joy_hat_x(0) = -1) &amp;&amp; GMP.dpad_left == 0)
+       if(keyboard_check_pressed(vk_left) || (joy_hat_x(0) = -1) &amp;&amp; GMP.dpad_left == 0)
        {
           option_selected = 1; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -279,7 +279,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }       
-       if(keyboard_check_pressed(global.ip_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
+       if(keyboard_check_pressed(vk_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
        {
           option_selected = 0;
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -288,7 +288,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);           
        }    
-       if(keyboard_check_pressed(global.ip_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
+       if(keyboard_check_pressed(vk_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
        {
           option_selected = 0; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -301,7 +301,7 @@
     else     
     if(option_selected == 3)
     {
-       if(keyboard_check_pressed(global.ip_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
+       if(keyboard_check_pressed(vk_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
        {
           option_selected = 0;
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -310,7 +310,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);           
        }
-       if(keyboard_check_pressed(global.ip_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
+       if(keyboard_check_pressed(vk_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
        {
           option_selected = 2; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -319,7 +319,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }       
-       if(keyboard_check_pressed(global.ip_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
+       if(keyboard_check_pressed(vk_down) || (joy_hat_y(0) = 1 &amp;&amp; GMP.dpad_down == 0))
        {
           option_selected = 1; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -328,7 +328,7 @@
           }
           audio_play(_general_menu_bleep, global.sfx_volume);          
        }     
-       if(keyboard_check_pressed(global.ip_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
+       if(keyboard_check_pressed(vk_up) || (joy_hat_y(0) = -1 &amp;&amp; GMP.dpad_up == 0))
        {
           option_selected = 1; 
           if(audio_is_playing(_general_menu_bleep) == true)
@@ -365,7 +365,7 @@
     if(option_in_page == false &amp;&amp; option_change_mode == 0 &amp;&amp; option_change_timer == 0)
     {
     
-    if(keyboard_check_pressed(global.ip_button_b) || joy_pressed(0, global.dip_button_b))
+    if(keyboard_check_pressed(ord("S")) || joy_pressed(0, global.dip_button_b))
     {
        if(instance_exists(obj_menu_transition) == false)
        {

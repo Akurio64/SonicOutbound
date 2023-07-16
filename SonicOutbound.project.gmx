@@ -583,6 +583,7 @@
             <sprite>sprites\spr_slz_spring_e</sprite>
             <sprite>sprites\spr_slz_explosion</sprite>
             <sprite>sprites\spr_slz_trundull</sprite>
+            <sprite>sprites\spr_slz_metal</sprite>
           </sprites>
           <sprites name="HSZ">
             <sprite>sprites\spr_hsz_bouncer_body</sprite>
@@ -1783,6 +1784,7 @@
             <object>objects\obj_slz_bomb_2</object>
             <object>objects\obj_slz_spring_e</object>
             <object>objects\obj_slz_trundull</object>
+            <object>objects\obj_slz_metal</object>
           </objects>
           <object>objects\obj_badnik_block</object>
           <objects name="Projectiles">

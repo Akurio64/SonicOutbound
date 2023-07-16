@@ -1209,6 +1209,9 @@
     <instance objName="obj_monitor_rings" x="11616" y="795" name="inst_E330DF88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rings" x="11584" y="795" name="inst_E05E646F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_trundull" x="384" y="638" name="inst_4779662D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_metal" x="1248" y="464" name="inst_FBE5FDB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="1168" y="448" name="inst_81E2A76A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="2064" y="848" name="inst_8BBF0A1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz_act1_1" x="12282" y="1611" w="256" h="256" xo="273" yo="8" id="10004152" name="inst_6929E005" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -80,7 +80,7 @@
             <string>/// Movement.
 
  // Exit the level select screen.
-    if(keyboard_check_pressed(global.ip_button_b) || keyboard_check_pressed(global.dip_button_b))
+    if(keyboard_check_pressed(vk_button_b) || keyboard_check_pressed(global.dip_button_b))
     {
        if(instance_exists(obj_fade_to) == false)
        {
@@ -92,7 +92,7 @@
     }
     
  // Change stage / act index.
-    if(keyboard_check_pressed(global.ip_right))
+    if(keyboard_check_pressed(vk_right))
     {
        {
           if(lvlselect_zone != lvlselect_zone_end)
@@ -105,7 +105,7 @@
           }        
        }
     }
-    if(keyboard_check_pressed(global.ip_left))
+    if(keyboard_check_pressed(vk_left))
     {
        {
           if(lvlselect_zone != 1)
@@ -120,7 +120,7 @@
     }    
     
  // Play stage.
-    if(keyboard_check_pressed(global.ip_button_a) || keyboard_check_pressed(global.ip_button_s) || keyboard_check_pressed(global.dip_button_a) || keyboard_check_pressed(global.ip_button_s))
+    if(keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(global.dip_button_a) || keyboard_check_pressed(vk_enter))
     {  
        if(instance_exists(obj_fade_to) == false)
        {

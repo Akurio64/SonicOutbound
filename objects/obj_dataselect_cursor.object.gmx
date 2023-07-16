@@ -70,7 +70,7 @@
     if(datacursor_direction == 0 &amp;&amp; datacursor_allow_movement == true)
     {
        // Move to the right.
-          if(datacursor_slot_index != 9 &amp;&amp; keyboard_check_pressed(global.ip_right))
+          if(datacursor_slot_index != 9 &amp;&amp; keyboard_check_pressed(vk_right))
           {
              datacursor_x           = x;
              datacursor_direction   = 1;
@@ -81,7 +81,7 @@
        // Move to the left.
           if(obj_dataselect_robotnik.state == "idle" &amp;&amp; obj_dataselect_robotnik.active == false)
           {
-             if(datacursor_slot_index != 0 &amp;&amp; keyboard_check_pressed(global.ip_left))
+             if(datacursor_slot_index != 0 &amp;&amp; keyboard_check_pressed(vk_left))
              {
                 datacursor_x           =  x;
                 datacursor_direction   = -1;
@@ -92,7 +92,7 @@
           else
           if(obj_dataselect_robotnik.state == "idle" &amp;&amp; obj_dataselect_robotnik.active == true)
           {
-             if(datacursor_slot_index != 1 &amp;&amp; keyboard_check_pressed(global.ip_left))
+             if(datacursor_slot_index != 1 &amp;&amp; keyboard_check_pressed(vk_left))
              {
                 datacursor_x           =  x;
                 datacursor_direction   = -1;
@@ -145,7 +145,7 @@
  // Set global save.
     global.save_selected = datacursor_slot_index;
     
-    if instance_exists(par_menu_1)=false{if(keyboard_check_pressed(global.ip_button_b) || (joy_pressed(0, global.dip_button_b)))
+    if instance_exists(par_menu_1)=false{if(keyboard_check_pressed(ord("S")) || (joy_pressed(0, global.dip_button_b)))
        {
            with(instance_create(0, 0, obj_fade_to))
            {

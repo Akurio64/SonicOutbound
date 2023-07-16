@@ -70,7 +70,7 @@
     if(menu_selection_freeze == 0)
     {
        // When pressing left...
-          if(keyboard_check_pressed(global.ip_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
+          if(keyboard_check_pressed(vk_left) || (joy_hat_x(0) = -1 &amp;&amp; GMP.dpad_left == 0))
           {
              if(menu_selection == 0)
              {
@@ -91,7 +91,7 @@
           }
     
        // When pressing right...
-          if(keyboard_check_pressed(global.ip_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
+          if(keyboard_check_pressed(vk_right) || (joy_hat_x(0) = 1 &amp;&amp; GMP.dpad_right == 0))
           {
              if(menu_selection == 3)
              {
@@ -127,7 +127,7 @@
  // Menu Selection:
     if(menu_selection_freeze == 0)
     {
-       if(keyboard_check_pressed(global.ip_button_a) || (joy_pressed(0, global.dip_button_a)))
+       if(keyboard_check_pressed(ord("A")) || (joy_pressed(0, global.dip_button_a)))
        {
           switch(menu_selection)
           {
@@ -204,7 +204,7 @@
     
     
     
-    if !instance_exists(obj_m_menu_options){if(keyboard_check_pressed(global.ip_button_b) || (joy_pressed(0, global.dip_button_b)))
+    if !instance_exists(obj_m_menu_options){if(keyboard_check_pressed(ord("S")) || (joy_pressed(0, global.dip_button_b)))
        {
        with(instance_create(0, 0, obj_fade_to))
 {
