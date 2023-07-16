@@ -30,7 +30,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 
@@ -61,7 +61,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 
@@ -92,7 +92,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 
@@ -123,7 +123,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 
@@ -154,7 +154,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15;
@@ -185,7 +185,7 @@
            {    
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15;
@@ -216,7 +216,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a))
+                  if(keyboard_check_pressed(vk_enter))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 
@@ -247,7 +247,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a) && (joy_count() > 0))
+                  if(keyboard_check_pressed(vk_enter) && (joy_count() > 0))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15;                     
@@ -281,7 +281,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a) && (joy_count() > 0))
+                  if(keyboard_check_pressed(vk_enter) && (joy_count() > 0))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 
@@ -314,7 +314,7 @@
            {
                if(option_change_mode == 0 && option_change_timer == 0)
                {
-                  if(keyboard_check_pressed(global.ip_button_a) && (joy_count() > 0))
+                  if(keyboard_check_pressed(vk_enter) && (joy_count() > 0))
                   {
                      option_change_mode  = 1;
                      option_change_timer = 15; 

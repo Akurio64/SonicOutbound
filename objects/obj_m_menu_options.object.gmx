@@ -515,7 +515,7 @@
     //draw_sprite(spr_s_menu_selection_options, option_selected, floor(view_xview+view_wview/2-sprite_get_width(spr_s_menu_selection_options)/2), view_yview-240+_y+8);
         
  // Change page.
-    if(keyboard_check_pressed(global.ip_button_a) || joy_pressed(0, global.dip_button_a)) 
+    if(keyboard_check_pressed(ord("A")) || joy_pressed(0, global.dip_button_a)) 
     {
        if(option_in_page == false)
        {
@@ -529,7 +529,7 @@
           audio_play(_general_menu_accept, global.sfx_volume);         
        }
     }
-    if(keyboard_check_pressed(global.ip_button_b) || joy_pressed(0, global.dip_button_b)) 
+    if(keyboard_check_pressed(ord("S")) || joy_pressed(0, global.dip_button_b)) 
     {
        if(option_in_page == true &amp;&amp; option_change_mode == 0 &amp;&amp; option_change_timer == 0)  
        {  

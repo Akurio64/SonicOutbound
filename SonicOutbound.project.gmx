@@ -2272,7 +2272,6 @@
       <object>objects\_MENU_README_</object>
       <objects name="Main Menu">
         <object>objects\par_menu_0</object>
-        <object>objects\obj_m_menu_create</object>
         <object>objects\obj_m_menu_background</object>
         <object>objects\obj_m_ls_background</object>
         <object>objects\obj_m_menu_selection</object>
@@ -2282,6 +2281,7 @@
       <objects name="Settings Menu">
         <object>objects\par_menu_1</object>
         <object>objects\obj_m_menu_options</object>
+        <object>objects\obj_m_menu_create</object>
       </objects>
       <objects name="Credits">
         <object>objects\obj_m_credits</object>
