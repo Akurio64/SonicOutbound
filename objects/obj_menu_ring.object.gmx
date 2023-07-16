@@ -204,13 +204,7 @@ y = (ystart + lengthdir_y(3, current_time*0.1))
                 }
                 if choice=1
                 {
-                     if(instance_exists(obj_fade_to) == false)
-                     {
-                        with(instance_create(0, 0, obj_fade_to))
-                        {
-                             fade_to = -1;
-                        }
-                     }
+                     game_end()
                      
                 }       
                 if choice=2

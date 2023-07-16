@@ -130,7 +130,7 @@
           if(obj_dataselect_robotnik.active == false)
           {
              // If we press Action or Start, start a new game, resume it or go to the level select.
-                if(keyboard_check_pressed(global.ip_button_a) || keyboard_check_pressed(global.ip_button_s) || keyboard_check_pressed(global.dip_button_a) || keyboard_check_pressed(global.ip_button_s))
+                if(keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(global.dip_button_a) || keyboard_check_pressed(vk_enter))
                 {
                    // New game:
                       if(dataslot_zone == 0)

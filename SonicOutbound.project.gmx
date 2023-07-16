@@ -584,6 +584,10 @@
             <sprite>sprites\spr_slz_explosion</sprite>
             <sprite>sprites\spr_slz_trundull</sprite>
             <sprite>sprites\spr_slz_metal</sprite>
+            <sprite>sprites\spr_slz_metal_fire</sprite>
+            <sprite>sprites\spr_slz_metal_turn</sprite>
+            <sprite>sprites\spr_slz_fan_bad</sprite>
+            <sprite>sprites\spr_slz_fan_bad_hand</sprite>
           </sprites>
           <sprites name="HSZ">
             <sprite>sprites\spr_hsz_bouncer_body</sprite>
@@ -1785,6 +1789,7 @@
             <object>objects\obj_slz_spring_e</object>
             <object>objects\obj_slz_trundull</object>
             <object>objects\obj_slz_metal</object>
+            <object>objects\obj_slz_fan_bad</object>
           </objects>
           <object>objects\obj_badnik_block</object>
           <objects name="Projectiles">

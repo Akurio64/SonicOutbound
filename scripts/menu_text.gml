@@ -19,6 +19,7 @@ if argument0=0
         "Geometry Dash  is the best mobile game ever",
         "Meta had enough of being redesigned",
         '"'+"Long time no see!!!!!."+'" +10000 sins',
+        "I have committed several war crimes in Serbia",
         
         //Plasmariel
         
@@ -47,12 +48,12 @@ if argument0=0
         
         //Suds
         
-        "All Toasters Toast Toast!",
-        "It's a Stone Luigi, You Didn't Make It.",
+        "All toasters toast toast!",
+        "It's a stone Luigi, you didn't make it.",
         "Work that sucker to death, come on now! Work that sucker to death!",
-        "Suds Was Here",
+        "Suds was here",
         "Me? Gongaga.",
-        "Wii Play. Do You? Is that a threat?",
+        "Wii Play. Do you? Is that a threat?",
         "And then there's Chunky, He's dead.",
         "First of all I am Vegeta. Second of all you're not Vegeta. Third of all you wanna be Vegeta but you can't be Vegeta because I'm Vegeta.",
         "YOU MIGHT KNOW EVERYTHING I'M GOING TO DO, BUT THATS NOT GOING TO HELP YOU SINCE I KNOW EVERYTHING YOUR GOING TO DO! STRANGE ISN'T IT???",
