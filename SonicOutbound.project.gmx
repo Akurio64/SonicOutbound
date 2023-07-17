@@ -843,6 +843,7 @@
             <sprite>sprites\spr_spz_tower</sprite>
             <sprite>sprites\spr_spz_bicycle</sprite>
             <sprite>sprites\spr_spz_bicycle_wheel</sprite>
+            <sprite>sprites\spr_spz_circle_quart</sprite>
           </sprites>
         </sprites>
         <sprites name="Penalty">
@@ -2041,6 +2042,7 @@
             <object>objects\obj_spz_roller</object>
             <object>objects\obj_spz_tower</object>
             <object>objects\obj_spz_bicycle</object>
+            <object>objects\obj_spz_circle_quart</object>
           </objects>
         </objects>
         <objects name="Penalty">
@@ -2314,6 +2316,7 @@
       <object>objects\obj_fire_particules2</object>
       <object>objects\obj_wind_particule2</object>
       <object>objects\obj_elec_particules2</object>
+      <object>objects\obj_bubble_particules</object>
       <object>objects\obj_rain</object>
       <object>objects\obj_wind</object>
     </objects>

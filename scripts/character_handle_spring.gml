@@ -241,6 +241,59 @@
                 audio_play(_general_spring, global.sfx_volume);               
           }           
        }
+       
+       // DOWN RIGHT:
+       if(_dspring.spring_direction == SP_DOWN_RIGHT)
+       {
+          if((character_collision_check(COL_BOTTOM_OBJECT, MASK_LARGE, x, y, angle, _dspring) && y_speed >= 0) or (character_collision_check(COL_LEFT_OBJECT, MASK_BIG, x, y, angle, _dspring) && x_speed <= 0))
+          {
+             // Bounce the character.
+                ground              = false;
+                x_speed             =  _dspring.spring_strength;
+                y_speed             =  _dspring.spring_strength;
+                animation_direction = 1;                
+                character_set_angle(0);
+
+                
+             // Set State:
+                state = CS_SPRING_DIAGONAL;  
+             
+             // Disable shield flag.
+                shield_usable = false;
+                
+             // Animate.
+                _dspring.image_speed = 0.5;
+                
+             // Sound:            
+                audio_play(_general_spring, global.sfx_volume);               
+          }           
+       }
+       
+       // UP LEFT:
+       if(_dspring.spring_direction == SP_DOWN_LEFT)
+       {
+          if((character_collision_check(COL_BOTTOM_OBJECT, MASK_LARGE, x, y, angle, _dspring) && y_speed >= 0) or (character_collision_check(COL_RIGHT_OBJECT, MASK_BIG, x, y, angle, _dspring) && x_speed <= 0))
+          {
+             // Bounce the character.
+                ground              = false;
+                x_speed             = -_dspring.spring_strength;
+                y_speed             =  _dspring.spring_strength;
+                animation_direction = -1;    
+                character_set_angle(0);
+                
+             // Set State:
+                state = CS_SPRING_DIAGONAL;  
+             
+             // Disable shield flag.
+                shield_usable = false;
+                
+             // Animate.
+                _dspring.image_speed = 0.5;
+                
+             // Sound:            
+                audio_play(_general_spring, global.sfx_volume);               
+          }           
+       }
     }
     
     // Spring handle:

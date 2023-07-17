@@ -937,11 +937,11 @@ part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaus
     }   
     
  // Spring.
-    if(state == CS_SPRING_DIAGONAL &amp;&amp; y_speed &lt;= 0)
+    if(state == CS_SPRING_DIAGONAL)
     {
        if(animation_index != "SPRING") { animation_index = "SPRING"; }
     }
-    else if(state == CS_SPRING_DIAGONAL &amp;&amp; y_speed &gt; 0)    
+    else if(state == CS_SPRING_DIAGONAL)    
     {
        if(animation_index != "WALK") { animation_index = "WALK"; }    
     }    
