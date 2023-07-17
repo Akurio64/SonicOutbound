@@ -70,7 +70,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_alpha!=0{
+            <string>if fade!=0{
 
 with(instance_create(x+8*sprite_direction, y-24, obj_hsz_turtle_bomb))
     {
