@@ -597,6 +597,10 @@
             <sprite>sprites\spr_hsz_liftor</sprite>
             <sprite>sprites\spr_hsz_dolphin_2</sprite>
             <sprite>sprites\spr_hsz_bouncer_spring</sprite>
+            <sprite>sprites\spr_hsz_turtle</sprite>
+            <sprite>sprites\spr_hsz_turtle_turn</sprite>
+            <sprite>sprites\spr_hsz_turtle_legs</sprite>
+            <sprite>sprites\spr_hsz_fire</sprite>
           </sprites>
           <sprites name="Projectiles">
             <sprite>sprites\spr_coconut_projectile</sprite>
@@ -1233,6 +1237,7 @@
       <sprite>sprites\spr_continues</sprite>
     </sprites>
     <sprite>sprites\spr_characters</sprite>
+    <sprite>sprites\spr_hsz_turtle_bomb</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Parallax">
@@ -1806,7 +1811,9 @@
             <object>objects\obj_hsz_bouncer_1</object>
             <object>objects\obj_hsz_dolphin</object>
             <object>objects\obj_hsz_frog</object>
+            <object>objects\obj_hsz_turtle</object>
             <object>objects\obj_hsz_liftor</object>
+            <object>objects\obj_hsz_turtle_bomb</object>
           </objects>
           <objects name="SPZ">
             <object>objects\obj_spz_ridal_p</object>

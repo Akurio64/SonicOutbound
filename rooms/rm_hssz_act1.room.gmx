@@ -15,20 +15,20 @@
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
-    <isSet>0</isSet>
-    <w>0</w>
-    <h>0</h>
-    <showGrid>0</showGrid>
-    <showObjects>0</showObjects>
-    <showTiles>0</showTiles>
-    <showBackgrounds>0</showBackgrounds>
-    <showForegrounds>0</showForegrounds>
+    <isSet>-1</isSet>
+    <w>1928</w>
+    <h>1053</h>
+    <showGrid>-1</showGrid>
+    <showObjects>-1</showObjects>
+    <showTiles>-1</showTiles>
+    <showBackgrounds>-1</showBackgrounds>
+    <showForegrounds>-1</showForegrounds>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
-    <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>0</xoffset>
-    <yoffset>0</yoffset>
+    <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
+    <page>1</page>
+    <xoffset>23683</xoffset>
+    <yoffset>269</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -126,20 +126,17 @@
     <instance objName="obj_surf_rock" x="8960" y="704" name="inst_EF26B357" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_surfing_ground" x="10544" y="480" name="inst_E01E7EFF" locked="0" code="end_s=true&#xA;" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_glider" x="10528" y="512" name="inst_4A22C591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid_terrain_00" x="12128" y="528" name="inst_7C04519A" locked="0" code="" scaleX="43.4285697937012" scaleY="15.4899997711182" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_bungee" x="14928" y="528" name="inst_57A02110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid_terrain_00" x="12128" y="464" name="inst_7C04519A" locked="0" code="" scaleX="70.25" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_beach_ball" x="10096" y="576" name="inst_18E16DEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hsz_elastic" x="14160" y="464" name="inst_253E6BDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="13136" y="432" name="inst_F9022D1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="12944" y="432" name="inst_A78C3329" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hsz_vine" x="12784" y="432" name="inst_9D047852" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_zipline" x="14800" y="400" name="inst_4559585C" locked="0" code="ex=16720&#xA;ey=848&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_zipline" x="10960" y="1712" name="inst_C1785B6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid_terrain_00" x="12128" y="496" name="inst_30C28EC6" locked="0" code="" scaleX="70.25" scaleY="15.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character" x="16576" y="480" name="inst_C656A17E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="12192" y="432" name="inst_C656A17E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_camera" x="17584" y="416" name="inst_237CD79A" locked="0" code="boss_id=obj_miniboss_1&#xA;mode=0&#xA;boss_x=x+320&#xA;boss_y=y+108&#xA;cutscene=false&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_run_terrain" x="16624" y="464" name="inst_CF828C0E" locked="0" code="" scaleX="66.5" scaleY="10.5" colour="4294967295" rotation="0"/>
     <instance objName="goal_ground" x="17040" y="464" name="inst_B1FAE62F" locked="0" code="" scaleX="30.5" scaleY="9.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="12416" y="432" name="inst_4693F5DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_badnik_block" x="12720" y="432" name="inst_43BDDFC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hsz_turtle" x="12560" y="432" name="inst_34840AF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_hsz_sand" x="0" y="556" w="128" h="128" xo="1172" yo="130" id="10004517" name="inst_02930D07" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
