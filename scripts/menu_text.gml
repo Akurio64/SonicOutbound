@@ -7,7 +7,7 @@ if argument0=0
         choose
         (
         
-        //Akurio
+        //Akurio64
         
         "This is Sonic Mania 2",
         "Who even reads this?",
@@ -20,7 +20,18 @@ if argument0=0
         "Meta had enough of being redesigned",
         '"'+"Long time no see!!!!!."+'" +10000 sins',
         "I have committed several war crimes in Serbia",
-        
+        "I'm gay for you, and you're gay for me.",
+        "Spiderman, why you gay for that guy?",
+        "Miles, the BLAACK one!!!",
+        "YouTubers after getting 1 million subscribers: I love diddling little children.",
+        "The professional cheesy-ass messages you might receive are from Plasmariel",
+        "My name is Akurio64, but you can call me the Programmer.",
+        "I wrote like seven meessages in on trip to Niagara Falls.",
+        "I seriously made free advertisement for Robtop by Geometry Dash",
+        "Me holding Suds and Comical at gunpoint (they don't make 1 million levels per second)",
+        "Fun fact: There is an actual lore for Sonic Outbound. There will be a comic series soon",
+        "Not everyone needs to be fucking Super.",
+       
         //Plasmariel
         
         "Hop in! Time for a brand new Sonic the Hedgehog adventure!",
@@ -61,7 +72,7 @@ if argument0=0
         
         //Other
         
-        "Welcome To The Sonic Mania 2 But Good", //ShyDev
+        "Welcome to the Sonic Mania 2 but good", //ShyDev
         "Yeast- I love it", //Dimiotis
         "Deez nuts", //Saph
         "YOU ARE OUR LUCKY WINNER! PRESS ALT AND F4 AT THE SAME TIME TO WIN 1 MILLION DOLLARS!", //Topaz

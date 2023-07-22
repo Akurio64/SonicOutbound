@@ -101,7 +101,7 @@ hurt2.y=y}else{hurt1.x=par_character.x+424;hurt2.x=par_character.x+424}
 y=clamp(y,STG.zone_water_position,room_height)
 image_xscale=sign(x-par_character.x)
 
-if distance_to_object&gt;128{hurt=false}
+if distance_to_object(par_character)&gt;128{hurt=false}
 </string>
           </argument>
         </arguments>

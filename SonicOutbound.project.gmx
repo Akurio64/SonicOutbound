@@ -850,6 +850,9 @@
             <sprite>sprites\spr_spz_bicycle</sprite>
             <sprite>sprites\spr_spz_bicycle_wheel</sprite>
             <sprite>sprites\spr_spz_circle_quart</sprite>
+            <sprites name="SPZ2">
+              <sprite>sprites\spr_spz2_hurt_train</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Penalty">
@@ -2048,6 +2051,9 @@
             <object>objects\obj_spz_turbine</object>
             <object>objects\obj_spz_pendulum</object>
             <object>objects\obj_spz_destroy</object>
+            <objects name="SPZ2">
+              <object>objects\obj_spz2_hurt_train</object>
+            </objects>
             <object>objects\obj_spz_roller</object>
             <object>objects\obj_spz_tower</object>
             <object>objects\obj_spz_bicycle</object>

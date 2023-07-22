@@ -12,7 +12,7 @@ The Team:
 
 Lead programmer and director: Akurio64
 Lead musician and director: Plasmariel
-Level designer: Comical
+Level designer: Comical and Suds
 
 Special thanks to:
 
