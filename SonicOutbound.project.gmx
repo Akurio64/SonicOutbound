@@ -1200,6 +1200,7 @@
         <sprite>sprites\spr_spz_loop_1</sprite>
         <sprite>sprites\spr_spz_loop_0</sprite>
         <sprite>sprites\spr_spz_loop_2</sprite>
+        <sprite>sprites\spz_hsz_1</sprite>
       </sprites>
       <sprites name="Custom Breakable Wall">
         <sprite>sprites\spr_slz_break_wall</sprite>
@@ -2279,6 +2280,7 @@
           <object>objects\obj_spz_loop_1</object>
           <object>objects\obj_spz_col_1</object>
           <object>objects\obj_spz_loop_0</object>
+          <object>objects\obj_hsz_1</object>
         </objects>
         <objects name="Custom Breakable Walls">
           <object>objects\obj_slz_break_wall</object>
