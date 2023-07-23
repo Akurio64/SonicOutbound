@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1792</w>
-    <h>1002</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>73</xoffset>
-    <yoffset>320</yoffset>
+    <page>2</page>
+    <xoffset>3069</xoffset>
+    <yoffset>937</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -166,25 +166,25 @@
     <instance objName="obj_ring" x="1200" y="2192" name="inst_F8690A81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
+    <tile bgName="tls_hsz_sand" x="7344" y="2088" w="128" h="128" xo="1172" yo="132" id="10007860" name="inst_309DB53A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7472" y="2088" w="128" h="128" xo="1172" yo="132" id="10007861" name="inst_665A3F1D" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7216" y="2088" w="128" h="128" xo="1172" yo="132" id="10007864" name="inst_8676E57A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7088" y="2088" w="128" h="128" xo="1172" yo="132" id="10007865" name="inst_517DD4B5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="6832" y="2088" w="128" h="128" xo="1172" yo="132" id="10007866" name="inst_9E770B78" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="6448" y="2088" w="128" h="128" xo="1172" yo="132" id="10007867" name="inst_4DF2512F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="6576" y="2088" w="128" h="128" xo="1172" yo="132" id="10007868" name="inst_D460E9C8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="6704" y="2088" w="128" h="128" xo="1172" yo="132" id="10007869" name="inst_53C76B5B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7088" y="2464" w="128" h="128" xo="1172" yo="132" id="10007870" name="inst_C9FB21C8" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7344" y="2560" w="128" h="128" xo="1172" yo="132" id="10007871" name="inst_4CEE8D41" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7216" y="2464" w="128" h="128" xo="1172" yo="132" id="10007872" name="inst_9F1A1DFA" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7472" y="2560" w="128" h="128" xo="1172" yo="132" id="10007873" name="inst_AF4EBEC5" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7600" y="2560" w="128" h="128" xo="1172" yo="132" id="10007874" name="inst_DE2B1C4B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7712" y="2504" w="128" h="128" xo="1172" yo="2" id="10007876" name="inst_A42CFB10" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_hsz_sand" x="7600" y="2120" w="128" h="128" xo="652" yo="262" id="10007883" name="inst_5FC1B383" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_sand" x="7344" y="2000" w="128" h="128" xo="2" yo="132" id="10007850" name="inst_81DDEB2C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_sand" x="7344" y="1872" w="128" h="128" xo="2" yo="2" id="10007851" name="inst_D3A95FB9" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_sand" x="7472" y="1872" w="128" h="128" xo="132" yo="2" id="10007852" name="inst_7EB7AB9B" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_hsz_sand" x="7472" y="2000" w="128" h="128" xo="132" yo="132" id="10007853" name="inst_3B4ACAE6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7344" y="2088" w="128" h="128" xo="1172" yo="132" id="10007860" name="inst_309DB53A" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7472" y="2088" w="128" h="128" xo="1172" yo="132" id="10007861" name="inst_665A3F1D" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7216" y="2088" w="128" h="128" xo="1172" yo="132" id="10007864" name="inst_8676E57A" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7088" y="2088" w="128" h="128" xo="1172" yo="132" id="10007865" name="inst_517DD4B5" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="6832" y="2088" w="128" h="128" xo="1172" yo="132" id="10007866" name="inst_9E770B78" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="6448" y="2088" w="128" h="128" xo="1172" yo="132" id="10007867" name="inst_4DF2512F" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="6576" y="2088" w="128" h="128" xo="1172" yo="132" id="10007868" name="inst_D460E9C8" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="6704" y="2088" w="128" h="128" xo="1172" yo="132" id="10007869" name="inst_53C76B5B" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7088" y="2464" w="128" h="128" xo="1172" yo="132" id="10007870" name="inst_C9FB21C8" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7344" y="2560" w="128" h="128" xo="1172" yo="132" id="10007871" name="inst_4CEE8D41" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7216" y="2464" w="128" h="128" xo="1172" yo="132" id="10007872" name="inst_9F1A1DFA" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7472" y="2560" w="128" h="128" xo="1172" yo="132" id="10007873" name="inst_AF4EBEC5" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7600" y="2560" w="128" h="128" xo="1172" yo="132" id="10007874" name="inst_DE2B1C4B" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7712" y="2504" w="128" h="128" xo="1172" yo="2" id="10007876" name="inst_A42CFB10" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_hsz_sand" x="7600" y="2120" w="128" h="128" xo="652" yo="262" id="10007883" name="inst_5FC1B383" depth="-2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>792</xoffset>
-    <yoffset>808</yoffset>
+    <xoffset>-61</xoffset>
+    <yoffset>224</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -55,13 +55,13 @@
     <instance objName="obj_aehz_collision_00_o" x="0" y="1200" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="1024" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax_spz2" x="16" y="1024" name="inst_957CBABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_base" x="1392" y="1136" name="inst_9942C072" locked="0" code="my_cart=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="816" y="1136" name="inst_D3FCCE46" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="624" y="1136" name="inst_EBDCEB7F" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="432" y="1136" name="inst_5C1EFD34" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="240" y="1136" name="inst_4EBE73B5" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="1008" y="1136" name="inst_F98BE61F" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="1200" y="1136" name="inst_F9D67B81" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_base" x="1392" y="1136" name="inst_9942C072" locked="0" code="train=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="816" y="1136" name="inst_D3FCCE46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="624" y="1136" name="inst_EBDCEB7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="432" y="1136" name="inst_5C1EFD34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="240" y="1136" name="inst_4EBE73B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="1008" y="1136" name="inst_F98BE61F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="1200" y="1136" name="inst_F9D67B81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_gun" x="816" y="1152" name="inst_915B73E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_tower" x="608" y="1168" name="inst_29E5019F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

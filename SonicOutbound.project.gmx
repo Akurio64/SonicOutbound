@@ -78,6 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
+    <extension index="2">extensions\Extension3</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -851,6 +852,8 @@
             <sprite>sprites\spr_spz_circle_quart</sprite>
             <sprites name="SPZ2">
               <sprite>sprites\spr_spz2_hurt_train</sprite>
+              <sprite>sprites\spr_spz2_train_base</sprite>
+              <sprite>sprites\spr_spz2_train_cart</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -2054,6 +2057,8 @@
             <object>objects\obj_spz_destroy</object>
             <objects name="SPZ2">
               <object>objects\obj_spz2_hurt_train</object>
+              <object>objects\obj_spz2_train_cart</object>
+              <object>objects\obj_spz2_train_base</object>
             </objects>
             <object>objects\obj_spz_roller</object>
             <object>objects\obj_spz_tower</object>
