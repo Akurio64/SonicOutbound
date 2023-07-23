@@ -806,15 +806,14 @@
             <sprite>sprites\spr_waterslide2</sprite>
             <sprite>sprites\spr_hsz_elastic_head</sprite>
             <sprite>sprites\spr_hsz_coco_tree</sprite>
-            <sprite>sprites\spr_hsz_wrecking</sprite>
             <sprite>sprites\spr_sonic_surf</sprite>
             <sprites name="Surfing">
-              <sprite>sprites\spr_surfing_ground</sprite>
               <sprite>sprites\spr_surf_sea</sprite>
               <sprite>sprites\spr_surf_rock</sprite>
               <sprite>sprites\spr_surf_wave</sprite>
               <sprite>sprites\spr_hsz_surf</sprite>
               <sprite>sprites\spr_surfing_ground_m</sprite>
+              <sprite>sprites\spr_surfing_ground</sprite>
             </sprites>
             <sprite>sprites\spr_hsz_minib_p</sprite>
           </sprites>
@@ -2036,6 +2035,7 @@
             <object>objects\obj_hsz_vine</object>
             <objects name="Surfing">
               <object>objects\obj_surfing_ground</object>
+              <object>objects\object444</object>
               <object>objects\obj_surf_wave</object>
               <object>objects\obj_sonic_surf</object>
               <object>objects\obj_surf_rock</object>

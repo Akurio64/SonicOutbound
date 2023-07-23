@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// initialize movement mechanics
-hmspd=5; // maxium speed
+hmspd=6; // maxium speed
 vmspd=1.5; // maxium speed
-hspd=0; // current direction player is moving (-1 left, 0 none, 1 right)
+hspd=par_character.hspeed; // current direction player is moving (-1 left, 0 none, 1 right)
 accl=.250; // the ammount per step to increment speed by until maximum is reached
 hdir=0; // current horizontal direction player is moving
 vspd=0; // current direction player is moving (-1 left, 0 none, 1 right)
@@ -174,8 +174,8 @@ y=clamp(y,sea.y,sea.y+sea.sprite_height-32)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if dead=false{hspeed=image_xscale*4}
-audio_play(_general_water,global.sfx_volume)
+            <string>if dead=false{hspeed=image_xscale*4
+audio_play(_general_water,global.sfx_volume)}
 
 up=-keyboard_check(vk_up);
 down=keyboard_check(vk_down);
@@ -196,7 +196,7 @@ if hit=true{
 
 }  
 else{
-    hmspd=5;
+    hmspd=6;
     vmspd=1.5
 }
 
