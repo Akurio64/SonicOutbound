@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
-    <h>600</h>
+    <w>1936</w>
+    <h>1056</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>792</xoffset>
-    <yoffset>808</yoffset>
+    <xoffset>1740</xoffset>
+    <yoffset>682</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -55,15 +55,31 @@
     <instance objName="obj_aehz_collision_00_o" x="0" y="1200" name="inst_8D5CB486" locked="0" code="" scaleX="135" scaleY="3.09677410125732" colour="4294967295" rotation="0"/>
     <instance objName="ctr_level" x="0" y="1024" name="inst_7D3F9438" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_parallax_spz2" x="16" y="1024" name="inst_957CBABE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_base" x="1392" y="1136" name="inst_9942C072" locked="0" code="my_cart=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="816" y="1136" name="inst_D3FCCE46" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="624" y="1136" name="inst_EBDCEB7F" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="432" y="1136" name="inst_5C1EFD34" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="240" y="1136" name="inst_4EBE73B5" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="1008" y="1136" name="inst_F98BE61F" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz2_train_cart" x="1200" y="1136" name="inst_F9D67B81" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz_gun" x="816" y="1152" name="inst_915B73E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz_tower" x="608" y="1168" name="inst_29E5019F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_base" x="2224" y="1136" name="inst_9942C072" locked="0" code="my_cart=1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="1440" y="1136" name="inst_F98BE61F" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart" x="1248" y="1136" name="inst_F9D67B81" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_gun" x="512" y="1072" name="inst_915B73E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_collision" x="160" y="1040" name="inst_040D54A4" locked="0" code="my_base=1&#xA;" scaleX="67.5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_stop" x="3824" y="1088" name="inst_FE5CA329" locked="0" code="" scaleX="3" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="224" y="1104" name="inst_4F542DDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="256" y="1136" name="inst_266BB480" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="256" y="1104" name="inst_3A29E626" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="256" y="1072" name="inst_DCB9FCB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="928" y="1136" name="inst_42A83499" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="1856" y="1136" name="inst_8BE54F50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="1184" y="1136" name="inst_9EC7FA95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32_2" x="192" y="1136" name="inst_1E596609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_64_2" x="320" y="1168" name="inst_7DB97D9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_spz_box_96" x="1216" y="1072" name="inst_30CA0CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_2" x="912" y="1136" name="inst_A521380A" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_2" x="1632" y="1136" name="inst_D5B72724" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_box_32" x="1424" y="1136" name="inst_5E1045A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_x2" x="256" y="1136" name="inst_621DDDD0" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_x2" x="512" y="1136" name="inst_EB0BC673" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_x05" x="768" y="1136" name="inst_0FB0EFD9" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_x05" x="1104" y="1136" name="inst_877FADFA" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_2_x2" x="1824" y="1136" name="inst_AED63EC1" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz2_train_cart_2_x05" x="2080" y="1136" name="inst_A2CE906C" locked="0" code="my_base=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz" x="0" y="1200" w="128" h="128" xo="0" yo="80" id="10007770" name="inst_2BD2CC29" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
