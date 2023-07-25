@@ -79,6 +79,7 @@
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
     <extension index="2">extensions\Extension3</extension>
+    <extension index="3">extensions\Extension1</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -612,6 +613,7 @@
           <sprites name="SPZ">
             <sprite>sprites\spr_spz_ridal_e</sprite>
             <sprite>sprites\spr_spz_ridal_p</sprite>
+            <sprite>sprites\spr_cd_mosqui</sprite>
             <sprite>sprites\spr_spz_moto</sprite>
             <sprites name="Destruction Trio">
               <sprite>sprites\spr_destruction_trio</sprite>
@@ -1848,8 +1850,10 @@
             <object>objects\obj_spz_splats</object>
             <object>objects\obj_spz_ridal_e</object>
             <object>objects\obj_spz_moto</object>
+            <object>objects\obj_cd_mosqui</object>
             <object>objects\obj_destruction_trio_1</object>
             <object>objects\obj_spz_gun</object>
+            <object>objects\obj_spz_box_badnik</object>
           </objects>
           <object>objects\obj_hurt</object>
           <object>objects\obj_bg_enemy</object>

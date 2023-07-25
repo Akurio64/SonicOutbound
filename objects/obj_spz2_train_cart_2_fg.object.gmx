@@ -53,15 +53,18 @@ fade=1
             <kind>1</kind>
             <string>if position_meeting(par_character.x,par_character.y,id)
     {
-        if fade&gt;0
+        if par_character.state!=CS_DEATH
             {
-                fade-=0.1
-                }
-            }
-        else if fade&lt;1
-            {
-                fade+=0.1
-                }
+                if fade&gt;0
+                    {
+                        fade-=0.1
+                        }
+                    }
+                else if fade&lt;1
+                    {
+                        fade+=0.1
+                        }
+                    }
             
 bg.image_xscale=image_xscale
 bg.image_yscale=image_yscale

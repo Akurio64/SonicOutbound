@@ -36,7 +36,6 @@
 
   // Deactivate instances for (M) Region:
      instance_deactivate_object(obj_ring);
-     instance_deactivate_object(par_badnik);
  
   // Objects. (M Region)
      var character;  
