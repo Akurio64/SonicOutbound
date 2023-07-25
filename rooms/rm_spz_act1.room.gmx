@@ -28,8 +28,8 @@ variant=3</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-390</xoffset>
-    <yoffset>-558</yoffset>
+    <xoffset>12737</xoffset>
+    <yoffset>236</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -555,7 +555,6 @@ variant=3</code>
     <instance objName="obj_ring" x="7456" y="320" name="inst_72E4D9FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="7488" y="336" name="inst_9455A8CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="7520" y="368" name="inst_22130E8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz_moto" x="6816" y="368" name="inst_202C7FD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="6560" y="352" name="inst_BF83E859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_badnik_block" x="7056" y="352" name="inst_11A15183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_ridal_p" x="1184" y="816" name="inst_E7E8C327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -665,6 +664,7 @@ variant=3</code>
     <instance objName="obj_aehz_collision_17" x="6944" y="704" name="inst_CCC2D65D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rock_shield" x="3824" y="112" name="inst_12EF07FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rings" x="912" y="960" name="inst_5B5143D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spz_cart" x="6800" y="368" name="inst_20DC2CC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz" x="1472" y="640" w="128" h="128" xo="288" yo="944" id="10006593" name="inst_4576C432" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -183,7 +183,7 @@
        // Backout.
           if(state == "selection")
           {
-             if(keyboard_check_pressed(vk_right) || keyboard_check_pressed("S"))
+             if(keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("S")))
              {  
                  sign_index = 1;
                  state      = "spin";
