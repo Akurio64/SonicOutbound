@@ -861,20 +861,17 @@
                 <sprite>sprites\spr_spz_box_128</sprite>
                 <sprite>sprites\spr_spz_box_128_2</sprite>
               </sprites>
+              <sprites name="Train Carts">
+                <sprite>sprites\spr_spz2_train_base</sprite>
+                <sprite>sprites\spr_spz2_train_cart_1</sprite>
+                <sprite>sprites\spr_spz2_train_cart_2</sprite>
+                <sprite>sprites\spr_spz2_train_cart_3</sprite>
+                <sprite>sprites\spr_spz2_train_cart_4</sprite>
+                <sprite>sprites\spr_spz2_train_cart_2_bg</sprite>
+                <sprite>sprites\spr_spz2_train_cart_2_fg</sprite>
+                <sprite>sprites\spr_spz2_train_cart_2_fg_preview</sprite>
+              </sprites>
               <sprite>sprites\spr_spz2_hurt_train</sprite>
-              <sprite>sprites\spr_spz2_train_base</sprite>
-              <sprite>sprites\spr_spz2_train_cart</sprite>
-              <sprite>sprites\spr_spz2_train_cart_x2</sprite>
-              <sprite>sprites\spr_spz2_train_cart_x05</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_mask</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_bg</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_x2</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_x2_mask</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_x2_bg</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_x05</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_x05_mask</sprite>
-              <sprite>sprites\spr_spz2_train_cart_2_x05_bg</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -1600,6 +1597,7 @@
         <script>scripts\draw_sprite_tiled_horizontal.gml</script>
         <script>scripts\draw_sprite_tiled_vertical.gml</script>
         <script>scripts\draw_sprite_tiled_area.gml</script>
+        <script>scripts\draw_sprite_tiled_area_ext.gml</script>
         <script>scripts\safe_division.gml</script>
         <script>scripts\interpolate_values.gml</script>
         <script>scripts\draw_curve.gml</script>
@@ -1832,6 +1830,7 @@
             <object>objects\obj_missile_coconut</object>
             <object>objects\obj_spz_ridal_b</object>
             <object>objects\obj_badnik_debris</object>
+            <object>objects\obj_gun_bullet</object>
           </objects>
           <objects name="HSZ">
             <object>objects\obj_hsz_bouncer_2</object>
@@ -2072,17 +2071,6 @@
           </objects>
           <objects name="SPZ">
             <objects name="SPZ2">
-              <object>objects\obj_spz2_hurt_train</object>
-              <object>objects\obj_spz2_train_base</object>
-              <object>objects\obj_spz2_train_cart</object>
-              <object>objects\obj_spz2_train_cart_x2</object>
-              <object>objects\obj_spz2_train_cart_x05</object>
-              <object>objects\obj_spz2_train_cart_2</object>
-              <object>objects\obj_spz2_train_cart_2_x2</object>
-              <object>objects\obj_spz2_train_cart_2_x05</object>
-              <object>objects\obj_spz2_train_collision</object>
-              <object>objects\par_spz2_train_cart</object>
-              <object>objects\obj_spz2_train_stop</object>
               <objects name="Train Boxes">
                 <object>objects\obj_spz_box_32</object>
                 <object>objects\obj_spz_box_32_2</object>
@@ -2093,6 +2081,19 @@
                 <object>objects\obj_spz_box_128</object>
                 <object>objects\obj_spz_box_128_2</object>
               </objects>
+              <objects name="Train Carts">
+                <object>objects\obj_spz2_train_cart_1</object>
+                <object>objects\obj_spz2_train_cart_2</object>
+                <object>objects\obj_spz2_train_cart_3</object>
+                <object>objects\obj_spz2_train_cart_4</object>
+                <object>objects\obj_spz2_train_cart_2_fg</object>
+                <object>objects\obj_spz2_train_cart_2_bg</object>
+              </objects>
+              <object>objects\obj_spz2_hurt_train</object>
+              <object>objects\obj_spz_hurt_train_activate</object>
+              <object>objects\obj_spz2_train_base</object>
+              <object>objects\obj_spz2_train_collision</object>
+              <object>objects\obj_spz2_train_stop</object>
             </objects>
             <object>objects\obj_spz_cart</object>
             <object>objects\obj_spz_mis_p</object>

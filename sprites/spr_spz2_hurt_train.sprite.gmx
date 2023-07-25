@@ -21,6 +21,5 @@
   <height>96</height>
   <frames>
     <frame index="0">images\spr_spz2_hurt_train_0.png</frame>
-    <frame index="1">images\spr_spz2_hurt_train_1.png</frame>
   </frames>
 </sprite>

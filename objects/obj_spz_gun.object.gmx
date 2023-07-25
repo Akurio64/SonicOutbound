@@ -46,6 +46,7 @@
     
     hurt=instance_create(x,y,obj_hurt)
     hurt.sprite_index=spr_spz_gun_spike
+    hurt.projectile=true
     hurt.visible=true
     
     bullet=""
@@ -100,8 +101,7 @@ event_inherited()
             <kind>1</kind>
             <string>if(in_view())
     {
-        bullet=instance_create(x,y-6,obj_hurt)
-        bullet.sprite_index=spr_spz_gun_bullet
+        bullet=instance_create(x,y-6,obj_gun_bullet)
         bullet.image_xscale=image_xscale
         bullet.image_yscale=image_yscale
         bullet.image_angle=gun_angle
