@@ -3,7 +3,7 @@
   <spriteName>spr_spz_pendulum</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -31,6 +31,7 @@ triggered=false;
 canbetriggered=true;
 angle=1
 xspeed=0
+bg=instance_create(x,y,obj_bg_enemy)
 </string>
           </argument>
         </arguments>
@@ -60,7 +61,7 @@ par_character.animation_angle=image_angle}
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -79,8 +80,8 @@ par_character.animation_angle=image_angle}
             <kind>1</kind>
             <string>if triggered==true
     {
-        par_character.x=floor(x)+lengthdir_x(108, image_angle-90);
-        par_character.y=floor(y)+lengthdir_y(108, image_angle-90);
+        par_character.x=floor(x)+lengthdir_x(240-36, image_angle-85);
+        par_character.y=floor(y)+lengthdir_y(240-36, image_angle-85);
         par_character.x_speed=0;
         par_character.y_speed=0;
         if par_character.state!=CS_HANG{
@@ -92,7 +93,7 @@ par_character.animation_angle=image_angle}
                 if image_angle&lt;=angle*360
                     {
                         image_angle += (3*((image_angle/135)+1))
-                        xspeed = power(1.0025,image_angle)+15
+                        xspeed = power(1.002,image_angle)+15
                         }
                             else
                                 {
@@ -110,7 +111,7 @@ par_character.animation_angle=image_angle}
                 if image_angle&gt;=-angle*360
                     {
                         image_angle -= (3/((image_angle/135)+1))
-                        xspeed = clamp(power(1.0025,image_angle)+15,-24,24)
+                        xspeed = clamp(power(1.002,image_angle)+15,-24,24)
                         }
                             else
                                 {
@@ -137,6 +138,9 @@ par_character.animation_angle=image_angle}
                 }
             }
         }
+        
+        bg.x=x;bg.y=y;bg.sprite_index=spr_spz_pendulum;bg.image_index=3;
+        bg.image_angle=image_angle
 </string>
           </argument>
         </arguments>
@@ -208,8 +212,8 @@ if image_xscale=-1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_spz_pendulum,0,x,y)
-draw_self()
+            <string>draw_self()
+draw_sprite(spr_spz_pendulum,0,x,y)
 draw_sprite(spr_spz_pendulum,1,x,y)
 </string>
           </argument>

@@ -35,7 +35,7 @@
     instance_activate_region(view_xview[0]-global.display_width/2, view_yview[0]-global.display_height/2, view_wview[0]+global.display_width, view_hview[0]+global.display_height, true);
 
   // Deactivate instances for (M) Region:
-     instance_deactivate_object(obj_ring);
+     
  
   // Objects. (M Region)
      var character;  

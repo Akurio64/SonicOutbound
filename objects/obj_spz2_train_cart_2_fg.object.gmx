@@ -51,9 +51,9 @@ fade=1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if position_meeting(par_character.x,par_character.y,id)
+            <string>if par_character.state!=CS_DEATH
     {
-        if par_character.state!=CS_DEATH
+        if position_meeting(par_character.x,par_character.y,id)
             {
                 if fade&gt;0
                     {
@@ -70,7 +70,6 @@ bg.image_xscale=image_xscale
 bg.image_yscale=image_yscale
 
 roof.image_xscale=image_xscale
-roof.image_yscale=image_yscale
 </string>
           </argument>
         </arguments>
@@ -102,6 +101,15 @@ y,
 x+sprite_width,
 y+sprite_height)
 draw_set_alpha(1)
+
+draw_set_colour(c_black)
+    draw_line(x,y,x,y+sprite_height)
+    draw_line(x+sprite_width,y,x+sprite_width,y+sprite_height)
+draw_set_alpha(0.5)
+    draw_line(x+1,y,x+1,y+sprite_height)
+    draw_line(x+sprite_width-1,y,x+sprite_width-1,y+sprite_height)
+draw_set_alpha(1)
+draw_set_colour(c_white)
 </string>
           </argument>
         </arguments>

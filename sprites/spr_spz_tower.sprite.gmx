@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>64</width>
-  <height>160</height>
+  <height>192</height>
   <frames>
     <frame index="0">images\spr_spz_tower_0.png</frame>
     <frame index="1">images\spr_spz_tower_1.png</frame>

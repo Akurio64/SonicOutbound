@@ -3,7 +3,7 @@
   <spriteName>spr_spz_tower</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -136,8 +136,7 @@ if canbetriggered==false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprite_index,0,x,ystart)
-draw_self()
+            <string>draw_self()
 </string>
           </argument>
         </arguments>

@@ -154,12 +154,6 @@ alarm[1]=timer
           y_speed = 12;
        }
     }
-    
-    if place_meeting(x,y,obj_badnik_block)
-        {
-            hspeed=0
-            }
-
 
 </string>
           </argument>
@@ -194,7 +188,10 @@ alarm[1]=timer
     {
        ground = false;
     }
-
+if place_meeting(x,y,obj_badnik_block)
+    {
+        hspeed=0
+            }
 </string>
           </argument>
         </arguments>
@@ -227,30 +224,31 @@ force=hspeed/8
 sprite_direction=-dir
 dir = sign(x-par_character.x)
 
-if distance_to_object(par_character)&lt;128
-    {
-        
-        if dir=1
-            {
-                if hspeed&gt;-4
+                if distance_to_object(par_character)&lt;128
                     {
-                        hspeed-=0.05*dir
-                        }
-                    }
-                else if dir=-1
-                    {
-                        if hspeed&lt;4
+                        
+                        if dir=1
                             {
-                                hspeed-=0.05*dir
-                                }
-                            }
-                            broken=false
-                        }
-                    else
-                        {
-                            hspeed=0
-                            broken=true
-                            }
+                                if hspeed&gt;-4
+                                    {
+                                        hspeed-=0.05*dir
+                                        }
+                                    }
+                                else if dir=-1
+                                    {
+                                        if hspeed&lt;4
+                                            {
+                                                hspeed-=0.05*dir
+                                                }
+                                            }
+                                            broken=false
+                                        }
+                                    else
+                                        {
+                                            hspeed=0
+                                            broken=true
+                                            }
+                                        
                             
 sprite_speed=(force/2)*on
 

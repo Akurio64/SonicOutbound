@@ -786,6 +786,16 @@
             </sprites>
             <sprite>sprites\spr_monitor_icon_disappear</sprite>
           </sprites>
+          <sprites name="SPZ">
+            <sprite>sprites\spr_marvelous_normal</sprite>
+            <sprite>sprites\spr_marvelous_hurt</sprite>
+            <sprite>sprites\spr_marvelous_death</sprite>
+            <sprite>sprites\spr_marvelous_bomb</sprite>
+            <sprite>sprites\spr_marvelous_rail</sprite>
+            <sprite>sprites\spr_marvelous_lines</sprite>
+            <sprite>sprites\spr_marvelous_wagon</sprite>
+            <sprite>sprites\spr_marvelous_ground</sprite>
+          </sprites>
         </sprites>
         <sprites name="Break Walls">
           <sprite>sprites\spr_test_break_wall_pieces</sprite>
@@ -1462,6 +1472,7 @@
       <backgrounds name="SPZ">
         <background>background\tls_spz</background>
         <background>background\tls_spz_roller</background>
+        <background>background\tls_spz_tower</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Misc">
@@ -2006,6 +2017,12 @@
             <object>objects\obj_tmz_chain_drop</object>
           </objects>
           <objects name="SPZ">
+            <objects name="Mini">
+              <object>objects\obj_miniboss_2</object>
+              <object>objects\obj_marvelous_rail</object>
+              <object>objects\obj_marvelous_lines</object>
+              <object>objects\obj_terrain_gen</object>
+            </objects>
             <objects name="Big">
               <object>objects\obj_fang_test</object>
             </objects>
