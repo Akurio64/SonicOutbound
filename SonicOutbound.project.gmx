@@ -695,6 +695,8 @@
               <sprite>sprites\spr_slz_boss_1</sprite>
               <sprite>sprites\spr_slz_boss_2</sprite>
               <sprite>sprites\spr_slz_boss_3</sprite>
+              <sprite>sprites\spr_slz_boss_4</sprite>
+              <sprite>sprites\spr_slz_boss_5</sprite>
               <sprite>sprites\spr_slz_star</sprite>
             </sprites>
             <sprites name="Mini">
