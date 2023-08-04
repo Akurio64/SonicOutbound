@@ -3,7 +3,7 @@
   <spriteName>spr_marvelous_normal</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1002</depth>
   <persistent>0</persistent>
   <parentName>par_boss</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -33,6 +33,13 @@ act_clear=_ev_act_clear
 theme=_ev_miniboss
 i_speed=0.3
 alarm[0]=30
+alarm[2]=120
+bomb=0
+e=0
+d=false
+offset=false
+xo=""
+time=0
 </string>
           </argument>
         </arguments>
@@ -55,13 +62,52 @@ alarm[0]=30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop(theme);
-ctr_audio.clear_bgm = false;    
+            <string>event_inherited()
 
-instance_destroy(obj_glow)
-instance_create(x,y,obj_fade_to_white)
-instance_create(x,y,obj_robotnik_escape)
-audio_play(_boss_destroy, global.sfx_volume); 
+ww = sprite_get_width(sprite_index); //we need to know how wide
+
+hh = sprite_get_height(sprite_index); //and how tall our sprite is
+
+chunk = ww/3; //this is how big your chunks will be in pixels
+
+for (i=0;i&lt;ww;i+=chunk) { //we loop 4 pixel at a time all the way across
+ for (j=0;j&lt;hh;j+=chunk) { //while picking all the vertical pixels in each column
+ particle = instance_create(x-(ww/2)+i,y-(hh/2)+j,obj_miniboss_part); //we create a particle relative to the object, offset by the proper amount
+ particle.spr = sprite_index; //we need to tell the particle which sprite to draw. in this case, it's drawing the sprite of the object that's creating it
+ particle.size = chunk;
+ particle.xx = i; //we'll need the particles to have these values so they can draw the right part of the sprite
+ particle.yy = j;
+ }
+ }
+ 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hit=false
+sprite_index=spr_marvelous_normal
+ctr_audio.act_clear=act_clear
+
+alarm[2]=120
 </string>
           </argument>
         </arguments>
@@ -85,8 +131,8 @@ audio_play(_boss_destroy, global.sfx_volume);
           <argument>
             <kind>1</kind>
             <string>dead=true
-var xx=random_range(x-(sprite_width/2)+(sprite_width/9),x+(sprite_width/2)-(sprite_width/9))
-var yy=random_range(y-(sprite_height/2)+(sprite_height/9),y+(sprite_height/2)-(sprite_height/9))
+var xx=random_range(x-(sprite_width/2),x+(sprite_width/2))
+var yy=random_range(y-(sprite_height/2),y+(sprite_height/2))
 dummy_effect_create(spr_boss_explosion, 0.35, xx, yy, -5, 0)
 dummy_effect_create(spr_red_glow, 0.35, xx, yy, -4, 0);
 audio_stop(_boss_hit); 
@@ -98,6 +144,11 @@ with obj_dummy_effect{image_xscale=random_range(0.1,1);image_yscale=image_xscale
 if instance_exists(obj_glow)=false{instance_create(x,y,obj_glow)}
 alarm[10]=8
 if alarm[9]=-1{alarm[9]=180}
+alarm[5]=-1
+alarm[3]=-1
+alarm[2]=-1
+alarm[1]=-1
+alarm[0]=-1
 </string>
           </argument>
         </arguments>
@@ -126,6 +177,119 @@ if alarm[9]=-1{alarm[9]=180}
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>offset=true;xo=x
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if hit == false
+    {     
+        hp +=-1;
+        hit=true;
+        audio_play(_boss_hit, global.sfx_volume);  
+        sprite_index=spr_marvelous_hurt
+        image_speed=0.3
+        };
+    
+    if hp&lt;1
+    {
+        if dead=false{alarm[10]=1}
+        sprite_index=dead_sprite
+        }
+    
+    if hp&gt;0
+    {
+        if alarm[11]=-1{alarm[11]=40}
+        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if bomb=0
+    {
+        e=choose(0,1,2)
+        }
+
+if bomb&lt;3
+    {
+                
+        if bomb=e
+            {
+                with instance_create(x+56-64,y-32,obj_marvelous_bomb)
+                    {  
+                        image_index=1
+                        }
+                    }
+                else
+                    {
+                         instance_create(x+56-64,y-32,obj_marvelous_bomb)
+                         }
+                    
+                    bomb+=1
+                    d=false
+                    alarm[2]=30+(hp*11.25)
+            
+                }
+                
+        else{d=true;bomb=0;alarm[2]=30+(hp*11.25);}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -143,7 +307,8 @@ if alarm[9]=-1{alarm[9]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friction=0.2
+            <string>friction=0.02
+alarm[4]=90
 </string>
           </argument>
         </arguments>
@@ -166,7 +331,7 @@ if alarm[9]=-1{alarm[9]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=3
+            <string>hspeed=2
 alarm[1]=60
 </string>
           </argument>
@@ -194,7 +359,11 @@ alarm[1]=60
 par_character.x_speed=clamp(par_character.x_speed,2,99)
 par_character.x=clamp(par_character.x,ctr_camera.limit_left+24,ctr_camera.limit_right)
 obj_parallax_spz1.parallax_offset+=obj_terrain_gen.spd/4
-with obj_ring{hspeed=-obj_terrain_gen.spd}
+with obj_ring{x-=obj_terrain_gen.spd}
+
+if d=true{if instance_exists(obj_marvelous_bomb)
+=false{if alarm[2]=-1{alarm[2]=120+(hp*7.5)}}}
+if offset=true{x=xo+32*sin(time/100);time+=1}
 </string>
           </argument>
         </arguments>

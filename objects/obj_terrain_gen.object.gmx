@@ -3,9 +3,9 @@
   <spriteName>spr_marvelous_ground</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>100</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
-  <parentName>par_solid</parentName>
+  <parentName>goal_ground</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd=5
+            <string>spd=4
 sp=0
 ring=4
 event_inherited()
@@ -70,10 +70,6 @@ instance_create(x+1216,y-16,obj_ring)
 instance_create(x+1248,y-16,obj_ring)
 instance_create(x+1280,y-16,obj_ring)
 instance_create(x+1312,y-16,obj_ring)
-instance_create(x+1344,y-16,obj_ring)
-instance_create(x+1376,y-16,obj_ring)
-instance_create(x+1408,y-16,obj_ring)
-instance_create(x+1440,y-16,obj_ring)
 </string>
           </argument>
         </arguments>
