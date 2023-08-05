@@ -30,16 +30,19 @@ hurt_sprite=spr_marvelous_normal
 main_sprite=spr_marvelous_hurt
 dead_sprite=spr_marvelous_death
 act_clear=_ev_act_clear
-theme=_ev_miniboss
+theme=_ev_miniboss2
 i_speed=0.3
 alarm[0]=30
-alarm[2]=120
 bomb=0
 e=0
 d=false
-offset=false
-xo=""
 time=0
+image_xscale=0.5
+image_yscale=0.5
+phase_2=false
+h=x
+xspeed=0
+fric=0
 </string>
           </argument>
         </arguments>
@@ -79,6 +82,8 @@ for (i=0;i&lt;ww;i+=chunk) { //we loop 4 pixel at a time all the way across
  particle.yy = j;
  }
  }
+
+ obj_marvelous_rail.dead=true
  
 
 </string>
@@ -149,6 +154,7 @@ alarm[3]=-1
 alarm[2]=-1
 alarm[1]=-1
 alarm[0]=-1
+xspeed=-0.5
 </string>
           </argument>
         </arguments>
@@ -177,7 +183,7 @@ alarm[0]=-1
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="4">
+    <event eventtype="2" enumb="6">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -194,7 +200,42 @@ alarm[0]=-1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>offset=true;xo=x
+            <string>xspeed=2
+x=xstart-128
+
+image_xscale=1
+image_yscale=1
+
+y=obj_boss_camera.y-16
+alarm[1]=60
+depth=0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>phase_2=true
+fric=0
+xspeed=-3
+alarm[6]=120
+alarm[2]=-1
 </string>
           </argument>
         </arguments>
@@ -268,23 +309,48 @@ if bomb&lt;3
                 
         if bomb=e
             {
-                with instance_create(x+56-64,y-32,obj_marvelous_bomb)
-                    {  
-                        image_index=1
-                        }
+                if (hp&lt;=4 and obj_miniboss_2.phase_2=false)=true
+                {
+                    instance_create(x-8,y-32,obj_marvelous_bomb)
                     }
                 else
+                {
+                    if hp&lt;=4 and obj_miniboss_2.phase_2=true
                     {
-                         instance_create(x+56-64,y-32,obj_marvelous_bomb)
-                         }
+                        with instance_create(x+100,y,obj_marvelous_bomb)
+                            {  
+                                image_index=1
+                                }
+                            }
+                        else
+                        {
+                            with instance_create(x-8,y-32,obj_marvelous_bomb)
+                            {  
+                                image_index=1
+                                }
+                            }
+                        }
+                    }
+                    
+                else
+                    {
+                        if hp&lt;=4 and obj_miniboss_2.phase_2=true
+                        {
+                             instance_create(x+100,y,obj_marvelous_bomb)
+                             }
+                        else
+                        {
+                            instance_create(x-8,y-32,obj_marvelous_bomb)
+                             }
+                        }
                     
                     bomb+=1
                     d=false
-                    alarm[2]=30+(hp*11.25)
+                    alarm[2]=45+hp*8
             
                 }
                 
-        else{d=true;bomb=0;alarm[2]=30+(hp*11.25);}
+        else{d=true;bomb=0;alarm[2]=60+(hp*10);}
 </string>
           </argument>
         </arguments>
@@ -307,8 +373,8 @@ if bomb&lt;3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friction=0.02
-alarm[4]=90
+            <string>fric=0.04*image_xscale
+alarm[2]=30
 </string>
           </argument>
         </arguments>
@@ -331,7 +397,7 @@ alarm[4]=90
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=2
+            <string>xspeed=2
 alarm[1]=60
 </string>
           </argument>
@@ -355,15 +421,14 @@ alarm[1]=60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>par_character.x-=obj_terrain_gen.spd
-par_character.x_speed=clamp(par_character.x_speed,2,99)
-par_character.x=clamp(par_character.x,ctr_camera.limit_left+24,ctr_camera.limit_right)
-obj_parallax_spz1.parallax_offset+=obj_terrain_gen.spd/4
-with obj_ring{x-=obj_terrain_gen.spd}
+            <string>if d=true{if instance_exists(obj_marvelous_bomb)
+=false{if alarm[2]=-1{alarm[2]=60+(hp*10)}}}
 
-if d=true{if instance_exists(obj_marvelous_bomb)
-=false{if alarm[2]=-1{alarm[2]=120+(hp*7.5)}}}
-if offset=true{x=xo+32*sin(time/100);time+=1}
+x=h+32*sin(time/100);time+=1
+
+h+=xspeed
+if xspeed&gt;0
+{xspeed-=fric}
 </string>
           </argument>
         </arguments>
@@ -386,7 +451,7 @@ if offset=true{x=xo+32*sin(time/100);time+=1}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Deactivating hurt
+            <string>if phase_2=true{with obj_character{character_state_hurt(other, false)}}
 </string>
           </argument>
         </arguments>

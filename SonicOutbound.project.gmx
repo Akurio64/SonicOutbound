@@ -534,7 +534,6 @@
               <sprite>sprites\spr_results_name</sprite>
               <sprite>sprites\spr_results_act</sprite>
               <sprite>sprites\spr_results_time</sprite>
-              <sprite>sprites\spr_results_ring</sprite>
               <sprite>sprites\spr_results_total</sprite>
               <sprite>sprites\spr_results_bg</sprite>
             </sprites>
@@ -793,8 +792,10 @@
             <sprite>sprites\spr_marvelous_hurt</sprite>
             <sprite>sprites\spr_marvelous_death</sprite>
             <sprite>sprites\spr_marvelous_bomb</sprite>
-            <sprite>sprites\spr_marvelous_rail</sprite>
             <sprite>sprites\spr_marvelous_lines</sprite>
+            <sprite>sprites\spr_marvelous_lines_2</sprite>
+            <sprite>sprites\spr_marvelous_rail</sprite>
+            <sprite>sprites\spr_marvelous_rail_2</sprite>
             <sprite>sprites\spr_marvelous_wagon</sprite>
             <sprite>sprites\spr_marvelous_ground</sprite>
           </sprites>

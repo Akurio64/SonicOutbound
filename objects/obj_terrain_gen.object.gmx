@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd=4
+            <string>///Variables
+
+spd=4
 sp=0
 ring=4
 event_inherited()
@@ -92,8 +94,25 @@ instance_create(x+1312,y-16,obj_ring)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x+sprite_width,y,obj_terrain_gen)
-s=true
+            <string>if instance_exists(obj_miniboss_2)
+    {
+        if obj_miniboss_2.hp&lt;=4
+            {
+                with instance_create(x+sprite_width,y,obj_terrain_gen)
+                {sprite_index=spr_marvelous_rail_2}
+                if obj_miniboss_2.phase_2=false{obj_miniboss_2.alarm[5]=1}
+                }
+            else
+                {
+                    instance_create(x+sprite_width,y,obj_terrain_gen)
+                    }
+                }
+            else
+                {
+                    instance_create(x+sprite_width,y,obj_terrain_gen)
+                    }
+
+        s=true
 </string>
           </argument>
         </arguments>
@@ -119,7 +138,7 @@ s=true
             <string>if patient_zero=true{
 par_character.x=clamp(par_character.x,ctr_camera.limit_left+28,ctr_camera.limit_right)
 
-if instance_exists(par_boss)
+if obj_boss_camera.start=true
     {
         if par_character.animation_index="WALK"
             {
@@ -149,22 +168,29 @@ if instance_exists(par_boss)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(par_boss)
+            <string>if obj_boss_camera.start=true
     {
         if x&lt;view_xview-128{instance_destroy()}
         x-=spd
         
         if s=false
             {
-                if patient_zero=true{if alarm[1]=-1{alarm[1]=64/spd}}
-                else{{if alarm[1]=-1{alarm[1]=2048/spd}}}
-                }
-            
-            if x =(view_xview+450)
-                {
-                    alarm[0]=1
+                if patient_zero=true
+                    {
+                        if alarm[1]=-1{alarm[1]=64/spd}
+                        }
+                    else
+                        {
+                            if alarm[1]=-1{alarm[1]=2048/spd}
+                        }
                     }
-                }
+            
+                if x =(view_xview+450)
+                    {
+                        alarm[0]=1
+                        }
+                    }
+                    
 </string>
           </argument>
         </arguments>

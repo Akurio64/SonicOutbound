@@ -27,6 +27,36 @@
             <kind>1</kind>
             <string>spd=2.5
 sp=0
+dead=false
+
+with instance_create(x,y,obj_marvelous_lines)
+    {
+        image_xscale=obj_marvelous_rail.image_xscale
+        y-=80
+        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dead=true
 </string>
           </argument>
         </arguments>
@@ -49,10 +79,17 @@ sp=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(par_boss)
+            <string>if obj_boss_camera.start=true
     {
+        if dead=false{
         sp-=spd
+        par_character.x-=obj_terrain_gen.spd
+        par_character.x_speed=clamp(par_character.x_speed,2,99)
+        par_character.x=clamp(par_character.x,ctr_camera.limit_left+24,ctr_camera.limit_right)
+        obj_parallax_spz1.parallax_offset+=obj_terrain_gen.spd/4
+        with obj_ring{x-=obj_terrain_gen.spd}
         }
+    }
 </string>
           </argument>
         </arguments>
