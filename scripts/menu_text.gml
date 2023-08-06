@@ -65,7 +65,7 @@ if argument0=0
         "Suds was here",
         "Me? Gongaga.",
         "Wii Play. Do you? Is that a threat?",
-        "And then there's Chunky, He's dead.",
+        "Do you speak british stuff?",
         "First of all I am Vegeta. Second of all you're not Vegeta. Third of all you wanna be Vegeta but you can't be Vegeta because I'm Vegeta.",
         "YOU MIGHT KNOW EVERYTHING I'M GOING TO DO, BUT THATS NOT GOING TO HELP YOU SINCE I KNOW EVERYTHING YOUR GOING TO DO! STRANGE ISN'T IT???",
         
