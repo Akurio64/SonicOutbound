@@ -51,7 +51,7 @@ sp=0
             <kind>1</kind>
             <string>if obj_boss_camera.start=true
     {
-        sp-=spd
+        sp-=obj_marvelous_rail.spd
         }
 </string>
           </argument>

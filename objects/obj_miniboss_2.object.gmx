@@ -301,7 +301,9 @@ alarm[2]=-1
             <kind>1</kind>
             <string>if bomb=0
     {
-        e=choose(0,1,2)
+        if hp&lt;=4
+        {e=2}else
+        {e=choose(0,1,2)}
         }
 
 if bomb&lt;3

@@ -171,7 +171,7 @@ if obj_boss_camera.start=true
             <string>if obj_boss_camera.start=true
     {
         if x&lt;view_xview-128{instance_destroy()}
-        x-=spd
+        if obj_marvelous_rail.dead=false{x-=spd}
         
         if s=false
             {

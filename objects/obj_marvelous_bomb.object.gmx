@@ -86,14 +86,7 @@
         yy = (y-sprite_get_yoffset(sprite_index)+(sprite_get_height(sprite_index)/2));
     dummy_effect_create(spr_badnik_explosion, 0.35, xx, yy, -5, 0);
     dummy_effect_create(spr_red_glow, 0.35, xx, yy, 5, 0);
-    instance_create(x,y,obj_enemy_part)
-    
-              
- // Add Score:
-    global.cscore += score_multiplier(true, xx, yy); 
-        
- // Play Sound:
-    audio_play(_general_destroy, global.sfx_volume);       
+    instance_create(x,y,obj_enemy_part)  
     
     ctr_camera.Camera_ShakeScreen   = true;
     ctr_camera.Camera_ShakeDuration = 20;
@@ -243,7 +236,7 @@ hurt=true
                     if(obj_character.state == CS_JUMP || obj_character.state == CS_ROLL || obj_character.shield_state == 1)
                     {
                     
-                        if par_character.y&gt;y
+                        if par_character.y&gt;y or hp&lt;=4
                         {
                             alarm[0]=1
                             }

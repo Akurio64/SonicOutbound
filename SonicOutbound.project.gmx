@@ -534,6 +534,7 @@
               <sprite>sprites\spr_results_name</sprite>
               <sprite>sprites\spr_results_act</sprite>
               <sprite>sprites\spr_results_time</sprite>
+              <sprite>sprites\spr_results_ring</sprite>
               <sprite>sprites\spr_results_total</sprite>
               <sprite>sprites\spr_results_bg</sprite>
             </sprites>
@@ -2272,7 +2273,11 @@
           <object>objects\obj_aehz_collision_15</object>
           <object>objects\obj_aehz_collision_16</object>
           <object>objects\obj_aehz_collision_17</object>
+          <object>objects\obj_aehz_collision_17_ll</object>
+          <object>objects\obj_aehz_collision_17_lh</object>
           <object>objects\obj_aehz_collision_18</object>
+          <object>objects\obj_aehz_collision_18_ll</object>
+          <object>objects\obj_aehz_collision_18_lh</object>
           <object>objects\obj_aehz_collision_19</object>
           <object>objects\obj_aehz_collision_20</object>
           <object>objects\obj_aehz_collision_21</object>
