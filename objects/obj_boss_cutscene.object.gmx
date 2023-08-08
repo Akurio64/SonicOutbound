@@ -33,7 +33,6 @@ rec_y1=view_yview-80
 ry1=0
 rec_y2=view_yview+view_hview
 ry2=0
-sprite_index=spr_cutscene_1
 frame=0
 start=false
 alarm[0]=60
@@ -178,10 +177,10 @@ if audio_is_playing(_ev_egg_event)=false
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_black)
-draw_rectangle(rec_x1-50,view_yview,rec_x1+84,view_yview+256,false)
-draw_rectangle(rec_x2,view_yview+50,rec_x2+84,view_yview+256,false)
-draw_rectangle(view_xview-5,rec_y1-10,view_xview+456,rec_y1+80,false)
-draw_rectangle(view_xview-5,rec_y2+10,view_xview+456,rec_y2+80,false)
+draw_rectangle(rec_x1-128,view_yview,rec_x1+84,view_yview+256,false)
+draw_rectangle(rec_x2,view_yview,rec_x2+84+128,view_yview+256,false)
+draw_rectangle(view_xview-128,rec_y1-10,view_xview+424+128,rec_y1+80,false)
+draw_rectangle(view_xview-128,rec_y2+10,view_xview+424+128,rec_y2+80,false)
 
 if start=true
 {

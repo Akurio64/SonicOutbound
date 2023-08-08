@@ -32,6 +32,11 @@ offset=""
 mode=0
 cutscene=""
 start=false
+cutscene_id=""
+second=false
+
+ll=""
+lr=""
 </string>
           </argument>
         </arguments>
@@ -56,7 +61,8 @@ start=false
             <kind>1</kind>
             <string>if cutscene=true{
 if !instance_exists(obj_boss_cutscene)
-{instance_create(x,y,obj_boss_cutscene)}}
+{with instance_create(x,y,obj_boss_cutscene)
+{sprite_index=obj_boss_camera.cutscene_id}}}
 else if cutscene=false{
 if !instance_exists(boss_id)
 {instance_create(boss_x,boss_y,boss_id)}
@@ -89,6 +95,9 @@ ctr_audio.clear_bgm=false}
             <kind>1</kind>
             <string> if start=true{exit}
  
+ if second=false
+ {
+ 
  // Set camera.
     if(bbox_right  &gt; view_xview
     &amp;&amp; bbox_left   &lt; view_xview + view_wview
@@ -120,13 +129,75 @@ ctr_audio.clear_bgm=false}
        start=true
        }
        }
-       
+       else if mode = 2
+       {
+       instance_create(x,y,obj_camera)
+       if start=false{alarm[0]=120;
+       with(ctr_camera)
+       {
+            cam_handle  = obj_camera
+            limit_left  = obj_boss_camera.x-obj_boss_camera.ll
+            limit_right = obj_boss_camera.x+obj_boss_camera.lr
+       }
+       start=true
+       }
+       }
        
        with(ctr_audio)
                    {
                         fadeout_flag = 1;
                    }
     }
+ }
+ 
+ else
+ {
+    // Set camera.
+    if(bbox_right  &gt; view_xview
+    &amp;&amp; bbox_left   &lt; view_xview + view_wview
+    &amp;&amp; bbox_bottom &gt; view_yview
+    &amp;&amp; bbox_top    &lt; view_yview + view_hview)   
+    {
+       if mode = 0 
+       {
+       if start=false{
+       with(ctr_camera)
+       {
+            cam_handle  = obj_boss_camera;
+            limit_left  = obj_boss_camera.x-view_wview/2;
+            limit_right = obj_boss_camera.x+view_wview/2;
+       }
+       start=true
+       }
+       }
+       else if mode = 1
+       {
+       instance_create(x,y,obj_camera)
+       if start=false{
+       with(ctr_camera)
+       {
+            cam_handle  = obj_camera
+            limit_left  = obj_boss_camera.x-obj_boss_camera.offset;
+            limit_right = obj_boss_camera.x+obj_boss_camera.offset;
+       }
+       start=true
+       }
+       }
+       else if mode = 2
+       {
+       instance_create(x,y,obj_camera)
+       if start=false{
+       with(ctr_camera)
+       {
+            cam_handle  = obj_camera
+            limit_left  = obj_boss_camera.x-obj_boss_camera.ll
+            limit_right = obj_boss_camera.x+obj_boss_camera.lr
+       }
+       start=true
+       }
+       }
+    }
+ }
 </string>
           </argument>
         </arguments>

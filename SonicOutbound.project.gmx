@@ -209,6 +209,7 @@
           <sound>sound\_ev_robotnik</sound>
           <sound>sound\_ev_robotnik2</sound>
           <sound>sound\_ev_robotnik3</sound>
+          <sound>sound\_ev_fang</sound>
         </sounds>
         <sounds name="Miniboss">
           <sound>sound\_ev_miniboss</sound>
@@ -690,6 +691,26 @@
               <sprite>sprites\spr_shark_3</sprite>
             </sprites>
           </sprites>
+          <sprites name="SPZ">
+            <sprites name="Miniboss">
+              <sprite>sprites\spr_marvelous_normal</sprite>
+              <sprite>sprites\spr_marvelous_hurt</sprite>
+              <sprite>sprites\spr_marvelous_death</sprite>
+              <sprite>sprites\spr_marvelous_bomb</sprite>
+              <sprite>sprites\spr_marvelous_lines_2</sprite>
+              <sprite>sprites\spr_marvelous_rail</sprite>
+              <sprite>sprites\spr_marvelous_rail_2</sprite>
+              <sprite>sprites\spr_marvelous_wagon</sprite>
+              <sprite>sprites\spr_marvelous_ground</sprite>
+            </sprites>
+            <sprites name="Bigboss">
+              <sprite>sprites\spr_fang_terrain</sprite>
+              <sprite>sprites\spr_fang_terrain_mask</sprite>
+              <sprite>sprites\spr_fang_terrain_2</sprite>
+              <sprite>sprites\spr_fang_terrain_2_mask</sprite>
+              <sprite>sprites\spr_fang_lines</sprite>
+            </sprites>
+          </sprites>
           <sprites name="SLZ">
             <sprites name="Big">
               <sprite>sprites\spr_slz_boss_1</sprite>
@@ -744,7 +765,8 @@
             <sprite>sprites\spr_robotnik_escape_2</sprite>
           </sprites>
           <sprites name="Cutscenes">
-            <sprite>sprites\spr_cutscene_1</sprite>
+            <sprite>sprites\spr_cutscene_2</sprite>
+            <sprite>sprites\spr_cutscene_3</sprite>
           </sprites>
           <sprites name="Phantom Egg">
             <sprite>sprites\spr_phantom_egg</sprite>
@@ -787,18 +809,6 @@
               <sprite>sprites\spr_monitor_static</sprite>
             </sprites>
             <sprite>sprites\spr_monitor_icon_disappear</sprite>
-          </sprites>
-          <sprites name="SPZ">
-            <sprite>sprites\spr_marvelous_normal</sprite>
-            <sprite>sprites\spr_marvelous_hurt</sprite>
-            <sprite>sprites\spr_marvelous_death</sprite>
-            <sprite>sprites\spr_marvelous_bomb</sprite>
-            <sprite>sprites\spr_marvelous_lines</sprite>
-            <sprite>sprites\spr_marvelous_lines_2</sprite>
-            <sprite>sprites\spr_marvelous_rail</sprite>
-            <sprite>sprites\spr_marvelous_rail_2</sprite>
-            <sprite>sprites\spr_marvelous_wagon</sprite>
-            <sprite>sprites\spr_marvelous_ground</sprite>
           </sprites>
         </sprites>
         <sprites name="Break Walls">
@@ -2031,6 +2041,11 @@
             </objects>
             <objects name="Big">
               <object>objects\obj_fang_test</object>
+              <object>objects\obj_bigboss_2</object>
+              <object>objects\obj_fang_bomb</object>
+              <object>objects\obj_fang_terrain</object>
+              <object>objects\obj_fang_lines</object>
+              <object>objects\obj_fang_rail</object>
             </objects>
           </objects>
         </objects>
