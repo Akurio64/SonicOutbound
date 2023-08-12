@@ -41,7 +41,8 @@ part_type_alpha1(first_particle,1);
 part_type_blend(first_particle,false);
 part_type_speed(first_particle,0.05,1,0.1,0.05);
 part_type_direction(first_particle,0,359,10,0);
-part_type_life(first_particle,120,240);
+part_type_life(first_particle,60,120);
+part_type_alpha1(first_particle,0.5)
 
 // define the emitter
 first_emitter = part_emitter_create(FirstParticleSystem);

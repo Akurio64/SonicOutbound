@@ -43,7 +43,8 @@ part_type_direction(first_particle,0,359,0,0);
 part_type_gravity(first_particle,0.02,90);
 part_type_orientation(first_particle,0,359,10,0,true);
 part_type_blend(first_particle,true);
-part_type_life(first_particle,50,125);
+part_type_life(first_particle,30,60);
+part_type_alpha1(first_particle,0.5)
 
 // define the emitter
 first_emitter = part_emitter_create(FirstParticleSystem);

@@ -78,8 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension3</extension>
-    <extension index="3">extensions\Extension1</extension>
+    <extension index="4">extensions\Extension5</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -704,11 +703,16 @@
               <sprite>sprites\spr_marvelous_ground</sprite>
             </sprites>
             <sprites name="Bigboss">
+              <sprites name="Fang">
+                <sprite>sprites\spr_fang_spz_i</sprite>
+                <sprite>sprites\spr_fang_spz_h</sprite>
+                <sprite>sprites\spr_fang_spz_cork</sprite>
+                <sprite>sprites\spr_fang_bomb</sprite>
+              </sprites>
               <sprite>sprites\spr_fang_terrain</sprite>
-              <sprite>sprites\spr_fang_terrain_mask</sprite>
-              <sprite>sprites\spr_fang_terrain_2</sprite>
-              <sprite>sprites\spr_fang_terrain_2_mask</sprite>
+              <sprite>sprites\spr_fang_terrain_m</sprite>
               <sprite>sprites\spr_fang_lines</sprite>
+              <sprite>sprites\spr_fang_door</sprite>
             </sprites>
           </sprites>
           <sprites name="SLZ">
@@ -750,12 +754,16 @@
             <sprite>sprites\spr_fang_idle</sprite>
             <sprite>sprites\spr_fang_walk</sprite>
             <sprite>sprites\spr_fang_gun</sprite>
+            <sprite>sprites\spr_fang_throw</sprite>
             <sprite>sprites\spr_fang_taunt</sprite>
             <sprite>sprites\spr_fang_hang</sprite>
-            <sprite>sprites\spr_fang_jump</sprite>
             <sprite>sprites\spr_fang_hurt</sprite>
             <sprite>sprites\spr_fang_dead</sprite>
             <sprite>sprites\spr_fang_look</sprite>
+            <sprite>sprites\spr_fang_down</sprite>
+            <sprite>sprites\spr_fang_up_gun</sprite>
+            <sprite>sprites\spr_fang_up_throw</sprite>
+            <sprite>sprites\spr_fang_jump</sprite>
           </sprites>
           <sprites name="Misc">
             <sprite>sprites\spr_miniboss_locker</sprite>
@@ -794,21 +802,6 @@
             </sprites>
             <sprite>sprites\spr_cinder</sprite>
             <sprite>sprites\spr_fire</sprite>
-          </sprites>
-          <sprites name="Monitors">
-            <sprite>sprites\spr_monitor</sprite>
-            <sprite>sprites\spr_monitor_broken</sprite>
-            <sprite>sprites\spr_monitor_mask</sprite>
-            <sprites name="Icons">
-              <sprite>sprites\spr_monitor_icon_border</sprite>
-              <sprite>sprites\spr_monitor_icon</sprite>
-            </sprites>
-            <sprites name="Effects">
-              <sprite>sprites\spr_monitor_explosion</sprite>
-              <sprite>sprites\spr_monitor_shard</sprite>
-              <sprite>sprites\spr_monitor_static</sprite>
-            </sprites>
-            <sprite>sprites\spr_monitor_icon_disappear</sprite>
           </sprites>
         </sprites>
         <sprites name="Break Walls">
@@ -934,6 +927,21 @@
             <sprite>sprites\spr_spring_diagonal_right_red</sprite>
             <sprite>sprites\spr_spring_diagonal_left_red</sprite>
           </sprites>
+        </sprites>
+        <sprites name="Monitors">
+          <sprite>sprites\spr_monitor</sprite>
+          <sprite>sprites\spr_monitor_broken</sprite>
+          <sprite>sprites\spr_monitor_mask</sprite>
+          <sprites name="Icons">
+            <sprite>sprites\spr_monitor_icon_border</sprite>
+            <sprite>sprites\spr_monitor_icon</sprite>
+          </sprites>
+          <sprites name="Effects">
+            <sprite>sprites\spr_monitor_explosion</sprite>
+            <sprite>sprites\spr_monitor_shard</sprite>
+            <sprite>sprites\spr_monitor_static</sprite>
+          </sprites>
+          <sprite>sprites\spr_monitor_icon_disappear</sprite>
         </sprites>
       </sprites>
       <sprites name="Terrain / Collision Masks">
@@ -1208,6 +1216,8 @@
         <sprite>sprites\spr_aehz_collision_34</sprite>
         <sprite>sprites\spr_aehz_collision_35</sprite>
         <sprite>sprites\spr_aehz_collision_36</sprite>
+        <sprite>sprites\spr_aehz_collision_37</sprite>
+        <sprite>sprites\spr_aehz_collision_38</sprite>
       </sprites>
       <sprites name="Collision (ST)">
         <sprite>sprites\spr_aehz_collision_st</sprite>
@@ -1615,6 +1625,7 @@
       <scripts name="Utils / GML Extension">
         <script>scripts\draw_sprite_bent.gml</script>
         <script>scripts\wrap_angle.gml</script>
+        <script>scripts\instance_nth_nearest.gml</script>
         <script>scripts\rotate_towards.gml</script>
         <script>scripts\string_place_number.gml</script>
         <script>scripts\approach.gml</script>
@@ -2040,12 +2051,13 @@
               <object>objects\obj_terrain_gen</object>
             </objects>
             <objects name="Big">
-              <object>objects\obj_fang_test</object>
-              <object>objects\obj_bigboss_2</object>
+              <object>objects\obj_bigboss_2_1</object>
+              <object>objects\obj_bigboss_2_2</object>
               <object>objects\obj_fang_bomb</object>
               <object>objects\obj_fang_terrain</object>
-              <object>objects\obj_fang_lines</object>
+              <object>objects\obj_fang_cork</object>
               <object>objects\obj_fang_rail</object>
+              <object>objects\obj_fang_lines</object>
             </objects>
           </objects>
         </objects>
@@ -2313,6 +2325,8 @@
           <object>objects\obj_lay_high</object>
           <object>objects\obj_aehz_collision_35</object>
           <object>objects\obj_aehz_collision_36</object>
+          <object>objects\obj_aehz_collision_37</object>
+          <object>objects\obj_aehz_collision_38</object>
         </objects>
         <objects name="Collision (P)">
           <object>objects\obj_aehz_collision_00_o_p</object>

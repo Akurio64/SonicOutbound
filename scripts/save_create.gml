@@ -25,6 +25,9 @@
        // Lives:
           file_text_write_string(dfile, string(global.clives^dkey));
           file_text_writeln(dfile);       
+       // Shield:
+          file_text_write_string(dfile, string(global.shield^dkey));
+          file_text_writeln(dfile);
        // Continues:
           file_text_write_string(dfile, string(global.ccontinues^dkey));
           file_text_writeln(dfile);                 

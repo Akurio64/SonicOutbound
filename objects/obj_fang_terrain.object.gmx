@@ -6,7 +6,7 @@
   <depth>1</depth>
   <persistent>0</persistent>
   <parentName>goal_ground</parentName>
-  <maskName>spr_fang_terrain_mask</maskName>
+  <maskName>spr_fang_terrain_m</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -55,41 +55,34 @@ patient_zero=false
             <kind>1</kind>
             <string>/// Ring
 
-    if (instance_exists(obj_bigboss_2) 
-    and obj_bigboss_2.phase_2=false) or
-    instance_exists(obj_bigboss_2)=false
-    {
-        instance_create(x+336,y+96,obj_ring)
-        instance_create(x+368,y+96,obj_ring)
-        instance_create(x+400,y+96,obj_ring)
-        instance_create(x+432,y+96,obj_ring)
-        instance_create(x+464,y+96,obj_ring)
-        instance_create(x+496,y+96,obj_ring)
-        instance_create(x+752,y+96,obj_ring)
-        instance_create(x+784,y+96,obj_ring)
-        instance_create(x+832,y+96,obj_ring)
-        instance_create(x+864,y+96,obj_ring)
-        instance_create(x+1280,y+96,obj_ring)
-        instance_create(x+1312,y+96,obj_ring)
-        instance_create(x+1344,y+96,obj_ring)
-        instance_create(x+1424,y+96,obj_ring)
-        instance_create(x+1456,y+96,obj_ring)
-        instance_create(x+1488,y+96,obj_ring)
-        instance_create(x+1744,y+96,obj_ring)
-        instance_create(x+1776,y+96,obj_ring)
-        instance_create(x+1808,y+96,obj_ring)
-        }
-        
-    else
-    {
-        instance_create(x+80,y+112,obj_ring)
-        instance_create(x+128,y+80,obj_ring)
-        instance_create(x+160,y+80,obj_ring)
-        instance_create(x+272,y+144,obj_ring)
-        instance_create(x+304,y+144,obj_ring)
-        instance_create(x+448,y+144,obj_ring)
-        instance_create(x+480,y+144,obj_ring)
-        }
+instance_create(x+16,y+144,obj_ring)
+instance_create(x+48,y+144,obj_ring)
+instance_create(x+80,y+144,obj_ring)
+
+instance_create(x+336,y+96,obj_ring)
+instance_create(x+384,y+96,obj_ring)
+instance_create(x+448,y+96,obj_ring)
+instance_create(x+496,y+96,obj_ring)
+
+instance_create(x+752,y+96,obj_ring)
+instance_create(x+784,y+96,obj_ring)
+instance_create(x+832,y+96,obj_ring)
+instance_create(x+864,y+96,obj_ring)
+
+instance_create(x+1200,y+144,obj_ring)
+instance_create(x+1232,y+144,obj_ring)
+
+instance_create(x+1280,y+96,obj_ring)
+instance_create(x+1312,y+96,obj_ring)
+instance_create(x+1344,y+96,obj_ring)
+
+instance_create(x+1424,y+96,obj_ring)
+instance_create(x+1456,y+96,obj_ring)
+instance_create(x+1488,y+96,obj_ring)
+
+instance_create(x+1744,y+96,obj_ring)
+instance_create(x+1776,y+96,obj_ring)
+instance_create(x+1808,y+96,obj_ring)
 </string>
           </argument>
         </arguments>
@@ -112,38 +105,18 @@ patient_zero=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_bigboss_2)
-{
-    if obj_bigboss_2.hp&lt;=4
+            <string>if instance_exists(par_boss)
+    {
         {
-            if obj_fang_terrain.sprite_index=spr_fang_terrain
-            {with instance_create(x+718,y,obj_fang_terrain)
-            {sprite_index=spr_fang_terrain_2;
-            mask_index=spr_fang_terrain_2_mask;
-            alarm[0]=(359)/spd}}
-            
-            else{
-            spd=0;
-            obj_boss_camera.start=false;
-            obj_boss_camera.mode=2
-            obj_boss_camera.ll=506
-            obj_boss_camera.lr=212
-            obj_boss_camera.second=true
+            instance_create(x+sprite_width,y,obj_fang_terrain)
             }
-            
-            if obj_bigboss_2.phase_2=false{obj_bigboss_2.alarm[5]=1}
+        }
+    else
+        {
+            instance_create(x+sprite_width,y,obj_fang_terrain)
             }
-        else
-            {
-                instance_create(x+sprite_width,y,obj_fang_terrain)
-                }
-            }
-        else
-            {
-                instance_create(x+sprite_width,y,obj_fang_terrain)
-                }
 
-    s=true
+s=true
 </string>
           </argument>
         </arguments>
@@ -190,7 +163,7 @@ par_character.x=clamp(par_character.x,ctr_camera.limit_left+28,ctr_camera.limit_
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_bigboss_2)
+            <string>if instance_exists(par_boss)
     {
         if x&lt;view_xview-128{instance_destroy()}
         if obj_fang_rail.dead=false{x-=spd}
@@ -199,15 +172,15 @@ par_character.x=clamp(par_character.x,ctr_camera.limit_left+28,ctr_camera.limit_
             {
                 if patient_zero=true
                     {
-                        if alarm[1]=-1{alarm[1]=1420/spd}
+                        if alarm[1]=-1{alarm[1]=(1776-512)/spd}
                         }
                     else
                         {
-                            if alarm[1]=-1{alarm[1]=sprite_width/spd}
+                            if alarm[1]=-1{alarm[1]=(2048-512)/spd}
                         }
                     }
-            
-               }
+                }
+        if instance_exists(obj_bigboss_2_2){spd=0}
 </string>
           </argument>
         </arguments>

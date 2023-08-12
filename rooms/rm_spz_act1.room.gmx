@@ -28,8 +28,8 @@ variant=3</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>14052</xoffset>
-    <yoffset>567</yoffset>
+    <xoffset>5552</xoffset>
+    <yoffset>-1309</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

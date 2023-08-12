@@ -158,10 +158,6 @@ if hp&gt;0
 if alarm[11]=-1{alarm[11]=40}
 }
 }
-else
-{
-with obj_character{character_state_hurt(other, false)}
-}
 </string>
           </argument>
         </arguments>
