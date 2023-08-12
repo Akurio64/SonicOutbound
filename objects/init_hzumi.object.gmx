@@ -288,6 +288,8 @@
     global.previous_room    = ""
     global.zone_id          = 0
     
+    randomize()                    // Random seed
+    
  // Save:
  ////////////////////////////////////////////////////////////////////////////////////////////////////
  // Load save slots:

@@ -27,10 +27,8 @@
             <kind>1</kind>
             <string>/// Variables.
  
-    randomize();
     image_speed  = 0.25;
     image_xscale = irandom_range(-1, 1);
-    randomize();
     hspeed       = image_xscale*(random_range(0.25, 2));
     vspeed       = random_range(-0.5, 0.05);
     gravity      = 0.21875;

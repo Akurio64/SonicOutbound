@@ -2,7 +2,6 @@
 
 if argument0=0
     {
-        randomize()
         text = 
         choose
         (
@@ -59,6 +58,7 @@ if argument0=0
         
         //Suds
         
+        "Shoutout to all my homies from Sonic Riders Tournament Edition",
         "All toasters toast toast!",
         "It's a stone Luigi, you didn't make it.",
         "Work that sucker to death, come on now! Work that sucker to death!",

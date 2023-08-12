@@ -38,7 +38,6 @@
     icon_rewarded    = -1;
     
  // Misc.
-    randomize();
     monitor_frame = irandom_range(0, 2)
 
 </string>

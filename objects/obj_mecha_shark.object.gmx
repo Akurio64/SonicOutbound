@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize()
-alarm[irandom(1)]=1
+            <string>alarm[irandom(1)]=1
 </string>
           </argument>
         </arguments>
@@ -103,7 +102,6 @@ x=random_range(view_xview,view_xview+view_wview)
 image_angle=0
 y=view_yview+300
 
-randomize()
 alarm[irandom(1)]=180
 </string>
           </argument>
@@ -187,7 +185,6 @@ else{image_xscale=-1;image_yscale=-1}
 image_angle=0
 y=view_yview+240
 
-randomize()
 alarm[irandom(1)]=180
 </string>
           </argument>
