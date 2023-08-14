@@ -2461,6 +2461,7 @@
       </objects>
       <object>objects\obj_intro</object>
     </objects>
+    <object>objects\obj_sage_demo</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Startup">

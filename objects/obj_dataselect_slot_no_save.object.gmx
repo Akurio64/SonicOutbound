@@ -57,50 +57,79 @@
             <kind>1</kind>
             <string>/// Character combination.
 
-    if(dataslot_zone = 0 &amp;&amp; obj_dataselect_robotnik.active == false)
+    if instance_exists(obj_sage_demo)
     {
-       if(keyboard_check_pressed(global.ip_up) &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == dataslot_index &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)
-       {
-          if(dataslot_combo == 2)
-          {
-             dataslot_combo  = 0;
-             audio_play(_general_menu_bleep, global.sfx_volume);
+        /// Character combination.
+    
+        if(dataslot_zone = 0 &amp;&amp; obj_dataselect_robotnik.active == false)
+        { 
+           if(dataslot_combo == 0)
+           {
+              dataslot_character = 0;
+              dataslot_cpu       = 1.0;   
+           }
+           if(dataslot_combo == 1)
+           {
+              dataslot_character = 1;
+              dataslot_cpu       = 1.0;   
+           }
+           if(dataslot_combo == 2)
+           {
+              dataslot_character = 2;
+              dataslot_cpu       = 1.0;   
           }
-          else
-          {
-             dataslot_combo += 1;
-             audio_play(_general_menu_bleep, global.sfx_volume);
+        }
+        
+        
+        dataslot_combo=0
+        }
+    else
+    {
+        if(dataslot_zone = 0 &amp;&amp; obj_dataselect_robotnik.active == false)
+        {
+           if(keyboard_check_pressed(global.ip_up) &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == dataslot_index &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)
+           {
+              if(dataslot_combo == 2)
+              {
+                 dataslot_combo  = 0;
+                 audio_play(_general_menu_bleep, global.sfx_volume);
+              }
+              else
+              {
+                 dataslot_combo += 1;
+                 audio_play(_general_menu_bleep, global.sfx_volume);
+              }
+           }
+           if(keyboard_check_pressed(global.ip_down) &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == dataslot_index &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)
+           {
+              if(dataslot_combo == 0)
+              {
+                 dataslot_combo  = 2;
+                 audio_play(_general_menu_bleep, global.sfx_volume);
+              }
+              else
+              {
+                 dataslot_combo -= 1;
+                 audio_play(_general_menu_bleep, global.sfx_volume);
+              }
+           }       
+           if(dataslot_combo == 0)
+           {
+              dataslot_character = 0;
+              dataslot_cpu       = 1;   
+           }
+           if(dataslot_combo == 1)
+           {
+              dataslot_character = 1;
+              dataslot_cpu       = 0;   
+           }
+           if(dataslot_combo == 2)
+           {
+              dataslot_character = 2;
+              dataslot_cpu       = 1;   
           }
-       }
-       if(keyboard_check_pressed(global.ip_down) &amp;&amp; obj_dataselect_cursor.datacursor_slot_index == dataslot_index &amp;&amp; obj_dataselect_cursor.datacursor_direction == 0)
-       {
-          if(dataslot_combo == 0)
-          {
-             dataslot_combo  = 2;
-             audio_play(_general_menu_bleep, global.sfx_volume);
-          }
-          else
-          {
-             dataslot_combo -= 1;
-             audio_play(_general_menu_bleep, global.sfx_volume);
-          }
-       }       
-       if(dataslot_combo == 0)
-       {
-          dataslot_character = 0;
-          dataslot_cpu       = 1;   
-       }
-       if(dataslot_combo == 1)
-       {
-          dataslot_character = 1;
-          dataslot_cpu       = 0;   
-       }
-       if(dataslot_combo == 2)
-       {
-          dataslot_character = 2;
-          dataslot_cpu       = 1;   
-      }
-    }
+        }
+        }
 </string>
           </argument>
         </arguments>

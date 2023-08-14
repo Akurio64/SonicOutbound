@@ -39,7 +39,7 @@ targ_x=-1
 targ_y=-1
 alarm[0]=120
 hp=4
-f=false
+fa=false
 vulnerable=false
 
 h=x
@@ -135,7 +135,7 @@ alarm[4]=-1
           <argument>
             <kind>1</kind>
             <string>instance_create(x,y,obj_bigboss_2_2)
-f=true
+fa=true
 
 instance_destroy(obj_glow)
 instance_create(x,y,obj_fade_to_white)
@@ -408,7 +408,7 @@ if sprite_index=hurt_sprite
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite_index,1,floor(x),floor(y),image_xscale,1,0,c_white,1)
-if f=false{draw_sprite_ext(fang,image_index,floor(x),floor(y),image_xscale,1,0,c_white,1)}
+if fa=false{draw_sprite_ext(fang,image_index,floor(x),floor(y),image_xscale,1,0,c_white,1)}
 draw_sprite_ext(sprite_index,0,floor(x),floor(y),image_xscale,1,0,c_white,1)
 
 if instance_exists(obj_glow){
