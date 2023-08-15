@@ -869,7 +869,6 @@
             <sprite>sprites\spr_spz_bicycle</sprite>
             <sprite>sprites\spr_spz_bicycle_wheel</sprite>
             <sprite>sprites\spr_spz_circle_quart</sprite>
-            <sprite>sprites\spr_spz_circle_quart_2</sprite>
             <sprites name="SPZ2">
               <sprites name="Train Boxes">
                 <sprite>sprites\spr_spz_box_32</sprite>
@@ -2158,7 +2157,6 @@
             <object>objects\obj_spz_tower</object>
             <object>objects\obj_spz_bicycle</object>
             <object>objects\obj_spz_circle_quart</object>
-            <object>objects\obj_spz_circle_quart_2</object>
           </objects>
         </objects>
         <objects name="Penalty">
