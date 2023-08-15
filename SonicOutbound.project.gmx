@@ -2692,6 +2692,7 @@
   <audiogroups name="audiogroups">
     <audiogroup name="audiogroup_default"/>
     <audiogroup name="Music"/>
+    <audiogroup name="Unused"/>
   </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
