@@ -85,10 +85,8 @@
     dummy_effect_create(spr_monitor_explosion, 0.40, x, y-8, -5, 0);
     
  // Create shards:
-    randomize();
     repeat(irandom_range(3, 6))
     {
-           randomize();
            instance_create(x+random_range(-16, 16), y+random_range(-24, -16), obj_monitor_shard);
     }
     
@@ -261,7 +259,6 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
        }
        else
        {
-          randomize();
           static_delay = irandom_range(32, 64);
           static_frame = 0;
        }

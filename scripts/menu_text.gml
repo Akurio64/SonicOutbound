@@ -2,7 +2,6 @@
 
 if argument0=0
     {
-        randomize()
         text = 
         choose
         (

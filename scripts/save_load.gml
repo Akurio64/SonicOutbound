@@ -34,6 +34,11 @@
           lifeVal             = file_text_read_real(dfile);
           global.clives = (dkey ^ lifeVal);
           file_text_readln(dfile);  
+       // Shield:
+          var shieldVal;
+          shieldVal             = file_text_read_real(dfile);
+          global.shield = (dkey ^ lifeVal);
+          file_text_readln(dfile);  
        // Continues:
           var continueVal;
           continueVal             = file_text_read_real(dfile);

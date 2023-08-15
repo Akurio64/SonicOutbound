@@ -17,6 +17,7 @@
            global.save_slot_continues [i] = global.ccontinues;               
            global.save_slot_emeralds  [i] = global.cemeralds;
            global.save_slot_completed [i] = global.game_completed;
+           global.save_slot_shield    [i] = global.shield_index;
         }        
         else
         {
@@ -27,5 +28,6 @@
            global.save_slot_continues [i] = 0;               
            global.save_slot_emeralds  [i] = 0;
            global.save_slot_completed [i] = 0;
+           global.save_slot_shield    [i] = 0
         }        
     }

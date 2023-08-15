@@ -198,6 +198,7 @@
            {
               // Back to the menu:
                  global.clives = 3;
+                 global.shield = 0;
                  global.crings = 0;
                  global.cscore = 0;
                  return rm_menu;

@@ -223,6 +223,7 @@
  // Global variables:
  ////////////////////////////////////////////////////////////////////////////////////////////////////
     global.clives       = 3; // Amount of lives for the character.
+    global.shield       = 0; // Shield index
     global.crings       = 0; // Amount of Rings the character has collected.
     global.crings_check = 1; // Used to gain lives when the ring counter hits * 100.
     global.cscore       = 0; // Current score amount.
@@ -281,10 +282,13 @@
     global.checkpoint_t     = 0;   // Time before we hit the checkpoint.
     global.character_index  = 0;   // The character index. (Human Player)
     global.cpu_index        = -1;  // The character index. (CPU Player)   
+    global.shield_index     = 0;
     global.title_card_name  = ""
     global.title_card_act   = ""
     global.previous_room    = ""
     global.zone_id          = 0
+    
+    randomize()                    // Random seed
     
  // Save:
  ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -304,6 +308,7 @@
            global.save_slot_continues [i] = global.ccontinues;               
            global.save_slot_emeralds  [i] = global.cemeralds;
            global.save_slot_completed [i] = global.game_completed;
+           global.save_slot_shield    [i] = global.shield_index;
         }        
         else
         {
@@ -314,6 +319,7 @@
            global.save_slot_continues [i] = 0;               
            global.save_slot_emeralds  [i] = 0;
            global.save_slot_completed [i] = 0;
+           global.save_slot_shield    [i] = 0;
         }        
     }
 

@@ -60,8 +60,7 @@ alarm[0]=1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize()
-terrain=instance_create(x,random_range(y-dy,y+dy),choose(t1,t2,t3,t4,t5,t6,t7,t8,t9))
+            <string>terrain=instance_create(x,random_range(y-dy,y+dy),choose(t1,t2,t3,t4,t5,t6,t7,t8,t9))
 terrain.hspeed=-spd
 alarm[0]=terrain.sprite_width/spd
 </string>

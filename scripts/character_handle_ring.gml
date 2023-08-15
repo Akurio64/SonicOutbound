@@ -17,10 +17,8 @@
           
           with(ring)
           { 
-               randomize();
                repeat(irandom_range(2, 4))
                {
-                      randomize();
                       dummy_effect_create(choose(spr_ring_sparkle_01, spr_ring_sparkle_02, spr_ring_sparkle_03), 0.35, x+random_range(-8, 8), y+random_range(-8, 8), -10, 0);
                }
                instance_destroy();
@@ -48,10 +46,8 @@
           
           with(hring)
           { 
-               randomize();
                repeat(irandom_range(2, 4))
                {
-                      randomize();
                       dummy_effect_create(choose(spr_ring_sparkle_01, spr_ring_sparkle_02, spr_ring_sparkle_03), 0.35, x+random_range(-8, 8), y+random_range(-8, 8), -10, 0);
                }
                instance_destroy();
@@ -78,10 +74,8 @@
                  
           with(magnetized_ring)
           { 
-               randomize();
                repeat(irandom_range(2, 4))
                {
-                      randomize();
                       dummy_effect_create(choose(spr_ring_sparkle_01, spr_ring_sparkle_02, spr_ring_sparkle_03), 0.35, x+random_range(-8, 8), y+random_range(-8, 8), -10, 0);
                }
                instance_destroy();

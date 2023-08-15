@@ -36,7 +36,7 @@ first_particle = part_type_create();
 part_type_shape(first_particle,pt_shape_spark);
 part_type_size(first_particle,0.1,0.8,-.001,0);
 part_system_depth(first_particle,-10)
-part_type_colour2(first_particle,c_yellow,c_yellow);
+part_type_colour2(first_particle,c_white,c_yellow);
 part_type_speed(first_particle,.1,1,0,0);
 part_type_direction(first_particle,0,359,0,0);
 part_type_gravity(first_particle,0.02,90);
@@ -44,6 +44,7 @@ part_type_orientation(first_particle,0,359,10,0,true);
 part_type_alpha2(first_particle,0.5,0.1);
 part_type_blend(first_particle,true);
 part_type_life(first_particle,50,125);
+part_type_alpha1(first_particle,0.5)
 
 // define the emitter
 first_emitter = part_emitter_create(FirstParticleSystem);

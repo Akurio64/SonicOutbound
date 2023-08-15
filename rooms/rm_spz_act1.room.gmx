@@ -17,8 +17,8 @@ variant=3</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1056</h>
+    <w>1008</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +28,8 @@ variant=3</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>14052</xoffset>
-    <yoffset>567</yoffset>
+    <xoffset>4535</xoffset>
+    <yoffset>202</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -745,21 +745,9 @@ variant=3</code>
     <instance objName="obj_ring" x="11472" y="448" name="inst_03B9BB6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="11504" y="448" name="inst_DD08D2B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_17_ll" x="13392" y="464" name="inst_DC4FB10F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_17_ll" x="13424" y="496" name="inst_2E8415D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_17_ll" x="13456" y="528" name="inst_7973DABF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_17_ll" x="13488" y="560" name="inst_1CB9D68F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_17_ll" x="13392" y="720" name="inst_D6632A52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_17_ll" x="13424" y="752" name="inst_63E20FBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_17_ll" x="13456" y="784" name="inst_A0763AA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_17_ll" x="13488" y="816" name="inst_80754086" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13376" y="944" name="inst_EF63DEF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13408" y="912" name="inst_CBCA7053" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13440" y="880" name="inst_BBABADEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13472" y="848" name="inst_372C5413" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13376" y="688" name="inst_614E2665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13408" y="656" name="inst_1E2F8A89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13440" y="624" name="inst_0AD68F55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_18_lh" x="13472" y="592" name="inst_28DE2EAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_18_lh" x="13376" y="848" name="inst_BBABADEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_18_lh" x="13376" y="592" name="inst_614E2665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="7200" y="1504" name="inst_BDA87688" locked="0" code="" scaleX="7" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_05" x="13632" y="208" name="inst_9CC0857B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_05" x="13696" y="240" name="inst_6ED2E3AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

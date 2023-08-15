@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>1001</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_solid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd=obj_fang_terrain.spd*2
+            <string>spd=8
 sp=0
 dead=false
+
+event_inherited()
 </string>
           </argument>
         </arguments>
@@ -73,14 +75,13 @@ dead=false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_bigboss_2)
+            <string>if instance_exists(par_boss)
     {
         if dead=false{
         sp-=spd
         par_character.x-=obj_fang_terrain.spd
-        par_character.x_speed=clamp(par_character.x_speed,-99,99)
         par_character.x=clamp(par_character.x,ctr_camera.limit_left+24,ctr_camera.limit_right)
-        obj_parallax_spz2.parallax_offset+=obj_fang_terrain.spd/4
+        obj_parallax_spz2.parallax_offset+=4
         with obj_ring{x-=obj_fang_terrain.spd}
         }
     }

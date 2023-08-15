@@ -232,8 +232,7 @@ vulnerable=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize()
-state=0
+            <string>state=0
 ang=0
 char=1
 targ=par_character.x

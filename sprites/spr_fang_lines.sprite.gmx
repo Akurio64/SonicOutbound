@@ -21,5 +21,6 @@
   <height>21</height>
   <frames>
     <frame index="0">images\spr_fang_lines_0.png</frame>
+    <frame index="1">images\spr_fang_lines_1.png</frame>
   </frames>
 </sprite>

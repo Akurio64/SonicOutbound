@@ -151,7 +151,7 @@ rec_y2=(view_yview+view_hview)+ry2
 x=obj_character.x
 y=obj_character.y
 
-if start=true{frame+=0.24;
+if start=true{frame+=0.3;
 if audio_is_playing(_ev_egg_event)=false
 {alarm[1]=1}}
 </string>

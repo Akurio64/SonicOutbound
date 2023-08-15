@@ -35,6 +35,7 @@
     dataslot_continues  = 0;
     dataslot_emeralds   = 0; 
     dataslot_completed  = 0;
+    dataslot_shield     = 0;
     
  // Refresh data. Needs to be done after initializing the variables.
     alarm[1]            = 1; 
@@ -81,6 +82,7 @@
     dataslot_continues  = global.save_slot_continues[dataslot_index];
     dataslot_emeralds   = global.save_slot_emeralds[dataslot_index]; 
     dataslot_completed  = global.save_slot_completed[dataslot_index];
+    dataslot_shield     = global.save_slot_shield[dataslot_shield];
 
  // Set zone id to -1 aka level select if the game is completed.
     if(dataslot_completed == 1)

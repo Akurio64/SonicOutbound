@@ -385,7 +385,7 @@ teleporting=false
 image_index=0
 sprite_index=spr_slz_boss_5
 audio_play(_general_super,global.bgm_volume)
-randomize()
+
 alarm[3]=30
 alarm[6]=15
 </string>
