@@ -1541,7 +1541,6 @@ variant=3</code>
     <tile bgName="tls_spz" x="128" y="1280" w="128" h="128" xo="720" yo="80" id="10006830" name="inst_0B545B48" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="256" y="1136" w="128" h="128" xo="720" yo="80" id="10006832" name="inst_377CF0AC" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="256" y="1264" w="128" h="128" xo="720" yo="80" id="10006833" name="inst_972ECE3E" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_spz" x="512" y="1456" w="128" h="128" xo="432" yo="80" id="10006839" name="inst_E180D216" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="384" y="1328" w="128" h="128" xo="288" yo="1520" id="10006842" name="inst_39011D7B" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="2112" y="896" w="128" h="128" xo="0" yo="80" id="10006870" name="inst_605868D3" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="2288" y="768" w="128" h="128" xo="432" yo="1520" id="10006872" name="inst_7D549C90" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1919,7 +1918,6 @@ variant=3</code>
     <tile bgName="tls_spz" x="9648" y="1584" w="128" h="128" xo="720" yo="80" id="10008904" name="inst_E09032A5" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="9424" y="1552" w="128" h="128" xo="720" yo="80" id="10008905" name="inst_DDEF9869" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="9648" y="432" w="128" h="128" xo="432" yo="80" id="10008906" name="inst_B6D80C73" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_spz" x="384" y="1456" w="128" h="128" xo="720" yo="80" id="10008908" name="inst_3C8C43FE" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="7008" y="1344" w="128" h="128" xo="288" yo="1232" id="10008909" name="inst_8B22DE52" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="9424" y="-48" w="128" h="128" xo="720" yo="1088" id="10008914" name="inst_88AD0391" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="9440" y="80" w="128" h="128" xo="720" yo="1088" id="10008919" name="inst_A8D1E3D4" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2074,6 +2072,8 @@ variant=3</code>
     <tile bgName="tls_spz" x="10848" y="208" w="128" h="128" xo="144" yo="1376" id="10009876" name="inst_65C45E44" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="10720" y="208" w="128" h="128" xo="0" yo="1376" id="10009877" name="inst_9BFDFB90" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="13008" y="336" w="128" h="128" xo="576" yo="944" id="10009883" name="inst_45C22819" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_spz" x="480" y="1456" w="128" h="128" xo="432" yo="80" id="10010644" name="inst_BBD31EFC" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tls_spz" x="384" y="1456" w="128" h="128" xo="720" yo="80" id="10010645" name="inst_71054EA7" depth="998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="9648" y="560" w="128" h="128" xo="720" yo="80" id="10008907" name="inst_D43C6A2F" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="12512" y="1104" w="128" h="128" xo="720" yo="80" id="10009234" name="inst_7EE1CB5E" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="12640" y="1104" w="128" h="128" xo="720" yo="80" id="10009235" name="inst_3A574E9C" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
