@@ -28,6 +28,8 @@
             <string>if place_meeting(x,y,obj_character){
 image_speed=0.3;
 obj_character.x_speed=obj_slz_3dloop.spd
+if !audio_is_playing(_char_spindash_release)
+{audio_play(_char_spindash_release,global.sfx_volume)}
 }
 else{image_speed=0;image_index=0}
 </string>

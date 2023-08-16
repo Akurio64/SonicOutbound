@@ -317,7 +317,7 @@ alarm[8]=90
           <argument>
             <kind>1</kind>
             <string>if star=0{path=choose(1,2,3)}
-if star&lt;8{
+if star&lt;4{
 with instance_create(ctr_camera.limit_left-64,view_yview-64,obj_slz_star)
 {image_xscale=0.5;image_yscale=0.5;visible=true; 
 state=obj_bigboss_3.path}

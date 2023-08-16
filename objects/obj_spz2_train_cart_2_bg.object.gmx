@@ -3,7 +3,7 @@
   <spriteName>spr_spz2_train_cart_2_fg_preview</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>100</depth>
   <persistent>0</persistent>
   <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>

@@ -29,6 +29,7 @@
 s2=instance_create(x+32,y,obj_stairs_part)
 s3=instance_create(x+64,y,obj_stairs_part)
 s4=instance_create(x+96,y,obj_stairs_part)
+move=32
 state=0
 active=false
 
@@ -68,30 +69,30 @@ image_index=1
 {
 if state=0
 {
-s2.offset=-32
-s3.offset=-64
-s4.offset=-96
+s2.offset=-move*1
+s3.offset=-move*2
+s4.offset=-move*3
 }
 
 else if state=1
 {
-s3.offset=-32
-s2.offset=-64
-s1.offset=-96
+s3.offset=-move*1
+s2.offset=-move*2
+s1.offset=-move*3
 }
 
 else if state=2
 {
-s2.offset=32
-s3.offset=64
-s4.offset=96
+s2.offset=move*1
+s3.offset=move*2
+s4.offset=move*3
 }
 
 else if state=3
 {
-s3.offset=32
-s2.offset=64
-s1.offset=96
+s3.offset=move*1
+s2.offset=move*2
+s1.offset=move*3
 }
 active=true
 }

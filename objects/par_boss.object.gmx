@@ -35,6 +35,7 @@ dead_sprite=""
 theme=""
 i_speed=""
 act_clear=""
+hurt=true
 image_speed=0.3
 </string>
           </argument>
@@ -158,6 +159,11 @@ if hp&gt;0
 if alarm[11]=-1{alarm[11]=40}
 }
 }
+else
+{
+if hurt=true{
+with other{character_state_hurt(other,false)}
+}}
 </string>
           </argument>
         </arguments>

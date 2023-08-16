@@ -3,7 +3,7 @@
   <spriteName>spr_hsz_vine</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1000002</depth>
+  <depth>1000005</depth>
   <persistent>0</persistent>
   <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>

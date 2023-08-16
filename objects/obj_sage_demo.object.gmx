@@ -31,11 +31,10 @@
     }
 else if room=rm_ttz_act1
 {
-    // Back to the menu:
                  global.clives = 3;
                  global.crings = 0;
                  global.cscore = 0;
-                 return rm_menu;
+                 room_goto(rm_menu)
                  }
 </string>
           </argument>

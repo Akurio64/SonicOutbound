@@ -464,6 +464,7 @@
           <sprite>sprites\spr_mask_lines_small</sprite>
           <sprite>sprites\spr_mask_edge_line</sprite>
           <sprite>sprites\spr_mask_ledge_climb</sprite>
+          <sprite>sprites\spr_mask_empty</sprite>
         </sprites>
         <sprites name="Mania">
           <sprites name="Sonic">
@@ -1935,7 +1936,6 @@
             <object>objects\obj_monitor_rock_shield</object>
             <object>objects\obj_monitor_lightning_shield</object>
             <object>objects\obj_monitor_speedshoe</object>
-            <object>objects\obj_monitor_life</object>
             <object>objects\obj_monitor_invincibility</object>
             <object>objects\obj_monitor_eggman</object>
             <object>objects\obj_monitor_hyper</object>
