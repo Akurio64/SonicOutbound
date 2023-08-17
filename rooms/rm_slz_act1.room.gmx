@@ -608,7 +608,6 @@
     <instance objName="obj_aehz_collision_00_o" x="15503" y="1834" name="inst_8C4519DE" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="15599" y="1611" name="inst_D29CA8C9" locked="0" code="" scaleX="1" scaleY="6.96774196624756" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_fan" x="15768" y="2062" name="inst_310C2278" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="15760" y="2094" name="inst_4B424799" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="15631" y="1706" name="inst_B7B6F1CE" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_srping_up_red" x="15477" y="2094" name="inst_22F01A2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="15887" y="1836" name="inst_B251DC5F" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
@@ -905,7 +904,6 @@
     <instance objName="obj_monitor_rings" x="12609" y="1580" name="inst_7DC3E952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rings" x="12639" y="1580" name="inst_AE45FC47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rings" x="12582" y="1580" name="inst_B1EA5028" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="12554" y="1580" name="inst_AB3FBAB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="12794" y="1695" name="inst_8444F06B" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ramp1" x="13096" y="1869" name="inst_686DB9E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_collapse" x="13822" y="1503" name="inst_65BCD36D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

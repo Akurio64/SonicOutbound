@@ -17,8 +17,8 @@ variant=3</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1904</w>
-    <h>1044</h>
+    <w>1872</w>
+    <h>1032</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +28,8 @@ variant=3</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>1771</xoffset>
-    <yoffset>434</yoffset>
+    <xoffset>3093</xoffset>
+    <yoffset>-342</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -1011,9 +1011,8 @@ variant=3</code>
     <instance objName="obj_aehz_collision_00_o" x="4080" y="480" name="inst_995E8F95" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_loop_0" x="10720" y="208" name="inst_CE4D0FAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="13072" y="400" name="inst_E76CBB24" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_semi_solid" x="2112" y="592" name="inst_8225BD33" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_s_p" x="1568" y="704" name="inst_94C51E7D" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_s_p" x="1600" y="704" name="inst_4277ECEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_s_p" x="1536" y="704" name="inst_94C51E7D" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_s_p" x="2080" y="592" name="inst_6C5FF2BA" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz_tower" x="2144" y="640" w="64" h="64" xo="0" yo="0" id="10008685" name="inst_ADFCE104" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

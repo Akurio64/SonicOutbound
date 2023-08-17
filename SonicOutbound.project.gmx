@@ -78,7 +78,6 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
-    <extension index="2">extensions\Extension5</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -875,6 +874,7 @@
                 <sprite>sprites\spr_spz_box_32</sprite>
                 <sprite>sprites\spr_spz_box_32_2</sprite>
                 <sprite>sprites\spr_spz_box_64</sprite>
+                <sprite>sprites\spr_spz_box_enemy</sprite>
                 <sprite>sprites\spr_spz_box_64_2</sprite>
                 <sprite>sprites\spr_spz_box_96</sprite>
                 <sprite>sprites\spr_spz_box_96_2</sprite>
@@ -1321,6 +1321,7 @@
       </backgrounds>
       <backgrounds name="SPZ">
         <background>background\pbg_spz_01</background>
+        <background>background\pbg_spz_cloud_1</background>
         <background>background\pbg_spz1_02</background>
         <background>background\pbg_spz2_02</background>
         <background>background\pbg_spz1_03</background>
