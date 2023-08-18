@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>broken=false
-pre_dir = dir
 sound=false
+dir=1
+pre_dir=dir
 </string>
           </argument>
         </arguments>
@@ -72,36 +73,42 @@ if !place_meeting(x, y + 1, par_terrain)
                }
                
 //Behaviour
-if dir=-1 or dir=1 {sound=true;
-if sound=true{audio_play(_badnik_skid,global.sfx_volume)sound=false}
-}
 
-image_xscale=-dir
-dir = sign(x-par_character.x)
-
-if distance_to_object(par_character)&lt;128
+if in_view()
+{
+    if dir!=pre_dir
     {
-        
-        if dir=1
-            {
-                if hspeed&gt;-4
-                    {
-                        hspeed-=0.05*dir
-                        }
-                    }
-                else if dir=-1
-                    {
-                        if hspeed&lt;4
-                            {
-                                hspeed-=0.05*dir
-                                }
-                            }
-                            broken=false
-                        }
-                    else
+        audio_play(_badnik_skid,global.sfx_volume);
+        pre_dir=dir
+        }
+    
+    image_xscale=-dir
+    dir = sign(x-par_character.x)
+    
+    if distance_to_object(par_character)&lt;128
+        {
+            
+            if dir=1
+                {
+                    if hspeed&gt;-4
                         {
-                            hspeed=0
-                            broken=true
+                            hspeed-=0.05*dir
+                            }
+                        }
+                    else if dir=-1
+                        {
+                            if hspeed&lt;4
+                                {
+                                    hspeed-=0.05*dir
+                                    }
+                                }
+                                broken=false
+                            }
+                        else
+                            {
+                                hspeed=0
+                                broken=true
+                                }
                             }
 </string>
           </argument>

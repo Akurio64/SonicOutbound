@@ -47,6 +47,8 @@
             <kind>1</kind>
             <string>///Execute script: edgefmv_load
 edgefmv_load("Misc\Intro.fmv");
+width = display_get_width()
+height = display_get_height()
 </string>
           </argument>
         </arguments>
@@ -172,7 +174,9 @@ edgefmv_load("Misc\Intro.fmv");
           <argument>
             <kind>1</kind>
             <string>//Play loaded video
-edgefmv_play(30,0,0,0,(424/1920)*2,(240/1080)*2,0,c_white,1,false, false);
+
+
+edgefmv_play(30,0,0,0,(2),(2),0,c_white,1,false, false);
 </string>
           </argument>
         </arguments>

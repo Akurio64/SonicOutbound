@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1768</w>
-    <h>993</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>10297</xoffset>
-    <yoffset>-474</yoffset>
+    <xoffset>16190</xoffset>
+    <yoffset>-70</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -191,7 +191,7 @@
     <instance objName="obj_slz_bomb_2" x="6824" y="2456" name="inst_7CE3AA02" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_blackhole" x="5920" y="1144" name="inst_9F3E4F87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_fan" x="6656" y="2496" name="inst_3E0B46BB" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_crane" x="9984" y="1188" name="inst_4FF8E495" locked="0" code="h=432" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_crane" x="9984" y="1188" name="inst_4FF8E495" locked="0" code="h=450&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="8704" y="736" name="inst_EA74AD56" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="9472" y="768" name="inst_23F583D1" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="9696" y="800" name="inst_9FD739E5" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
@@ -673,8 +673,8 @@
     <instance objName="obj_aehz_collision_00_o" x="12672" y="736" name="inst_FDE2DD91" locked="0" code="" scaleX="28" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_stairs" x="17024" y="576" name="inst_C7D5426E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_spring_e" x="17408" y="512" name="inst_CBAAE411" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_crane" x="17664" y="1312" name="inst_B3D5AC63" locked="0" code="h=576&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_crane" x="18704" y="1056" name="inst_5972BE1A" locked="0" code="h=448&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_crane" x="17664" y="1312" name="inst_B3D5AC63" locked="0" code="h=576" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slz_crane" x="18704" y="1072" name="inst_5972BE1A" locked="0" code="h=448&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_3dloop" x="19456" y="1280" name="inst_CCE51EC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_3dloop_ext" x="19456" y="1024" name="inst_B06A1F03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_3dloop_ext" x="19456" y="768" name="inst_76D070B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
