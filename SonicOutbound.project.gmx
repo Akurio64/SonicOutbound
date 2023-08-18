@@ -1321,7 +1321,6 @@
       </backgrounds>
       <backgrounds name="SPZ">
         <background>background\pbg_spz_01</background>
-        <background>background\pbg_spz_cloud_1</background>
         <background>background\pbg_spz1_02</background>
         <background>background\pbg_spz2_02</background>
         <background>background\pbg_spz1_03</background>
