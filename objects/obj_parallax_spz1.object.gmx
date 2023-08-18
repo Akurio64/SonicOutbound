@@ -34,8 +34,8 @@
     var bg_yoffset;
         bg_yoffset = (room_height-((162+150)-view_hview))/room_height
         
-    parallax_add_node(1, pbg_spz_01, 1, 0, 0, 0, 0, 1, 0, 0, -30, 0, 0, 0, 480, 328); // &lt; Parallax ID 0
-    parallax_add_node(1, pbg_spz_cloud_1, 1, -0.06, 0, 0, -(parallax_offset/0.06), 1, 0, 0, -30, 0, 0, 0, 480, 328); // &lt; Parallax ID 0
+    parallax_add_node(1, pbg_spz_01, 1, 0, 0, 0, 0, 1, 0, 0, -30, 0, 0, 0, 480, 240); // &lt; Parallax ID 0
+    parallax_add_node(1, pbg_spz_cloud_1, 1, -0.06, 0, 0, -(parallax_offset/0.06), 1, 0, 0, -30, 0, 0, 0, 480, 30); // &lt; Parallax ID 0
         
  // Create the mountains:
     parallax_add_node(1, pbg_spz1_02, 0.96, 0, 0,(parallax_offset/0.96), 0, bg_yoffset, 0, 0, 90, 0, 0, 0, 200, 144);  // &lt; Parallax ID 1   

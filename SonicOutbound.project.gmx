@@ -1329,6 +1329,7 @@
         <background>background\pbg_spz2_05</background>
         <background>background\pbg_spz1_05</background>
         <background>background\pbg_spz_02</background>
+        <background>background\pbg_spz_cloud_2</background>
       </backgrounds>
       <backgrounds name="RPZ">
         <background>background\pbg_rpz_01</background>
