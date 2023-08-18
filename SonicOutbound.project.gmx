@@ -221,7 +221,9 @@
     </sounds>
     <sounds name="SE">
       <sounds name="Badniks">
+        <sound>sound\_badnik_skid</sound>
         <sound>sound\_badnik_shot</sound>
+        <sound>sound\_badnik_fire</sound>
       </sounds>
       <sounds name="Character">
         <sound>sound\_char_jump</sound>
@@ -305,6 +307,19 @@
         <sounds name="Watermobile">
           <sound>sound\_wm_charge</sound>
           <sound>sound\_wm_dash</sound>
+        </sounds>
+        <sounds name="SPZ">
+          <sound>sound\_boss_throw</sound>
+        </sounds>
+      </sounds>
+      <sounds name="Zone Specific">
+        <sounds name="SPZ">
+          <sound>sound\_train_chugga</sound>
+          <sound>sound\_tower_active</sound>
+          <sound>sound\_tower_launch</sound>
+          <sound>sound\_pend_enter</sound>
+          <sound>sound\_pend_spin</sound>
+          <sound>sound\_pend_release</sound>
         </sounds>
       </sounds>
     </sounds>

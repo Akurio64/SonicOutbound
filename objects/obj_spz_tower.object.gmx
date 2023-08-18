@@ -96,6 +96,7 @@ par_character.state=CS_DEFAULT
                     canbetriggered=false;
                     par_character.ground=false;
                     par_character.y_speed=-12;
+                    audio_play(_tower_launch,global.sfx_volume)
                 }
             }
         else
@@ -109,6 +110,14 @@ if canbetriggered==false
         if instance_exists(par_character)
             {
                 if alarm[0]=-1{alarm[0]=60}
+                }
+            }
+            
+        if triggered=true
+        {
+            if audio_is_playing(_tower_active)=false
+            {
+                audio_play(_tower_active,global.sfx_volume)
                 }
             }
 </string>
@@ -133,7 +142,13 @@ if canbetriggered==false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if other.is_cpu==false{if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT{triggered=true;}}
+            <string>if other.is_cpu==false
+{
+    if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT
+    {
+        triggered=true;
+        }
+    }
 </string>
           </argument>
         </arguments>

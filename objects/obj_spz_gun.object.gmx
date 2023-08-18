@@ -100,6 +100,7 @@ event_inherited()
             <kind>1</kind>
             <string>if(in_view())
     {
+        audio_play(_badnik_shot,global.sfx_volume)
         bullet=instance_create(x,y-6,obj_gun_bullet)
         bullet.image_xscale=image_xscale
         bullet.image_yscale=image_yscale

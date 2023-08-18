@@ -100,6 +100,7 @@ par_character.animation_angle=image_angle}
                                     triggered             = false;
                                     canbetriggered        = false;
                                     par_character.state   = CS_ROLL;
+                                    audio_play(_pend_release,global.sfx_volume)
                                     par_character.ground  = false;
                                     par_character.y_speed = lengthdir_x(xspeed,image_angle+90)
                                     par_character.x_speed = lengthdir_y(xspeed,image_angle-90)
@@ -117,6 +118,7 @@ par_character.animation_angle=image_angle}
                                 {
                                     triggered             = false;
                                     canbetriggered        = false;
+                                    audio_play(_pend_release,global.sfx_volume)
                                     par_character.state   = CS_ROLL;
                                     par_character.ground  = false;
                                     par_character.y_speed = lengthdir_x(xspeed,image_angle+90)
@@ -141,6 +143,14 @@ par_character.animation_angle=image_angle}
         
         bg.x=x;bg.y=y;bg.sprite_index=spr_spz_pendulum;bg.image_index=3;
         bg.image_angle=image_angle
+        
+        if image_angle&gt;80 and image_angle&lt;100
+        {
+            if audio_is_playing(_pend_spin)=false
+            {
+                audio_play(_pend_spin,global.sfx_volume)
+                }
+            }
 </string>
           </argument>
         </arguments>
@@ -171,6 +181,7 @@ par_character.animation_angle=image_angle}
                     {
                         if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT
                             {
+                                audio_play(_pend_enter,global.sfx_volume)
                                 triggered=true;
                                 }
                             }
@@ -185,6 +196,7 @@ if image_xscale=-1
                     {
                         if canbetriggered=true &amp;&amp; other.state!=CS_DEATH &amp;&amp; other.state!=CS_HURT
                             {
+                                audio_play(_pend_enter,global.sfx_volume)
                                 triggered=true;
                                 }
                             }

@@ -38,45 +38,15 @@
      parallax_add_node(1, pbg_spz_cloud_2, 1, -0.06, 0, 0, -0.06, bg_yoffset, 0, 0, -30, 0, 0, 0, 480, 164); // &lt; Parallax ID 0
         
  // Create the mountains:
-    parallax_add_node(1, pbg_spz2_05, 0.96, 0, 0, (parallax_offset*0.96), 0, bg_yoffset, 0, 0, 90+96, 0, 0, 0, 130, 54);  // &lt; Parallax ID 1   
-    parallax_add_node(1, pbg_spz1_04, 0.92, 0, 0, (parallax_offset*0.92), 0, bg_yoffset, 0, 0, 112+96, 0, 0, 0, 130, 54);  // &lt; Parallax ID 1  
+    parallax_add_node(1, pbg_spz2_05, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 90+96, 0, 0, 0, 130, 54);  // &lt; Parallax ID 1   
+    parallax_add_node(1, pbg_spz1_04, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 112+96, 0, 0, 0, 130, 54);  // &lt; Parallax ID 1  
     
     // Create the ocean.
     for(i=0; i&lt;30; i+=1)
     {
-        parallax_add_node(1, pbg_spz1_05, (0.84-(i*0.04)), -(0.3+i*0.03), 0, (parallax_offset/0.84), 0, bg_yoffset, 0, 0, (112+54+96)+i*5, 0, 0, i*5, 512, 128);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
+        parallax_add_node(1, pbg_spz1_05, (0.84-(i*0.04)), -(0.3+i*0.03), 0, 0, 0, bg_yoffset, 0, 0, (112+54+96)+i*5, 0, 0, i*5, 512, 128);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8   
                   
     }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Animation speeds.
- 
- // We can change the image frame of parallax sprites by changing parallax_speed[id]
- // This obviously only works when using a sprite with multiple frames.
- 
-    parallax_speed[1] += 0.25; // Mountains 1 waterfalls.
-    parallax_speed[2] += 0.25; // Mountains 2 waterfalls.    
-
 </string>
           </argument>
         </arguments>

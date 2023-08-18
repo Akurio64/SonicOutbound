@@ -55,6 +55,8 @@
     // Collision variables:
         ground = false;
         hurt   = false;
+        
+        audio_play(_boss_throw,global.sfx_volume)
 </string>
           </argument>
         </arguments>

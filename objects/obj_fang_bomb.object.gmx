@@ -31,6 +31,8 @@ vspeed=-5
 image_speed=0.3
 alarm[1]=60
 hurt=false
+
+audio_play(_boss_throw,global.sfx_volume)
 </string>
           </argument>
         </arguments>
@@ -61,6 +63,7 @@ hurt=false
         visible=true
         hspeed=-obj_fang_terrain.spd
         depth=3
+        audio_play(_boss_destroy,global.sfx_volume)
         }
 </string>
           </argument>

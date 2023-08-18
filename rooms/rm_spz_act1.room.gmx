@@ -28,8 +28,8 @@ variant=3</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>3994</xoffset>
-    <yoffset>-238</yoffset>
+    <xoffset>21566</xoffset>
+    <yoffset>2113</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -418,8 +418,6 @@ variant=3</code>
     <instance objName="obj_ring" x="7456" y="920" name="inst_72E4D9FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="7488" y="936" name="inst_9455A8CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="7520" y="968" name="inst_22130E8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="6656" y="952" name="inst_BF83E859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_badnik_block" x="6928" y="952" name="inst_11A15183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_ridal_p" x="1184" y="1432" name="inst_E7E8C327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="1184" y="1432" name="inst_5075026D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="1520" y="1240" name="inst_94DB79E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -507,7 +505,6 @@ variant=3</code>
     <instance objName="obj_aehz_collision_00_o" x="7504" y="2008" name="inst_F1436BFA" locked="0" code="" scaleX="4" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_17" x="6944" y="1304" name="inst_CCC2D65D" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rock_shield" x="3824" y="712" name="inst_12EF07FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spz_cart" x="6800" y="968" name="inst_20DC2CC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_circle_quart" x="8896" y="1432" name="inst_933E5C6E" locked="0" code="" scaleX="-1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_circle_quart" x="8896" y="1272" name="inst_61BE7EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_circle_quart" x="8896" y="1272" name="inst_00F12229" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>

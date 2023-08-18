@@ -92,6 +92,7 @@
         image_angle=point_direction(x,y,par_character.x,par_character.y)
         sprite_direction=sign(par_character.x-x)
         move_towards_point(par_character.x,par_character.y,10)
+        audio_play(_badnik_fire,global.sfx_volume)
         friction=0.2
         rush=true
         alarm[1]=30

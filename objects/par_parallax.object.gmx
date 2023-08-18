@@ -146,7 +146,7 @@
         Height        = ds_grid_get(ParallaxNodes, constParallaxHeight,        CurrentNode);
         
         // Calculate final position
-        xFinal = floor((view_xview[view_current])*xFactor+xOffset+xScroll)-parallax_offset;
+        xFinal = floor((view_xview[view_current])*xFactor+xOffset+xScroll);
         yFinal = floor((view_yview[view_current])*yFactor+yOffset+yScroll);
 //      yFinal = floor((view_yview+yOffset+yScroll)*yFactor);
     

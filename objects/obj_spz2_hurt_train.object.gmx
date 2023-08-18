@@ -28,6 +28,14 @@
             <string>cart=4
 start=false
 spd=4
+
+if start=true
+{
+    if audio_is_playing(_train_chugga)=false
+    {
+        audio_play(_train_chugga,global.sfx_volume)
+        }
+    }
 </string>
           </argument>
         </arguments>

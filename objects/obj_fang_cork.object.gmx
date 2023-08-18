@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>hspeed=5*sign(par_character.x-x)
 image_xscale=sign(par_character.x-x)
-
+audio_play(_badnik_shot,global.sfx_volume)
 </string>
           </argument>
         </arguments>

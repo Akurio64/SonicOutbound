@@ -431,6 +431,14 @@ x=h+32*sin(time/100);time+=1
 h+=xspeed
 if xspeed&gt;0
 {xspeed-=fric}
+
+if dead=false
+{
+    if audio_is_playing(_train_chugga)=false
+    {
+        audio_play(_train_chugga,global.sfx_volume*(image_xscale/2))
+        }
+    }
 </string>
           </argument>
         </arguments>

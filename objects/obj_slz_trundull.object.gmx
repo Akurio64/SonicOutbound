@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>broken=false
-dir=1
+pre_dir = dir
+sound=false
 </string>
           </argument>
         </arguments>
@@ -71,6 +72,9 @@ if !place_meeting(x, y + 1, par_terrain)
                }
                
 //Behaviour
+if dir=-1 or dir=1 {sound=true;
+if sound=true{audio_play(_badnik_skid,global.sfx_volume)sound=false}
+}
 
 image_xscale=-dir
 dir = sign(x-par_character.x)

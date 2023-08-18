@@ -41,6 +41,11 @@ alarm[0]=120
 hp=4
 fa=false
 vulnerable=false
+instance_destroy(obj_parallax_spz2)
+with instance_create(0,0,obj_parallax_spz2)
+{
+    auto=true
+    }
 
 h=x
 v=y
