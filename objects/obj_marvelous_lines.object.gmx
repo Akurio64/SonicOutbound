@@ -49,9 +49,9 @@ sp=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if obj_boss_camera.start=true
+            <string>if instance_exists(par_boss)
     {
-        if dead=false{
+        if obj_marvelous_rail.dead=false{
         sp-=spd
         }
     }

@@ -75,7 +75,7 @@ dead=false
             <kind>1</kind>
             <string>if instance_exists(par_boss)
     {
-        if dead=false{
+        if obj_fang_rail.dead=false{
         sp-=spd
         }
     }

@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
-    <h>600</h>
+    <w>1848</w>
+    <h>1023</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>427</xoffset>
-    <yoffset>-236</yoffset>
+    <page>0</page>
+    <xoffset>1408</xoffset>
+    <yoffset>-289</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -74,7 +74,6 @@
     <instance objName="obj_fang_rail" x="15856" y="1652" name="inst_1CC8C1F6" locked="0" code="" scaleX="41" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fang_lines" x="15856" y="1460" name="inst_C56F317E" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_boss_camera" x="16176" y="1572" name="inst_D9859447" locked="0" code="boss_id=obj_bigboss_2_2&#xA;mode=0&#xA;boss_x=x+144&#xA;boss_y=y+48&#xA;cutscene=true&#xA;cutscene_id=spr_cutscene_2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character" x="32" y="708" name="inst_85C3C2BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_circle_quart" x="512" y="724" name="inst_59480BE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_circle_quart" x="512" y="1012" name="inst_7BC4494B" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz2_train_cart_2" x="224" y="1300" name="inst_704C7D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -626,9 +625,13 @@
     <instance objName="obj_spz_mis_p" x="4224" y="1060" name="inst_BB588517" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_mis_p" x="4256" y="1060" name="inst_27A8E8BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_tower" x="4432" y="1124" name="inst_BD4EF54F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< Updated upstream
     <instance objName="obj_ring" x="2104" y="1144" name="inst_1D52F9EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="2120" y="1120" name="inst_F4C2537B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="2168" y="1144" name="inst_C5A4B920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="obj_character" x="15888" y="1632" name="inst_1C961BE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> Stashed changes
   </instances>
   <tiles>
     <tile bgName="tls_spz" x="832" y="804" w="128" h="128" xo="720" yo="80" id="10009826" name="inst_9F8FF811" depth="999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
