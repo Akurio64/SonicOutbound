@@ -30,14 +30,7 @@ alarm_ex=false
 event_inherited()
 spd=0
 cap=4
-
-if start=true
-{
-    if audio_is_playing(_train_chugga)=false
-    {
-        audio_play(_train_chugga,global.sfx_volume)
-        }
-    }
+my_cart=""
 </string>
           </argument>
         </arguments>

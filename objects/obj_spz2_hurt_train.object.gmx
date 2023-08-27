@@ -28,6 +28,7 @@
             <string>cart=4
 start=false
 spd=4
+my_active = ""
 
 if start=true
 {

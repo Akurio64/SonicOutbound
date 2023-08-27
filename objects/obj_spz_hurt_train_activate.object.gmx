@@ -32,6 +32,8 @@
     
     alarm[0] = 1;
     train_id = noone;
+    
+    my_train = ""
 </string>
           </argument>
         </arguments>

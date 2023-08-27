@@ -34,6 +34,7 @@
     train=""
     alarm[0] = 1;
     base_id = noone;
+    my_base= ""
 </string>
           </argument>
         </arguments>
@@ -79,7 +80,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_spz2_train_base) {
+            <string>with instance_nearest(x,y,obj_spz2_train_base) {
    if (my_cart == other.my_base) {
       other.base_id = id;
       break;

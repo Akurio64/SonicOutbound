@@ -2475,7 +2475,6 @@
     </objects>
     <object>objects\obj_sage_demo</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <rooms name="Startup">
       <room>rooms\rm_init</room>

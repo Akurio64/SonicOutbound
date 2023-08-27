@@ -43,6 +43,7 @@
     y_diracc        = 0.25;    
     horz_speed      = 1;
     vert_speed      = 1;
+    reverse         = ""
 </string>
           </argument>
         </arguments>
