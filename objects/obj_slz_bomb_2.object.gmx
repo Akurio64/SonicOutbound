@@ -73,7 +73,6 @@ block_timer = 0;
               
  // Add Score:
     global.cscore += score_multiplier(true, xx, yy); 
-    instance_create(x,y,obj_enemy_part)
         
  // Play Sound:
     audio_play(_general_destroy, global.sfx_volume);       

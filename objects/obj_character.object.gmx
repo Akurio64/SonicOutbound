@@ -1687,7 +1687,7 @@ else {shield_y = floor(y+22)}
           <argument>
             <kind>1</kind>
             <string>///Particle System
-
+/*
 if(shield_index == SHIELD_FIRE){
 part_emitter_region(FireP,fe,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(FireP,fe,fp,1)}
@@ -1714,7 +1714,7 @@ if invincibility=2{
 part_emitter_region(Star1,ie,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(Star1,ie,ip,1)
-part_emitter_burst(Star2,ie2,ip2,1)}
+part_emitter_burst(Star2,ie2,ip2,1)}*/
 </string>
           </argument>
         </arguments>

@@ -4,11 +4,7 @@
   <width>14656</width>
   <height>2300</height>
   <vsnap>8</vsnap>
-<<<<<<< Updated upstream
   <hsnap>8</hsnap>
-=======
-  <hsnap>16</hsnap>
->>>>>>> Stashed changes
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -31,9 +27,9 @@ variant=3</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>0</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>8404</xoffset>
-    <yoffset>141</yoffset>
+    <page>1</page>
+    <xoffset>13701</xoffset>
+    <yoffset>1153</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -999,7 +995,6 @@ variant=3</code>
     <instance objName="obj_aehz_collision_00_o" x="4080" y="1080" name="inst_995E8F95" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_spz_loop_0" x="10720" y="808" name="inst_CE4D0FAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="13072" y="1000" name="inst_E76CBB24" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-<<<<<<< Updated upstream
     <instance objName="obj_aehz_collision_00_s_p" x="1600" y="1304" name="inst_94C51E7D" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_s_p" x="2080" y="1192" name="inst_6C5FF2BA" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="1984" y="568" name="inst_FF44DFA9" locked="0" code="" scaleX="4" scaleY="7.5" colour="4294967295" rotation="0"/>
@@ -1022,12 +1017,6 @@ variant=3</code>
     <instance objName="obj_spring_up" x="12096" y="1336" name="inst_C290761E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spring_up" x="12128" y="1336" name="inst_9309CAE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spring_up" x="12160" y="1336" name="inst_A77D755C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
-    <instance objName="obj_semi_solid" x="1984" y="1192" name="inst_4E34AC1E" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_semi_solid" x="1408" y="1304" name="inst_BA6726EF" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_34" x="12080" y="1224" name="inst_A35D2D2A" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_34" x="12080" y="1096" name="inst_86A449DA" locked="0" code="" scaleX="0.75" scaleY="-0.75" colour="4294967295" rotation="0"/>
->>>>>>> Stashed changes
   </instances>
   <tiles>
     <tile bgName="tls_spz_tower" x="2144" y="1240" w="64" h="64" xo="0" yo="0" id="10008685" name="inst_ADFCE104" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1301,13 +1290,7 @@ variant=3</code>
     <tile bgName="tls_spz" x="896" y="1432" w="128" h="128" xo="720" yo="800" id="10009871" name="inst_EEC5FB77" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="12944" y="776" w="128" h="128" xo="864" yo="1376" id="10009878" name="inst_BE432904" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="12816" y="872" w="128" h="128" xo="720" yo="80" id="10010038" name="inst_8BDBB339" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-<<<<<<< Updated upstream
     <tile bgName="tls_spz" x="6560" y="1048" w="128" h="128" xo="576" yo="800" id="10010711" name="inst_CDA31664" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-=======
-    <tile bgName="tls_spz" x="12048" y="1000" w="128" h="128" xo="432" yo="1376" id="10010660" name="inst_3DFF6135" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_spz" x="12048" y="1192" w="128" h="128" xo="432" yo="1520" id="10010661" name="inst_4771FE4E" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tls_spz" x="6560" y="1048" w="128" h="128" xo="576" yo="800" id="10010663" name="inst_46B2540A" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
->>>>>>> Stashed changes
     <tile bgName="tls_spz" x="0" y="1240" w="128" h="128" xo="0" yo="80" id="10006478" name="inst_7ACB748B" depth="999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="256" y="1176" w="128" h="128" xo="288" yo="1232" id="10006484" name="inst_18209D3C" depth="999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_spz" x="0" y="1368" w="128" h="128" xo="576" yo="80" id="10006501" name="inst_6A004148" depth="999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

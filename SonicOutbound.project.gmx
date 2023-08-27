@@ -2448,8 +2448,6 @@
     </objects>
     <objects name="Particules">
       <object>objects\par_particules</object>
-      <object>objects\obj_enemy_part</object>
-      <object>objects\obj_flower</object>
       <object>objects\obj_fire_particules2</object>
       <object>objects\obj_wind_particule2</object>
       <object>objects\obj_elec_particules2</object>
@@ -2477,6 +2475,7 @@
     </objects>
     <object>objects\obj_sage_demo</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <rooms name="Startup">
       <room>rooms\rm_init</room>
