@@ -352,6 +352,7 @@
           <sprite>sprites\spr_sonic_dropdash</sprite>
           <sprite>sprites\spr_sonic_spindash</sprite>
           <sprite>sprites\spr_sonic_spring</sprite>
+          <sprite>sprites\spr_sonic_tower</sprite>
           <sprite>sprites\spr_sonic_bungee</sprite>
           <sprite>sprites\spr_sonic_glider</sprite>
           <sprite>sprites\spr_sonic_twirl</sprite>

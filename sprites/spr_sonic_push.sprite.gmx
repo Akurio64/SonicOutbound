@@ -7,9 +7,9 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>10</bbox_left>
-  <bbox_right>38</bbox_right>
-  <bbox_top>7</bbox_top>
+  <bbox_left>11</bbox_left>
+  <bbox_right>40</bbox_right>
+  <bbox_top>9</bbox_top>
   <bbox_bottom>43</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -27,8 +27,5 @@
     <frame index="4">images\spr_sonic_push_4.png</frame>
     <frame index="5">images\spr_sonic_push_5.png</frame>
     <frame index="6">images\spr_sonic_push_6.png</frame>
-    <frame index="7">images\spr_sonic_push_7.png</frame>
-    <frame index="8">images\spr_sonic_push_8.png</frame>
-    <frame index="9">images\spr_sonic_push_9.png</frame>
   </frames>
 </sprite>
