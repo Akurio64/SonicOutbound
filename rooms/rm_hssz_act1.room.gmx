@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>1297</xoffset>
-    <yoffset>127</yoffset>
+    <page>0</page>
+    <xoffset>790</xoffset>
+    <yoffset>-19</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -164,6 +164,7 @@
     <instance objName="obj_ring" x="1392" y="2176" name="inst_C6B88C4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="1296" y="2192" name="inst_DD4971CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="1200" y="2192" name="inst_F8690A81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sage_demo" x="1296" y="112" name="inst_425B42E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_hsz_sand" x="7344" y="2088" w="128" h="128" xo="1172" yo="132" id="10007860" name="inst_309DB53A" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

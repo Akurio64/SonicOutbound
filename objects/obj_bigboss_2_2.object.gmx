@@ -42,9 +42,6 @@ if sign(par_character.y-y)=-1
 {vspeed=-10}
 hspeed=sign(par_character.x-x)*3
 gravity=0.1875
-
-obj_boss_camera.second=true
-obj_boss_camera.y-=16
 </string>
           </argument>
         </arguments>
@@ -71,6 +68,9 @@ obj_boss_camera.y-=16
 instance_create(view_xview+212, obj_boss_camera.y, obj_sign_post_camera);
 ctr_audio.clear_bgm = false;
 audio_stop(theme);
+
+obj_fang_rail.spd=8
+obj_fang_lines.spd=8
 </string>
           </argument>
         </arguments>
@@ -121,8 +121,6 @@ alarm[1]=1
           <argument>
             <kind>1</kind>
             <string>dead=true
-audio_stop(_general_spike)
-audio_play(_char_hurt, global.sfx_volume);  
 </string>
           </argument>
         </arguments>
@@ -382,7 +380,11 @@ with(other){
   obj_bigboss_2_2.hit=true;
   obj_bigboss_2_2.hspeed=-2
   obj_bigboss_2_2.vspeed=-4
-  audio_play(_general_spike, global.sfx_volume);  
+  
+  if obj_bigboss_2_2.dead=false{
+  audio_play(_general_spike, global.sfx_volume);}
+  else{audio_play(_char_hurt, global.sfx_volume);}
+  
   obj_bigboss_2_2.sprite_index=obj_bigboss_2_2.hurt_sprite
     image_speed=0.3
  }else if(state != CS_HURT &amp;&amp; state != CS_DEATH &amp;&amp; !is_cpu){

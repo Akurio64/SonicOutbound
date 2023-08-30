@@ -885,6 +885,8 @@
             <sprite>sprites\spr_spz_bicycle</sprite>
             <sprite>sprites\spr_spz_bicycle_wheel</sprite>
             <sprite>sprites\spr_spz_circle_quart</sprite>
+            <sprite>sprites\spr_spz_loop_h</sprite>
+            <sprite>sprites\spr_spz_slope</sprite>
             <sprites name="SPZ2">
               <sprites name="Train Boxes">
                 <sprite>sprites\spr_spz_box_32</sprite>
@@ -2174,6 +2176,7 @@
             <object>objects\obj_spz_tower</object>
             <object>objects\obj_spz_bicycle</object>
             <object>objects\obj_spz_circle_quart</object>
+            <object>objects\obj_spz_loop_h</object>
           </objects>
         </objects>
         <objects name="Penalty">
@@ -2383,6 +2386,7 @@
           <object>objects\obj_shit</object>
           <object>objects\obj_layer_high_dif</object>
           <object>objects\obj_layer_low_dif</object>
+          <object>objects\obj_spz_slope</object>
           <object>objects\obj_semi_solid</object>
           <object>objects\obj_Ramp2</object>
           <object>objects\obj_ramp_3</object>
