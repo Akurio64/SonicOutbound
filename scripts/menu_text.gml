@@ -14,15 +14,12 @@ if argument0=0
         "Sonic Adventure 1 is way better than Sonic Adventure 2",
         "Sonic 06 was ruined by SEGA, not Sonic Team.",
         "Frontiers final boss and ending is disappointing",
-        "Only in Ohio",
         "Geometry Dash  is the best mobile game ever",
         "Meta had enough of being redesigned",
         '"'+"Long time no see!!!!!."+'" +10000 sins',
         "I have committed several war crimes in Serbia",
-        "I'm gay for you, and you're gay for me.",
         "Spiderman, why you gay for that guy?",
         "Miles, the BLAACK one!!!",
-        "YouTubers after getting 1 million subscribers: I love diddling little children.",
         "The professional cheesy-ass messages you might receive are from Plasmariel",
         "My name is Akurio64, but you can call me the Programmer.",
         "I wrote like seven meessages in on trip to Niagara Falls.",
@@ -67,7 +64,6 @@ if argument0=0
         "Wii Play. Do you? Is that a threat?",
         "Do you speak british stuff?",
         "First of all I am Vegeta. Second of all you're not Vegeta. Third of all you wanna be Vegeta but you can't be Vegeta because I'm Vegeta.",
-        "YOU MIGHT KNOW EVERYTHING I'M GOING TO DO, BUT THATS NOT GOING TO HELP YOU SINCE I KNOW EVERYTHING YOUR GOING TO DO! STRANGE ISN'T IT???",
         
         
         //Other
