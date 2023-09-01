@@ -83,7 +83,11 @@ my_cart=""
     {
         alarm[0]=1;
         spd+=cap/100
-        }
+        if audio_is_playing(_train_chugga)=false
+            {
+                audio_play(_train_chugga,global.sfx_volume)
+                }
+            }
     else
         {
             if spd&gt;0

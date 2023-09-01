@@ -84,6 +84,10 @@ ctr_camera.Camera_ShakeDuration = 30
 ctr_camera.Camera_ShakeForce    = 3;
 if !instance_exists(obj_tmz_shader)
 {instance_create(0,0,obj_tmz_shader)}
+obj_character.input_lock_r=1
+obj_character.input_lock_l=1
+obj_character.start=false
+obj_character.state=CS_DEFAULT
 }
 </string>
           </argument>

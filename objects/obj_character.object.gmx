@@ -3199,7 +3199,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_robotnik_fun_room)
+            <string>//room_goto(rm_robotnik_fun_room)
 </string>
           </argument>
         </arguments>
@@ -3222,7 +3222,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_soundtest)
+            <string>//room_goto(rm_soundtest)
 </string>
           </argument>
         </arguments>
@@ -3245,7 +3245,7 @@ else if character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y, angle, obj_min
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(stage_order())
+            <string>//room_goto(stage_order())
 </string>
           </argument>
         </arguments>

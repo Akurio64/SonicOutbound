@@ -79,7 +79,7 @@ par_character.state=CS_DEFAULT
     {
         par_character.x_speed=0;
         par_character.y_speed=0;
-        par_character.y=floor(y)
+        par_character.y=floor(y)-6
         par_character.x=floor(x)
         par_character.animation_angle=0
         par_character.angle=0
