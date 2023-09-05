@@ -96,7 +96,7 @@ instance_create(x+1312,y-16,obj_ring)
             <kind>1</kind>
             <string>if instance_exists(obj_miniboss_2)
     {
-        if obj_miniboss_2.hp&lt;=4
+        if obj_miniboss_2.hp&lt;=2
             {
                 with instance_create(x+sprite_width,y,obj_terrain_gen)
                 {sprite_index=spr_marvelous_rail_2}

@@ -320,6 +320,7 @@
           {
              if(character_collision_check(COL_BOTTOM_OBJECT, MASK_BIG, x, y, angle, _seesaw) && y_speed >= 0)
              {
+                
                 // Bounce the character.
                    ground  = false;
                    y_speed = -_seesaw.spring_strength;

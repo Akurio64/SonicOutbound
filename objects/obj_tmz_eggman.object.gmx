@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>ctr_indestructible</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,9 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>alarm[0]=90
-with obj_character{
-input_lock_l=1
-input_lock_r=1}
 </string>
           </argument>
         </arguments>
@@ -100,6 +97,11 @@ else
    }
    image_speed=0.3
  
+obj_character.input_lock_r=1
+obj_character.input_lock_l=1
+obj_character.start=false
+obj_character.state=CS_DEFAULT
+obj_character.animation_direction=1
 </string>
           </argument>
         </arguments>

@@ -54,7 +54,8 @@ event_inherited()
             <kind>1</kind>
             <string>event_inherited()
 audio_stop(_general_collapse)
-audio_play(_boss_destroy,global.sfx_volume)
+if audio_is_playing(_boss_destroy)=false
+{audio_play(_boss_destroy,global.sfx_volume)}
 var xx=random_range(x-(sprite_width/2)+(sprite_width/9),x+(sprite_width/2)-(sprite_width/9))
 var yy=random_range(y-(sprite_height/2)+(sprite_height/9),y+(sprite_height/2)-(sprite_height/9))
 dummy_effect_create(spr_boss_explosion, 0.35, xx, yy, depth-2, 0)

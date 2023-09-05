@@ -176,8 +176,8 @@ if(keyboard_check_pressed(vk_left))
 
 time+=50/3
 
-x = (xstart + lengthdir_x(3, current_time*0.1))
-y = (ystart + lengthdir_y(3, current_time*0.1))
+x = (xstart + lengthdir_x(3, time*0.1))
+y = (ystart + lengthdir_y(3, time*0.1))
 
 // Menu Selection:
        if(keyboard_check_pressed(ord("A")) || (joy_pressed(0, global.dip_button_a || keyboard_check_pressed(vk_enter) || (joy_pressed(0, global.dip_button_s)))))
@@ -272,7 +272,7 @@ else if choice=3{col=make_colour_rgb(50,70,95)}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(spr_circle_bg,0,x,y,1,1,2*sin(current_time*0.001),col,1)
+            <string>draw_sprite_ext(spr_circle_bg,0,x,y,1,1,2*sin(time*0.001),col,1)
 draw_set_colour(c_black)
 draw_set_alpha(0.5)
 draw_circle(x,y,350,false)
@@ -285,9 +285,9 @@ draw_text_circle(x,y,string_repeat(menu_text(1)+"    ",clamp((2*324*pi)/string_w
 draw_set_halign(fa_left)
 draw_set_valign(fa_left)
 draw_set_colour(c_white)
-draw_sprite_ext(spr_menu_arrow,ar,x,y-ystart-10,1,1,1.5*sin(current_time*0.001),c_white,1)
-draw_sprite_ext(spr_menu_icon,choice,x-xstart+215,y-ystart+213,1,1,1*sin(current_time*0.001),c_black,0.5)
-draw_sprite_ext(spr_menu_icon,choice,x-xstart+212,y-ystart+210,1,1,1*sin(current_time*0.001),c_white,1.0)
+draw_sprite_ext(spr_menu_arrow,ar,x,y-ystart-10,1,1,1.5*sin(time*0.001),c_white,1)
+draw_sprite_ext(spr_menu_icon,choice,x-xstart+215,y-ystart+213,1,1,1*sin(time*0.001),c_black,0.5)
+draw_sprite_ext(spr_menu_icon,choice,x-xstart+212,y-ystart+210,1,1,1*sin(time*0.001),c_white,1.0)
 </string>
           </argument>
         </arguments>

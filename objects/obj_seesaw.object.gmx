@@ -86,7 +86,7 @@ obj_see_ball.alarm[0]=1
           <argument>
             <kind>1</kind>
             <string>if bounce=true{bounce=false}else if bounce=false{bounce=true}
-if bounce=true{alarm[0]=20}
+if bounce=true{alarm[0]=1}
 </string>
           </argument>
         </arguments>
@@ -111,6 +111,12 @@ if bounce=true{alarm[0]=20}
             <kind>1</kind>
             <string>if state=0{if image_angle&lt;10{image_angle+=6}}
 else if state=1{if image_angle&gt;-10{image_angle-=6}}
+
+if par_character.y&lt;y-48
+{
+    spring_strength = abs(obj_character.y_speed*1.5)
+    spring_strength = clamp(spring_strength,7.5,12)
+    }
 </string>
           </argument>
         </arguments>

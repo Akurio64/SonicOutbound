@@ -37,12 +37,12 @@ m=0
 global.crings=18
 audio_play(_tmz_shield, global.sfx_volume);
 
-for (i=4; i&gt;0; i-=1)
+for (i=2; i&gt;0; i-=1)
     {
         ring_create=instance_create(x,y,obj_tmz_chain)
-        ring_create.direction=(360-i*90)-45
-        ring_create.ie=i
-    }
+        ring_create.direction=(360-4*90)-45
+        ring_create.ie=i+2
+        }
 
 for (i=4; i&gt;0; i-=1)
     {
@@ -54,7 +54,7 @@ event_inherited()
 eggman_sprite=spr_tmz_robotnik_normal
 act_clear=_ev_act_clear2
 theme=msc_phantom_egg
-hp=16
+hp=8
 i_speed=0.3
 instance_create(x,y,obj_tmz_shield)
 
@@ -350,7 +350,7 @@ mis=false
           <argument>
             <kind>1</kind>
             <string>state=0
-if jump&lt;3{vspeed=-8}else{instance_create(x,y,obj_fade_to_white)}
+if jump&lt;3{vspeed=-8}else{}
 alarm[6]=2
 move=false
 jump-=1
@@ -444,8 +444,7 @@ y=lerp(y,ystart,0.05);x=lerp(x,xstart,0.05)
 if move=true{
 y=ystart+32*sin(time*0.004)
 x=xstart+(64*2)*sin(time*0.002)
-time+=10
-}else{time=0}
+time+=10;}else{time=0;}
 
 if dead=false{
 if hit=true{

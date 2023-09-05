@@ -6,7 +6,7 @@
   <depth>10</depth>
   <persistent>0</persistent>
   <parentName>ctr_indestructible</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_spz_bomb_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -28,7 +28,7 @@
             <string>/// Variables.
  
  // Movement Variables:
- if obj_miniboss_2.hp&lt;=4 and obj_miniboss_2.phase_2=true
+ if obj_miniboss_2.hp&lt;=2 and obj_miniboss_2.phase_2=true
  {
     hspeed=2
     }
@@ -152,9 +152,9 @@
           <argument>
             <kind>1</kind>
             <string>vspeed=-5
-if obj_miniboss_2.hp&lt;=4
+if obj_miniboss_2.hp&lt;=2
 {hspeed=-par_character.x_speed}
-else{hspeed=-hspeed/1.5}
+else{hspeed=(par_character.x-x)/50}
 hurt=true
 </string>
           </argument>
@@ -237,7 +237,7 @@ hurt=true
                     if(obj_character.state == CS_JUMP || obj_character.state == CS_ROLL || obj_character.shield_state == 1)
                     {
                     
-                        if par_character.y&gt;y or obj_miniboss_2.hp&lt;=4
+                        if par_character.y&gt;y or obj_miniboss_2.hp&lt;=2
                         {
                             alarm[0]=1
                             }
@@ -281,7 +281,7 @@ hurt=true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hurt=true{if image_xscale&lt;0.7 or obj_miniboss_2.hp&lt;=4{instance_destroy()}}
+            <string>if hurt=true{if image_xscale&lt;0.7 or obj_miniboss_2.hp&lt;=2{instance_destroy()}}
 </string>
           </argument>
         </arguments>

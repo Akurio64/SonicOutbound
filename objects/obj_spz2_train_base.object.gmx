@@ -31,6 +31,7 @@ event_inherited()
 spd=0
 cap=4
 my_cart=""
+a=true
 </string>
           </argument>
         </arguments>
@@ -79,7 +80,7 @@ my_cart=""
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if start=true
+            <string>if start=true and a=true
     {
         alarm[0]=1;
         spd+=cap/100
@@ -120,6 +121,7 @@ my_cart=""
           <argument>
             <kind>1</kind>
             <string>start=false
+a=false
 </string>
           </argument>
         </arguments>

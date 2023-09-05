@@ -712,6 +712,7 @@
               <sprite>sprites\spr_marvelous_hurt</sprite>
               <sprite>sprites\spr_marvelous_death</sprite>
               <sprite>sprites\spr_marvelous_bomb</sprite>
+              <sprite>sprites\spr_spz_bomb_mask</sprite>
               <sprite>sprites\spr_marvelous_lines_2</sprite>
               <sprite>sprites\spr_marvelous_rail</sprite>
               <sprite>sprites\spr_marvelous_rail_2</sprite>
@@ -873,6 +874,7 @@
             <sprite>sprites\spr_slz_swing_piece1</sprite>
             <sprite>sprites\spr_slz_swing_piece2</sprite>
             <sprite>sprites\spr_slz_swing_hurt</sprite>
+            <sprite>sprites\spr_slz_arrow</sprite>
           </sprites>
           <sprites name="SPZ">
             <sprite>sprites\spr_spz_mis_p</sprite>
@@ -1347,6 +1349,7 @@
         <background>background\pbg_spz1_05</background>
         <background>background\pbg_spz_02</background>
         <background>background\pbg_spz_cloud_2</background>
+        <background>background\pfg_spz_01</background>
       </backgrounds>
       <backgrounds name="RPZ">
         <background>background\pbg_rpz_01</background>
@@ -1378,6 +1381,7 @@
         <background>background\pbg_slz_light</background>
         <background>background\pbg_slz2_034</background>
         <background>background\pbg_slz2_033</background>
+        <background>background\pfg_slz_01</background>
       </backgrounds>
       <backgrounds name="CNZ">
         <background>background\pbg_cnz1_01</background>
@@ -1801,6 +1805,31 @@
       <object>objects\ctr_gamepad</object>
       <object>objects\ctr_level</object>
     </objects>
+    <objects name="Character">
+      <object>objects\ctr_camera</object>
+      <object>objects\par_character</object>
+      <object>objects\obj_character</object>
+      <object>objects\obj_ai</object>
+      <object>objects\obj_ai2</object>
+      <objects name="Shields">
+        <object>objects\par_shield</object>
+        <object>objects\obj_shield_normal</object>
+        <object>objects\obj_shield_wind</object>
+        <object>objects\obj_shield_rock</object>
+        <object>objects\obj_rock_part</object>
+        <object>objects\obj_shield_bubble</object>
+        <object>objects\obj_shield_flames</object>
+        <object>objects\obj_shield_lightning</object>
+        <object>objects\obj_shield_insta</object>
+      </objects>
+      <objects name="Effects">
+        <object>objects\obj_skid_dust</object>
+        <object>objects\obj_dropdash_dust</object>
+        <object>objects\obj_character_afterimage</object>
+        <object>objects\obj_lightning_spark</object>
+        <object>objects\obj_invincibility_spark</object>
+      </objects>
+    </objects>
     <objects name="Fades">
       <object>objects\obj_fade_in</object>
       <object>objects\obj_fade_to</object>
@@ -1813,31 +1842,6 @@
       </objects>
     </objects>
     <objects name="Gameplay">
-      <objects name="Character">
-        <object>objects\ctr_camera</object>
-        <object>objects\par_character</object>
-        <object>objects\obj_character</object>
-        <object>objects\obj_ai</object>
-        <object>objects\obj_ai2</object>
-        <objects name="Shields">
-          <object>objects\par_shield</object>
-          <object>objects\obj_shield_normal</object>
-          <object>objects\obj_shield_wind</object>
-          <object>objects\obj_shield_rock</object>
-          <object>objects\obj_rock_part</object>
-          <object>objects\obj_shield_bubble</object>
-          <object>objects\obj_shield_flames</object>
-          <object>objects\obj_shield_lightning</object>
-          <object>objects\obj_shield_insta</object>
-        </objects>
-        <objects name="Effects">
-          <object>objects\obj_skid_dust</object>
-          <object>objects\obj_dropdash_dust</object>
-          <object>objects\obj_character_afterimage</object>
-          <object>objects\obj_lightning_spark</object>
-          <object>objects\obj_invincibility_spark</object>
-        </objects>
-      </objects>
       <objects name="Objects">
         <objects name="Common">
           <object>objects\obj_ring</object>
@@ -2090,10 +2094,10 @@
             <object>objects\obj_stairs_part</object>
             <object>objects\obj_slz_fan</object>
             <object>objects\obj_slz_wind</object>
-            <object>objects\obj_see_ball</object>
             <object>objects\spr_slz_fire_des</object>
             <object>objects\obj_slz_fire</object>
             <object>objects\obj_slz_fire_shooter</object>
+            <object>objects\obj_see_ball</object>
             <object>objects\obj_seesaw</object>
             <object>objects\obj_slz_light</object>
             <object>objects\par_break_walls</object>
@@ -2111,6 +2115,7 @@
             <object>objects\obj_crane_hold</object>
             <object>objects\obj_slz_shooting_s</object>
             <object>objects\obj_slz_collapse</object>
+            <object>objects\obj_slz_arrow</object>
           </objects>
           <objects name="HSZ">
             <object>objects\obj_g_create</object>
@@ -2191,6 +2196,11 @@
         <object>objects\obj_score</object>
         <object>objects\obj_game_over</object>
       </objects>
+      <objects name="Foreground">
+        <object>objects\obj_foreground_slz</object>
+        <object>objects\obj_foreground_spz</object>
+        <object>objects\obj_rpz2_foreground</object>
+      </objects>
       <objects name="Backgrounds">
         <object>objects\par_parallax</object>
         <objects name="Zones">
@@ -2222,7 +2232,6 @@
           <object>objects\obj_parallax_lbz2</object>
           <object>objects\obj_parallax_snz1</object>
           <object>objects\obj_parallax_snz2</object>
-          <object>objects\obj_rpz2_foreground</object>
         </objects>
       </objects>
       <objects name="Terrain / Collision Masks">

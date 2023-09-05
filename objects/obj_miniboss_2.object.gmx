@@ -40,6 +40,7 @@ time=0
 image_xscale=0.5
 image_yscale=0.5
 phase_2=false
+hp=6
 h=x
 xspeed=0
 fric=0
@@ -301,7 +302,7 @@ alarm[2]=-1
             <kind>1</kind>
             <string>if bomb=0
     {
-        if hp&lt;=4
+        if hp&lt;=2
         {e=2}else
         {e=choose(0,1,2)}
         }
@@ -311,13 +312,13 @@ if bomb&lt;3
                 
         if bomb=e
             {
-                if (hp&lt;=4 and obj_miniboss_2.phase_2=false)=true
+                if (hp&lt;=2 and obj_miniboss_2.phase_2=false)=true
                 {
                     instance_create(x-8,y-32,obj_marvelous_bomb)
                     }
                 else
                 {
-                    if hp&lt;=4 and obj_miniboss_2.phase_2=true
+                    if hp&lt;=2 and obj_miniboss_2.phase_2=true
                     {
                         with instance_create(x+100,y,obj_marvelous_bomb)
                             {  
@@ -336,7 +337,7 @@ if bomb&lt;3
                     
                 else
                     {
-                        if hp&lt;=4 and obj_miniboss_2.phase_2=true
+                        if hp&lt;=2 and obj_miniboss_2.phase_2=true
                         {
                              instance_create(x+100,y,obj_marvelous_bomb)
                              }
@@ -348,11 +349,11 @@ if bomb&lt;3
                     
                     bomb+=1
                     d=false
-                    alarm[2]=45+hp*8
+                    alarm[2]=150
             
                 }
                 
-        else{d=true;bomb=0;alarm[2]=60+(hp*10);}
+        else{d=true;bomb=0;alarm[2]=150;}
 </string>
           </argument>
         </arguments>
@@ -424,7 +425,7 @@ alarm[1]=60
           <argument>
             <kind>1</kind>
             <string>if d=true{if instance_exists(obj_marvelous_bomb)
-=false{if alarm[2]=-1{alarm[2]=60+(hp*10)}}}
+=false{if alarm[2]=-1{alarm[2]=150}}}
 
 x=h+32*sin(time/100);time+=1
 

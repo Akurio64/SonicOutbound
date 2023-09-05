@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>99999999</depth>
+  <depth>-9000000</depth>
   <persistent>0</persistent>
   <parentName>par_parallax</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,29 +29,19 @@
 
  // First, call the parent. We do this to receive all variables from it.
     event_inherited()
-    instance_create(x,y,obj_foreground_slz)
     
  // Create the parallax background:
     var bg_yoffset;
-        bg_yoffset = (room_height-((242+200+480)-view_hview))/room_height
-        bg_offset  = 0
-        
- // Create the sky.
-    parallax_add_node(1, pbg_slz2_01, 0.98, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 12, 512, 384);  // &lt; Parallax ID 3, 4, 5, 6, 7, 8                
-        
+        bg_yoffset = (room_height-((242+480)-view_hview))/room_height; // Offset for the parallax bg.
+          
  // Create the mountains:
-    parallax_add_node(1, pbg_slz2_02, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 64+200, 0, 0, 0, 261, 135);  // &lt; Parallax ID 1      
-    parallax_add_node(1, pbg_slz2_03, 0.90, 0, 0, 0, 0, bg_yoffset, 0, 0, 168+200, 0, 0, 0, 512, 88);  // &lt; Parallax ID 1      
-    parallax_add_node(1, pbg_slz1_03, 0.86, 0, 0, 0, 0, bg_yoffset, 0, 0, 240+200, 0, 0, 0, 512, 72); // &lt; Parallax ID 2    
-    parallax_add_node(1, pbg_slz1_03, 0.82, 0, 0, 0, 0, bg_yoffset, 0, 0, 270+200, 0, 0, 0, 512, 72); // &lt; Parallax ID 2    
-    parallax_add_node(1, pgb_slz2_03, 0.78, 0, 0, 0, 0, bg_yoffset, 0, 0, 300+200, 0, 0, 0, 512, 104); // &lt; Parallax ID 2  
-    parallax_add_node(1, pbg_slz2_04, 0.74, 0, 0, 0, 0, bg_yoffset, 0, 0, 242+200, 0, 0, 0, 512, 480); // &lt; Parallax ID 2   
+    parallax_add_node(3, pfg_slz_01, -0.95, 0, 0, -32, 0, 0, 0, 0, 0, 0, 0, 0, 512, 256);  // &lt; Parallax ID 1      
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -68,11 +58,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>/// Animation speeds.
+ 
+ // We can change the image frame of parallax sprites by changing parallax_speed[id]
+ // This obviously only works when using a sprite with multiple frames.
+ 
+    parallax_speed[1] += 0.25; // Mountains 1 waterfalls.
+    parallax_speed[2] += 0.25; // Mountains 2 waterfalls.    
 
-draw_set_blend_mode(bm_add)
-draw_background_tiled_horizontal_part(pbg_slz_light, 0, 0, 512, 640, (view_xview*0.78), 192+150+(view_yview*((room_height-((242+480)-view_hview))/room_height)), 0, 0)
-draw_set_blend_mode(bm_normal)
 </string>
           </argument>
         </arguments>

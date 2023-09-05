@@ -35,6 +35,7 @@ image_speed=0.6
 i_speed=0.6
 
 //Boss behaviour
+instance_destroy(obj_foreground_spz)
 teleporting=false
 teleported=false
 returning=false
@@ -42,6 +43,7 @@ s_pos=240
 path=""
 star=0
 alarm[0]=150
+hp=12
 instance_create(x,y,obj_slzb_bg)
 </string>
           </argument>

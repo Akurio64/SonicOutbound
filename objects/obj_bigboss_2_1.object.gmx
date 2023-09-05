@@ -37,8 +37,9 @@ theme=_ev_fang
 i_speed=0.3
 targ_x=-1
 targ_y=-1
+instance_destroy(obj_foreground_spz)
 alarm[0]=120
-hp=4
+hp=8
 fa=false
 vulnerable=false
 instance_destroy(obj_parallax_spz2)

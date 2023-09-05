@@ -29,6 +29,7 @@
 
  // First, call the parent. We do this to receive all variables from it.
     event_inherited()
+    instance_create(x,y,obj_foreground_slz)
     
  // Create the parallax background:
     var bg_yoffset;
