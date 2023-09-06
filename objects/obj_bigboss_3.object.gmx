@@ -106,7 +106,7 @@ if hp&lt;=4
         }
     else
         {
-            alarm[0]=30
+            alarm[0]=1
             }
 </string>
           </argument>
