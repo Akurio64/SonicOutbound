@@ -62,32 +62,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Gravity.
-
- // Check for collision:
-    repeat(abs(y_speed))
-    {
-           if(!place_meeting(x, y+sign(y_speed), par_terrain))
-           {
-              y      += sign(y_speed);
-              landed  = false;
-           }
-           else
-           {
-              y_speed = 0;
-              landed  = true;
-           }           
-    }
-    // Add Gravity:
-       if(landed == false)
-       {
+            <string> // Check for collision:
+          repeat(abs(y_speed))
+          {
+                 if(!place_meeting(x, y+sign(y_speed), par_terrain))
+                 {
+                    y += sign(y_speed);
+                 }
+                 else
+                 {
+                    y_speed   = 0;
+                    is_bumped = false;
+                 }           
+          }
+       // Add Gravity:
           y_speed += y_gravity;
           if(y_speed &gt; 12)
           {
              y_speed = 12;
           }
-       }
-
 </string>
           </argument>
         </arguments>

@@ -260,6 +260,7 @@
     angle_in_corkscrew = 0
     time=0
     surf=false
+    sounde=0
 </string>
           </argument>
         </arguments>
@@ -418,11 +419,10 @@ part_system_depth(FireP,0);
 
 // define the particle
 fp = part_type_create();
-part_type_shape(fp,pt_shape_flare);
-part_type_size(fp,0.2,0.3,-.001,0);
-part_type_scale(fp,1,1);
-part_type_colour2(fp,c_red,c_orange);
-part_type_alpha2(fp,0.75,0.5);
+part_type_sprite(fp,spr_char_fire_ef,0,0,1);
+part_type_size(fp,1,2,-.01,0);
+part_system_depth(fp,-10)
+part_type_alpha2(fp,1,0.5);
 part_type_speed(fp,.1,.5,0,0);
 part_type_direction(fp,0,359,0,0);
 part_type_gravity(fp,0.02,90);
@@ -1687,34 +1687,52 @@ else {shield_y = floor(y+22)}
           <argument>
             <kind>1</kind>
             <string>///Particle System
-/*
+
 if(shield_index == SHIELD_FIRE){
 part_emitter_region(FireP,fe,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(FireP,fe,fp,1)}
 else
+
 if(shield_index == SHIELD_BUBBLE){
 part_emitter_region(BubbleP,be,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(BubbleP,be,bp,1)}
 else
+
+/*
+
 if(shield_index == SHIELD_LIGHTNING){
 part_emitter_region(ElectricP,ee,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(ElectricP,ee,ep,1)}
 else
+
+*/
+
+/*
+
 if(shield_index == SHIELD_WIND){
 part_emitter_region(WindP,we,x-64,x+64,y-64,y+64,ps_shape_ellipse,ps_distr_invgaussian)
 part_emitter_burst(WindP,we,wp,3)}
 else
+
+*/
+
 if(shield_index == SHIELD_ROCK){
 part_emitter_region(RockP1,re1,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_invgaussian)
 part_emitter_region(RockP2,re2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(RockP1,re1,rp1,1)
 part_emitter_burst(RockP2,re2,rp2,1)}
+
+/*
+
 else
+
 if invincibility=2{
 part_emitter_region(Star1,ie,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_region(Star2,ie2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(Star1,ie,ip,1)
-part_emitter_burst(Star2,ie2,ip2,1)}*/
+part_emitter_burst(Star2,ie2,ip2,1)}
+
+*/
 </string>
           </argument>
         </arguments>

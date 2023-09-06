@@ -38,7 +38,7 @@
     parallax_add_node(1, pbg_spz_01, 1, 0, 0, 0, 0, bg_yoffset, 0, 0, 0, 0, 0, 0, 480, 240); // &lt; Parallax ID 0
         
  // Create the mountains:
-    parallax_add_node(1, pbg_spz1_02, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 90+96, 0, 0, 0, 200, 144);  // &lt; Parallax ID 1   
+    parallax_add_node(1, pbg_spz1_02, 0.96, 0, 0, 0, 0, bg_yoffset, 0, 0, 90+108, 0, 0, 0, 512, 128);  // &lt; Parallax ID 1   
     parallax_add_node(1, pbg_spz1_03, 0.94, 0, 0, 0, 0, bg_yoffset, 0, 0, 90+96-76, 0, 0, 0, 512, 130);  // &lt; Parallax ID 1   
     parallax_add_node(1, pbg_spz1_04, 0.92, 0, 0, 0, 0, bg_yoffset, 0, 0, 112+96, 0, 0, 0, 130, 54);  // &lt; Parallax ID 1  
     

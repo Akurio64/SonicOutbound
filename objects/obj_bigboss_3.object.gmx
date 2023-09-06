@@ -35,7 +35,7 @@ image_speed=0.6
 i_speed=0.6
 
 //Boss behaviour
-instance_destroy(obj_foreground_spz)
+instance_destroy(obj_foreground_slz)
 teleporting=false
 teleported=false
 returning=false
@@ -81,6 +81,38 @@ audio_play(_boss_destroy, global.sfx_volume);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited()
+
+if hp&lt;=4
+    {
+        alarm[4]=1
+        }
+    else
+        {
+            alarm[0]=30
+            }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="10">
       <action>
         <libid>1</libid>
@@ -113,7 +145,6 @@ if instance_exists(obj_glow)=false{instance_create(x,y,obj_glow)}
 alarm[10]=8
 if alarm[9]=-1{alarm[9]=180}
 alarm[0]=-1
-alarm[1]=-1
 alarm[2]=-1
 alarm[3]=-1
 alarm[4]=-1
@@ -175,56 +206,6 @@ path=0
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>119</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_path</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>8</kind>
-            <path>pth_boss_1</path>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="6">
-      <action>
-        <libid>1</libid>
-        <id>124</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_path_end</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="2" enumb="5">
@@ -323,9 +304,9 @@ if star&lt;4{
 with instance_create(ctr_camera.limit_left-64,view_yview-64,obj_slz_star)
 {image_xscale=0.5;image_yscale=0.5;visible=true; 
 state=obj_bigboss_3.path}
-alarm[2]=120
+alarm[2]=180
 star+=1;if path=2{alarm[3]=45}
-else{alarm[3]=75}}
+else{alarm[3]=90}}
 </string>
           </argument>
         </arguments>
@@ -353,11 +334,13 @@ returning=true
 visible=true
 y=ystart
 image_index=0
-alarm[7]=15
 sprite_index=spr_slz_boss_4
 audio_play(_general_super,global.bgm_volume)
 x=random_range(obj_boss_camera.x-270,obj_boss_camera.x+270)
 star=0
+
+alarm[0]=150;
+vulnerable=true;
 
 with obj_slz_star{path_end();x=xstart;y=ystart;visible=false}
 </string>
@@ -365,69 +348,7 @@ with obj_slz_star{path_end();x=xstart;y=ystart;visible=false}
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>teleported=true
-teleporting=false
-image_index=0
-sprite_index=spr_slz_boss_5
-audio_play(_general_super,global.bgm_volume)
-
-alarm[3]=30
-alarm[6]=15
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>119</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_path</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>8</kind>
-            <path>pth_boss_1</path>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0.5</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -446,24 +367,25 @@ alarm[6]=15
             <kind>1</kind>
             <string>if hp&lt;=4{
 alarm[0]=-1
-alarm[1]=-1
 alarm[2]=-1
 alarm[3]=-1
 alarm[4]=1
-path_end()}
+}
 
 else{
+teleported=true
+teleporting=false
+image_index=0
+sprite_index=spr_slz_boss_5
+audio_play(_general_super,global.bgm_volume)
 
-teleporting=true
-returning=false
-vulnerable=false
-alarm[1]=180}
+alarm[3]=30}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="obj_character">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -480,39 +402,18 @@ alarm[1]=180}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp&gt;=5{
-if teleporting=true
-{
-with(instance_create(x, y, obj_character_afterimage))
-{
-               sprite_index = obj_bigboss_3.sprite_index
-               image_xscale = obj_bigboss_3.image_xscale
-               image_yscale = obj_bigboss_3.image_yscale
-               image_angle  = obj_bigboss_3.image_angle
-               image_speed  = 0;
-               image_index  = obj_bigboss_3.image_index
-               image_alpha  = 0.9;
-               depth        = obj_bigboss_3.depth+1;
-}
-path_speed+=0.05
-}
-else if returning=true
-{
-with(instance_create(x, y, obj_character_afterimage))
-{
-               sprite_index = obj_bigboss_3.sprite_index
-               image_xscale = obj_bigboss_3.image_xscale
-               image_yscale = obj_bigboss_3.image_yscale
-               image_angle  = obj_bigboss_3.image_angle
-               image_speed  = 0;
-               image_index  = obj_bigboss_3.image_index
-               image_alpha  = 0.9;
-               depth        = obj_bigboss_3.depth+1;
-}
-if path_speed&gt;0{path_speed-=0.05}else{if alarm[0]=-1{alarm[0]=90;vulnerable=true;path_end()}}
-}
-
-if path_speed&lt;2{vulnerable=true}else{vulnerable=false}}
+            <string>if visible=true
+    {
+        if sprite_index=spr_slz_boss_1
+            {
+                event_inherited()
+                alarm[0]=-1
+                alarm[2]=-1
+                alarm[3]=-1
+                alarm[4]=-1
+                alarm[5]=-1
+                }
+            }
 </string>
           </argument>
         </arguments>
@@ -573,6 +474,7 @@ d3d_set_fog(true,c_red,0,0);
 //draw code
 draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,c_white,obj_glow.image_alpha);
 d3d_set_fog(false,c_black,0,0)}
+
 </string>
           </argument>
         </arguments>

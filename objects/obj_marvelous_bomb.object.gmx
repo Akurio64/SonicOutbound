@@ -151,11 +151,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed=-5
-if obj_miniboss_2.hp&lt;=2
+            <string>if obj_miniboss_2.hp&lt;=2
 {hspeed=-par_character.x_speed}
-else{hspeed=(par_character.x-x)/50}
+else{hspeed=((obj_miniboss_2.x+64)-par_character.x)/25;
+hspeed=clamp(hspeed,-3,2)}
 hurt=true
+
+vspeed=-abs(hspeed)*2
+vspeed=clamp(vspeed,-9,-6)
 </string>
           </argument>
         </arguments>

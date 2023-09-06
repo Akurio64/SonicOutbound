@@ -80,7 +80,7 @@
     <instance objName="obj_aehz_collision_00_o" x="2047" y="878" name="inst_57C59649" locked="0" code="" scaleX="1" scaleY="3.9375" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="2207" y="1132" name="inst_D025A6F3" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="3062" y="374" name="inst_6A0FD253" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_aehz_collision_00_o" x="2689" y="494" name="inst_60E6919C" locked="0" code="" scaleX="7.90322589874268" scaleY="1.03125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_aehz_collision_00_o" x="2689" y="494" name="inst_60E6919C" locked="0" code="" scaleX="8.65625" scaleY="1.09677422046661" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="2925" y="526" name="inst_057487E3" locked="0" code="" scaleX="10.53125" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="3198" y="494" name="inst_DCA48025" locked="0" code="" scaleX="12" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="3325" y="131" name="inst_35E3D94E" locked="0" code="" scaleX="8" scaleY="8.48387050628662" colour="4294967295" rotation="0"/>
@@ -214,7 +214,6 @@
     <instance objName="obj_ring" x="3149" y="508" name="inst_B6AD6ADC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="3117" y="509" name="inst_64FA2EEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="3181" y="509" name="inst_9E04D30E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ring" x="2963" y="509" name="inst_301E452E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="2996" y="509" name="inst_D7590F99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="3027" y="509" name="inst_ED20795E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ring" x="3059" y="509" name="inst_96C832F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

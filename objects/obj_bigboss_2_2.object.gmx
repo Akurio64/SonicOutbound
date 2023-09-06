@@ -358,6 +358,7 @@ alarm[1]=30
         if alarm[2] != -1 {
         if((global.game_time div 60) mod 3)
         {image_alpha=1}else{image_alpha=0}}
+        else{image_alpha=1}
 </string>
           </argument>
         </arguments>

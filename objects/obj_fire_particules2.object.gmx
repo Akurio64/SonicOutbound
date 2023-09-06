@@ -33,18 +33,16 @@ part_system_depth(FirstParticleSystem,0);
 
 // define the particle
 first_particle = part_type_create();
-part_type_shape(first_particle,pt_shape_flare);
-part_type_size(first_particle,0.2,0.3,-.001,0);
-part_type_scale(first_particle,1,1);
-part_type_colour2(first_particle,c_orange,c_red);
-part_type_alpha2(first_particle,0.75,0.5);
+part_type_sprite(first_particle,spr_char_fire_ef,0,0,1);
+part_type_size(first_particle,1,2,-.01,0);
+part_system_depth(first_particle,-10)
+part_type_alpha2(first_particle,1,0.5);
 part_type_speed(first_particle,.1,.5,0,0);
 part_type_direction(first_particle,0,359,0,0);
 part_type_gravity(first_particle,0.02,90);
 part_type_orientation(first_particle,0,359,10,0,true);
 part_type_blend(first_particle,true);
-part_type_life(first_particle,30,60);
-part_type_alpha1(first_particle,0.5)
+part_type_life(first_particle,50,125);
 
 // define the emitter
 first_emitter = part_emitter_create(FirstParticleSystem);
