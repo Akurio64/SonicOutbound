@@ -21,5 +21,6 @@
   <height>256</height>
   <frames>
     <frame index="0">images\spr_layer_low_slz_0.png</frame>
+    <frame index="1">images\spr_layer_low_slz_1.png</frame>
   </frames>
 </sprite>

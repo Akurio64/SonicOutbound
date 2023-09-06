@@ -1272,16 +1272,6 @@
     <tile bgName="tls_slz_act1_1" x="3327" y="655" w="256" h="256" xo="9" yo="8" id="10004495" name="inst_CE7B1E78" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_slz_act1_1" x="2809" y="494" w="49" h="36" xo="4" yo="231" id="10010046" name="inst_AE706F09" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tls_slz_act1_1" x="2748" y="513" w="135" h="148" xo="1190" yo="258" id="10010048" name="inst_76E56B7A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop2" x="2302" y="908" w="256" h="256" xo="0" yo="0" id="10003892" name="inst_FFFBCFB7" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop2" x="4862" y="653" w="256" h="256" xo="0" yo="0" id="10003893" name="inst_DB0B8F12" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop2" x="10487" y="461" w="256" h="256" xo="0" yo="0" id="10004185" name="inst_9B02B0B6" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop1" x="7800" y="815" w="256" h="256" xo="0" yo="0" id="10004352" name="inst_77A3B5C8" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop1" x="7544" y="560" w="256" h="256" xo="0" yo="0" id="10004353" name="inst_4DCE7237" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop1" x="12792" y="590" w="256" h="256" xo="0" yo="0" id="10004354" name="inst_30B68F94" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop2" x="14327" y="847" w="256" h="256" xo="0" yo="0" id="10004486" name="inst_A5A9FF3C" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop1" x="14071" y="591" w="256" h="256" xo="0" yo="0" id="10004488" name="inst_05EE8D0A" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop1" x="13816" y="337" w="256" h="256" xo="0" yo="0" id="10004489" name="inst_BBDB22E9" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_slz_loop1" x="15887" y="561" w="256" h="256" xo="0" yo="0" id="10004492" name="inst_CEFD3BD8" depth="-100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
