@@ -39,7 +39,6 @@
     
  // Misc.
     monitor_frame = irandom_range(0, 2)
-
 </string>
           </argument>
         </arguments>
@@ -62,25 +61,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> // Check for collision:
-          repeat(abs(y_speed))
-          {
-                 if(!place_meeting(x, y+sign(y_speed), par_terrain))
-                 {
-                    y += sign(y_speed);
-                 }
-                 else
-                 {
-                    y_speed   = 0;
-                    is_bumped = false;
-                 }           
-          }
-       // Add Gravity:
-          y_speed += y_gravity;
-          if(y_speed &gt; 12)
-          {
-             y_speed = 12;
-          }
+            <string>/// Gravity.
+
+    if image_angle = 0
+    {
+           // Check for collision:
+              repeat(abs(y_speed))
+              {
+                     if(!place_meeting(x, y+sign(y_speed), par_terrain))
+                     {
+                        y += sign(y_speed);
+                     }
+                     else
+                     {
+                        y_speed   = 0;
+                        is_bumped = false;
+                     }           
+              }
+           // Add Gravity:
+              y_speed += y_gravity;
+              if(y_speed &gt; 12)
+              {
+                 y_speed = 12;
+              }     
+            }
 </string>
           </argument>
         </arguments>
@@ -108,14 +112,16 @@
  // Moving up:
     if(icon_position &lt; 45)
     {
-       icon_position += ((46)-icon_position)*0.10;
+       icon_position += (((46)-icon_position)*0.10)*image_yscale
     }
     else // Stop moving and give reward.
-    if(icon_position &gt;= 45 &amp;&amp; icon_rewarded == -1)
+    if(icon_position*image_yscale &gt;= 45 &amp;&amp; icon_rewarded == -1)
     {
-       icon_position = 45;
+       icon_position = 45*image_yscale;
        icon_rewarded = 1;
-       instance_create(x, yy-icon_position, obj_monitor_icon_disappear);
+       dis = instance_create(x+lengthdir_x(icon_position,image_angle+90), y+(lengthdir_y(icon_position,image_angle+90)), obj_monitor_icon_disappear);
+       dis.image_yscale = image_yscale
+       dis.image_angle  = image_angle
        event_user(0);
     }
 
@@ -564,13 +570,13 @@
             <string>/// Draw Broken Monitor.
 
  // Broken part:
-    draw_sprite(sprite_index, monitor_frame, x, y)
+    draw_sprite_ext(sprite_index, monitor_frame, x, y, 1, image_yscale, image_angle, c_white, 1)
     
  // Draw Icon:
     if(icon_rewarded == -1)
     {
-       draw_sprite_ext(spr_monitor_icon_border, current_time div 45, x, yy-icon_position, 1, 1, 0, c_white, 1)    
-       draw_sprite_ext(spr_monitor_icon, icon_frame, x, yy-icon_position, 1, 1, 0, c_white, 1)
+       draw_sprite_ext(spr_monitor_icon_border, current_time div 45, x+lengthdir_x(icon_position,image_angle+90), y+(lengthdir_y(icon_position,image_angle+90)), 1, image_yscale, image_angle, c_white, 1)
+       draw_sprite_ext(spr_monitor_icon, icon_frame, x+lengthdir_x(icon_position,image_angle+90), y+(lengthdir_y(icon_position,image_angle+90)), 1, image_yscale, image_angle, c_white, 1)
     }
 </string>
           </argument>

@@ -999,7 +999,11 @@ variant=3</code>
     <instance objName="obj_aehz_collision_00_o" x="13504" y="1192" name="inst_C2DBE797" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_aehz_collision_00_o" x="13264" y="1064" name="inst_42BA26B0" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_remove_foreground" x="13568" y="768" name="inst_2D1D5962" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_monitor_flame_shield" x="208" y="1232" name="inst_CB877E63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="1408" y="1256" name="inst_DBC50EE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_monitor_flame_shield" x="176" y="1240" name="inst_B2F3E491" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="1136" y="1464" name="inst_ECF7E978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
+    <instance objName="obj_monitor_rings" x="544" y="1288" name="inst_7E23D713" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="335"/>
+    <instance objName="obj_monitor_rings" x="1024" y="1848" name="inst_475F32DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="45"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz" x="2112" y="1208" w="128" h="128" xo="576" yo="512" id="10011744" name="inst_3E37867C" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

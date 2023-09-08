@@ -34,6 +34,8 @@
 
  // Collision:
     collision = instance_create(x, y, obj_monitor_collision);
+    collision.image_yscale = image_yscale
+    collision.image_angle  = image_angle
 
  // Animation:
     icon_border_frame = 0;
@@ -67,10 +69,12 @@
  
  // Create broken part:
     broken = instance_create(x, y, obj_monitor_broken);
-    broken . icon_frame = icon_frame;
-    broken . yy         = y-19;
-    broken . y          = y-24;
-    broken . parent     = parent;
+    broken . image_yscale = image_yscale
+    broken . image_angle  = image_angle
+    broken . icon_frame   = icon_frame;
+    broken . yy           = y;
+    broken . y            = y;
+    broken . parent       = parent;
     
  // Destroy collision.
     with(collision)
@@ -128,30 +132,28 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
             <kind>1</kind>
             <string>/// Gravity.
 
-    if(is_bumped == true)
+    if image_angle = 0
     {
-       // Check for collision:
-          repeat(abs(y_speed))
-          {
-                 if(!place_meeting(x, y+sign(y_speed), par_terrain))
-                 {
-                    y += sign(y_speed);
-                 }
-                 else
-                 {
-                    y_speed   = 0;
-                    is_bumped = false;
-                 }           
-          }
-       // Add Gravity:
-          y_speed += y_gravity;
-          if(y_speed &gt; 12)
-          {
-             y_speed = 12;
-          }     
-  }
-
- 
+           // Check for collision:
+              repeat(abs(y_speed))
+              {
+                     if(!place_meeting(x, y+sign(y_speed), par_terrain))
+                     {
+                        y += sign(y_speed);
+                     }
+                     else
+                     {
+                        y_speed   = 0;
+                        is_bumped = false;
+                     }           
+              }
+           // Add Gravity:
+              y_speed += y_gravity;
+              if(y_speed &gt; 12)
+              {
+                 y_speed = 12;
+              }     
+            }
 </string>
           </argument>
         </arguments>
@@ -236,16 +238,16 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
             <string>/// Draw Monitor &amp; Icon.
 
  // Draw Monitor: 
-    draw_sprite(spr_monitor, 0, x, y);
+    draw_sprite_ext(spr_monitor, 0, x, y, 1, image_yscale, image_angle, c_white, 1)
     draw_set_blend_mode(bm_add)
-    draw_sprite(spr_monitor, 1, x, y);
+    draw_sprite_ext(spr_monitor, 1, x, y, 1, image_yscale, image_angle, c_white, 1)
     draw_set_blend_mode(bm_normal)
     
  // Draw Icon Border:
-    draw_sprite(spr_monitor_icon_border, icon_border_frame, x, y-19)
+    draw_sprite_ext(spr_monitor_icon_border, icon_border_frame, x, y, 1, image_yscale, image_angle, c_white, 1)
     
  // Draw Icon:
-    draw_sprite(spr_monitor_icon, icon_frame, x, y-19);
+    draw_sprite_ext(spr_monitor_icon, icon_frame, x, y, 1, image_yscale, image_angle, c_white, 1)
     
  // Draw Static.
     if(static_delay &gt; 0)
@@ -263,7 +265,7 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
           static_delay = irandom_range(32, 64);
           static_frame = 0;
        }
-       draw_sprite(spr_monitor_static, static_frame, x, y-19);
+       draw_sprite_ext(spr_monitor_static, static_frame, x, y, 1, image_yscale, image_angle, c_white, 1)
     }
     
 </string>

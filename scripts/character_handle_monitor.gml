@@ -60,31 +60,64 @@
     monitor = instance_nearest(x, y, par_monitor);
     if(monitor != noone && state != CS_CLIMB && (y_speed == 0 && (state != CS_JUMP || state != CS_ROLL || animation_index != "ROLL")))
     {
-       if(state != CS_CROUCH && state != CS_SPINDASH || state != CS_CLIMB)
-       {
-          if(character_collision_check(COL_TOP_OBJECT, MASK_MAIN, x, y, angle, monitor))
-          {
-             monitor.is_bumped  = true;
-             monitor.y_speed    = -2;
-             angle              = 0;               
-          }
-       }
-       else if(character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y+10, angle, monitor))
-       {
-               if(state == CS_SPINDASH)
+        if monitor.image_yscale = 1 or monitor.image_angle = 1
+        {
+           if(state != CS_CROUCH && state != CS_SPINDASH || state != CS_CLIMB)
+           {
+                if(character_collision_check(COL_TOP_OBJECT, MASK_MAIN, x, y, angle, monitor))
+              {
+                 monitor.is_bumped  = true;
+                 monitor.y_speed    = -2;
+                 angle              = 0;               
+              }
+           }
+                   
+           else if(character_collision_check(COL_TOP_OBJECT, MASK_BIG, x, y+10, angle, monitor))
+           {
+                   if(state == CS_SPINDASH)
+                   {
+                     // Destroy monitor:
+                        monitor.parent = id;
+                        with(monitor)
+                        {
+                            instance_destroy();
+                        }                
+                   }
+                   else
+                   {
+                      monitor.is_bumped  = true;
+                      monitor.y_speed     = -2;
+                      angle             = 0;  
+                   }         
+             }
+        }
+        
+        else
+        {
+            if(state != CS_CROUCH && state != CS_SPINDASH || state != CS_CLIMB)
                {
-                 // Destroy monitor:
-                    monitor.parent = id;
-                    with(monitor)
-                    {
-                        instance_destroy();
-                    }                
+                  if(character_collision_check(COL_MAIN_OBJECT, x, y, monitor))
+                  {
+                     monitor.is_bumped  = true;
+                     angle              = 0;               
+                  }
                }
-               else
+               else if(character_collision_check(COL_MAIN_OBJECT, x, y, monitor))
                {
-                  monitor.is_bumped  = true;
-                  monitor.y_speed     = -2;
-                  angle             = 0;  
-               }         
-       }
+                       if(state == CS_ROLL)
+                       {
+                         // Destroy monitor:
+                            monitor.parent = id;
+                            with(monitor)
+                            {
+                                instance_destroy();
+                            }                
+                       }
+                       else
+                       {
+                          monitor.is_bumped  = true;
+                          angle             = 0;  
+                       }         
+                }
+            }
     }

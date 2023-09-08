@@ -961,7 +961,7 @@
     <instance objName="obj_semi_solid" x="18992" y="992" name="inst_E6F4E3AC" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semi_solid" x="16640" y="608" name="inst_ED1C29C3" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semi_solid" x="17024" y="224" name="inst_E9C1DFE6" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character" x="17040" y="208" name="inst_49CA51D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character" x="96" y="1744" name="inst_49CA51D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stairs_part" x="17760" y="1376" name="inst_3BDBE186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stairs_part" x="18560" y="1120" name="inst_8A03F9D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stairs_part" x="18832" y="1120" name="inst_82382D0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -987,7 +987,6 @@
     <instance objName="obj_slz_arrow" x="18384" y="352" name="inst_B9265840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_arrow" x="18064" y="224" name="inst_F9C56539" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_arrow" x="17616" y="128" name="inst_E5C582F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slz_arrow" x="16896" y="96" name="inst_72C63067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_arrow" x="15152" y="736" name="inst_77A905E5" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_arrow" x="15536" y="736" name="inst_09FACBB8" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_arrow" x="16560" y="608" name="inst_580A9ED0" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>

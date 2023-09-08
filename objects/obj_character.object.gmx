@@ -420,13 +420,13 @@ part_system_depth(FireP,0);
 // define the particle
 fp = part_type_create();
 part_type_sprite(fp,spr_char_fire_ef,0,0,1);
-part_type_size(fp,1,2,-.01,0);
+part_type_size(fp,0.5,2,-.01,0);
 part_system_depth(fp,-10)
-part_type_alpha2(fp,1,0.5);
+part_type_alpha2(fp,0.7,0.5);
 part_type_speed(fp,.1,.5,0,0);
-part_type_direction(fp,0,359,0,0);
+part_type_direction(fp,45,359-45,0,0);
 part_type_gravity(fp,0.02,90);
-part_type_orientation(fp,0,359,10,0,true);
+part_type_orientation(fp,45,359-45,10,0,true);
 part_type_blend(fp,true);
 part_type_life(fp,50,125);
 
@@ -474,15 +474,14 @@ part_system_depth(ElectricP,0);
 
 // define the particle
 ep = part_type_create();
-part_type_shape(ep,pt_shape_spark);
-part_type_size(ep,0.4,0.6,-.001,0);
-part_type_scale(ep,1,1);
-part_type_colour2(ep,c_white,c_aqua);
-part_type_alpha2(ep,0.5,0.25);
+part_type_sprite(ep,spr_char_elec_ef,0,0,1);
+part_type_size(ep,0.5,2,-.01,0);
+part_system_depth(ep,-10)
+part_type_alpha2(ep,0.7,0.5);
 part_type_speed(ep,.1,.25,0,0.05);
-part_type_direction(ep,0,359,0,1);
+part_type_direction(ep,90,270,0,1);
+part_type_orientation(fp,90,270,0,0,true);
 part_type_gravity(ep,0.02,90);
-part_type_orientation(ep,0,359,10,1,true);
 part_type_blend(ep,true);
 part_type_life(ep,50,125);
 
@@ -1698,14 +1697,10 @@ part_emitter_region(BubbleP,be,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gau
 part_emitter_burst(BubbleP,be,bp,1)}
 else
 
-/*
-
 if(shield_index == SHIELD_LIGHTNING){
 part_emitter_region(ElectricP,ee,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
 part_emitter_burst(ElectricP,ee,ep,1)}
 else
-
-*/
 
 /*
 

@@ -458,6 +458,7 @@
           <sprite>sprites\spr_shield_flames_burst</sprite>
           <sprite>sprites\spr_shield_lightning</sprite>
           <sprite>sprites\spr_char_fire_ef</sprite>
+          <sprite>sprites\spr_char_elec_ef</sprite>
           <sprite>sprites\spr_shield_insta</sprite>
         </sprites>
         <sprites name="Effects">

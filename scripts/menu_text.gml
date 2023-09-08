@@ -35,7 +35,7 @@ if argument0=0
         "Uhhhhh... Hey misteer, I am mad scientist. Is so cooooooolll!'!! Sonuvabitch",
         "How do you wash your brain?",
         "A man walks into a bar, Ouch, he says... Relax liberals, it's called dark humour...",
-        "Nintendo annihilating the entire population of Italy (there are too much people called Mario)",
+        "Nintendo annihilating the entire population of Italy due to the significant number of people called Mario",
         "Your honour, if you are what you eat, then my client is an innocent man.",
         "Your honour, my client is not racist. He loves all races, even the bad ones.",
         "Empaths helping a dude who's getting stabbed to death by sending them good vibes.",
