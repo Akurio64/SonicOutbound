@@ -36,6 +36,10 @@
     collision = instance_create(x, y, obj_monitor_collision);
     collision.image_yscale = image_yscale
     collision.image_angle  = image_angle
+    
+    touch = instance_create(x, y, obj_monitor_touch);
+    touch.image_yscale = image_yscale
+    touch.image_angle  = image_angle
 
  // Animation:
     icon_border_frame = 0;

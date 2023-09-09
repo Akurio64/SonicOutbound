@@ -1972,6 +1972,7 @@
             <object>objects\obj_monitor_collision</object>
             <object>objects\obj_monitor_icon_disappear</object>
             <object>objects\obj_monitor_shard</object>
+            <object>objects\obj_monitor_touch</object>
           </objects>
         </objects>
         <objects name="Bridges">
@@ -2180,11 +2181,11 @@
             <object>objects\obj_spz_cart</object>
             <object>objects\obj_spz_mis_p</object>
             <object>objects\obj_spz_turbine</object>
-            <object>objects\obj_spz_pendulum</object>
             <object>objects\obj_spz_destroy</object>
             <object>objects\obj_spz_roller</object>
             <object>objects\obj_spz_tower</object>
             <object>objects\obj_spz_bicycle</object>
+            <object>objects\obj_spz_pendulum</object>
             <object>objects\obj_spz_circle_quart</object>
             <object>objects\obj_spz_loop_h</object>
           </objects>
