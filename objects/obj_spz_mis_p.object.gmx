@@ -59,7 +59,7 @@ audio_stop(_general_collapse)
 if obj_character.sounde&lt;6
     {
         audio_play(_boss_destroy,global.sfx_volume);
-        sounde+=1
+        obj_character.sounde+=1
             }
         else if audio_is_playing(_boss_destroy)=false
             {
