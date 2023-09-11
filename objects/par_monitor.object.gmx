@@ -211,11 +211,15 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
     {
        collision.x = x;
        collision.y = y;
+       touch.x     = x;
+       touch.y     = y;
     }
     if(is_bumped == true)
     {
        collision.x = -1;
-       collision.y = -1;            
+       collision.y = -1;       
+       touch.x     = x;
+       touch.y     = y;     
     }
 </string>
           </argument>
@@ -243,9 +247,6 @@ else if icon_frame=9{dummy_effect_create(spr_blue_glow, 0.40, x, y-8, 5, 0)}
 
  // Draw Monitor: 
     draw_sprite_ext(spr_monitor, 0, x, y, 1, image_yscale, image_angle, c_white, 1)
-    draw_set_blend_mode(bm_add)
-    draw_sprite_ext(spr_monitor, 1, x, y, 1, image_yscale, image_angle, c_white, 1)
-    draw_set_blend_mode(bm_normal)
     
  // Draw Icon Border:
     draw_sprite_ext(spr_monitor_icon_border, icon_border_frame, x, y, 1, image_yscale, image_angle, c_white, 1)
