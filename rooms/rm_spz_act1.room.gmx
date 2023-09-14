@@ -952,6 +952,7 @@ variant=3</code>
     <instance objName="obj_aehz_collision_00_o" x="13136" y="808" name="inst_114EFDD8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_monitor_rings" x="13184" y="872" name="inst_0836B444" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semi_solid" x="9392" y="1272" name="inst_05F5E615" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_wind_shield" x="176" y="1240" name="inst_7EC508C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_spz" x="2112" y="1208" w="128" h="128" xo="576" yo="512" id="10011744" name="inst_3E37867C" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -502,13 +502,12 @@ part_system_depth(WindP,0);
 // define the particle
 wp = part_type_create();
 part_type_sprite(wp,spr_char_wind_ef,true,false,true)
+part_type_speed(wp,.0625,.125,0.025,0.05);
+part_type_direction(wp,0,359,1,0);
 part_type_size(wp,1.0,1.0,0,0);
 part_type_alpha2(wp,0.5,1);
-part_type_speed(wp,0.01,0.05,0.05,0.05);
 part_type_blend(wp,true);
-part_type_direction(wp,0,359,1,0);
-part_type_orientation(wp,0,359,1,1,true);
-part_type_life(wp,45,90);
+part_type_life(wp,30,45);
 
 // define the emitter
 we = part_emitter_create(WindP);
@@ -518,27 +517,6 @@ part_emitter_region(WindP,we,x-64,x+64,y-64,y+64,ps_shape_ellipse,ps_distr_invga
 
 
 //Rock
-
-// define the particle system
-RockP1 = part_system_create()
-
-// define the depth of the particle system
-part_system_depth(RockP1,0);
-
-// define the particle
-rp1 = part_type_create();
-part_type_sprite(rp1,spr_rock_part,true,false,true)
-part_type_scale(rp1,1,1);
-part_type_speed(rp1,1,1,0,0);
-part_type_direction(rp1,0,359,1,0);
-part_type_orientation(rp1,0,359,1,1,true);
-part_type_life(rp1,10,30);
-
-// define the emitter
-re1 = part_emitter_create(RockP1);
-
-//define the emitter region
-part_emitter_region(RockP1,re1,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_invgaussian);
 
 // define the particle system
 RockP2 = part_system_create()
@@ -1704,9 +1682,7 @@ part_emitter_burst(WindP,we,wp,2)}
 else
 
 if(shield_index == SHIELD_ROCK){
-part_emitter_region(RockP1,re1,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_invgaussian)
 part_emitter_region(RockP2,re2,x-45,x+45,y-45,y+45,ps_shape_ellipse,ps_distr_gaussian)
-part_emitter_burst(RockP1,re1,rp1,1.0)
 part_emitter_burst(RockP2,re2,rp2,2.0)}
 
 /*
