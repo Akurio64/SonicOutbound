@@ -38,7 +38,7 @@
     collision.image_angle  = image_angle
     
     touch = instance_create(x, y, obj_monitor_touch);
-    touch.image_yscale = image_yscale
+    touch.image_yscale = image_yscale*0.60
     touch.image_angle  = image_angle
 
  // Animation:
@@ -82,6 +82,11 @@
     
  // Destroy collision.
     with(collision)
+    {
+         instance_destroy();
+    }
+    
+    with(touch)
     {
          instance_destroy();
     }

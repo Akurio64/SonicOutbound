@@ -21,6 +21,17 @@
                 state == CS_MEGA) )
             {
             // Destroy monitor:
+                        
+                        if _monitor.image_angle = 0
+                        {
+                            y_speed = abs(y_speed)*-1.5
+                        }
+                        
+                        else if _monitor.image_angle = 180
+                        {
+                            y_speed = abs(y_speed)*1.5
+                        }
+            
                         _monitor.parent = id;             
                         with(_monitor)
                         {
@@ -28,7 +39,6 @@
                         }
                         
                         // Rebound:
-                        y_speed       *= 1.5
                          ground         = false;
                          if(roll_rebounce == false)
                          {

@@ -957,6 +957,7 @@
           <sprite>sprites\spr_monitor</sprite>
           <sprite>sprites\spr_monitor_broken</sprite>
           <sprite>sprites\spr_monitor_mask</sprite>
+          <sprite>sprites\spr_monitor_mask_2</sprite>
           <sprites name="Icons">
             <sprite>sprites\spr_monitor_icon_border</sprite>
             <sprite>sprites\spr_monitor_icon</sprite>
