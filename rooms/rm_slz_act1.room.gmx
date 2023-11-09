@@ -963,6 +963,9 @@
     <instance objName="obj_semi_solid" x="13050" y="432" name="inst_C437B415" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_semi_solid" x="13562" y="560" name="inst_B384859A" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slz_fan" x="15223" y="1167" name="inst_4DE457C2" locked="0" code="force=2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="1904" y="656" name="inst_B9B42D27" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_flame_shield" x="3376" y="912" name="inst_0F187CB0" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor_rings" x="9223" y="909" name="inst_FD1F8B16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tls_slz_act1_1" x="12282" y="1612" w="256" h="256" xo="273" yo="8" id="10004152" name="inst_6929E005" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
