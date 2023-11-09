@@ -98,7 +98,8 @@ audio_play(_boss_destroy, global.sfx_volume);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
+            <string>sprite_index=main_sprite
+ctr_audio.act_clear=act_clear
 
 if hp&lt;=4
     {
@@ -270,6 +271,7 @@ alarm[4]=100
           <argument>
             <kind>1</kind>
             <string>vulnerable=true
+hit=false
 visible=true
 image_index=0
 sprite_index=spr_slz_boss_5
@@ -332,6 +334,7 @@ else{alarm[3]=90}}
             <string>teleported=false
 returning=true
 visible=true
+hit=false
 y=ystart
 image_index=0
 sprite_index=spr_slz_boss_4

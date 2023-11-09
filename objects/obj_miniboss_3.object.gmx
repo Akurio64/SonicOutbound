@@ -80,6 +80,7 @@ for (i=0;i&lt;ww;i+=chunk) { //we loop 4 pixel at a time all the way across
  particle.size = chunk;
  particle.xx = i; //we'll need the particles to have these values so they can draw the right part of the sprite
  particle.yy = j;
+ particle.depth = 1000002
  }
  }
  

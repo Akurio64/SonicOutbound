@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="18" name="datafiles">
-    <datafiles number="18" name="Misc">
+  <datafiles number="19" name="datafiles">
+    <datafiles number="19" name="Misc">
       <datafile>
         <name>Intro.fmv</name>
         <exists>-1</exists>
@@ -78,6 +78,7 @@
   <NewExtensions>
     <extension index="0">extensions\WebMPlayer</extension>
     <extension index="1">extensions\GMRichPresence</extension>
+    <extension index="2">extensions\Extension1</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="BGM">
@@ -321,6 +322,17 @@
           <sound>sound\_pend_spin</sound>
           <sound>sound\_pend_release</sound>
         </sounds>
+      </sounds>
+      <sounds name="CGS">
+        <sound>sound\snd_cgs2021_appear</sound>
+        <sound>sound\snd_cgs2021_land</sound>
+        <sound>sound\snd_cgs2021_flip</sound>
+        <sound>sound\snd_cgs2021_textland</sound>
+        <sound>sound\snd_cgs2021_zoom</sound>
+        <sound>sound\snd_cgs2021_end</sound>
+        <sound>sound\snd_sfx_frypan</sound>
+        <sound>sound\snd_sfx_gigapunch</sound>
+        <sound>sound\snd_battlefall</sound>
       </sounds>
     </sounds>
   </sounds>
@@ -1290,6 +1302,12 @@
         <sprite>sprites\spr_slz_break_wall_piece</sprite>
       </sprites>
     </sprites>
+    <sprites name="CGS">
+      <sprite>sprites\spr_cgs2021_splashscreen</sprite>
+      <sprite>sprites\spr_cgs2021_splashscreen_shine</sprite>
+      <sprite>sprites\spr_cgs2021_starsA</sprite>
+      <sprite>sprites\spr_cgs2021_starsB</sprite>
+    </sprites>
     <sprites name="Startup">
       <sprites name="SEGA">
         <sprite>sprites\spr_sega_startup1</sprite>
@@ -1533,6 +1551,9 @@
     <backgrounds name="Misc">
       <background>background\bg_dataselect</background>
       <background>background\bg_levelselect</background>
+    </backgrounds>
+    <backgrounds name="CGS">
+      <background>background\bg_cgs2021_splashscreen</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -1789,6 +1810,10 @@
       <script>scripts\edgefmv_play.gml</script>
       <script>scripts\edgefmv_unload.gml</script>
     </scripts>
+    <script>scripts\approach_new.gml</script>
+    <script>scripts\EaseInExpo.gml</script>
+    <script>scripts\EaseOutElastic.gml</script>
+    <script>scripts\EaseInBack.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_blackhole.shader</shader>
@@ -2495,6 +2520,9 @@
         </objects>
       </objects>
       <object>objects\obj_intro</object>
+      <objects name="CGS">
+        <object>objects\obj_cgs2021_splashscreen</object>
+      </objects>
     </objects>
     <object>objects\obj_sage_demo</object>
   </objects>
@@ -2505,6 +2533,7 @@
       <room>rooms\rm_sega</room>
       <room>rooms\rm_p255</room>
       <room>rooms\rm_sage</room>
+      <room>rooms\rm_cgs2021</room>
     </rooms>
     <rooms name="Title Screen">
       <room>rooms\rm_title_screen</room>
